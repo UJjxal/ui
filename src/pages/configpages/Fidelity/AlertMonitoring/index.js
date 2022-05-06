@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { Layout, Tag, message } from "antd";
-import { STATICRISK360, WEBSOCKETURL } from "../../../../config";
+import React, {Component} from "react";
+import {Layout, message, Tag} from "antd";
+import {STATICRISK360} from "../../../../config";
 import FidelitySidebar from "./FidelitySidebar";
 import NewsAlert from "./NewsAlert";
 import FilterTableWithTabs from "./FilterTableWithTabs";
 import "./index.css";
-import { getAlertData, getNewsAlertData, getUpdateAlertData, getUpdateCaseOwner } from "./api";
+import {getAlertData, getUpdateCaseOwner} from "./api";
 
-const { Content } = Layout;
+const {Content} = Layout;
 
 function getUrlParameter(name) {
     name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -15,6 +15,7 @@ function getUrlParameter(name) {
     var results = regex.exec(window.location.search);
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
+
 class Fidelity extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +36,7 @@ class Fidelity extends Component {
             recommendFilters: {}
         }
     }
+
     componentDidMount() {
         this.getAlertData().then(() => {
             let AlertID = getUrlParameter("alertID");
@@ -56,7 +58,7 @@ class Fidelity extends Component {
 
     getRowDtl = (alertID) => {
         let dtl = {};
-        const { alertData } = this.state
+        const {alertData} = this.state
         alertData.forEach(data => {
             if (data.alertID === alertID) {
                 dtl = {
@@ -87,7 +89,7 @@ class Fidelity extends Component {
 
     updateRow = (data, newdata) => {
         let dtl = {};
-        const { alertData } = this.state
+        const {alertData} = this.state
         alertData.forEach((item, i) => {
             if (item.alertID === data.replace("_", "/") || item.caseName === data) {
                 for (let k in newdata) {
@@ -127,7 +129,9 @@ class Fidelity extends Component {
                 sorter: (a, b) => a.alertID.localeCompare(b.alertID),
                 width: 120,
                 ellipsis: true,
-                render: (text, record) => <span style={{ cursor: 'pointer' }} onClick={() => this.drawerOpen(record.alertID, record.caseOwner)} className="text-uppercase">{text.slice(text.length - 9)}</span>,
+                render: (text, record) => <span style={{cursor: 'pointer'}}
+                                                onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}
+                                                className="text-uppercase">{text.slice(text.length - 9)}</span>,
             },
             {
                 title: 'Case Name',
@@ -137,7 +141,8 @@ class Fidelity extends Component {
                 width: 180,
                 applySideBarFilter: true,
                 className: "casename-td",
-                render: (text, record) => <span style={{ cursor: 'pointer' }} onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}>{text}</span>,
+                render: (text, record) => <span style={{cursor: 'pointer'}}
+                                                onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}>{text}</span>,
             },
             {
                 title: 'Case Type',
@@ -149,8 +154,8 @@ class Fidelity extends Component {
                 render: (text, record) => (
                     record.caseTypeDesc &&
                     <Tag onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}
-                        className="tag-blue"
-                        style={{ borderRadius: '12px', cursor: 'pointer' }}>
+                         className="tag-blue"
+                         style={{borderRadius: '12px', cursor: 'pointer'}}>
                         {text}
                     </Tag>
                 ),
@@ -162,7 +167,8 @@ class Fidelity extends Component {
                 sorter: (a, b) => a.headline.localeCompare(b.headline),
                 width: 250,
                 className: "headline-td",
-                render: (text, record) => <span className="headline-td-span" onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}
+                render: (text, record) => <span className="headline-td-span"
+                                                onClick={() => this.drawerOpen(record.alertID, record.caseOwner)}
                 >{text}</span>
             },
             {
@@ -176,8 +182,8 @@ class Fidelity extends Component {
                     record.riskStatus &&
                     <Tag onClick={() =>
                         this.drawerOpen(record.alertID, record.caseOwner)}
-                        className={(record.riskStatus === 'Cleared') ? "tag-green" : "tag-red"}
-                        style={{ borderRadius: '12px', cursor: 'pointer' }}>
+                         className={(record.riskStatus === 'Cleared') ? "tag-green" : "tag-red"}
+                         style={{borderRadius: '12px', cursor: 'pointer'}}>
                         {text}
                     </Tag>
                 ),
@@ -192,8 +198,8 @@ class Fidelity extends Component {
                     record.modelTag &&
                     <Tag onClick={() =>
                         this.drawerOpen(record.alertID, record.caseOwner)}
-                        className={(record.modelTag === 'Cleared') ? "tag-green" : "tag-red"}
-                        style={{ borderRadius: '12px', cursor: 'pointer' }}>
+                         className={(record.modelTag === 'Cleared') ? "tag-green" : "tag-red"}
+                         style={{borderRadius: '12px', cursor: 'pointer'}}>
                         {text}
                     </Tag>
                 ),
@@ -210,9 +216,9 @@ class Fidelity extends Component {
                         record.reviewed &&
                         <Tag onClick={() =>
                             this.drawerOpen(record.alertID, record.caseOwner)}
-                            className={text === "true" || text === "yes" ? "tag-green" : "tag-red"}
+                             className={text === "true" || text === "yes" ? "tag-green" : "tag-red"}
                             //className={record.reviewed === 'Yes' ? "tag-green" : "tag-red"}
-                            style={{ borderRadius: '12px', cursor: 'pointer' }}>
+                             style={{borderRadius: '12px', cursor: 'pointer'}}>
                             {text === "true" || text === "yes" ? "Yes" : "No"}
                         </Tag>
                     )
@@ -228,26 +234,36 @@ class Fidelity extends Component {
                 applySideBarFilter: true,
                 render: (text, record, index) => {
                     return (this.state.isEditCaseOwner === index ?
-                        <div className="d-flex align-items-center">
-                            <form>
-                                {STATICRISK360 ?    // Set Static Risk360 data
-                                    <select style={{ fontSize: '12px', width: '108px' }} name="caseOwner" value={this.state.caseOwner} onChange={(e) => this.setState({ caseOwner: e.target.value })} className="mr-1 form-control custom-select-sm" >
-                                        <option value="Sanjit Grover">Sanjit Grover</option>
-                                        <option value="Gargi Verma">Gargi Verma</option>
-                                        <option value="Amit Maan">Amit Maan</option>
-                                    </select> :
-                                    <select style={{ fontSize: '12px', width: '108px' }} name="caseOwner" value={this.state.caseOwner} onChange={(e) => this.setState({ caseOwner: e.target.value })} className="mr-1 form-control custom-select-sm" >
-                                        {
-                                            this.state.caseOwnerList.map((item, i) => {
-                                                return <option key={i} value={item}>{item}</option>
-                                            })}
-                                    </select>
-                                }
-                            </form>
-                            {this.state.isLoadingCaseOwner ? <i className="fa fa-spin fa-circle-notch mr10"></i> : <i onClick={() => this.updateCaseOwner(record.caseName)} style={{ fontSize: '20px' }} className="fa fa-check mx-2" aria-hidden="true"></i>}
-                            <i onClick={this.handleEditCaseOwnerCancel} className="fa fa-times" aria-hidden="true" style={{ fontSize: '20px' }}></i>
-                        </div> :
-                        <span>{text} <i onClick={() => this.showEditCaseOwner(index)} className="fas fa-pencil-alt ml-2"></i></span>
+                            <div className="d-flex align-items-center">
+                                <form>
+                                    {STATICRISK360 ?    // Set Static Risk360 data
+                                        <select style={{fontSize: '12px', width: '108px'}} name="caseOwner"
+                                                value={this.state.caseOwner}
+                                                onChange={(e) => this.setState({caseOwner: e.target.value})}
+                                                className="mr-1 form-control custom-select-sm">
+                                            <option value="Sanjit Grover">Sanjit Grover</option>
+                                            <option value="Gargi Verma">Gargi Verma</option>
+                                            <option value="Amit Maan">Amit Maan</option>
+                                        </select> :
+                                        <select style={{fontSize: '12px', width: '108px'}} name="caseOwner"
+                                                value={this.state.caseOwner}
+                                                onChange={(e) => this.setState({caseOwner: e.target.value})}
+                                                className="mr-1 form-control custom-select-sm">
+                                            {
+                                                this.state.caseOwnerList.map((item, i) => {
+                                                    return <option key={i} value={item}>{item}</option>
+                                                })}
+                                        </select>
+                                    }
+                                </form>
+                                {this.state.isLoadingCaseOwner ? <i className="fa fa-spin fa-circle-notch mr10"></i> :
+                                    <i onClick={() => this.updateCaseOwner(record.caseName)} style={{fontSize: '20px'}}
+                                       className="fa fa-check mx-2" aria-hidden="true"></i>}
+                                <i onClick={this.handleEditCaseOwnerCancel} className="fa fa-times" aria-hidden="true"
+                                   style={{fontSize: '20px'}}></i>
+                            </div> :
+                            <span>{text} <i onClick={() => this.showEditCaseOwner(index)}
+                                            className="fas fa-pencil-alt ml-2"></i></span>
                     )
                 },
             },
@@ -267,7 +283,8 @@ class Fidelity extends Component {
                 width: 170,
                 sorter: (a, b) => new Date(a.publicationDate) - new Date(b.publicationDate),
                 ellipsis: true,
-                render: (text, record) => record.publicationDate && record.publicationDate.length > 0 && <span>{text}</span>
+                render: (text, record) => record.publicationDate && record.publicationDate.length > 0 &&
+                    <span>{text}</span>
             },
             {
                 title: 'Date Updated',
@@ -286,7 +303,8 @@ class Fidelity extends Component {
                 sorter: (a, b) => a.duplicate.localeCompare(b.duplicate),
                 render: (text, record) => (
                     record.duplicate &&
-                    <Tag className={record.duplicate === 'Yes' ? "tag-green" : "tag-red"} style={{ borderRadius: '12px' }}>
+                    <Tag className={record.duplicate === 'Yes' ? "tag-green" : "tag-red"}
+                         style={{borderRadius: '12px'}}>
                         {text}
                     </Tag>
                 ),
@@ -301,7 +319,7 @@ class Fidelity extends Component {
                     record.relevanceScore &&
                     <Tag
                         className="tag-blue"
-                        style={{ borderRadius: '12px' }}>
+                        style={{borderRadius: '12px'}}>
                         {text}
                     </Tag>
                 )
@@ -325,7 +343,7 @@ class Fidelity extends Component {
         });
     };
     handleCurrentSelected = (str) => {
-        this.setState({ currentSelected: str });
+        this.setState({currentSelected: str});
     };
     showEditCaseOwner = (index) => {
         this.setState({
@@ -333,7 +351,7 @@ class Fidelity extends Component {
         })
     };
     updateCaseOwnerList = (successMessage) => {
-        const { alertData } = this.state;
+        const {alertData} = this.state;
         let caseOwnerList = [];
         alertData.map((item) => {
             if (!caseOwnerList.includes(item.caseOwner)) {
@@ -352,7 +370,7 @@ class Fidelity extends Component {
         }
     }
     updateCaseOwner = async (caseName) => {
-        this.setState({ isLoadingCaseOwner: true })
+        this.setState({isLoadingCaseOwner: true})
         const data = {
             caseName: caseName,
             caseOwner: this.state.caseOwner,
@@ -360,9 +378,9 @@ class Fidelity extends Component {
         }
         const res = await getUpdateCaseOwner(data);
         if (res) {
-            let newdata = { caseOwner: data.caseOwner };
+            let newdata = {caseOwner: data.caseOwner};
             this.updateRow(caseName, newdata);
-            this.setState({ isLoadingCaseOwner: false, isEditCaseOwner: false })
+            this.setState({isLoadingCaseOwner: false, isEditCaseOwner: false})
             message.success('Case owner is successfully updated.');
         }
     };
@@ -374,15 +392,16 @@ class Fidelity extends Component {
 
     handleFilters = (filters) => {
         this.setState((prevState) => ({
-            recommendFilters: { ...prevState.recommendFilters, ...filters },
+            recommendFilters: {...prevState.recommendFilters, ...filters},
         }));
     }
+
     render() {
         return (
             <div className="KPImidarea">
                 <div className="KPImain pt-3">
                     {this.state.currentSelected === 'newsAlert' ?
-                        <Content style={{ padding: "4px 24px", minHeight: 280 }}>
+                        <Content style={{padding: "4px 24px", minHeight: 280}}>
                             <NewsAlert
                                 drawerCollapsed={this.drawerCollapsed}
                                 currentSelected={(e) => this.handleCurrentSelected(e)}
@@ -396,7 +415,7 @@ class Fidelity extends Component {
                                 updateRow={this.updateRow}
                             />
                         </Content> :
-                        <Content style={{ padding: "4px 24px", minHeight: "280px", position: "relative" }}>
+                        <Content style={{padding: "4px 24px", minHeight: "280px", position: "relative"}}>
                             <FilterTableWithTabs
                                 appliedFilters={this.state.recommendFilters}
                                 setAppliedFilters={this.handleFilters}
@@ -408,8 +427,8 @@ class Fidelity extends Component {
                                 getAlertData={this.getAlertData}
                                 selectedPage={this.state.selectedPage}
                                 selectedRowPerPage={this.state.selectedRowPerPage}
-                                setSelectedPage={(page) => this.setState({ selectedPage: page })}
-                                setSelectedRowPerPage={(perPage) => this.setState({ selectedRowPerPage: perPage })}
+                                setSelectedPage={(page) => this.setState({selectedPage: page})}
+                                setSelectedRowPerPage={(perPage) => this.setState({selectedRowPerPage: perPage})}
                             />
                         </Content>
                     }
@@ -435,4 +454,5 @@ class Fidelity extends Component {
         );
     }
 }
+
 export default Fidelity;

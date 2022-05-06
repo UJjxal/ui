@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const FilterTags = (props) => {
@@ -26,7 +25,8 @@ const FilterTags = (props) => {
             item.map((tag, index) => {
                 return (
                     <li key={index} className="mr-1 tag ">
-                        {tag} <i onClick={() => props.handleTagClick(tag)} style={{ color: 'grey' }} className="fa fa-times ml-1" aria-hidden="true"></i>
+                        {tag} <i onClick={() => props.handleTagClick(tag)} style={{color: 'grey'}}
+                                 className="fa fa-times ml-1" aria-hidden="true"></i>
                     </li>
                 )
             })

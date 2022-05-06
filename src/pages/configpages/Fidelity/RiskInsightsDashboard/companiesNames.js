@@ -1,4 +1,4 @@
-export const companiesNames=[
+export const companiesNames = [
     '2CHECKOUT.COM INC',
     '2Checkout-1001',
     '2Checkout-1002',

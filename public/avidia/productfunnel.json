@@ -7,7 +7,9 @@
       "Personal_Loans": "180,000",
       "Mortgages": "40,500",
       "Overall": "450,000",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Credit_Card": "16,740",
@@ -16,7 +18,9 @@
       "Personal_Loans": "21,600",
       "Mortgages": "4,860",
       "Overall": "54,000",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Credit_Card": "13,392",
@@ -25,7 +29,9 @@
       "Personal_Loans": "17,280",
       "Mortgages": "3,888",
       "Overall": "43,200",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Credit_Card": "8,035",
@@ -34,12 +40,14 @@
       "Personal_Loans": "10,368",
       "Mortgages": "2,333",
       "Overall": "25,920",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     }
   ],
   "crossSellRate": [
     {
-      "title":"Leads to Conversion Ratio (Cross Sell Rates)",
+      "title": "Leads to Conversion Ratio (Cross Sell Rates)",
       "Credit_Card": "3.6%",
       "ECL": "2.3%",
       "Auto_Loans": "2.6%",

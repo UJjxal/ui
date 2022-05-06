@@ -1,13 +1,25 @@
 {
-  "categories": ["No Gaps", "0-4 Months Gap", "> 4 Months Gap"],
+  "categories": [
+    "No Gaps",
+    "0-4 Months Gap",
+    "> 4 Months Gap"
+  ],
   "modeldata": [
     {
       "name": "High Risk",
-      "data": [13, 32, 62]
+      "data": [
+        13,
+        32,
+        62
+      ]
     },
     {
       "name": "Low Risk",
-      "data": [87, 68, 38]
+      "data": [
+        87,
+        68,
+        38
+      ]
     }
   ]
 }

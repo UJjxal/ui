@@ -1,32 +1,32 @@
 import React from 'react';
-import { Icon } from '@material-ui/core';
-import { Table } from "antd";
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText } from "mdbreact";
+import {Icon} from '@material-ui/core';
+import {Table} from "antd";
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow} from "mdbreact";
 import ReactECharts from 'echarts-for-react';
-import SyncFusion from "../../../utilities/SyncFusion";
 
 const MarketingEffectiveness = () => {
     return <div className="container-fluid my-5">
         <div className="container-fluid">
-        <MDBRow>
-            {
-            tabDetails.map(({ label, value, percentage, icon, color, img }, i) => (
-                <MDBCol md="3" key={i}>
-                    <MDBCard>
-                        <MDBCardBody className="px-3 py-2">
-                        <div className="text-center">
-                                <h6 className="text-left" style={{color:"#868686"}}>{label}</h6>
-                            <div className="d-flex justify-content-between align-items-center">
-                                <h3 className="font-weight-bold mt-2 mb-0 text-left">{value}</h3>
-                                <Icon className={`font-weight-bold align-text-top text-${color}`} style={{ fontSize: "2.3rem" }}>{icon}</Icon>
-                            </div>
-                        </div>
-                        </MDBCardBody>
-                    </MDBCard>
-                </MDBCol>
-            ))
-            }
-        </MDBRow>
+            <MDBRow>
+                {
+                    tabDetails.map(({label, value, percentage, icon, color, img}, i) => (
+                        <MDBCol md="3" key={i}>
+                            <MDBCard>
+                                <MDBCardBody className="px-3 py-2">
+                                    <div className="text-center">
+                                        <h6 className="text-left" style={{color: "#868686"}}>{label}</h6>
+                                        <div className="d-flex justify-content-between align-items-center">
+                                            <h3 className="font-weight-bold mt-2 mb-0 text-left">{value}</h3>
+                                            <Icon className={`font-weight-bold align-text-top text-${color}`}
+                                                  style={{fontSize: "2.3rem"}}>{icon}</Icon>
+                                        </div>
+                                    </div>
+                                </MDBCardBody>
+                            </MDBCard>
+                        </MDBCol>
+                    ))
+                }
+            </MDBRow>
         </div>
         <div className="container-fluid my-5">
             <MDBRow>
@@ -43,7 +43,7 @@ const MarketingEffectiveness = () => {
                                 width="90%"
                                 disabledTooltip={true}
                             /> */}
-                            <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
+                            <Table dataSource={dataSource} columns={columns} pagination={false} bordered/>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
@@ -76,8 +76,8 @@ const OptionsFunnelBau = {
     },
     series: [
         {
-            name:'Lead Conversion - BAU',
-            type:'funnel',
+            name: 'Lead Conversion - BAU',
+            type: 'funnel',
             left: '20%',
             top: '5%',
             bottom: 0,
@@ -127,8 +127,8 @@ const OptionsFunnelStrategy = {
     },
     series: [
         {
-            name:'Lead Conversion - BAU',
-            type:'funnel',
+            name: 'Lead Conversion - BAU',
+            type: 'funnel',
             left: '20%',
             top: '5%',
             bottom: 0,
@@ -175,28 +175,28 @@ const OptionsFunnelStrategy = {
 
 const optionsBau = [
     {
-      "x": "Conversions",
-      "y": "1",
-      "display": "Conversions : 27,648",
-      "fill": "#58CCED"
+        "x": "Conversions",
+        "y": "1",
+        "display": "Conversions : 27,648",
+        "fill": "#58CCED"
     },
     {
-      "x": "Approvals",
-      "y": "1",
-      "display": "Approvals : 46,080",
-      "fill": "#3895D3"
+        "x": "Approvals",
+        "y": "1",
+        "display": "Approvals : 46,080",
+        "fill": "#3895D3"
     },
     {
-      "x": "Applications",
-      "y": "1",
-      "display": "Applications : 57,600",
-      "fill": "#1261A0"
+        "x": "Applications",
+        "y": "1",
+        "display": "Applications : 57,600",
+        "fill": "#1261A0"
     },
     {
-      "x": "Leads",
-      "y": "1",
-      "display": "Leads : 480,000",
-      "fill": "#072F5F"
+        "x": "Leads",
+        "y": "1",
+        "display": "Leads : 480,000",
+        "fill": "#072F5F"
     }
 ];
 const optionsStrategy = [
@@ -237,7 +237,7 @@ const optionsChannel = {
     legend: {
         data: ['BAU', 'AI Enabled Strategy'],
         top: "3%",
-        textStyle:{
+        textStyle: {
             fontSize: 14
         },
     },
@@ -250,12 +250,12 @@ const optionsChannel = {
     xAxis: {
         type: 'category',
         data: ['App', 'Email', 'Call Center', 'Web', 'Branch'],
-        splitLine: { show: false },
+        splitLine: {show: false},
         //boundaryGap: [0, 0.01]
     },
     yAxis: {
         type: 'value',
-        splitLine: { show: false },
+        splitLine: {show: false},
     },
 
     series: [
@@ -299,7 +299,7 @@ const optionsProduct = {
     legend: {
         data: ['BAU', 'AI Enabled Strategy'],
         top: "3%",
-        textStyle:{
+        textStyle: {
             fontSize: 14
         },
     },
@@ -312,11 +312,11 @@ const optionsProduct = {
     xAxis: {
         type: 'value',
         boundaryGap: [0, 0.02],
-        splitLine: { show: false },
+        splitLine: {show: false},
     },
     yAxis: {
         type: 'category',
-        splitLine: { show: false },
+        splitLine: {show: false},
         data: ['Credit Cards', 'Personal Loans', 'ECL', 'Mortgage', 'Auto Loans'],
     },
 
@@ -351,10 +351,38 @@ const optionsProduct = {
 };
 
 const tabDetails = [
-    { label: 'Sales increase for cross sell', value: '40%', percentage: '40%', icon: 'expand_less', color: 'success', img: 'sales-increase.svg' },
-    { label: 'Increase in leads conversion ratio', value: '30%', percentage: '30%', icon: 'expand_less', color: 'success', img: 'balance-increase.svg' },
-    { label: 'Growth in Digital Channel sales', value: '20%', percentage: '20%', icon: 'expand_less', color: 'success', img: 'channel-sales.svg' },
-    { label: 'Growth in credit card conversions', value: '5%', percentage: '5%', icon: 'expand_less', color: 'success', img: 'traffic-conversion.svg' },
+    {
+        label: 'Sales increase for cross sell',
+        value: '40%',
+        percentage: '40%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'sales-increase.svg'
+    },
+    {
+        label: 'Increase in leads conversion ratio',
+        value: '30%',
+        percentage: '30%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'balance-increase.svg'
+    },
+    {
+        label: 'Growth in Digital Channel sales',
+        value: '20%',
+        percentage: '20%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'channel-sales.svg'
+    },
+    {
+        label: 'Growth in credit card conversions',
+        value: '5%',
+        percentage: '5%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'traffic-conversion.svg'
+    },
 ]
 
 const columns = [
@@ -362,23 +390,23 @@ const columns = [
         title: '',
         dataIndex: 'key',
         key: 'key',
-      },
-      {
+    },
+    {
         title: 'BAU',
         dataIndex: 'BAU',
         key: 'BAU',
-      },
-      {
+    },
+    {
         title: 'AI Enabled Strategy',
         dataIndex: 'AIEnabledStrategy',
         key: 'AIEnabledStrategy',
-      },
-      {
+    },
+    {
         title: 'Change over BAU',
         dataIndex: 'ChangeOverBAU',
         key: 'ChangeOverBAU',
-      }
-    ]
+    }
+]
 const dataSource = [
     {
         "key": <h6 className="m-0">Leads</h6>,
@@ -395,13 +423,15 @@ const dataSource = [
     {
         "key": <h6 className="m-0">Approvals</h6>,
         "BAU": <h6><strong>23,800</strong><br/><small>5.0%</small></h6>,
-        "AIEnabledStrategy":<h6><strong>46,000</strong><br/><small className="text-success font-weight-bold">10.7%</small></h6>,
+        "AIEnabledStrategy": <h6><strong>46,000</strong><br/><small
+            className="text-success font-weight-bold">10.7%</small></h6>,
         "ChangeOverBAU": <h4 className="text-success">5.7%<Icon className="align-text-top">arrow_upward</Icon></h4>
     },
     {
         "key": <h6 className="m-0">Conversions</h6>,
         "BAU": <h6><strong>15,360</strong><br/><small>3.2%</small></h6>,
-        "AIEnabledStrategy": <h6><strong>33,870</strong><br/><small className="text-success font-weight-bold">7.5%</small></h6>,
+        "AIEnabledStrategy": <h6><strong>33,870</strong><br/><small
+            className="text-success font-weight-bold">7.5%</small></h6>,
         "ChangeOverBAU": <h4 className="text-success">4.3%<Icon className="align-text-top">arrow_upward</Icon></h4>
     },
 ]

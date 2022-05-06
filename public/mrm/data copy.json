@@ -287,7 +287,6 @@
       "rankOrderingStatus": "green",
       "Actions": ""
     },
-
     {
       "modelId": "MKT_RISK1",
       "modelName": "VaR Of The Investment Portfolio - Historical Simulation",
@@ -313,7 +312,7 @@
       "csiStatus": "orange",
       "rankOrderingStatus": "green",
       "Actions": "",
-      "isNewDetailPage":1
+      "isNewDetailPage": 1
     },
     {
       "modelId": "INTERNAL_RATING_1",
@@ -1016,7 +1015,7 @@
       "csiStatus": "green",
       "rankOrderingStatus": "red",
       "Actions": "",
-      "isNewDetailPage":1
+      "isNewDetailPage": 1
     }
   ]
 }

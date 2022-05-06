@@ -56,4 +56,12 @@ const getEmailData = async (body) => {
     return res && res.data && res.data.response;
 };
 
-export { getAlertData, getNewsAlertData, getUpdateAlertData, getUpdateCaseOwner, getSaveNewsAlertData, getNotificationsData, getEmailData };
+export {
+    getAlertData,
+    getNewsAlertData,
+    getUpdateAlertData,
+    getUpdateCaseOwner,
+    getSaveNewsAlertData,
+    getNotificationsData,
+    getEmailData
+};

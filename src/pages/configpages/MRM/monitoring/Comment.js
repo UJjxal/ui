@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Button} from "antd";
-import { TextField } from "@material-ui/core";
+import {TextField} from "@material-ui/core";
 import Loader from "../../../../utilities/Loader";
 
 
@@ -29,7 +29,7 @@ const Comment = (props) => {
                     type="TailSpin"
                     color="#000000"
                     height={20}
-                    style={{ color: "#000000" }}
+                    style={{color: "#000000"}}
                 />
             ) : (
                 <Button
@@ -40,7 +40,7 @@ const Comment = (props) => {
                     Submit Comment
                 </Button>
             )}
-            
+
         </div>
     )
 }

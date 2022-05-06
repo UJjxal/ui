@@ -205,127 +205,127 @@
 // }
 
 /** DemoInsights, FeatureImportance*3,  */
-import React, { Component } from "react";
-import { MDBCard, MDBCardText, MDBCardTitle } from "mdbreact";
+import React, {Component} from "react";
+import {MDBCard, MDBCardText, MDBCardTitle} from "mdbreact";
 import ReactEcharts from "echarts-for-react";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    this.state = {};
-  }
+        this.state = {};
+    }
 
-  /**
-   * E-chart options
-   */
+    /**
+     * E-chart options
+     */
 
-  getOption() {
-    const series = this.props.series.map((item) => {
-      return {
-        name: item.name,
-        type: "scatter",
-        data: item.data,
-        showSymbol: false,
-        smooth: true,
-        markLine: item.markLine ? item.markLine : null,
-      };
-    });
+    getOption() {
+        const series = this.props.series.map((item) => {
+            return {
+                name: item.name,
+                type: "scatter",
+                data: item.data,
+                showSymbol: false,
+                smooth: true,
+                markLine: item.markLine ? item.markLine : null,
+            };
+        });
 
-    const option = {
-      title: {
-        show: false,
-      },
-      grid: {
-        left: "3%",
-        right: "3%",
-        //bottom: "1%",
-        top: "7%",
-        containLabel: true,
-      },
-      tooltip: {
-        // trigger: 'axis',
-        showDelay: 0,
-        formatter: function (params) {
-          if (params.value.length > 1) {
-            return (
-              params.value[2] +
-              " <br/>" +
-              "DGI Score Final Metric : " +
-              params.value[0] +
-              " <br/>" +
-              "# Commercial Customers : " +
-              params.value[1]
-            );
-          }
-        },
-        axisPointer: {
-          show: true,
-          type: "cross",
-          lineStyle: {
-            type: "dashed",
-            width: 1,
-          },
-        },
-      },
-      legend: {
-        data: ["No Impact", "Some Impact", "Moderate Impact", "Highest Impact"],
-        bottom: "0",
-      },
-      xAxis: [
-        {
-          type: "value",
-          scale: true,
-          nameLocation: "middle",
-          name: this.props.xaxisTitle ? this.props.xaxisTitle : "",
-          nameTextStyle: { padding: 10 },
-          axisLabel: {
-            formatter: "{value}",
-          },
-          splitLine: {
-            show: false,
-          },
-        },
-      ],
-      yAxis: [
-        {
-          type: "value",
-          nameLocation: "middle",
-          nameGap: 45,
-          name: this.props.yaxisTitle ? this.props.yaxisTitle : "",
-          scale: true,
-          axisLabel: {
-            formatter: "{value}",
-          },
-        },
-      ],
-      series: series,
-      color: ["#6d9070", "#a6bb6e", "#ffbd5f", "#f99d5c", "#ec7f5e"],
-    };
+        const option = {
+            title: {
+                show: false,
+            },
+            grid: {
+                left: "3%",
+                right: "3%",
+                //bottom: "1%",
+                top: "7%",
+                containLabel: true,
+            },
+            tooltip: {
+                // trigger: 'axis',
+                showDelay: 0,
+                formatter: function (params) {
+                    if (params.value.length > 1) {
+                        return (
+                            params.value[2] +
+                            " <br/>" +
+                            "DGI Score Final Metric : " +
+                            params.value[0] +
+                            " <br/>" +
+                            "# Commercial Customers : " +
+                            params.value[1]
+                        );
+                    }
+                },
+                axisPointer: {
+                    show: true,
+                    type: "cross",
+                    lineStyle: {
+                        type: "dashed",
+                        width: 1,
+                    },
+                },
+            },
+            legend: {
+                data: ["No Impact", "Some Impact", "Moderate Impact", "Highest Impact"],
+                bottom: "0",
+            },
+            xAxis: [
+                {
+                    type: "value",
+                    scale: true,
+                    nameLocation: "middle",
+                    name: this.props.xaxisTitle ? this.props.xaxisTitle : "",
+                    nameTextStyle: {padding: 10},
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                    splitLine: {
+                        show: false,
+                    },
+                },
+            ],
+            yAxis: [
+                {
+                    type: "value",
+                    nameLocation: "middle",
+                    nameGap: 45,
+                    name: this.props.yaxisTitle ? this.props.yaxisTitle : "",
+                    scale: true,
+                    axisLabel: {
+                        formatter: "{value}",
+                    },
+                },
+            ],
+            series: series,
+            color: ["#6d9070", "#a6bb6e", "#ffbd5f", "#f99d5c", "#ec7f5e"],
+        };
 
-    return option;
-  }
+        return option;
+    }
 
-  render() {
-    return (
-      <MDBCard
-        style={this.props.styleCard ? this.props.styleCard : { padding: 5 }}
-      >
-        <MDBCardTitle
-          tag="h6"
-          style={{ color: "black", fontSize: 12 }}
-          className="text-center mb-0 pt-2"
-        >
-          {this.props.title ? this.props.title : ""}
-        </MDBCardTitle>
-        <MDBCardText>
-          <React.Fragment>
-            <ReactEcharts option={this.getOption()} />
-          </React.Fragment>
-        </MDBCardText>
-      </MDBCard>
-    );
-  }
+    render() {
+        return (
+            <MDBCard
+                style={this.props.styleCard ? this.props.styleCard : {padding: 5}}
+            >
+                <MDBCardTitle
+                    tag="h6"
+                    style={{color: "black", fontSize: 12}}
+                    className="text-center mb-0 pt-2"
+                >
+                    {this.props.title ? this.props.title : ""}
+                </MDBCardTitle>
+                <MDBCardText>
+                    <React.Fragment>
+                        <ReactEcharts option={this.getOption()}/>
+                    </React.Fragment>
+                </MDBCardText>
+            </MDBCard>
+        );
+    }
 }
 
 export default App;

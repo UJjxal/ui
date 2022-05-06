@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { CONTEXT } from '../../../config';
+import React, {useEffect, useState} from "react";
+import {CONTEXT} from '../../../config';
 import axios from "axios";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
-import { Icon } from '@material-ui/core';
-import { Select } from 'antd';
-import EChart from "../../../utilities/EChartGlobal";    
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow} from "mdbreact";
+import {Icon} from '@material-ui/core';
+import {Select} from 'antd';
+import EChart from "../../../utilities/EChartGlobal";
 import Tiles from "../../../utilities/Tiles";
 // import AntdDataTable from "../../../utilities/AntdDataTable";
 import AntdDataTable from "./AntdDataTable";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import util from "../../../utilities/util";
 import './index.css';
 
-const { Option } = Select;
+const {Option} = Select;
 
 const AttritionPerformance = () => {
     const [record, setRecord] = useState([])
@@ -51,7 +51,8 @@ const AttritionPerformance = () => {
                 key: 'CreditCard',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             },
             {
                 title: 'Mortgage',
@@ -59,7 +60,8 @@ const AttritionPerformance = () => {
                 key: 'Mortgage',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             },
             {
                 title: 'Personal Loan',
@@ -67,7 +69,8 @@ const AttritionPerformance = () => {
                 key: 'PersonalLoan',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             },
             {
                 title: 'Auto Loan',
@@ -75,7 +78,8 @@ const AttritionPerformance = () => {
                 key: 'AutoLoan',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             },
             {
                 title: 'ECL',
@@ -83,7 +87,8 @@ const AttritionPerformance = () => {
                 key: 'ECL',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             },
             {
                 title: 'All Products',
@@ -91,7 +96,8 @@ const AttritionPerformance = () => {
                 key: 'AllProducts',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
+                render: (text, record) => <div
+                    className="p-3 font-weight-bolder">{util.numberFormatSeparator(text)}</div>,
             }
         ]
     }
@@ -122,28 +128,31 @@ const AttritionPerformance = () => {
     }
     return (
         <div className="container-fluid my-4">
-            <Tiles tileStyle={{ height: "94" }} tilesDetails={record.AttritionPerformance?.TilesData ?? []} />
+            <Tiles tileStyle={{height: "94"}} tilesDetails={record.AttritionPerformance?.TilesData ?? []}/>
             <div className="container-fluid">
                 <MDBRow className="my-4">
                     <MDBCol md="9">
                         <MDBCard>
                             <MDBCardBody>
-                                <MDBCardTitle tag="h5" style={tableHeaderStyle}>Sales Performance Scorecard  (# Accounts)</MDBCardTitle>
-                                <AntdDataTable rows={record.AttritionPerformanceScoreboard?.TableData ?? []} columns={tableHeader()} pagination={false} />
+                                <MDBCardTitle tag="h5" style={tableHeaderStyle}>Sales Performance Scorecard (#
+                                    Accounts)</MDBCardTitle>
+                                <AntdDataTable rows={record.AttritionPerformanceScoreboard?.TableData ?? []}
+                                               columns={tableHeader()} pagination={false}/>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
                     <MDBCol md="3">
                         <MDBCardTitle tag="h5">Key Insights</MDBCardTitle>
                         {
-                            record.KeyInsights ? record.KeyInsights.map(({ title, description, link }, i) => (
+                            record.KeyInsights ? record.KeyInsights.map(({title, description, link}, i) => (
                                 <MDBCard key={i} className="mb-3">
                                     <MDBCardBody>
                                         <div>
                                             <div className="d-flex justify-content-between">
                                                 <div className="text-primary bold600 fs16 cursor-pointer">{title}</div>
                                                 {link ?
-                                                    <Link to={CONTEXT + link}><Icon className="text-primary">device_hub</Icon></Link>
+                                                    <Link to={CONTEXT + link}><Icon
+                                                        className="text-primary">device_hub</Icon></Link>
                                                     : <Link><Icon className="text-primary">device_hub</Icon></Link>
                                                 }
                                             </div>
@@ -159,7 +168,8 @@ const AttritionPerformance = () => {
                     <MDBCol md="6">
                         <MDBCard>
                             <MDBCardBody>
-                                <Select defaultValue="allProducts" style={{ width: 240 }} onChange={e => changeAttritionData(e)}>
+                                <Select defaultValue="allProducts" style={{width: 240}}
+                                        onChange={e => changeAttritionData(e)}>
                                     <Option value="allProducts">All Products</Option>
                                     <Option value="autoLoan">Auto Loan</Option>
                                     <Option value="mortgage">Mortgage</Option>
@@ -168,7 +178,7 @@ const AttritionPerformance = () => {
                                     <Option value="ecl">ECL</Option>
                                 </Select>
                             </MDBCardBody>
-                            <MDBCardBody style={{ height: '400px' }}>
+                            <MDBCardBody style={{height: '400px'}}>
                                 <MDBCardTitle tag="h5">Attrition Rate Trends (YTD)</MDBCardTitle>
                                 <EChart
                                     toolTipFormatter={'{b}: {c}%'}
@@ -187,7 +197,7 @@ const AttritionPerformance = () => {
                     </MDBCol>
                     <MDBCol md="6">
                         <MDBCard>
-                            <MDBCardBody style={{ height: '400px' }}>
+                            <MDBCardBody style={{height: '400px'}}>
                                 <MDBCardTitle tag="h5">Reasons for Attrition</MDBCardTitle>
                                 <EChart
                                     triggerAxis="axis"

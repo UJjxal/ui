@@ -3,7 +3,8 @@
     width: 65rem !important;
     height: 100% !important;
 }
-.page-btn{
+
+.page-btn {
     color: #3F88C5;
     text-decoration: none;
     padding: 8px 16px;
@@ -11,14 +12,15 @@
     border-radius: 50%;
     border: 1px solid #3F88C5;
 }
-.pdfWrapper{
+
+.pdfWrapper {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     overflow-x: auto;
-  }
-  
-  .page-footer{
+}
+
+.page-footer {
     display: flex;
     justify-content: space-between;
-  }
+}

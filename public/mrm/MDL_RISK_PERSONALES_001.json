@@ -115,23 +115,77 @@
   ],
   "PrecisionRecall": [
     {
-      "Score_Threshold": [448, 502, 555, 609, 663, 716, 770, 823, 877],
-      "Precision": [0.92, 0.91, 0.91, 0.92, 0.93, 0.94, 0.94, 0.95, 0.95],
-      "Recall": [0.95, 0.95, 0.94, 0.93, 0.88, 0.66, 0.37, 0.19, 0.1]
+      "Score_Threshold": [
+        448,
+        502,
+        555,
+        609,
+        663,
+        716,
+        770,
+        823,
+        877
+      ],
+      "Precision": [
+        0.92,
+        0.91,
+        0.91,
+        0.92,
+        0.93,
+        0.94,
+        0.94,
+        0.95,
+        0.95
+      ],
+      "Recall": [
+        0.95,
+        0.95,
+        0.94,
+        0.93,
+        0.88,
+        0.66,
+        0.37,
+        0.19,
+        0.1
+      ]
     }
   ],
   "ConfusionMatrix": [
     [
-      { "label": "0", "negative": "596,182 (87%)", "positive": "47,157 (6%)" },
-      { "label": "1", "negative": "18,851 (2%)", "positive": "17,895 (2%)" }
+      {
+        "label": "0",
+        "negative": "596,182 (87%)",
+        "positive": "47,157 (6%)"
+      },
+      {
+        "label": "1",
+        "negative": "18,851 (2%)",
+        "positive": "17,895 (2%)"
+      }
     ]
   ],
   "EventDataMetric": [
     [
-      { "key": 1, "Metric": "Precision", "Value": "27%" },
-      { "key": 2, "Metric": "Recall", "Value": "48%" },
-      { "key": 3, "Metric": "F1 Score", "Value": "0.36" },
-      { "key": 4, "Metric": "False Positive Rate", "Value": "7%" }
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "27%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "48%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.36"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "7%"
+      }
     ]
   ],
   "RankOrdering": [
@@ -240,7 +294,18 @@
   ],
   "KSCurve": [
     {
-      "Score_Decile": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Decile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "cum_eventrate": [
         "50",
         "66",
@@ -445,7 +510,19 @@
   ],
   "ROCCurve": [
     {
-      "Score_Cutoff": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Cutoff": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "FalsePositiveRate": [
         "0.0",
         "0.07",
@@ -595,10 +672,26 @@
   ],
   "DivergenceData": [
     [
-      { "key": 1, "Metric": "Event Distribution Mean", "Value": 659 },
-      { "key": 2, "Metric": "Non-Event Distribution Mean", "Value": 744 },
-      { "key": 3, "Metric": "Event Distribution Variance", "Value": 3258 },
-      { "key": 4, "Metric": "Non-Event Distribution Variance", "Value": 5153 }
+      {
+        "key": 1,
+        "Metric": "Event Distribution Mean",
+        "Value": 659
+      },
+      {
+        "key": 2,
+        "Metric": "Non-Event Distribution Mean",
+        "Value": 744
+      },
+      {
+        "key": 3,
+        "Metric": "Event Distribution Variance",
+        "Value": 3258
+      },
+      {
+        "key": 4,
+        "Metric": "Non-Event Distribution Variance",
+        "Value": 5153
+      }
     ]
   ],
   "PSI": [
@@ -627,7 +720,18 @@
         -10.18,
         -10.15
       ],
-      "Actual": [9.26, 13.89, 8.35, 8.07, 7.89, 9.31, 9.22, 9.69, 11.02, 13.29]
+      "Actual": [
+        9.26,
+        13.89,
+        8.35,
+        8.07,
+        7.89,
+        9.31,
+        9.22,
+        9.69,
+        11.02,
+        13.29
+      ]
     }
   ],
   "PSIData": [
@@ -738,7 +842,18 @@
         "Pmt {1-6} % Bal {2-7}",
         "Max Utlztm {1-6}"
       ],
-      "CSI_Score": [0.25, 0.17, 0.11, 0.05, 0.05, 0.05, 0.04, 0.03, 0.03, 0.01]
+      "CSI_Score": [
+        0.25,
+        0.17,
+        0.11,
+        0.05,
+        0.05,
+        0.05,
+        0.04,
+        0.03,
+        0.03,
+        0.01
+      ]
     }
   ],
   "CSIData": [

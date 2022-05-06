@@ -2,7 +2,7 @@
     background-color: #111;
 } */
 .PrivateTabIndicator-root-47 {
-    
+
     height: 0.5rem;
 }
 
@@ -10,6 +10,6 @@
     outline: none !important;
 }
 
-#tabs-panel .MuiTabs-indicator{
+#tabs-panel .MuiTabs-indicator {
     background-color: #4285f4;
 }

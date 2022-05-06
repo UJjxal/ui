@@ -9,7 +9,11 @@
       "icon": "databaseTable.svg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -34,10 +38,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -53,7 +69,11 @@
       "icon": "awsS3.svg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -68,11 +88,26 @@
           "label": "File Type",
           "objIdentifier": "fileType",
           "option": [
-            { "key": " ", "value": "Please Select File Type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "dsv", "value": "DSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please Select File Type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "dsv",
+              "value": "DSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "value": ""
         },
@@ -92,7 +127,11 @@
       "icon": "github.svg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -118,7 +157,11 @@
       "icon": "googleSheets.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -130,7 +173,6 @@
         }
       ]
     },
-
     {
       "id": 5,
       "nodeBaseType": "transform",
@@ -139,18 +181,41 @@
       "icon": "join.svg",
       "internal": [
         {
-          "nodeInput": [{ "position": "30%" }, { "position": "70%" }],
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeInput": [
+            {
+              "position": "30%"
+            },
+            {
+              "position": "70%"
+            }
+          ],
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please Select Join" },
-            { "key": "left", "value": "Left" },
-            { "key": "right", "value": "Right" },
-            { "key": "inner", "value": "Inner" }
+            {
+              "key": " ",
+              "value": "Please Select Join"
+            },
+            {
+              "key": "left",
+              "value": "Left"
+            },
+            {
+              "key": "right",
+              "value": "Right"
+            },
+            {
+              "key": "inner",
+              "value": "Inner"
+            }
           ],
           "label": "Join Type",
           "objIdentifier": "joinType",
@@ -163,13 +228,23 @@
               {
                 "inputType": "select",
                 "label": "select",
-                "option": [{ "key": "", "value": "Select" }],
+                "option": [
+                  {
+                    "key": "",
+                    "value": "Select"
+                  }
+                ],
                 "selectedValue": ""
               },
               {
                 "inputType": "select",
                 "label": "Select",
-                "option": [{ "key": "", "value": "Select" }],
+                "option": [
+                  {
+                    "key": "",
+                    "value": "Select"
+                  }
+                ],
                 "selectedValue": ""
               }
             ]
@@ -187,7 +262,11 @@
       "icon": "awsS3.svg",
       "internal": [
         {
-          "nodeInput": [{ "position": "50%" }]
+          "nodeInput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -207,7 +286,11 @@
       "icon": "databaseTable.svg",
       "internal": [
         {
-          "nodeInput": [{ "position": "50%" }]
+          "nodeInput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -245,7 +328,11 @@
       "icon": "googleSheets.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -265,7 +352,11 @@
       "icon": "mongodb.jpg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -290,10 +381,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -309,7 +412,11 @@
       "icon": "cassandradb.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -334,10 +441,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -353,7 +472,11 @@
       "icon": "redshiftdb.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -378,10 +501,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -397,7 +532,11 @@
       "icon": "Salesforce.svg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -423,7 +562,11 @@
       "icon": "googleAnalytics.svg",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -448,10 +591,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -467,7 +622,11 @@
       "icon": "snowflake.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -492,10 +651,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",
@@ -511,7 +682,11 @@
       "icon": "ApacheSpark.png",
       "internal": [
         {
-          "nodeOutput": [{ "position": "50%" }]
+          "nodeOutput": [
+            {
+              "position": "50%"
+            }
+          ]
         }
       ],
       "external": [
@@ -536,10 +711,22 @@
         {
           "inputType": "select",
           "option": [
-            { "key": " ", "value": "Please select file type" },
-            { "key": "csv", "value": "CSV" },
-            { "key": "parquet", "value": "Parquet" },
-            { "key": "txt", "value": "Txt" }
+            {
+              "key": " ",
+              "value": "Please select file type"
+            },
+            {
+              "key": "csv",
+              "value": "CSV"
+            },
+            {
+              "key": "parquet",
+              "value": "Parquet"
+            },
+            {
+              "key": "txt",
+              "value": "Txt"
+            }
           ],
           "label": "File Type",
           "objIdentifier": "fileType",

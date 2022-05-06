@@ -115,28 +115,93 @@
   ],
   "PrecisionRecall": [
     {
-      "Score_Threshold": [167, 175, 183, 191, 199, 207, 215, 223, 231],
-      "Precision": [0.72, 0.74, 0.75, 0.75, 0.77, 0.77, 0.8, 0.82, 0.82],
-      "Recall": [0.81, 0.81, 0.81, 0.78, 0.74, 0.55, 0.41, 0.29, 0.22]
+      "Score_Threshold": [
+        167,
+        175,
+        183,
+        191,
+        199,
+        207,
+        215,
+        223,
+        231
+      ],
+      "Precision": [
+        0.72,
+        0.74,
+        0.75,
+        0.75,
+        0.77,
+        0.77,
+        0.8,
+        0.82,
+        0.82
+      ],
+      "Recall": [
+        0.81,
+        0.81,
+        0.81,
+        0.78,
+        0.74,
+        0.55,
+        0.41,
+        0.29,
+        0.22
+      ]
     }
   ],
   "ConfusionMatrix": [
     [
-      { "label": "0", "negative": "411 (16%)", "positive": "1,599 (64%)" },
-      { "label": "1", "negative": "22 (0%)", "positive": "449 (18%)" }
+      {
+        "label": "0",
+        "negative": "411 (16%)",
+        "positive": "1,599 (64%)"
+      },
+      {
+        "label": "1",
+        "negative": "22 (0%)",
+        "positive": "449 (18%)"
+      }
     ]
   ],
   "EventDataMetric": [
     [
-      { "key": 1, "Metric": "Precision", "Value": "21%" },
-      { "key": 2, "Metric": "Recall", "Value": "95%" },
-      { "key": 3, "Metric": "F1 Score", "Value": "0.36" },
-      { "key": 4, "Metric": "False Positive Rate", "Value": "79%" }
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "21%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "95%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.36"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "79%"
+      }
     ]
   ],
   "KSCurve": [
     {
-      "Score_Decile": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Decile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "cum_eventrate": [
         "22",
         "41",
@@ -341,7 +406,19 @@
   ],
   "ROCCurve": [
     {
-      "Score_Cutoff": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Cutoff": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "FalsePositiveRate": [
         "0.0",
         "0.07",
@@ -436,17 +513,66 @@
   ],
   "DivergenceCurve": [
     {
-      "Score": [159, 169, 179, 189, 199, 209, 219, 229, 239, 249],
-      "Events": [2, 24, 57, 142, 170, 86, 21, 4, 1, 0],
-      "Non_Events": [6, 24, 95, 281, 749, 545, 353, 99, 6, 0]
+      "Score": [
+        159,
+        169,
+        179,
+        189,
+        199,
+        209,
+        219,
+        229,
+        239,
+        249
+      ],
+      "Events": [
+        2,
+        24,
+        57,
+        142,
+        170,
+        86,
+        21,
+        4,
+        1,
+        0
+      ],
+      "Non_Events": [
+        6,
+        24,
+        95,
+        281,
+        749,
+        545,
+        353,
+        99,
+        6,
+        0
+      ]
     }
   ],
   "DivergenceData": [
     [
-      { "key": 1, "Metric": "Event Distribution Mean", "Value": 199 },
-      { "key": 2, "Metric": "Non-Event Distribution Mean", "Value": 208 },
-      { "key": 3, "Metric": "Event Distribution Variance", "Value": 146 },
-      { "key": 4, "Metric": "Non-Event Distribution Variance", "Value": 157 }
+      {
+        "key": 1,
+        "Metric": "Event Distribution Mean",
+        "Value": 199
+      },
+      {
+        "key": 2,
+        "Metric": "Non-Event Distribution Mean",
+        "Value": 208
+      },
+      {
+        "key": 3,
+        "Metric": "Event Distribution Variance",
+        "Value": 146
+      },
+      {
+        "key": 4,
+        "Metric": "Non-Event Distribution Variance",
+        "Value": 157
+      }
     ]
   ],
   "PSI": [
@@ -595,7 +721,16 @@
         "# SEVERELY DEROGATORY TRADE LINES",
         "SEXO"
       ],
-      "CSI_Score": [3.5, 0.26, 0.24, 0.23, 0.2, 0.06, 0.04, 0.01]
+      "CSI_Score": [
+        3.5,
+        0.26,
+        0.24,
+        0.23,
+        0.2,
+        0.06,
+        0.04,
+        0.01
+      ]
     }
   ],
   "CSIData": [
@@ -630,14 +765,24 @@
         "CSI Score": 0.2,
         "Status": "orange"
       },
-      { "key": 1, "Variable": "EDAD", "CSI Score": 0.06, "Status": "green" },
+      {
+        "key": 1,
+        "Variable": "EDAD",
+        "CSI Score": 0.06,
+        "Status": "green"
+      },
       {
         "key": 5,
         "Variable": "# SEVERELY DEROGATORY TRADE LINES",
         "CSI Score": 0.04,
         "Status": "green"
       },
-      { "key": 3, "Variable": "SEXO", "CSI Score": 0.01, "Status": "green" }
+      {
+        "key": 3,
+        "Variable": "SEXO",
+        "CSI Score": 0.01,
+        "Status": "green"
+      }
     ]
   ]
 }

@@ -7,7 +7,9 @@
       "App": "4,500",
       "Web": "4,500",
       "Overall": "450,000",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Branch": "37,800",
@@ -16,7 +18,9 @@
       "App": "540",
       "Web": "540",
       "Overall": "54,000",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Branch": "30,240",
@@ -25,7 +29,9 @@
       "App": "432",
       "Web": "432",
       "Overall": "43,200",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     },
     {
       "Branch": "18,144",
@@ -34,7 +40,9 @@
       "App": "259",
       "Web": "259",
       "Overall": "25,920",
-      "skip": { "fill": "#fff" }
+      "skip": {
+        "fill": "#fff"
+      }
     }
   ],
   "crossSellRate": [

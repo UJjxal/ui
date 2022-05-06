@@ -115,23 +115,77 @@
   ],
   "PrecisionRecall": [
     {
-      "Score_Threshold": [122, 142, 162, 182, 203, 223, 243, 263, 283],
-      "Precision": [0.92, 0.93, 0.93, 0.94, 0.95, 0.95, 0.95, 0.96, 0.96],
-      "Recall": [0.96, 0.95, 0.91, 0.79, 0.55, 0.36, 0.19, 0.1, 0.05]
+      "Score_Threshold": [
+        122,
+        142,
+        162,
+        182,
+        203,
+        223,
+        243,
+        263,
+        283
+      ],
+      "Precision": [
+        0.92,
+        0.93,
+        0.93,
+        0.94,
+        0.95,
+        0.95,
+        0.95,
+        0.96,
+        0.96
+      ],
+      "Recall": [
+        0.96,
+        0.95,
+        0.91,
+        0.79,
+        0.55,
+        0.36,
+        0.19,
+        0.1,
+        0.05
+      ]
     }
   ],
   "ConfusionMatrix": [
     [
-      { "label": "0", "negative": "2,425 (91%)", "positive": "127 (4%)" },
-      { "label": "1", "negative": "91 (3%)", "positive": "21 (0%)" }
+      {
+        "label": "0",
+        "negative": "2,425 (91%)",
+        "positive": "127 (4%)"
+      },
+      {
+        "label": "1",
+        "negative": "91 (3%)",
+        "positive": "21 (0%)"
+      }
     ]
   ],
   "EventDataMetric": [
     [
-      { "key": 1, "Metric": "Precision", "Value": "14%" },
-      { "key": 2, "Metric": "Recall", "Value": "18%" },
-      { "key": 3, "Metric": "F1 Score", "Value": "0.16" },
-      { "key": 4, "Metric": "False Positive Rate", "Value": "4%" }
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "14%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "18%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.16"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "4%"
+      }
     ]
   ],
   "RankOrdering": [
@@ -759,7 +813,18 @@
   ],
   "KSCurve": [
     {
-      "Score_Decile": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Decile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "cum_eventrate": [
         "30",
         "49",
@@ -1036,7 +1101,19 @@
   ],
   "ROCCurve": [
     {
-      "Score_Cutoff": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Cutoff": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "FalsePositiveRate": [
         "0.0",
         "0.08",
@@ -1207,10 +1284,26 @@
   ],
   "DivergenceData": [
     [
-      { "key": 1, "Metric": "Event Distribution Mean", "Value": 183 },
-      { "key": 2, "Metric": "Non-Event Distribution Mean", "Value": 209 },
-      { "key": 3, "Metric": "Event Distribution Variance", "Value": 778 },
-      { "key": 4, "Metric": "Non-Event Distribution Variance", "Value": 1048 }
+      {
+        "key": 1,
+        "Metric": "Event Distribution Mean",
+        "Value": 183
+      },
+      {
+        "key": 2,
+        "Metric": "Non-Event Distribution Mean",
+        "Value": 209
+      },
+      {
+        "key": 3,
+        "Metric": "Event Distribution Variance",
+        "Value": 778
+      },
+      {
+        "key": 4,
+        "Metric": "Non-Event Distribution Variance",
+        "Value": 1048
+      }
     ]
   ],
   "PSI": [
@@ -1239,7 +1332,18 @@
         -10.3,
         -10.4
       ],
-      "Actual": [8.24, 4.42, 4.47, 5.0, 7.75, 13.69, 9.62, 11.14, 0.98, 34.69]
+      "Actual": [
+        8.24,
+        4.42,
+        4.47,
+        5.0,
+        7.75,
+        13.69,
+        9.62,
+        11.14,
+        0.98,
+        34.69
+      ]
     }
   ],
   "PSIData": [
@@ -1337,12 +1441,40 @@
     ]
   ],
   "MonthlyPSI": [
-    { "key": 0, "date": "31/01/2018", "monthly_psi": 0.253 },
-    { "key": 1, "date": "28/02/2018", "monthly_psi": 0.294 },
-    { "key": 2, "date": "31/03/2018", "monthly_psi": 0.299 },
-    { "key": 3, "date": "30/04/2018", "monthly_psi": 0.265 },
-    { "key": 4, "date": "31/05/2018", "monthly_psi": 0.254 },
-    { "key": 5, "date": "30/06/2018", "monthly_psi": 0.305 },
-    { "key": 6, "date": "31/07/2018", "monthly_psi": 0.273 }
+    {
+      "key": 0,
+      "date": "31/01/2018",
+      "monthly_psi": 0.253
+    },
+    {
+      "key": 1,
+      "date": "28/02/2018",
+      "monthly_psi": 0.294
+    },
+    {
+      "key": 2,
+      "date": "31/03/2018",
+      "monthly_psi": 0.299
+    },
+    {
+      "key": 3,
+      "date": "30/04/2018",
+      "monthly_psi": 0.265
+    },
+    {
+      "key": 4,
+      "date": "31/05/2018",
+      "monthly_psi": 0.254
+    },
+    {
+      "key": 5,
+      "date": "30/06/2018",
+      "monthly_psi": 0.305
+    },
+    {
+      "key": 6,
+      "date": "31/07/2018",
+      "monthly_psi": 0.273
+    }
   ]
 }

@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { CONTEXT } from '../../../config';
+import React, {useEffect, useState} from "react";
+import {CONTEXT} from '../../../config';
 import axios from "axios";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
-import { Icon } from '@material-ui/core';
-import { Select } from 'antd';
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow} from "mdbreact";
+import {Icon} from '@material-ui/core';
+import {Select} from 'antd';
 import EChart from "../../../utilities/EChartGlobal";
 import Tiles from "../../../utilities/Tiles";
 // import AntdDataTable from "../../../utilities/AntdDataTable";
 import AntdDataTable from "./AntdDataTable";
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './index.css';
 
-const { Option } = Select;
+const {Option} = Select;
 
 const AcquisitionsPerformance = () => {
     const [record, setRecord] = useState([])
@@ -64,7 +64,9 @@ const AcquisitionsPerformance = () => {
                 key: 'CreditCard',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.CreditCard > 100 ? '#b2d8b8' : record.CreditCard == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.CreditCard > 100 ? '#b2d8b8' : record.CreditCard == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             },
             {
                 title: 'Mortgage',
@@ -72,7 +74,9 @@ const AcquisitionsPerformance = () => {
                 key: 'Mortgage',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.Mortgage > 100 ? '#b2d8b8' : record.Mortgage == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.Mortgage > 100 ? '#b2d8b8' : record.Mortgage == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             },
             {
                 title: 'Personal Loan',
@@ -80,7 +84,9 @@ const AcquisitionsPerformance = () => {
                 key: 'PersonalLoan',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.PersonalLoan > 100 ? '#b2d8b8' : record.PersonalLoan == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.PersonalLoan > 100 ? '#b2d8b8' : record.PersonalLoan == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             },
             {
                 title: 'Auto Loan',
@@ -88,7 +94,9 @@ const AcquisitionsPerformance = () => {
                 key: 'AutoLoan',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.AutoLoan > 100 ? '#b2d8b8' : record.AutoLoan == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.AutoLoan > 100 ? '#b2d8b8' : record.AutoLoan == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             },
             {
                 title: 'ECL',
@@ -96,7 +104,9 @@ const AcquisitionsPerformance = () => {
                 key: 'ECL',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.ECL > 100 ? '#b2d8b8' : record.ECL == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.ECL > 100 ? '#b2d8b8' : record.ECL == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             },
             {
                 title: 'All Products',
@@ -104,7 +114,9 @@ const AcquisitionsPerformance = () => {
                 key: 'AllProducts',
                 className: "p-0 text-center",
                 width: 100,
-                render: (text, record) => <div style={{ backgroundColor: record.AllProducts > 100 ? '#b2d8b8' : record.AllProducts == 100 ? '#f9e29d' : '#ecb1ab' }} className="p-3 font-weight-bolder">{text}</div>,
+                render: (text, record) => <div
+                    style={{backgroundColor: record.AllProducts > 100 ? '#b2d8b8' : record.AllProducts == 100 ? '#f9e29d' : '#ecb1ab'}}
+                    className="p-3 font-weight-bolder">{text}</div>,
             }
         ]
     }
@@ -241,28 +253,31 @@ const AcquisitionsPerformance = () => {
     }
     return (
         <div className="container-fluid my-4">
-            <Tiles tileStyle={{ height: "94" }} tilesDetails={record.AcquisitionsPerformance?.TilesData ?? []} />
+            <Tiles tileStyle={{height: "94"}} tilesDetails={record.AcquisitionsPerformance?.TilesData ?? []}/>
             <div className="container-fluid">
                 <MDBRow className="my-4">
                     <MDBCol md="9">
                         <MDBCard>
                             <MDBCardBody>
-                                <MDBCardTitle tag="h5" style={tableHeaderStyle}>Acquistions Performance Scorecard  (# Accounts)- Actual vs Target</MDBCardTitle>
-                                <AntdDataTable rows={record.AcquisitionsPerformanceScoreboard?.TableData ?? []} columns={tableHeader()} pagination={false} />
+                                <MDBCardTitle tag="h5" style={tableHeaderStyle}>Acquistions Performance Scorecard (#
+                                    Accounts)- Actual vs Target</MDBCardTitle>
+                                <AntdDataTable rows={record.AcquisitionsPerformanceScoreboard?.TableData ?? []}
+                                               columns={tableHeader()} pagination={false}/>
                             </MDBCardBody>
                         </MDBCard>
                     </MDBCol>
                     <MDBCol md="3">
                         <MDBCardTitle tag="h5">Key Insights</MDBCardTitle>
                         {
-                            record.KeyInsights ? record.KeyInsights.map(({ title, description, link }, i) => (
+                            record.KeyInsights ? record.KeyInsights.map(({title, description, link}, i) => (
                                 <MDBCard key={i} className="mb-3">
                                     <MDBCardBody>
                                         <div>
                                             <div className="d-flex justify-content-between">
                                                 <div className="text-primary bold600 fs16 cursor-pointer">{title}</div>
                                                 {link ?
-                                                    <Link to={CONTEXT + link}><Icon className="text-primary">device_hub</Icon></Link>
+                                                    <Link to={CONTEXT + link}><Icon
+                                                        className="text-primary">device_hub</Icon></Link>
                                                     : <Link><Icon className="text-primary">device_hub</Icon></Link>
                                                 }
                                             </div>
@@ -280,7 +295,8 @@ const AcquisitionsPerformance = () => {
                             <MDBRow>
                                 <MDBCol>
                                     <MDBCardBody>
-                                        <Select defaultValue="allProducts" style={{ width: 240 }} onChange={e => changeAnalysisData(e)}>
+                                        <Select defaultValue="allProducts" style={{width: 240}}
+                                                onChange={e => changeAnalysisData(e)}>
                                             <Option value="allProducts">All Products</Option>
                                             <Option value="autoLoan">Auto Loan</Option>
                                             <Option value="mortgage">Mortgage</Option>
@@ -293,7 +309,7 @@ const AcquisitionsPerformance = () => {
                             </MDBRow>
                             <MDBRow>
                                 <MDBCol md="6">
-                                    <MDBCardBody style={{ height: '400px' }}>
+                                    <MDBCardBody style={{height: '400px'}}>
                                         <MDBCardTitle tag="h6">Acquisitions Performance- Funnel Analysis</MDBCardTitle>
                                         <EChart
                                             funnelChart={true}
@@ -307,8 +323,10 @@ const AcquisitionsPerformance = () => {
                                 </MDBCol>
                                 <MDBCol md="6">
                                     <MDBCardBody className="mr-2 rounded" style={{border: '1px solid #f0f0f0'}}>
-                                        <MDBCardTitle tag="h6" style={tableHeaderStyle}>Lead to Conversion Ratio (By Channels)</MDBCardTitle>
-                                        <AntdDataTable rows={filterAnalysis.tableAnalysis ?? []} columns={tableHeaderByChannel()} pagination={false} />
+                                        <MDBCardTitle tag="h6" style={tableHeaderStyle}>Lead to Conversion Ratio (By
+                                            Channels)</MDBCardTitle>
+                                        <AntdDataTable rows={filterAnalysis.tableAnalysis ?? []}
+                                                       columns={tableHeaderByChannel()} pagination={false}/>
                                     </MDBCardBody>
                                 </MDBCol>
                             </MDBRow>
@@ -321,7 +339,8 @@ const AcquisitionsPerformance = () => {
                             <MDBRow>
                                 <MDBCol>
                                     <MDBCardBody>
-                                        <Select defaultValue="allProducts" style={{ width: 240 }} onChange={e => changeTrendsData(e)}>
+                                        <Select defaultValue="allProducts" style={{width: 240}}
+                                                onChange={e => changeTrendsData(e)}>
                                             <Option value="allProducts">All Products</Option>
                                             <Option value="autoLoan">Auto Loan</Option>
                                             <Option value="mortgage">Mortgage</Option>
@@ -334,7 +353,7 @@ const AcquisitionsPerformance = () => {
                             </MDBRow>
                             <MDBRow>
                                 <MDBCol md="6">
-                                    <MDBCardBody style={{ height: '400px' }}>
+                                    <MDBCardBody style={{height: '400px'}}>
                                         <MDBCardTitle tag="h6">Lead to Conversion Trends (YTD)</MDBCardTitle>
                                         <EChart
                                             toolTipFormatter={'{b}: {c}%'}
@@ -351,8 +370,9 @@ const AcquisitionsPerformance = () => {
                                     </MDBCardBody>
                                 </MDBCol>
                                 <MDBCol md="6">
-                                    <MDBCardBody style={{ height: '400px' }}>
-                                        <MDBCardTitle tag="h6"> Lead to Conversion Trends (YTD) (By Channels)</MDBCardTitle>
+                                    <MDBCardBody style={{height: '400px'}}>
+                                        <MDBCardTitle tag="h6"> Lead to Conversion Trends (YTD) (By
+                                            Channels)</MDBCardTitle>
                                         <EChart
                                             toolTipFormatter={'{b}: {c}%'}
                                             barColor={["#92B4F3", "#5d90c6", "#5e9fe5", "#D5E3FA", "#007bff"]}

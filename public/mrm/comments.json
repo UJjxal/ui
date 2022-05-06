@@ -1,17 +1,17 @@
 [
-    {
-        "DataOverview": "comment1"
-    },
-    {
-        "Discrimination": "comment2"
-    },
-    {
-        "CharacteristicStability": "comment3"
-    },
-    {
-        "RankOrdering": "comment4"
-    },
-    {
-        "PopulationStability": "comment5"
-    }
+  {
+    "DataOverview": "comment1"
+  },
+  {
+    "Discrimination": "comment2"
+  },
+  {
+    "CharacteristicStability": "comment3"
+  },
+  {
+    "RankOrdering": "comment4"
+  },
+  {
+    "PopulationStability": "comment5"
+  }
 ]

@@ -1,5 +1,5 @@
 /** configtabs/Therapy/ModelSummary, configtabs/Hypertension/ModelSummaryPatient */
-import React, { Component } from "react";
+import React from "react";
 // import {
 //   BarChart,
 //   Bar,
@@ -11,10 +11,10 @@ import React, { Component } from "react";
 // } from "recharts";
 
 const Chart = (props) => {
-  console.log("Chart123", props);
-  return (
-    <React.Fragment>
-      {/* <BarChart
+    console.log("Chart123", props);
+    return (
+        <React.Fragment>
+            {/* <BarChart
         width={500}
         height={300}
         data={props.data}
@@ -48,8 +48,8 @@ const Chart = (props) => {
           ))}
         </div>
       ) : null} */}
-    </React.Fragment>
-  );
+        </React.Fragment>
+    );
 };
 
 export default Chart;

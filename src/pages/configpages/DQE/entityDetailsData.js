@@ -1,7 +1,7 @@
-let entityDetailsData={
-    dtl:{},
-    dataQualityReport:{},
-    processedRecords:{},
+let entityDetailsData = {
+    dtl: {},
+    dataQualityReport: {},
+    processedRecords: {},
 };
 
 export default entityDetailsData;

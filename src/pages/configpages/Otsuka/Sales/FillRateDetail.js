@@ -1,44 +1,36 @@
-import React, {useState, useEffect} from 'react';
-import {Link} from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import {CONTEXT} from "../../../../config";
 import {ApexBarChart} from '../../../../utilities/Controls';
 import KeyInsights from './KeyInsights';
-import {
-    MDBCard, 
-    MDBCardTitle,
-    MDBCardBody,
-    MDBRow,
-    MDBCol,
-    MDBIcon,
-} from "mdbreact";
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow,} from "mdbreact";
 
-const FillRateDetail=()=>{
-    let initData={
-        abondonment:{},
-        keyInsights:[]
+const FillRateDetail = () => {
+    let initData = {
+        abondonment: {},
+        keyInsights: []
     };
-    const [d, setData]=useState({...initData});
+    const [d, setData] = useState({...initData});
 
-    const init=async()=>{
-        const result=await axios(`${CONTEXT}/otsuka/sales/lostFillRateDetails.json`);
-        if(result.data.code===200){
-            const res=result.data.response;
-            let abondonment={months:res.abondonment.months, series:res.abondonment.series};
-            d.abondonment=abondonment;
-            d.keyInsights=res.keyInsights;
+    const init = async () => {
+        const result = await axios(`${CONTEXT}/otsuka/sales/lostFillRateDetails.json`);
+        if (result.data.code === 200) {
+            const res = result.data.response;
+            let abondonment = {months: res.abondonment.months, series: res.abondonment.series};
+            d.abondonment = abondonment;
+            d.keyInsights = res.keyInsights;
             setData({...d});
-        }else{
+        } else {
             setData({...initData});
         }
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         init();
         // eslint-disable-next-line
     }, []);
 
-    return(
+    return (
         <div>
             <div className="mb15">
                 <MDBCard>
@@ -72,11 +64,11 @@ const FillRateDetail=()=>{
                                 <label className="mb2 bold600">Review Period</label>
                                 <div className="d-flex">
                                     <div className="my-auto">
-                                        <input type="date" className="form-control form-control-sm w150" />
+                                        <input type="date" className="form-control form-control-sm w150"/>
                                     </div>
                                     <div className="my-auto">-</div>
                                     <div className="my-auto">
-                                        <input type="date" className="form-control form-control-sm w150" />
+                                        <input type="date" className="form-control form-control-sm w150"/>
                                     </div>
                                 </div>
                             </div>
@@ -95,7 +87,13 @@ const FillRateDetail=()=>{
                                 title=""
                                 titlealign="center"
                                 categories={d.abondonment.months}
-                                yaxis={[{title:{text:'Percentage'}, labels:{formatter:function (value){return value + " %";}}}]}
+                                yaxis={[{
+                                    title: {text: 'Percentage'}, labels: {
+                                        formatter: function (value) {
+                                            return value + " %";
+                                        }
+                                    }
+                                }]}
                                 series={d.abondonment.series}
                                 stacked={true}
                                 showDatalables={false}
@@ -113,7 +111,7 @@ const FillRateDetail=()=>{
                         </MDBCardTitle>
                         <MDBCardBody className="p0 pt20">
                             <div className="key-insights-ht2">
-                                <KeyInsights data={d.keyInsights} />
+                                <KeyInsights data={d.keyInsights}/>
                             </div>
                         </MDBCardBody>
                     </MDBCard>

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Chart } from "../../../../utilities/charts/Echarts";
+import React, {useEffect, useState} from "react";
+import {Chart} from "../../../../utilities/charts/Echarts";
 import apiServices from "./apiServices";
 import moment from "moment";
 import Loader from "../../../../utilities/Loader";
@@ -7,7 +7,7 @@ import Loader from "../../../../utilities/Loader";
 const CreateChart = (props) => {
     let clrs = ["#F47935", "#A39AF3", "#61D21B", "#0d47a1", "#1e7ba5", "#F08080", "#FF0000", "#8B0000", "#FF1493", "#FFD700", "#9370DB", "#00CED1"];
     let colors = [];
-    let { data } = props;
+    let {data} = props;
     let legendData = [];
     data.series.forEach((v, i) => {
         legendData.push(v.name);
@@ -20,10 +20,10 @@ const CreateChart = (props) => {
 
     return (
         <Chart
-            title={{ text: data.name, left: 'center' }}
+            title={{text: data.name, left: 'center'}}
             width="100%"
             height="300px"
-            tooltip={{ trigger: 'axis' }}
+            tooltip={{trigger: 'axis'}}
             //legendData={legendData}
             //legendPosition="bottom"
             //legendVerticalDistance={-5}
@@ -38,22 +38,22 @@ const CreateChart = (props) => {
                 itemGap: 10,
             }}
 
-            xaxis={{ data: data.xaxis }}
-            yaxis={{ title: "No. of Alerts", nameGapY: 40 }}
+            xaxis={{data: data.xaxis}}
+            yaxis={{title: "No. of Alerts", nameGapY: 40}}
             //nameGapY={45}
             series={data.series}
             color={colors}
             grid={
-                { left: '10%', right: '2%', top: '10%', bottom: '12%', containLabel: true }
+                {left: '10%', right: '2%', top: '10%', bottom: '12%', containLabel: true}
             }
-            textStyle={{ fontSize: 10 }}
+            textStyle={{fontSize: 10}}
         />
     )
 }
 
 
 const AlertsCaseTypeDetail = (props) => {
-    const [counts, setCounts] = useState({ total: 0, action: 0, noaction: 0 });
+    const [counts, setCounts] = useState({total: 0, action: 0, noaction: 0});
     const [charts, setChartsData] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
@@ -84,7 +84,7 @@ const AlertsCaseTypeDetail = (props) => {
                     })
                 });
                 total = action + noaction;
-                setCounts({ total, action, noaction });
+                setCounts({total, action, noaction});
 
                 requestors.sort();
                 let allCharts = [];
@@ -99,9 +99,17 @@ const AlertsCaseTypeDetail = (props) => {
                                         emailTos.push(v1.escalated_to);
                                     }
 
-                                    emailToCounts.push({ name: v1.escalated_to, count: v1.actioned_count * 1, dt: xaxis[di] });
+                                    emailToCounts.push({
+                                        name: v1.escalated_to,
+                                        count: v1.actioned_count * 1,
+                                        dt: xaxis[di]
+                                    });
                                 });
-                                emailToCounts.push({ name: "No Action Taken", count: v.no_action_count * 1, dt: xaxis[di] });
+                                emailToCounts.push({
+                                    name: "No Action Taken",
+                                    count: v.no_action_count * 1,
+                                    dt: xaxis[di]
+                                });
                                 if (v.no_action_count * 1 > 0) {
                                     flg = 1;
                                 }
@@ -112,9 +120,14 @@ const AlertsCaseTypeDetail = (props) => {
                         emailTos.push("No Action Taken");
                     }
 
-                    let dtl = { name: requestor, xaxis: xaxis, series: [] };
+                    let dtl = {name: requestor, xaxis: xaxis, series: []};
                     emailTos.forEach((name) => {
-                        let srs = { name: (name !== 'No Action Taken' ? 'Email To ' : '') + name, type: 'bar', barGap: 0, data: [] };
+                        let srs = {
+                            name: (name !== 'No Action Taken' ? 'Email To ' : '') + name,
+                            type: 'bar',
+                            barGap: 0,
+                            data: []
+                        };
                         xaxis.forEach(dt => {
                             let flg = 0;
                             emailToCounts.forEach(v => {
@@ -138,7 +151,7 @@ const AlertsCaseTypeDetail = (props) => {
         }).catch((err) => {
             console.error(err);
         }).finally(() => {
-           
+
         });
     }
 
@@ -168,8 +181,8 @@ const AlertsCaseTypeDetail = (props) => {
             <div className="heading fs18 uc text-center">Alerts Trend by Requestor w.r.t Action Taken</div>
             <div className="content">
                 {isLoading ? (
-                    <div className="m-auto text-center" style={{ height: '300px' }}>
-                        <Loader />
+                    <div className="m-auto text-center" style={{height: '300px'}}>
+                        <Loader/>
                     </div>
                 ) : (
                     <>
@@ -190,12 +203,12 @@ const AlertsCaseTypeDetail = (props) => {
 
                         <div className="row mingap">
                             {charts.map((chart, i) => {
-                                return chart.series.length > 0 ? <div key={i} className="col-md-6 mb40">
-                                    <CreateChart
-                                        data={chart}
-                                    />
-                                </div> : null
-                            }
+                                    return chart.series.length > 0 ? <div key={i} className="col-md-6 mb40">
+                                        <CreateChart
+                                            data={chart}
+                                        />
+                                    </div> : null
+                                }
                             )}
                         </div>
                     </>

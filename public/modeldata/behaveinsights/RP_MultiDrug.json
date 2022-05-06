@@ -1,13 +1,22 @@
 {
-  "categories": ["# of Drugs = 1", "# of Drugs = 2"],
+  "categories": [
+    "# of Drugs = 1",
+    "# of Drugs = 2"
+  ],
   "modeldata": [
     {
       "name": "High Risk",
-      "data": [11, 43]
+      "data": [
+        11,
+        43
+      ]
     },
     {
       "name": "Low Risk",
-      "data": [89, 57]
+      "data": [
+        89,
+        57
+      ]
     }
   ]
 }

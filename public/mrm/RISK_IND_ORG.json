@@ -115,23 +115,77 @@
   ],
   "PrecisionRecall": [
     {
-      "Score_Threshold": [151, 165, 179, 193, 207, 220, 234, 248, 262],
-      "Precision": [0.93, 0.93, 0.93, 0.94, 0.94, 0.95, 0.96, 0.96, 0.96],
-      "Recall": [0.96, 0.95, 0.91, 0.81, 0.58, 0.35, 0.17, 0.08, 0.04]
+      "Score_Threshold": [
+        151,
+        165,
+        179,
+        193,
+        207,
+        220,
+        234,
+        248,
+        262
+      ],
+      "Precision": [
+        0.93,
+        0.93,
+        0.93,
+        0.94,
+        0.94,
+        0.95,
+        0.96,
+        0.96,
+        0.96
+      ],
+      "Recall": [
+        0.96,
+        0.95,
+        0.91,
+        0.81,
+        0.58,
+        0.35,
+        0.17,
+        0.08,
+        0.04
+      ]
     }
   ],
   "ConfusionMatrix": [
     [
-      { "label": "0", "negative": "16,204 (87%)", "positive": "1,625 (8%)" },
-      { "label": "1", "negative": "543 (2%)", "positive": "205 (1%)" }
+      {
+        "label": "0",
+        "negative": "16,204 (87%)",
+        "positive": "1,625 (8%)"
+      },
+      {
+        "label": "1",
+        "negative": "543 (2%)",
+        "positive": "205 (1%)"
+      }
     ]
   ],
   "EventDataMetric": [
     [
-      { "key": 1, "Metric": "Precision", "Value": "11%" },
-      { "key": 2, "Metric": "Recall", "Value": "27%" },
-      { "key": 3, "Metric": "F1 Score", "Value": "0.16" },
-      { "key": 4, "Metric": "False Positive Rate", "Value": "9%" }
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "11%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "27%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.16"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "9%"
+      }
     ]
   ],
   "RankOrdering": [
@@ -339,7 +393,18 @@
   ],
   "KSCurve": [
     {
-      "Score_Decile": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Decile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "cum_eventrate": [
         "28",
         "46",
@@ -632,7 +697,19 @@
   ],
   "ROCCurve": [
     {
-      "Score_Cutoff": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "Score_Cutoff": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
       "FalsePositiveRate": [
         "0.0",
         "0.09",
@@ -744,7 +821,23 @@
         268,
         278
       ],
-      "Events": [1, 41, 50, 53, 98, 192, 179, 127, 48, 19, 9, 1, 0, 0, 0],
+      "Events": [
+        1,
+        41,
+        50,
+        53,
+        98,
+        192,
+        179,
+        127,
+        48,
+        19,
+        9,
+        1,
+        0,
+        0,
+        0
+      ],
       "Non_Events": [
         4,
         171,
@@ -766,10 +859,26 @@
   ],
   "DivergenceData": [
     [
-      { "key": 1, "Metric": "Event Distribution Mean", "Value": 195 },
-      { "key": 2, "Metric": "Non-Event Distribution Mean", "Value": 211 },
-      { "key": 3, "Metric": "Event Distribution Variance", "Value": 374 },
-      { "key": 4, "Metric": "Non-Event Distribution Variance", "Value": 429 }
+      {
+        "key": 1,
+        "Metric": "Event Distribution Mean",
+        "Value": 195
+      },
+      {
+        "key": 2,
+        "Metric": "Non-Event Distribution Mean",
+        "Value": 211
+      },
+      {
+        "key": 3,
+        "Metric": "Event Distribution Variance",
+        "Value": 374
+      },
+      {
+        "key": 4,
+        "Metric": "Non-Event Distribution Variance",
+        "Value": 429
+      }
     ]
   ],
   "PSI": [
@@ -798,7 +907,18 @@
         -10.3,
         -10.4
       ],
-      "Actual": [7.47, 13.46, 6.43, 10.1, 8.18, 7.13, 7.1, 9.57, 12.39, 18.16]
+      "Actual": [
+        7.47,
+        13.46,
+        6.43,
+        10.1,
+        8.18,
+        7.13,
+        7.1,
+        9.57,
+        12.39,
+        18.16
+      ]
     }
   ],
   "PSIData": [
@@ -909,7 +1029,18 @@
         "Sexo",
         "TIENE CUENTA DE AHORRO SI O NO"
       ],
-      "CSI_Score": [0.88, 0.6, 0.31, 0.16, 0.15, 0.11, 0.1, 0.08, 0.0, 0.0]
+      "CSI_Score": [
+        0.88,
+        0.6,
+        0.31,
+        0.16,
+        0.15,
+        0.11,
+        0.1,
+        0.08,
+        0.0,
+        0.0
+      ]
     }
   ],
   "CSIData": [
@@ -962,7 +1093,12 @@
         "CSI Score": 0.08,
         "Status": "green"
       },
-      { "key": 1, "Variable": "Sexo", "CSI Score": 0.0, "Status": "green" },
+      {
+        "key": 1,
+        "Variable": "Sexo",
+        "CSI Score": 0.0,
+        "Status": "green"
+      },
       {
         "key": 2,
         "Variable": "TIENE CUENTA DE AHORRO SI O NO",

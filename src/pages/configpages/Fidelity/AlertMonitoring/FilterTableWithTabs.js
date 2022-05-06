@@ -1,27 +1,18 @@
-import React, { Fragment } from 'react';
-import { Input, Button, Dropdown, Menu, Checkbox, Card } from 'antd';
-import { ExportTableButton } from "ant-table-extensions";
+import React, {Fragment} from 'react';
+import {Button, Card, Checkbox, Dropdown, Input, Menu} from 'antd';
+import {ExportTableButton} from "ant-table-extensions";
 import Loader from "../../../../utilities/Loader";
 // import DataTable from "./AntDataTable";
 import FilterSidebar from './FilterSidebar';
 import FilterTags from './FilterTags';
 import moment from 'moment';
-import FilterCard from '../../../../utilities/FilterCard/FilterCard';
 import DataTable from '../../../../utilities/AntCustomTable/Table';
-import weeklyCases_light from '../../../../assets/weeklyCases_light.png';
-import weeklyCases_dark from '../../../../assets/weeklyCases_dark.png';
-import pendingCases_dark from '../../../../assets/pendingCases_dark.png';
-import pendingCases_light from '../../../../assets/pendingCases_light.png';
-import highRiskCases_dark from '../../../../assets/highRiskCases_dark.png';
-import highRiskCases_light from '../../../../assets/highRiskCases_light.png';
-import casesInQueue_dark from '../../../../assets/casesInQueue_dark.png';
-import casesInQueue_light from '../../../../assets/casesInQueue_light.png';
 
 
 class FilterTableWithTabs extends React.Component {
     constructor(props) {
         super();
-        
+
         this.state = {
             searchText: '',
             searchedColumn: '',
@@ -73,23 +64,23 @@ class FilterTableWithTabs extends React.Component {
                 return el.dataIndex !== checkedColumns[i];
             });
 
-        this.setState({ columns: filtered, checkedColumns: checkedColumns });
-        this.props.setAppliedFilters({ checkedColumns: checkedColumns })
+        this.setState({columns: filtered, checkedColumns: checkedColumns});
+        this.props.setAppliedFilters({checkedColumns: checkedColumns})
     };
     handleVisibleChange = flag => {
-        this.setState({ visibleMenuSettings: flag });
+        this.setState({visibleMenuSettings: flag});
     };
 
     handleFilter = (value, label) => {
         this.setState({
-            filter: { ...this.state.filter, [label]: value }
+            filter: {...this.state.filter, [label]: value}
         }, () => {
-            this.props.setAppliedFilters({ filter: this.state.filter })
+            this.props.setAppliedFilters({filter: this.state.filter})
         })
 
     }
     handleSideFilters = (data, filterArray) => {
-        let obj = { ...filterArray }
+        let obj = {...filterArray}
         obj = Object.entries(obj).reduce((a, [k, v]) => (v ? (a[k] = v, a) : a), {});
         var filteredInput = (data).filter(function (i) {
             return !Object.keys(obj).some(function (prop) {
@@ -106,7 +97,7 @@ class FilterTableWithTabs extends React.Component {
             filterDateRange: dateString,
             dateRangeValue: value
         }, () => {
-            this.props.setAppliedFilters({ filterDateRange: dateString, dateRangeValue: value })
+            this.props.setAppliedFilters({filterDateRange: dateString, dateRangeValue: value})
         })
     }
 
@@ -214,13 +205,13 @@ class FilterTableWithTabs extends React.Component {
             this.setState({
                 weeklyCases: []
             }, () => {
-                this.props.setAppliedFilters({ weeklyCases: [] })
+                this.props.setAppliedFilters({weeklyCases: []})
             })
         } else {
             this.setState({
                 weeklyCases: this.getWeekDates()
             }, () => {
-                this.props.setAppliedFilters({ weeklyCases: this.getWeekDates() })
+                this.props.setAppliedFilters({weeklyCases: this.getWeekDates()})
             })
         }
     }
@@ -229,35 +220,35 @@ class FilterTableWithTabs extends React.Component {
         this.setState({
             isYesterdayDate: !this.state.isYesterdayDate,
         }, () => {
-            this.props.setAppliedFilters({ isYesterdayDate: this.state.isYesterdayDate })
+            this.props.setAppliedFilters({isYesterdayDate: this.state.isYesterdayDate})
         })
     }
     filterTodayDate = () => {
         this.setState({
             isTodayDate: !this.state.isTodayDate
         }, () => {
-            this.props.setAppliedFilters({ isTodayDate: this.state.isTodayDate })
+            this.props.setAppliedFilters({isTodayDate: this.state.isTodayDate})
         })
     }
     filterMyQueue = () => {
         this.setState({
             isMyQueue: !this.state.isMyQueue,
         }, () => {
-            this.props.setAppliedFilters({ isMyQueue: this.state.isMyQueue })
+            this.props.setAppliedFilters({isMyQueue: this.state.isMyQueue})
         })
     }
     filterPendingReview = () => {
         this.setState({
             isPendingReview: !this.state.isPendingReview,
         }, () => {
-            this.props.setAppliedFilters({ isPendingReview: this.state.isPendingReview })
+            this.props.setAppliedFilters({isPendingReview: this.state.isPendingReview})
         })
     }
     filterHighRiskCases = () => {
         this.setState({
             isHighRiskCases: !this.state.isHighRiskCases,
         }, () => {
-            this.props.setAppliedFilters({ isHighRiskCases: this.state.isHighRiskCases })
+            this.props.setAppliedFilters({isHighRiskCases: this.state.isHighRiskCases})
         })
     }
     applyFilters = (data) => {
@@ -296,24 +287,21 @@ class FilterTableWithTabs extends React.Component {
             }, () => {
                 this.props.setAppliedFilters({isTodayDate: false})
             })
-        }
-        else if (tag === "Yesterday") {
+        } else if (tag === "Yesterday") {
             this.setState({
                 isYesterdayDate: false
             }, () => {
                 this.props.setAppliedFilters({isYesterdayDate: false})
             })
-        }
-        else if (tag.includes("~")) {
+        } else if (tag.includes("~")) {
             this.setState({
                 filterDateRange: [],
                 dateRangeValue: []
             }, () => {
                 this.props.setAppliedFilters({filterDateRange: [], dateRangeValue: []})
             })
-        }
-        else {
-            let obj = { ...this.state.filter }
+        } else {
+            let obj = {...this.state.filter}
 
             for (const [key, value] of Object.entries(obj)) {
                 if (value.includes(tag)) {
@@ -354,7 +342,7 @@ class FilterTableWithTabs extends React.Component {
         // }
         try {
             data.forEach((data, index) => {
-                rows.push({ ...data, key: index });
+                rows.push({...data, key: index});
 
             });
         } catch (error) {
@@ -362,9 +350,10 @@ class FilterTableWithTabs extends React.Component {
         }
         return rows;
     }
+
     render() {
-        const { columns, initialColumns, checkedColumns } = this.state
-        const { isShowHide } = this.props
+        const {columns, initialColumns, checkedColumns} = this.state
+        const {isShowHide} = this.props
 
         const menu = (
             <Menu>
@@ -456,7 +445,9 @@ class FilterTableWithTabs extends React.Component {
                             </div>
                         </div>
                     </Card> */}
-                    <Card className={this.state.weeklyCases.length > 0 ? "boxGrey" : ""} onClick={this.filterWeeklyCases} style={{ background: "#59595b", border: '2px solid rgb(32, 86, 132)' }}>
+                    <Card className={this.state.weeklyCases.length > 0 ? "boxGrey" : ""}
+                          onClick={this.filterWeeklyCases}
+                          style={{background: "#59595b", border: '2px solid rgb(32, 86, 132)'}}>
                         <div className="d-flex justify-content-center">
                             <div className="text-center">
                                 <span>{weeklyCasesCount}</span>
@@ -464,7 +455,8 @@ class FilterTableWithTabs extends React.Component {
                             </div>
                         </div>
                     </Card>
-                    <Card className={this.state.isPendingReview ? "boxOrange" : ""} onClick={this.filterPendingReview} style={{ background: "#f18934" }}>
+                    <Card className={this.state.isPendingReview ? "boxOrange" : ""} onClick={this.filterPendingReview}
+                          style={{background: "#f18934"}}>
                         <div className="d-flex justify-content-center">
                             <div className="text-center">
                                 <span>{pendingReviewedCount}</span>
@@ -472,7 +464,8 @@ class FilterTableWithTabs extends React.Component {
                             </div>
                         </div>
                     </Card>
-                    <Card className={this.state.isHighRiskCases ? "boxLightBlue" : ""} onClick={this.filterHighRiskCases} style={{ background: "#3e89a8" }}>
+                    <Card className={this.state.isHighRiskCases ? "boxLightBlue" : ""}
+                          onClick={this.filterHighRiskCases} style={{background: "#3e89a8"}}>
                         <div className="d-flex justify-content-center">
                             <div className="text-center">
                                 <span>{highRiskCount}</span>
@@ -480,7 +473,8 @@ class FilterTableWithTabs extends React.Component {
                             </div>
                         </div>
                     </Card>
-                    <Card className={this.state.isMyQueue ? "boxBlue" : ""} onClick={this.filterMyQueue} style={{ background: "#215682" }}>
+                    <Card className={this.state.isMyQueue ? "boxBlue" : ""} onClick={this.filterMyQueue}
+                          style={{background: "#215682"}}>
                         <div className="d-flex justify-content-center">
                             <div className="text-center">
                                 <span>{myQueueCount}</span>
@@ -499,10 +493,10 @@ class FilterTableWithTabs extends React.Component {
                         <ExportTableButton
                             dataSource={this.getRowData(this.state.filterKeyword === null ? this.props.rows : this.globalSearch())}
                             columns={this.props.columns}
-                            btnProps={{ className: "mr-2 ml-2", style: { borderColor: '#205684', borderRadius: '4px' } }}
+                            btnProps={{className: "mr-2 ml-2", style: {borderColor: '#205684', borderRadius: '4px'}}}
                             showColumnPicker
                         >
-                            <i className="fas fa-file-export" style={{ color: '#205684' }}></i>
+                            <i className="fas fa-file-export" style={{color: '#205684'}}></i>
                         </ExportTableButton>
                         {
                             isShowHide &&
@@ -513,8 +507,9 @@ class FilterTableWithTabs extends React.Component {
                                 visible={this.state.visibleMenuSettings}
 
                             >
-                                <Button className="tile-btn mr-2" style={{ borderColor: '#205684', borderRadius: '4px' }}>
-                                    <i style={{ transform: ' rotate(90deg)', color: '#205684' }} className="fa fa-bars" aria-hidden="true"></i>
+                                <Button className="tile-btn mr-2" style={{borderColor: '#205684', borderRadius: '4px'}}>
+                                    <i style={{transform: ' rotate(90deg)', color: '#205684'}} className="fa fa-bars"
+                                       aria-hidden="true"></i>
                                 </Button>
                             </Dropdown>
                         }
@@ -553,11 +548,11 @@ class FilterTableWithTabs extends React.Component {
                         setSelectedRowPerPage={this.props.setSelectedRowPerPage}
                         onDragEnd={true}
                         rowKey={record => record.alertID}
-                    // pageSize={this.props.pageSize}
-                    // currentPage={this.props.currentPage}
-                    // total={this.props.total}
+                        // pageSize={this.props.pageSize}
+                        // currentPage={this.props.currentPage}
+                        // total={this.props.total}
                     />
-                    : <Loader style={{ marginLeft: "40%" }} />
+                    : <Loader style={{marginLeft: "40%"}}/>
                 }
             </Fragment>
         )

@@ -1,8 +1,7 @@
-import { bb } from "billboard.js";
+import {bb} from "billboard.js";
 import React, {Component} from "react";
 
 // or as importing default
-
 // 2) import css if your dev-env supports. If don't, include them via <link>
 import "billboard.js/dist/billboard.css";
 
@@ -11,79 +10,79 @@ import "billboard.js/dist/theme/insight.css";
 // import { ConsoleLogger } from "@aws-amplify/core";
 
 
-
 export default class BarChartObsPerAdhRP extends Component {
-  state={
-    isChartRendered:false,
-  }
-  _renderChart(){
-    bb.generate({
-      data: {
-        x:"x",
-        columns: [
-          ["x",...this.props.categories],    
-          ...this.props.data
-        ],
-        type: "bar",
-        groups: [
-          this.props.names
-        ],
-        colors:{
-          "No Hypertension":"#0d47a1",
-          "Hypertension":"#4285f4"
-        },
-       
-        labels: {
-          show: true,
-			format: function (v, id, i, j) {
-				// var formatPercent = d3.format(",%");
-				return (v + "%");
-			},
-      colors: "white",
-      centered: true
-    }
-      },
-      grid: {
-        y: {
-          lines: [
-            {
-              value: 0
-            }
-          ]
-        }
-      },
-      bar: {
-        width: {
-          ratio: 0.9,
-          max: 60
-        }
-      },
-      axis: {
-        x: {
-          type: "category",
-          // label:{text:"(mcg_L/mg_L)", position:"outer-center"}
-        }
-        },
-        
-      bindto: "#stackedBarChart53"
-    });
-   
+    state = {
+        isChartRendered: false,
     }
 
-    componentDidUpdate(prevProps, prevState){
-      this._renderChart();
-    }  
+    _renderChart() {
+        bb.generate({
+            data: {
+                x: "x",
+                columns: [
+                    ["x", ...this.props.categories],
+                    ...this.props.data
+                ],
+                type: "bar",
+                groups: [
+                    this.props.names
+                ],
+                colors: {
+                    "No Hypertension": "#0d47a1",
+                    "Hypertension": "#4285f4"
+                },
 
-    componentDidMount(){
-      this._renderChart();
+                labels: {
+                    show: true,
+                    format: function (v, id, i, j) {
+                        // var formatPercent = d3.format(",%");
+                        return (v + "%");
+                    },
+                    colors: "white",
+                    centered: true
+                }
+            },
+            grid: {
+                y: {
+                    lines: [
+                        {
+                            value: 0
+                        }
+                    ]
+                }
+            },
+            bar: {
+                width: {
+                    ratio: 0.9,
+                    max: 60
+                }
+            },
+            axis: {
+                x: {
+                    type: "category",
+                    // label:{text:"(mcg_L/mg_L)", position:"outer-center"}
+                }
+            },
+
+            bindto: "#stackedBarChart53"
+        });
+
     }
 
-  render() {
-    
-    return (
-  
-    <div id="stackedBarChart53" style={{"height":"23rem", "width":"98%"}}></div>
-   
-    );
-  }
+    componentDidUpdate(prevProps, prevState) {
+        this._renderChart();
+    }
+
+    componentDidMount() {
+        this._renderChart();
+    }
+
+    render() {
+
+        return (
+
+            <div id="stackedBarChart53" style={{"height": "23rem", "width": "98%"}}></div>
+
+        );
+    }
 }

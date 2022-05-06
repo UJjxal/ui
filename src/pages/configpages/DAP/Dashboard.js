@@ -1,36 +1,53 @@
-import React, {useState, useContext} from 'react';
-import { Icon } from '@material-ui/core';
-import { Table } from "antd";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
+import React, {useContext, useState} from 'react';
+import {Icon} from '@material-ui/core';
+import {Table} from "antd";
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow} from "mdbreact";
 import ReactECharts from 'echarts-for-react';
-import { CONTEXT } from "../../../config";
-import { Link } from 'react-router-dom';
-import { AppContext } from "../../../AppProvider";
+import {CONTEXT} from "../../../config";
+import {Link} from 'react-router-dom';
+import {AppContext} from "../../../AppProvider";
 
 const Dashboard = () => {
     const {pageContent} = useContext(AppContext);
     const [keyInsights, setKeyInsights] = useState([
-        { title: 'Collection Rate ($)', description: 'Overall collection rate has decreased by more than 10%', link:pageContent.filter(page=>page.treeID===10)[0].link},
-        { title: 'Collection Rate (# Account)', description: 'Collection Rate by account has decreased by 4%', link: pageContent.filter(page=>page.treeID===10)[0].link },
-        { title: 'Outstanding Balance', description: '$ balance in DPD 90+ bucket has increased by 3%', link: pageContent.filter(page=>page.treeID===10)[0].link },
-        { title: 'Roll Rate', description: 'Shift to higher DPD buckets (e.g 30-60) observed in the past 12 months', link: pageContent.filter(page=>page.treeID===10)[0].link },
-        
+        {
+            title: 'Collection Rate ($)',
+            description: 'Overall collection rate has decreased by more than 10%',
+            link: pageContent.filter(page => page.treeID === 10)[0].link
+        },
+        {
+            title: 'Collection Rate (# Account)',
+            description: 'Collection Rate by account has decreased by 4%',
+            link: pageContent.filter(page => page.treeID === 10)[0].link
+        },
+        {
+            title: 'Outstanding Balance',
+            description: '$ balance in DPD 90+ bucket has increased by 3%',
+            link: pageContent.filter(page => page.treeID === 10)[0].link
+        },
+        {
+            title: 'Roll Rate',
+            description: 'Shift to higher DPD buckets (e.g 30-60) observed in the past 12 months',
+            link: pageContent.filter(page => page.treeID === 10)[0].link
+        },
+
     ])
     return <div className="container-fluid my-5">
         <div className="container-fluid">
             <MDBRow>
                 {
-                    tabDetails.map(({ label, value, percentage, icon, color }, i) => (
+                    tabDetails.map(({label, value, percentage, icon, color}, i) => (
                         <MDBCol md="3" key={i}>
                             <MDBCard>
                                 <MDBCardBody className="px-3 py-2">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 style={{ color: "#868686" }}>{label}</h6>
+                                            <h6 style={{color: "#868686"}}>{label}</h6>
                                             <h3 className="font-weight-bold mt-2 mb-0 text-left">{value}</h3>
                                         </div>
                                         <div>
-                                            <h3 className="m-0"><Icon className={`font-weight-bold text-${color}`} style={{ fontSize: "2.3rem" }}>{icon}</Icon></h3>
+                                            <h3 className="m-0"><Icon className={`font-weight-bold text-${color}`}
+                                                                      style={{fontSize: "2.3rem"}}>{icon}</Icon></h3>
                                             <h6 className={`font-weight-bold text-${color} text-center`}>{percentage}</h6>
                                         </div>
                                     </div>
@@ -48,8 +65,9 @@ const Dashboard = () => {
                         <MDBCol md="12">
                             <MDBCard>
                                 <MDBCardBody>
-                                    <MDBCardTitle tag="h5">Collections Performance - Auto Lending Portfolio</MDBCardTitle>
-                                    <ReactECharts option={optionsCollectionPerformance} style={{ minHeight: '500px' }} />
+                                    <MDBCardTitle tag="h5">Collections Performance - Auto Lending
+                                        Portfolio</MDBCardTitle>
+                                    <ReactECharts option={optionsCollectionPerformance} style={{minHeight: '500px'}}/>
                                 </MDBCardBody>
                             </MDBCard>
                         </MDBCol>
@@ -58,14 +76,15 @@ const Dashboard = () => {
                 <MDBCol md="3">
                     <MDBCardTitle tag="h5">Key Insights</MDBCardTitle>
                     {
-                        keyInsights.map(({ title, description, link }, i) => (
+                        keyInsights.map(({title, description, link}, i) => (
                             <MDBCard key={i} className="mb-3">
                                 <MDBCardBody>
                                     <div>
                                         <div className="d-flex justify-content-between">
                                             <div className="text-primary bold600 fs16 cursor-pointer">{title}</div>
                                             {link ?
-                                                <Link to={CONTEXT + link}><Icon className="text-primary">device_hub</Icon></Link>
+                                                <Link to={CONTEXT + link}><Icon
+                                                    className="text-primary">device_hub</Icon></Link>
                                                 : <Link><Icon className="text-primary">device_hub</Icon></Link>
                                             }
                                         </div>
@@ -83,14 +102,16 @@ const Dashboard = () => {
                         <MDBRow>
                             <MDBCol md="6">
                                 <MDBCardBody>
-                                    <MDBCardTitle tag="h5">Current Outstanding Balance Distribution (By DPD Buckets)</MDBCardTitle>
-                                    <ReactECharts option={optionsDoughnut} style={{ minHeight: '400px' }} />
+                                    <MDBCardTitle tag="h5">Current Outstanding Balance Distribution (By DPD
+                                        Buckets)</MDBCardTitle>
+                                    <ReactECharts option={optionsDoughnut} style={{minHeight: '400px'}}/>
                                 </MDBCardBody>
                             </MDBCol>
                             <MDBCol md="6">
-                                <MDBCardBody className="m-2" style={{border: '1px solid #f0f0f0', borderRadius: '4px' }}>
-                                    <MDBCardTitle tag="h5" style={tableHeaderStyle}>Current Outstanding Balance Distribution (By DPD Buckets)</MDBCardTitle>
-                                    <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
+                                <MDBCardBody className="m-2" style={{border: '1px solid #f0f0f0', borderRadius: '4px'}}>
+                                    <MDBCardTitle tag="h5" style={tableHeaderStyle}>Current Outstanding Balance
+                                        Distribution (By DPD Buckets)</MDBCardTitle>
+                                    <Table dataSource={dataSource} columns={columns} pagination={false} bordered/>
                                 </MDBCardBody>
                             </MDBCol>
                         </MDBRow>
@@ -102,7 +123,7 @@ const Dashboard = () => {
                     <MDBCard>
                         <MDBCardBody>
                             <MDBCardTitle tag="h5">M-O-M Portfolio Balance (By DPD Buckets)</MDBCardTitle>
-                            <ReactECharts option={optionsBalance} style={{ minHeight: '350px' }} />
+                            <ReactECharts option={optionsBalance} style={{minHeight: '350px'}}/>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
@@ -140,19 +161,19 @@ const optionsCollectionPerformance = {
         type: 'value',
         min: 100,
         max: 200,
-        splitLine: { show: false },
+        splitLine: {show: false},
         position: 'left'
     },
-    {
-        type: 'value',
-        min: 50,
-        max: 100,
-        position: 'right',
-        splitLine: { show: false },
-        axisLabel: {
-            formatter: '{value} %'
+        {
+            type: 'value',
+            min: 50,
+            max: 100,
+            position: 'right',
+            splitLine: {show: false},
+            axisLabel: {
+                formatter: '{value} %'
+            }
         }
-    }
     ],
     series: [{
         name: 'Outstanding Balance ($ mn)',
@@ -161,37 +182,37 @@ const optionsCollectionPerformance = {
         color: '#D5E3FA',
         barGap: 0
     },
-    {
-        name: 'Payments ($ mn)',
-        data: [140.25, 144.32, 141.81, 136.08, 134.48, 130.38, 127.19, 123.2, 124.64, 119.14, 118.99, 117.86],
-        type: 'bar',
-        color: '#92B4F3',
-        barGap: 0
-    },
-    {
-        name: 'Collection Rate (%)',
-        type: 'line',
-        color: '#92B4F3',
-        barGap: 0,
-        data: [85, 88, 87, 84, 82, 82, 79, 77, 76, 74, 73, 71],
-        yAxisIndex: 1,
-        lineStyle: {
-            color: '#007bff',
-            width: 3,
-            type: 'solid'
+        {
+            name: 'Payments ($ mn)',
+            data: [140.25, 144.32, 141.81, 136.08, 134.48, 130.38, 127.19, 123.2, 124.64, 119.14, 118.99, 117.86],
+            type: 'bar',
+            color: '#92B4F3',
+            barGap: 0
         },
-        Symbol: 'circle',
-        symbolSize: 6,
-        itemStyle: {
-            borderWidth: 2,
-            borderColor: '#007bff',
-            color: '#007bff'
+        {
+            name: 'Collection Rate (%)',
+            type: 'line',
+            color: '#92B4F3',
+            barGap: 0,
+            data: [85, 88, 87, 84, 82, 82, 79, 77, 76, 74, 73, 71],
+            yAxisIndex: 1,
+            lineStyle: {
+                color: '#007bff',
+                width: 3,
+                type: 'solid'
+            },
+            Symbol: 'circle',
+            symbolSize: 6,
+            itemStyle: {
+                borderWidth: 2,
+                borderColor: '#007bff',
+                color: '#007bff'
+            },
+            label: {
+                position: 'outside',
+                formatter: '{a} %'
+            },
         },
-        label: {
-            position: 'outside',
-            formatter: '{a} %'
-        },
-    },
     ]
 };
 
@@ -214,7 +235,7 @@ const optionsBalance = {
     },
     yAxis: {
         type: 'value',
-        splitLine: { show: false },
+        splitLine: {show: false},
     },
     series: [
         {
@@ -302,12 +323,12 @@ const optionsDoughnut = {
             height: '450px',
             color: ['#719DEF', '#92B4F3', '#007bff', '#83b2af', '#569f9a', '#2a7873'],
             data: [
-                { value: 70, name: 'DPD 0-30' },
-                { value: 14, name: 'DPD 30-60' },
-                { value: 5, name: 'DPD 60-90' },
-                { value: 4, name: 'DPD 90-120' },
-                { value: 3.5, name: 'DPD 120-150' },
-                { value: 3.2, name: 'DPD 150-180' }
+                {value: 70, name: 'DPD 0-30'},
+                {value: 14, name: 'DPD 30-60'},
+                {value: 5, name: 'DPD 60-90'},
+                {value: 4, name: 'DPD 90-120'},
+                {value: 3.5, name: 'DPD 120-150'},
+                {value: 3.2, name: 'DPD 150-180'}
             ],
             label: {
                 color: '#000',
@@ -322,10 +343,10 @@ const optionsDoughnut = {
 }
 
 const tabDetails = [
-    { label: 'Outstanding Balance ($ mn)', value: '$171', percentage: '4%', icon: 'expand_less', color: 'success' },
-    { label: 'Accounts in Collection', value: '41,250', percentage: '1.2%', icon: 'expand_less', color: 'success' },
-    { label: 'Collection Rate (By Balance)', value: '71%', percentage: '14%', icon: 'expand_more', color: 'danger' },
-    { label: 'Collection Rate (By Account)', value: '85%', percentage: '4%', icon: 'expand_more', color: 'danger' },
+    {label: 'Outstanding Balance ($ mn)', value: '$171', percentage: '4%', icon: 'expand_less', color: 'success'},
+    {label: 'Accounts in Collection', value: '41,250', percentage: '1.2%', icon: 'expand_less', color: 'success'},
+    {label: 'Collection Rate (By Balance)', value: '71%', percentage: '14%', icon: 'expand_more', color: 'danger'},
+    {label: 'Collection Rate (By Account)', value: '85%', percentage: '4%', icon: 'expand_more', color: 'danger'},
 ]
 
 
@@ -359,9 +380,9 @@ const dataSource = [
         "Contribution": <h6 className="m-0">14%</h6>
     },
     {
-       "DPD": <h6 className="m-0">DPD 60-90</h6>,
-       "Balance": <h6 className="m-0">11.97</h6>,
-       "Contribution": <h6 className="m-0">5%</h6>
+        "DPD": <h6 className="m-0">DPD 60-90</h6>,
+        "Balance": <h6 className="m-0">11.97</h6>,
+        "Contribution": <h6 className="m-0">5%</h6>
     },
     {
         "DPD": <h6 className="m-0">DPD 90-120</h6>,

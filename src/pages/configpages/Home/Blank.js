@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardGroup, MDBCardText, MDBCardTitle } from 'mdbreact';
+import {MDBRow} from 'mdbreact';
 
 const Blank = () => {
-	return (
-		<MDBRow center>
-			
-		</MDBRow>
-	);
+    return (
+        <MDBRow center>
+
+        </MDBRow>
+    );
 };
 
 export default Blank;

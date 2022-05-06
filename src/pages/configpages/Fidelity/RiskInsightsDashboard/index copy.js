@@ -1,8 +1,5 @@
 import React, {useState} from "react";
 import {Button} from "antd";
-import {FilterFilled} from "@ant-design/icons";
-import {TextField} from "@material-ui/core";
-import MenuItem from "@material-ui/core/MenuItem";
 
 import AlertsFunnel from "./AlertsFunnel";
 import AlertsRiskLevel from "./AlertsRiskLevel";
@@ -10,14 +7,13 @@ import AlertsRiskType from "./AlertsRiskType";
 import AlertsTrends from "./AlertsTrends";
 import CompanyAlerts from "./CompanyAlerts";
 import CompanyFindings from "./CompanyFindings";
-import moment from "moment";
 
-const RiskInsightDashboard=(props)=>{
-    const [filterData, setFilterData]=useState({
-        alertType:'All'
+const RiskInsightDashboard = (props) => {
+    const [filterData, setFilterData] = useState({
+        alertType: 'All'
     });
-    const handleAlertTypeChange=(e)=>{
-        setFilterData({...filterData, alertType:e.target.value});
+    const handleAlertTypeChange = (e) => {
+        setFilterData({...filterData, alertType: e.target.value});
     }
 
     return (
@@ -30,8 +26,12 @@ const RiskInsightDashboard=(props)=>{
                 <div className="my-auto ml-auto">
                     <div className="d-flex">
                         <div className="my-auto">
-                            <Button size="large" className="blue-bg" style={{borderTopRightRadius:0, borderBottomRightRadius:0, height:'44px'}}>Daily</Button>
-                            <Button size="large" className="radius0" style={{height:'44px'}}>Monthly</Button>
+                            <Button size="large" className="blue-bg" style={{
+                                borderTopRightRadius: 0,
+                                borderBottomRightRadius: 0,
+                                height: '44px'
+                            }}>Daily</Button>
+                            <Button size="large" className="radius0" style={{height: '44px'}}>Monthly</Button>
                             {/* <Button size="large" className="radius0" style={{height:'44px'}}>Quarterly</Button> */}
                             {/* <Button size="large" style={{borderTopLeftRadius:0, borderBottomLeftRadius:0, height:'44px'}}>Custom</Button> */}
                         </div>
@@ -68,28 +68,28 @@ const RiskInsightDashboard=(props)=>{
             </div>
 
             <div className="mb20">
-                <AlertsFunnel token={props.token} />
+                <AlertsFunnel token={props.token}/>
             </div>
 
             <div className="row mb20">
                 <div className="col-md-6">
-                    <AlertsRiskLevel token={props.token} />
+                    <AlertsRiskLevel token={props.token}/>
                 </div>
 
                 <div className="col-md-6">
-                    <AlertsRiskType token={props.token} />
+                    <AlertsRiskType token={props.token}/>
                 </div>
             </div>
 
             <div className="mb20">
-                <AlertsTrends token={props.token} />
+                <AlertsTrends token={props.token}/>
             </div>
 
             <div className="mb20">
-                <CompanyAlerts token={props.token} />
+                <CompanyAlerts token={props.token}/>
             </div>
             <div className="mb20">
-                <CompanyFindings token={props.token} />
+                <CompanyFindings token={props.token}/>
             </div>
         </div>
     );

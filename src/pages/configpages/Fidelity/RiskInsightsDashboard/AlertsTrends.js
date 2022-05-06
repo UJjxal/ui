@@ -1,16 +1,16 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {Chart} from "../../../../utilities/charts/Echarts";
 import apiServices from "./apiServices";
 import Loader from "../../../../utilities/Loader";
 import {STATICRISK360} from "../../../../config";
 
-const AlertsRiskLevel=(props)=>{
-    const mountedRef=useRef(true);
-    const [chartData, setChartData]=useState({series:[], legendData:[], xaxisData:[], colors:[]});
-    const [isLoading, setLoading]=useState(true);
+const AlertsRiskLevel = (props) => {
+    const mountedRef = useRef(true);
+    const [chartData, setChartData] = useState({series: [], legendData: [], xaxisData: [], colors: []});
+    const [isLoading, setLoading] = useState(true);
 
-    const setDummyData=()=>{
-        let series=[
+    const setDummyData = () => {
+        let series = [
             {
                 name: 'Email VM/BU',
                 type: 'line',
@@ -27,32 +27,32 @@ const AlertsRiskLevel=(props)=>{
                 data: [10, 30, 60, 50, 30, 50, 60, 30, 50]
             }
         ];
-        let legendData=[];
-        series.forEach(v=>{
+        let legendData = [];
+        series.forEach(v => {
             legendData.push(v.name);
         })
-        let xaxisData=["FCS", "Vendor", "WAS", "AAP", "CAIR", "Credit", "Diversified", "Family Office", "FCAT"];
+        let xaxisData = ["FCS", "Vendor", "WAS", "AAP", "CAIR", "Credit", "Diversified", "Family Office", "FCAT"];
 
-        setChartData({series, legendData, xaxisData, colors:["#F47935", "#A39AF3", "#61D21B"]});
+        setChartData({series, legendData, xaxisData, colors: ["#F47935", "#A39AF3", "#61D21B"]});
     }
 
-    const getData=()=>{
-        if(mountedRef.current){
+    const getData = () => {
+        if (mountedRef.current) {
             setLoading(true);
         }
-        apiServices.summaryAndTrends("requestor", props.periodType).then((result)=>{
-            if(result.data.code===200){
-                let data=result.data.response.data;
-                let clrs=["#F47935", "#A39AF3", "#61D21B", "#0d47a1", "#1e7ba5", "#F08080", "#FF0000", "#8B0000", "#FF1493", "#FFD700", "#9370DB", "#00CED1"];
-                let series=[], legendData=[], xaxisData=[], emailTos=[], colors=[];
+        apiServices.summaryAndTrends("requestor", props.periodType).then((result) => {
+            if (result.data.code === 200) {
+                let data = result.data.response.data;
+                let clrs = ["#F47935", "#A39AF3", "#61D21B", "#0d47a1", "#1e7ba5", "#F08080", "#FF0000", "#8B0000", "#FF1493", "#FFD700", "#9370DB", "#00CED1"];
+                let series = [], legendData = [], xaxisData = [], emailTos = [], colors = [];
 
-                data.forEach(d=>{
-                    d.result.forEach(v=>{
-                        if(xaxisData.indexOf(v.requestor)<0){
+                data.forEach(d => {
+                    d.result.forEach(v => {
+                        if (xaxisData.indexOf(v.requestor) < 0) {
                             xaxisData.push(v.requestor);
                         }
-                        v.action_count.forEach(v1=>{
-                            if(emailTos.indexOf(v1.escalated_to)<0){
+                        v.action_count.forEach(v1 => {
+                            if (emailTos.indexOf(v1.escalated_to) < 0) {
                                 emailTos.push(v1.escalated_to);
                             }
                         })
@@ -61,74 +61,79 @@ const AlertsRiskLevel=(props)=>{
                 xaxisData.sort();
                 emailTos.sort();
 
-                let flg=0;
-                data.forEach(d=>{d.result.forEach(v=>{
-                    if(v.no_action_count*1){
-                        flg=1;
-                    }
-                })});
-                if(flg){
+                let flg = 0;
+                data.forEach(d => {
+                    d.result.forEach(v => {
+                        if (v.no_action_count * 1) {
+                            flg = 1;
+                        }
+                    })
+                });
+                if (flg) {
                     emailTos.push("No Action Taken");
                 }
 
-                emailTos.forEach((name,i)=>{
-                    if(name==='No Action Taken'){
+                emailTos.forEach((name, i) => {
+                    if (name === 'No Action Taken') {
                         colors.push("#77B6EA");
-                    }else{
+                    } else {
                         colors.push(clrs[i]);
                     }
 
-                    let srs={name:(name!=='No Action Taken'?'Email To ':'')+name, type:'line', data:[]};
-                    xaxisData.forEach(requestor=>{
-                        let n=0;
-                        data.forEach(d=>{d.result.forEach(v=>{
-                            if(v.requestor===requestor){
-                                if(name==='No Action Taken'){
-                                    n+=v.no_action_count*1;
-                                }else{
-                                    v.action_count.forEach(v1=>{
-                                        if(v1.escalated_to===name){
-                                            n+=v1.actioned_count*1;
-                                        }
-                                    });
+                    let srs = {name: (name !== 'No Action Taken' ? 'Email To ' : '') + name, type: 'line', data: []};
+                    xaxisData.forEach(requestor => {
+                        let n = 0;
+                        data.forEach(d => {
+                            d.result.forEach(v => {
+                                if (v.requestor === requestor) {
+                                    if (name === 'No Action Taken') {
+                                        n += v.no_action_count * 1;
+                                    } else {
+                                        v.action_count.forEach(v1 => {
+                                            if (v1.escalated_to === name) {
+                                                n += v1.actioned_count * 1;
+                                            }
+                                        });
+                                    }
                                 }
-                            }
-                        })});
+                            })
+                        });
                         srs.data.push(n);
                     });
                     series.push(srs);
                 });
 
-                series.forEach(v=>{
+                series.forEach(v => {
                     legendData.push(v.name);
                 });
 
-                if(mountedRef.current){
+                if (mountedRef.current) {
                     setChartData({series, legendData, xaxisData, colors});
                 }
             }
-        }).catch((err)=>{
+        }).catch((err) => {
             console.error(err);
-        }).finally(()=>{
-            if(mountedRef.current){
+        }).finally(() => {
+            if (mountedRef.current) {
                 setLoading(false);
             }
         });
     }
 
-    useEffect(()=>{
-        if (STATICRISK360){     // Set Static Risk360 data
+    useEffect(() => {
+        if (STATICRISK360) {     // Set Static Risk360 data
             setLoading(false);
-            setDummyData(); return;
+            setDummyData();
+            return;
         }
         getData();
 
         // eslint-disable-next-line
     }, [props.periodType]);
 
-    useEffect(()=>{
-        return ()=>{
-            mountedRef.current=false;
+    useEffect(() => {
+        return () => {
+            mountedRef.current = false;
         }
         // eslint-disable-next-line
     }, []);
@@ -138,37 +143,38 @@ const AlertsRiskLevel=(props)=>{
         <div className="whitebx">
             <div className="heading uc text-center fs18">Alerts Trend by Requestor w.r.t Action Taken</div>
             <div className="content">
-                {isLoading?(
-                    <div className="m-auto text-center" style={{height:'400px'}}>
-                        <Loader />
+                {isLoading ? (
+                    <div className="m-auto text-center" style={{height: '400px'}}>
+                        <Loader/>
                     </div>
-                ):(
+                ) : (
                     <>
-                        {chartData.legendData.length?(
-                            <Chart 
+                        {chartData.legendData.length ? (
+                            <Chart
                                 width="100%"
                                 height="500px"
-                                tooltip={{trigger:'axis'}}
+                                tooltip={{trigger: 'axis'}}
                                 //legendData={chartData.legendData}
-                                xaxis={{data:chartData.xaxisData}}
-                                yaxis={{title:"No. of Alerts", nameGapY:40}}
+                                xaxis={{data: chartData.xaxisData}}
+                                yaxis={{title: "No. of Alerts", nameGapY: 40}}
                                 series={chartData.series}
                                 color={chartData.colors}
                                 grid={
-                                    {left:'5%', right:'2%', top:'10%', bottom:'0%', containLabel:true}
+                                    {left: '5%', right: '2%', top: '10%', bottom: '0%', containLabel: true}
                                 }
                                 legend={{
-                                    show:true,
-                                    data:chartData.legendData,
-                                    itemWidth:12,
-                                    itemHeight:12,
-                                    icon:'rect',
-                                    itemGap:12,
+                                    show: true,
+                                    data: chartData.legendData,
+                                    itemWidth: 12,
+                                    itemHeight: 12,
+                                    icon: 'rect',
+                                    itemGap: 12,
                                 }}
-                                textStyle={{fontSize:11}}
+                                textStyle={{fontSize: 11}}
                             />
-                        ):(
-                            <div className="text-secondary text-center" style={{height:'300px', paddingTop:'50px'}}>No Data</div>
+                        ) : (
+                            <div className="text-secondary text-center" style={{height: '300px', paddingTop: '50px'}}>No
+                                Data</div>
                         )}
                     </>
                 )}

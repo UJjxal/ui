@@ -1,4 +1,4 @@
-import { HeaderAcceptType } from "../config";
+import {HeaderAcceptType} from "../config";
 import util from "../utilities/util";
 
 const headers = () => ({

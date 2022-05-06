@@ -1,19 +1,17 @@
-import { Button } from "@material-ui/core";
-import React, { useState } from "react";
-import { useContext } from "react";
-import { AppContext } from "../../../../../AppProvider";
+import React, {useContext, useState} from "react";
+import {AppContext} from "../../../../../AppProvider";
 import KPIMetricsMaintenance from "../../../KPISandbox/KPIMetricsMaintenance";
 
 const MetricsManagement = () => {
-  const { token, hasRights } = useContext(AppContext);
-  const [metricsModal, setMetricsModal] = useState(false);
-  const toggleMetricsModal = () => {
-    setMetricsModal((prevMetricsModal) => !prevMetricsModal);
-  };
+    const {token, hasRights} = useContext(AppContext);
+    const [metricsModal, setMetricsModal] = useState(false);
+    const toggleMetricsModal = () => {
+        setMetricsModal((prevMetricsModal) => !prevMetricsModal);
+    };
 
-  return (
-    <div className="d-flex justify-content-center">
-      {/* <Button
+    return (
+        <div className="d-flex justify-content-center">
+            {/* <Button
         className="position-absolute"
         variant="contained"
         style={{
@@ -30,13 +28,13 @@ const MetricsManagement = () => {
       >
         Create Metric
       </Button> */}
-      <KPIMetricsMaintenance
-        metricsModal={metricsModal}
-        toggleMetricsModal={toggleMetricsModal}
-        token={token}
-      />
-    </div>
-  );
+            <KPIMetricsMaintenance
+                metricsModal={metricsModal}
+                toggleMetricsModal={toggleMetricsModal}
+                token={token}
+            />
+        </div>
+    );
 };
 
 export default MetricsManagement;

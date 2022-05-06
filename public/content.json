@@ -5,7 +5,10 @@
   "heading": "incedoNOV",
   "icon": "",
   "primary": "#111",
-  "cardMenuKey": [3, 4],
+  "cardMenuKey": [
+    3,
+    4
+  ],
   "content": {
     "pages": [
       {
@@ -314,7 +317,7 @@
             "expanded": true,
             "children": []
           },
-          { 
+          {
             "menuKey": "6",
             "displayName": "Osteoporosis Risk Indicators",
             "link": "/osteoporosisriskindicators",

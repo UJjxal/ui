@@ -306,8 +306,6 @@
       "key": "DAP/CampaignPerformance",
       "val": "DAP Campaign Performance"
     },
-
-   
     {
       "key": "DataProfiler/index",
       "val": "Data Profiler"
@@ -328,7 +326,6 @@
       "key": "Avidia/ModelLeaderboard",
       "val": "DataScience-ModelLeaderboard"
     },
-    
     {
       "key": "DQE/index",
       "val": "DQE"
@@ -337,7 +334,6 @@
       "key": "DQP/index",
       "val": "DQP"
     },
-    
     {
       "key": "Fidelity/AlertMonitoring/index",
       "val": "Fidelity-Alert Monitoring"
@@ -350,7 +346,6 @@
       "key": "Fidelity/RiskInsightsDashboard/DeepDive",
       "val": "Fidelity-Deep Dive"
     },
-    
     {
       "key": "ExecutiveCommandCentre/marketingEffectiveness",
       "val": "Marketing Effectiveness"
@@ -375,14 +370,10 @@
       "key": "ExecutiveCommandCentre/productLevelPerformance",
       "val": "Product Level Performance"
     },
-  
-    
-   
     {
       "key": "KPISandbox/KPIVisualDraft",
       "val": "KPI Visual Configuration"
     },
-   
     {
       "key": "Menu/AdminMenuConfigurations",
       "val": "Menu Configuration"
@@ -391,7 +382,6 @@
       "key": "Theme/ThemeSelection",
       "val": "Theme Configuration"
     },
-   
     {
       "key": "SelfCure/SelfCureKpi",
       "val": "SC KPI"
@@ -422,7 +412,7 @@
       "key": "",
       "val": "Select Internal Page"
     },
-     {
+    {
       "key": "Fidelity/AlertMonitoring/index",
       "val": "Fidelity-Alert Monitoring"
     },
@@ -498,7 +488,6 @@
       "key": "Delinquency/RootCauseaAnalysis",
       "val": "Delinquency RootCauseaAnalysis"
     },
-    
     {
       "key": "DQE/index",
       "val": "DQE"
@@ -507,7 +496,7 @@
       "key": "DQP/index",
       "val": "DQP"
     },
-     {
+    {
       "key": "Dashboard/DashboardViewer",
       "val": "Dashboard"
     },
@@ -535,12 +524,10 @@
       "key": "KPISandbox/KPIVisualDraft",
       "val": "KPI Visual Configuration"
     },
-   
     {
       "key": "Menu/AdminMenuConfigurations",
       "val": "Menu Configuration"
     },
-    
     {
       "key": "MlOps/MlOps",
       "val": "ML Ops"
@@ -561,7 +548,7 @@
       "key": "MRM/monitoring/index",
       "val": "MRM-Monitoring"
     },
-     {
+    {
       "key": "riskSOI/predictiveIntelligence",
       "val": "Predictive Intelligence"
     },
@@ -582,38 +569,38 @@
       "val": "Osteo-StudyDesign"
     },
     {
-      "key":"PayerAnalytics/Home/EffectiveRebate",
-      "val":"Payer Analytics-EffectiveRebate"
+      "key": "PayerAnalytics/Home/EffectiveRebate",
+      "val": "Payer Analytics-EffectiveRebate"
     },
     {
-      "key":"PayerAnalytics/Home/GTN",
-      "val":"Payer Analytics - GTN"
+      "key": "PayerAnalytics/Home/GTN",
+      "val": "Payer Analytics - GTN"
     },
     {
-      "key":"PayerAnalytics/Home/MarketShare",
-      "val":"Payer Analytics-Market Share"
+      "key": "PayerAnalytics/Home/MarketShare",
+      "val": "Payer Analytics-Market Share"
     },
     {
-      "key":"PayerAnalytics/Home/ReturnOnContract",
-      "val":"Payer Analytics-ReturnOnContract"
+      "key": "PayerAnalytics/Home/ReturnOnContract",
+      "val": "Payer Analytics-ReturnOnContract"
     },
     {
-      "key":"PayerAnalytics/ContractRecommender/ContractRecommender",
-      "val":"Payer Analytics-Contract Recommender"
+      "key": "PayerAnalytics/ContractRecommender/ContractRecommender",
+      "val": "Payer Analytics-Contract Recommender"
     },
     {
-      "key":"PayerAnalytics/ScenarioManager/Scenario1",
-      "val":"Payer Analytics-Scenario1"
+      "key": "PayerAnalytics/ScenarioManager/Scenario1",
+      "val": "Payer Analytics-Scenario1"
     },
     {
-      "key":"PayerAnalytics/ScenarioManager/Scenario2",
-      "val":"Payer Analytics-Scenario2"
+      "key": "PayerAnalytics/ScenarioManager/Scenario2",
+      "val": "Payer Analytics-Scenario2"
     },
     {
-      "key":"PayerAnalytics/ScenarioManager/CompareScenarios",
-      "val":"Payer Analytics-CompareScenarios"
+      "key": "PayerAnalytics/ScenarioManager/CompareScenarios",
+      "val": "Payer Analytics-CompareScenarios"
     },
-     {
+    {
       "key": "PSP/AdvancedAnalytics/cohortAnalysis",
       "val": "PSP-Advanced Analytics-Cohort Analysis"
     },
@@ -685,7 +672,7 @@
       "key": "riskSOI/analyser",
       "val": "Root Cause Analyser"
     },
-   {
+    {
       "key": "SageMaker/AwsServices",
       "val": "Sage-AwsServices"
     },
@@ -705,7 +692,6 @@
       "key": "SelfCure/CampaignPerformance",
       "val": "SC CampaignPerformance"
     },
-     
     {
       "key": "Integratedbi/Integratedbi",
       "val": "Tableau"
@@ -742,7 +728,7 @@
       "key": "Theme/ThemeSelection",
       "val": "Theme Configuration"
     },
-     {
+    {
       "key": "WellsFargo/PaymentInsightsConfiguration",
       "val": "WellsFargo-Payment Insights"
     },

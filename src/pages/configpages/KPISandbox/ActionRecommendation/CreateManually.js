@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import util from '../../../../utilities/util';
+import React from 'react';
 import CreateActionRecommendation from './CreateActionRecommendation';
 
-const CreateManually=(props)=>{
+const CreateManually = (props) => {
     /* const [actionRecommendation, setActionRecommendation]=useState(true);
     useEffect(()=>{
         setActionRecommendation(true);
@@ -15,21 +14,21 @@ const CreateManually=(props)=>{
         // eslint-disable-next-line
     }, [actionRecommendation]); */
 
-    return(
+    return (
         <div>
             <div className="mb15">
-                <div className="uc fs16 text-primary cpointer" onClick={()=>props.setCreateType('')}>
+                <div className="uc fs16 text-primary cpointer" onClick={() => props.setCreateType('')}>
                     <i className="fa fa-chevron-left"></i> Actions Home
                 </div>
-                <div className="fs30" style={{color:'#3F729B'}}>Create Manually</div>
+                <div className="fs30" style={{color: '#3F729B'}}>Create Manually</div>
             </div>
 
             <CreateActionRecommendation
-				//isOpen={actionRecommendation}  
-				//setIsOpen={setActionRecommendation}
-				InitiatedFromInsightsSection={false}
+                //isOpen={actionRecommendation}
+                //setIsOpen={setActionRecommendation}
+                InitiatedFromInsightsSection={false}
                 showInsidePage={true}
-			/>
+            />
         </div>
     )
 }

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Radio, Checkbox, Row, Col, Input, Card, Select, Tabs, Avatar, Button, Icon, Table } from 'antd';
+import React, {useState} from 'react';
+import {Card, Col, Input, Row, Select, Tabs} from 'antd';
 
 import Loader from 'react-loader-spinner';
 import InclusionExclusionCriteria from './components/InclusionExclusionCriteria';
@@ -15,42 +15,42 @@ import CTSCA2display from './components/CTSCA2';
 // import 'react-rangeslider/lib/index.css';
 import './clinical.css';
 import {
-    MDBContainer,
-    MDBRow,
+    MDBBtn,
     MDBCard,
     MDBCardBody,
     MDBCardImage,
-
     MDBCardText,
-
-    MDBTable,
-    MDBTableHead,
-    MDBTableBody,
     MDBCol,
-    MDBInput,
+    MDBContainer,
     MDBIcon,
-
-    MDBBtn,
-
+    MDBInput,
+    MDBRow,
+    MDBTable,
+    MDBTableBody,
+    MDBTableHead,
 } from 'mdbreact';
 import {
-
-    VitalsList,
-    IncExcList,
+    comparatordrug,
     ConditionList,
-    YesNoList,
-    DemographicVarList,
     DemographicGenderList,
+    DemographicVarList,
+    IncExcList,
     IndicationList,
-    outcomes, RWEVariable, comparatordrug, RCTArms, SCAArms
+    outcomes,
+    RCTArms,
+    RWEVariable,
+    SCAArms,
+    VitalsList,
+    YesNoList
 } from '../../../../utilities/AllDropDowns';
+
 const InputGroup = Input.Group;
-const { Option } = Select;
-const { TabPane } = Tabs;
+const {Option} = Select;
+const {TabPane} = Tabs;
 const inputGroup = {
-    padding: "1px 5px",
-    marginLeft: "13px",
-},
+        padding: "1px 5px",
+        marginLeft: "13px",
+    },
     inputLabel = {
         width: "40%",
         background: "rgb(32, 56, 100)",
@@ -146,7 +146,13 @@ const BuildSynthetic = (props) => {
             // console.log("row with prop", row[prop]);
             if (property.toUpperCase() === "VIEW") {
                 valueArray.push(<MDBInput
-                    style={{ height: '1.2rem', width: '1.2rem', textAlign: 'center', 'vertical-align': 'middle', 'margin-left': '10px' }}
+                    style={{
+                        height: '1.2rem',
+                        width: '1.2rem',
+                        textAlign: 'center',
+                        'vertical-align': 'middle',
+                        'margin-left': '10px'
+                    }}
                     onClick={() => onClick(index)}
                     checked={radio === index ? true : false}
                     label=""
@@ -154,8 +160,7 @@ const BuildSynthetic = (props) => {
                     id={`radio${index}`}
                     containerClass="mb-4"
                 />)
-            }
-            else {
+            } else {
                 valueArray.push(row[property]);
             }
         }
@@ -169,18 +174,20 @@ const BuildSynthetic = (props) => {
         setRelative(!relative);
     };
 
-    let { ndc, EHRData, clinicalTrialData,briefTitle, loadRCTData, viewRCTData, demoData,
-        indicationList, demographicList, vitalList } = props;
+    let {
+        ndc, EHRData, clinicalTrialData, briefTitle, loadRCTData, viewRCTData, demoData,
+        indicationList, demographicList, vitalList
+    } = props;
 
     return (
         <React.Fragment>
-            <Row >
+            <Row>
 
-                <Col style={{ width: '100%', "margin-bottom": "-9px" }}>
+                <Col style={{width: '100%', "margin-bottom": "-9px"}}>
 
                     <Card
                         className="ant-card-small"
-                        style={{ margin: "0 10px 10px 0" }}
+                        style={{margin: "0 10px 10px 0"}}
 
                     >
                         <Tabs
@@ -188,29 +195,33 @@ const BuildSynthetic = (props) => {
                             animated={false}
                             tabPosition="top"
                             className="tabCustomization"
-                            style={{ "margin-top": "-6px" }}
+                            style={{"margin-top": "-6px"}}
 
                         >
                             <TabPane tab="RCT Arms" key={1}>
                                 <div className="row">
-                                    <div className="" style={{ width: '40%' }}>
+                                    <div className="" style={{width: '40%'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={inputLabel}>Study ID</label>
                                                 <input className="ant-select-selection ant-select-selection--single"
-                                                    type="text" value={ndc} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+                                                       type="text" value={ndc}
+                                                       style={{padding: '0px 9px', width: '56%'}} readOnly/>
                                             </InputGroup>
-                                            <input className="clinical-input ant-select-selection ant-select-selection--single"
-                                                type="text" value='Inclusion/Exclusion Criteria' onClick={toggleInclusion} readOnly />
-                                            <InclusionExclusionCriteria relative={relative} toggleInclusion={toggleInclusion}
-                                                indicationList={indicationList}
-                                                demographicList={demographicList}
-                                                vitalList={vitalList}
+                                            <input
+                                                className="clinical-input ant-select-selection ant-select-selection--single"
+                                                type="text" value='Inclusion/Exclusion Criteria'
+                                                onClick={toggleInclusion} readOnly/>
+                                            <InclusionExclusionCriteria relative={relative}
+                                                                        toggleInclusion={toggleInclusion}
+                                                                        indicationList={indicationList}
+                                                                        demographicList={demographicList}
+                                                                        vitalList={vitalList}
 
                                             />
                                         </React.Fragment>
                                     </div>
-                                    <div className="" style={{ width: '60%', marginLeft: '-24px' }}>
+                                    <div className="" style={{width: '60%', marginLeft: '-24px'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={{
@@ -224,39 +235,49 @@ const BuildSynthetic = (props) => {
                                                     marginBottom: "0px"
                                                 }}>Brief Title</label>
                                                 <textarea className="ant-select-selection
-ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", height: "62px", resize: 'none' }} readOnly>{briefTitle}</textarea>
+ant-select-selection--single" style={{width: '70%', "padding-top": "0px", height: "62px", resize: 'none'}}
+                                                          readOnly>{briefTitle}</textarea>
                                             </InputGroup>
                                         </React.Fragment>
                                     </div>
                                 </div>
-                                <Row style={{ marginRight: '-6px' }}>
-                                    <Col style={{ width: '100%' }}>
+                                <Row style={{marginRight: '-6px'}}>
+                                    <Col style={{width: '100%'}}>
                                         <Card
                                             className="ant-card-small"
-                                            style={{ margin: "0 10px 10px 0" }}
+                                            style={{margin: "0 10px 10px 0"}}
                                         >
                                             <Tabs
                                                 defaultActiveKey="1"
                                                 animated={false}
                                                 tabPosition="top"
-                                                style={{ "margin-top": "-6px" }}
+                                                style={{"margin-top": "-6px"}}
                                                 className="tabCustomization"
                                             >
                                                 <TabPane tab="Load RCT Arms" key={1}>
-                                                    <div className='' style={{ "margin-left": "-17px", "margin-top": "-9px" }}>
-                                                        <MDBCard className="" style={{ height: '9rem' }}>
-                                                            <MDBCardBody className="pt-1" style={{ lineHeight: '11px', width: '102%' }}>
+                                                    <div className=''
+                                                         style={{"margin-left": "-17px", "margin-top": "-9px"}}>
+                                                        <MDBCard className="" style={{height: '9rem'}}>
+                                                            <MDBCardBody className="pt-1"
+                                                                         style={{lineHeight: '11px', width: '102%'}}>
                                                                 <MDBTable
                                                                     small
                                                                     className="border" border="1"
-                                                                    style={{ height: '5rem' }}
+                                                                    style={{height: '5rem'}}
                                                                 >
                                                                     <MDBTableHead style={inputLabelWidth}>
                                                                         <tr>
-                                                                            <th style={{ width: '4%', textAlign: 'left' }}>Arm Label</th>
-                                                                            <th style={{ width: '5%' }}>Intervention Drug</th>
-                                                                            <th style={{ width: '8%' }}>Drug Dosage</th>
-                                                                            <th style={{ width: '5%' }}>Patients Count</th>
+                                                                            <th style={{
+                                                                                width: '4%',
+                                                                                textAlign: 'left'
+                                                                            }}>Arm Label
+                                                                            </th>
+                                                                            <th style={{width: '5%'}}>Intervention
+                                                                                Drug
+                                                                            </th>
+                                                                            <th style={{width: '8%'}}>Drug Dosage</th>
+                                                                            <th style={{width: '5%'}}>Patients Count
+                                                                            </th>
                                                                         </tr>
                                                                     </MDBTableHead>
                                                                     <MDBTableBody className="mb-0">
@@ -318,13 +339,16 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                     </div>
                                                 </TabPane>
                                                 <TabPane tab="View RCT Arms " key={2}>
-                                                    <div className='' style={{ "margin-left": "-17px", "margin-top": "-9px" }}>
-                                                        <MDBCard className="" style={{ height: '21rem', overflow: 'scroll' }}>
-                                                            <MDBCardBody className="pt-1" style={{ lineHeight: '11px', width: '112%' }}>
+                                                    <div className=''
+                                                         style={{"margin-left": "-17px", "margin-top": "-9px"}}>
+                                                        <MDBCard className=""
+                                                                 style={{height: '21rem', overflow: 'scroll'}}>
+                                                            <MDBCardBody className="pt-1"
+                                                                         style={{lineHeight: '11px', width: '112%'}}>
                                                                 <MDBTable
                                                                     small
                                                                     className="border" border="1"
-                                                                    style={{ height: '' }}
+                                                                    style={{height: ''}}
                                                                 >
                                                                     <MDBTableHead style={inputLabelWidth}>
                                                                         <tr>
@@ -333,83 +357,97 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '2%'
-                                                                            }}>Patient ID</th>
+                                                                            }}>Patient ID
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '2%'
-                                                                            }}>Age</th>
+                                                                            }}>Age
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle'
-                                                                            }}>Gender</th>
+                                                                            }}>Gender
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '20%'
-                                                                            }}>Ethnicity</th>
+                                                                            }}>Ethnicity
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '23%'
-                                                                            }}>Race</th>
+                                                                            }}>Race
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Bladder Cancer</th>
+                                                                            }}>Bladder Cancer
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>COPD</th>
+                                                                            }}>COPD
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Gastro</th>
+                                                                            }}>Gastro
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Hepatitis</th>
+                                                                            }}>Hepatitis
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Other Fracture</th>
+                                                                            }}>Other Fracture
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Creatinine Median</th>
+                                                                            }}>Creatinine Median
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle'
-                                                                            }}>Hemoglobin Median</th>
+                                                                            }}>Hemoglobin Median
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Platelets Median</th>
+                                                                            }}>Platelets Median
+                                                                            </th>
                                                                             <th style={{
                                                                                 textAlign: 'center',
                                                                                 lineHeight: 'initial',
                                                                                 'vertical-align': 'middle',
                                                                                 width: '1%'
-                                                                            }}>Bilirubintotal Median</th>
+                                                                            }}>Bilirubintotal Median
+                                                                            </th>
                                                                         </tr>
                                                                     </MDBTableHead>
                                                                     <MDBTableBody className="mb-0">
@@ -558,24 +596,27 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                             </TabPane>
                             <TabPane tab="SCA Arms" key={2}>
                                 <div className="row">
-                                    <div className="" style={{ width: '40%' }}>
+                                    <div className="" style={{width: '40%'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={inputLabel}>Study ID</label>
                                                 <input className="ant-select-selection
-ant-select-selection--single" type="text" value={ndc} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text" value={ndc} style={{padding: '0px 9px', width: '56%'}} readOnly/>
                                             </InputGroup>
-                                            <input className="clinical-input ant-select-selection ant-select-selection--single"
-                                                type="text" value='Inclusion/Exclusion Criteria' onClick={toggleInclusion} readOnly />
-                                            <InclusionExclusionCriteria relative={relative} toggleInclusion={toggleInclusion}
-                                                indicationList={indicationList}
-                                                demographicList={demographicList}
-                                                vitalList={vitalList}
+                                            <input
+                                                className="clinical-input ant-select-selection ant-select-selection--single"
+                                                type="text" value='Inclusion/Exclusion Criteria'
+                                                onClick={toggleInclusion} readOnly/>
+                                            <InclusionExclusionCriteria relative={relative}
+                                                                        toggleInclusion={toggleInclusion}
+                                                                        indicationList={indicationList}
+                                                                        demographicList={demographicList}
+                                                                        vitalList={vitalList}
 
                                             />
                                         </React.Fragment>
                                     </div>
-                                    <div className="" style={{ width: '60%', marginLeft: '-24px' }}>
+                                    <div className="" style={{width: '60%', marginLeft: '-24px'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={{
@@ -589,27 +630,28 @@ ant-select-selection--single" type="text" value={ndc} style={{ padding: '0px 9px
                                                     marginBottom: "0px"
                                                 }}>Brief Title</label>
                                                 <textarea className="ant-select-selection
-ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", height: "62px", resize: 'none' }} readOnly>{briefTitle}</textarea>
+ant-select-selection--single" style={{width: '70%', "padding-top": "0px", height: "62px", resize: 'none'}}
+                                                          readOnly>{briefTitle}</textarea>
                                             </InputGroup>
                                         </React.Fragment>
                                     </div>
                                 </div>
-                                <Row style={{ marginRight: '-6px' }}>
-                                    <Col style={{ width: '100%' }}>
+                                <Row style={{marginRight: '-6px'}}>
+                                    <Col style={{width: '100%'}}>
                                         <Card
                                             className="ant-card-small"
-                                            style={{ margin: "0 10px 10px 0" }}
+                                            style={{margin: "0 10px 10px 0"}}
                                         >
                                             <Tabs
                                                 defaultActiveKey="1"
                                                 animated={false}
                                                 tabPosition="top"
-                                                style={{ "margin-top": "-6px" }}
+                                                style={{"margin-top": "-6px"}}
                                                 className="tabCustomization"
                                             >
                                                 <TabPane tab="Set SCA Filters" key={1}>
-                                                    <div className="row" >
-                                                        <div className="" style={{ width: '100%' }}>
+                                                    <div className="row">
+                                                        <div className="" style={{width: '100%'}}>
                                                             <React.Fragment>
                                                                 <InputGroup style={inputGroup} compact>
                                                                     <label style={{
@@ -624,7 +666,13 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                         marginRight: "3px"
                                                                     }}>Comparator drug</label>
                                                                     <Select
-                                                                        style={{ width: "28%", fontWeight: '400', height: '32px', overflow: 'scroll', 'overflow-x': 'hidden' }}
+                                                                        style={{
+                                                                            width: "28%",
+                                                                            fontWeight: '400',
+                                                                            height: '32px',
+                                                                            overflow: 'scroll',
+                                                                            'overflow-x': 'hidden'
+                                                                        }}
                                                                         mode="multiple"
                                                                         defaultValue={[5, 8]}
                                                                     >
@@ -648,11 +696,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                         marginRight: "3px"
                                                                     }}>Select outcomes</label>
                                                                     <Select
-                                                                        style={{ width: "40%", fontWeight: '400', height: '32px', overflow: 'scroll', 'overflow-x': 'hidden' }}
+                                                                        style={{
+                                                                            width: "40%",
+                                                                            fontWeight: '400',
+                                                                            height: '32px',
+                                                                            overflow: 'scroll',
+                                                                            'overflow-x': 'hidden'
+                                                                        }}
                                                                         mode="multiple"
                                                                         defaultValue={['Overall Survival (OS)', 'Adverse Events (AE/SAE)']}
-                                                                    // placeholder="Overall Survival (OS) Adverse Events (AE/SAE)"
-                                                                    // maxTagCount={5}
+                                                                        // placeholder="Overall Survival (OS) Adverse Events (AE/SAE)"
+                                                                        // maxTagCount={5}
 
                                                                     >
                                                                         {outcomes.map((el) => {
@@ -676,7 +730,14 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                         marginRight: "3px"
                                                                     }}>RWE Data</label>
                                                                     <Select
-                                                                        style={{ width: "43%", fontWeight: '400', height: '32px', overflow: 'scroll', 'overflow-x': 'hidden', marginTop: "2px" }}
+                                                                        style={{
+                                                                            width: "43%",
+                                                                            fontWeight: '400',
+                                                                            height: '32px',
+                                                                            overflow: 'scroll',
+                                                                            'overflow-x': 'hidden',
+                                                                            marginTop: "2px"
+                                                                        }}
                                                                         mode="multiple"
                                                                         defaultValue={['Past Clinical Trials', 'Electronic Health Records']}
 
@@ -696,52 +757,88 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                         <div class="row">
 
                                                             <div class="col-md-7">
-                                                                <label class="p-1 mt-1 font-weight-bold text-center w-100 text-white"
-                                                                    style={{ background: "rgb(32, 56, 100)", height: "32px" }}>EHR</label>
+                                                                <label
+                                                                    class="p-1 mt-1 font-weight-bold text-center w-100 text-white"
+                                                                    style={{
+                                                                        background: "rgb(32, 56, 100)",
+                                                                        height: "32px"
+                                                                    }}>EHR</label>
 
                                                                 <div class="row align-items-center">
                                                                     <div class="col-4">
-                                                                        <label class="font-weight-bold">Patients universe:</label>
+                                                                        <label class="font-weight-bold">Patients
+                                                                            universe:</label>
                                                                         <div class="w-100"></div>
-                                                                        <label class="font-weight-bold">Filtered Patients:</label>
+                                                                        <label class="font-weight-bold">Filtered
+                                                                            Patients:</label>
                                                                     </div>
                                                                     <div class="col-2 p-1 w-100">
-                                                                        <input type="text" value='7460' />
+                                                                        <input type="text" value='7460'/>
                                                                         <div class="w-100"></div>
-                                                                        <input type="text" value='540' />
+                                                                        <input type="text" value='540'/>
                                                                     </div>
 
                                                                     <div class="col-4">
-                                                                        <svg style={{ height: '120px', marginLeft: '100px' }}>
-                                                                            <circle cx="75" cy="62" r="57" fill="#A8CAF1" />
+                                                                        <svg style={{
+                                                                            height: '120px',
+                                                                            marginLeft: '100px'
+                                                                        }}>
+                                                                            <circle cx="75" cy="62" r="57"
+                                                                                    fill="#A8CAF1"/>
                                                                         </svg>
-                                                                        <svg style={{ position: 'absolute', top: '15px', left: '8px', marginLeft: '100px', height: '200px' }}>
-                                                                            <circle cx="82" cy="47" r={volume / 2 + 7} fill="#0451AA" />
+                                                                        <svg style={{
+                                                                            position: 'absolute',
+                                                                            top: '15px',
+                                                                            left: '8px',
+                                                                            marginLeft: '100px',
+                                                                            height: '200px'
+                                                                        }}>
+                                                                            <circle cx="82" cy="47" r={volume / 2 + 7}
+                                                                                    fill="#0451AA"/>
                                                                         </svg>
                                                                     </div>
                                                                 </div>
 
 
-                                                                <label class="p-1 mt-1 font-weight-bold text-center w-100 text-white"
-                                                                    style={{ background: "rgb(32, 56, 100)", height: "32px" }}>CT</label>
+                                                                <label
+                                                                    class="p-1 mt-1 font-weight-bold text-center w-100 text-white"
+                                                                    style={{
+                                                                        background: "rgb(32, 56, 100)",
+                                                                        height: "32px"
+                                                                    }}>CT</label>
                                                                 <div class="row align-items-center">
                                                                     <div class="col-4">
-                                                                        <label class="font-weight-bold">Clinical Trial Universe:</label>
+                                                                        <label class="font-weight-bold">Clinical Trial
+                                                                            Universe:</label>
                                                                         <div class="w-100"></div>
-                                                                        <label class="font-weight-bold">Filtered Clinical Trials:</label>
+                                                                        <label class="font-weight-bold">Filtered
+                                                                            Clinical Trials:</label>
                                                                     </div>
                                                                     <div class="col-2 p-1 w-100">
-                                                                        <input type="text" value='75' />
+                                                                        <input type="text" value='75'/>
                                                                         <div class="w-100"></div>
-                                                                        <input type="text" value='53' />
+                                                                        <input type="text" value='53'/>
                                                                     </div>
                                                                     <div class="col-4">
-                                                                        <svg style={{ margin: '0', height: '122px', marginLeft: '-26px' }}>
-                                                                            <circle cx="200" cy="64" r="57" fill="#F59673" />
+                                                                        <svg style={{
+                                                                            margin: '0',
+                                                                            height: '122px',
+                                                                            marginLeft: '-26px'
+                                                                        }}>
+                                                                            <circle cx="200" cy="64" r="57"
+                                                                                    fill="#F59673"/>
                                                                         </svg>
 
-                                                                        <svg style={{ position: 'absolute', top: '-1px', left: '15px', marginLeft: '-26px', height: '200px' }}>
-                                                                            <circle cx="200" cy="65" r={volume / 1.5 - 9} fill="#E9470A" />
+                                                                        <svg style={{
+                                                                            position: 'absolute',
+                                                                            top: '-1px',
+                                                                            left: '15px',
+                                                                            marginLeft: '-26px',
+                                                                            height: '200px'
+                                                                        }}>
+                                                                            <circle cx="200" cy="65"
+                                                                                    r={volume / 1.5 - 9}
+                                                                                    fill="#E9470A"/>
                                                                         </svg>
                                                                     </div>
                                                                 </div>
@@ -749,40 +846,61 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
 
                                                             <div class="col-md-5">
                                                                 <React.Fragment>
-                                                                    <Row style={{ marginRight: '12px', marginLeft: '-11px', "font-weight": "bold" }}>
-                                                                        <Col style={{ width: '100%' }}>
+                                                                    <Row style={{
+                                                                        marginRight: '12px',
+                                                                        marginLeft: '-11px',
+                                                                        "font-weight": "bold"
+                                                                    }}>
+                                                                        <Col style={{width: '100%'}}>
                                                                             <Card
                                                                                 className="ant-card-small"
-                                                                                style={{ margin: "0 10px 10px 0" }}
+                                                                                style={{margin: "0 10px 10px 0"}}
                                                                             >
                                                                                 <Tabs
                                                                                     defaultActiveKey="1"
                                                                                     animated={false}
                                                                                     tabPosition="top"
                                                                                     className="tabCustomization"
-                                                                                    style={{ "margin-top": "-6px" }}
+                                                                                    style={{"margin-top": "-6px"}}
 
                                                                                 >
-                                                                                    <TabPane tab="Match SCA with RCT I/E criteria" key={1}>
-                                                                                        <MDBRow className="mt-2 d-flex justify-content-around">
+                                                                                    <TabPane
+                                                                                        tab="Match SCA with RCT I/E criteria"
+                                                                                        key={1}>
+                                                                                        <MDBRow
+                                                                                            className="mt-2 d-flex justify-content-around">
                                                                                             <MDBCol>
-                                                                                                <MDBCard className="" style={{ height: '23rem', "margin-left": "-12px" }}>
-                                                                                                    <MDBCardBody style={{ overflowY: 'scroll', "margin-top": "-25px" }}>
-                                                                                                        <MDBCardText className="d-flex flex-column mt-2" >
-                                                                                                            <InputGroup style={inputGroup} compact>
-                                                                                                                <label style={{
-                                                                                                                    width: "40%",
-                                                                                                                    background: "rgb(32, 56, 100)",
-                                                                                                                    color: "#fff",
-                                                                                                                    fontWeight: "bold",
-                                                                                                                    textAlign: "center",
-                                                                                                                    height: "32px",
-                                                                                                                    padding: "4px 8px",
-                                                                                                                    margin: "1px",
-                                                                                                                    marginLeft: "-20px",
-                                                                                                                    "margin-top": "9px"
-                                                                                                                }}>Matching Caliper(%)</label>
-                                                                                                                <div style={{ width: '54%' }}>
+                                                                                                <MDBCard className=""
+                                                                                                         style={{
+                                                                                                             height: '23rem',
+                                                                                                             "margin-left": "-12px"
+                                                                                                         }}>
+                                                                                                    <MDBCardBody
+                                                                                                        style={{
+                                                                                                            overflowY: 'scroll',
+                                                                                                            "margin-top": "-25px"
+                                                                                                        }}>
+                                                                                                        <MDBCardText
+                                                                                                            className="d-flex flex-column mt-2">
+                                                                                                            <InputGroup
+                                                                                                                style={inputGroup}
+                                                                                                                compact>
+                                                                                                                <label
+                                                                                                                    style={{
+                                                                                                                        width: "40%",
+                                                                                                                        background: "rgb(32, 56, 100)",
+                                                                                                                        color: "#fff",
+                                                                                                                        fontWeight: "bold",
+                                                                                                                        textAlign: "center",
+                                                                                                                        height: "32px",
+                                                                                                                        padding: "4px 8px",
+                                                                                                                        margin: "1px",
+                                                                                                                        marginLeft: "-20px",
+                                                                                                                        "margin-top": "9px"
+                                                                                                                    }}>Matching
+                                                                                                                    Caliper(%)</label>
+                                                                                                                <div
+                                                                                                                    style={{width: '54%'}}>
                                                                                                                     {/* <Slider
                                                                                                                         value={volume}
                                                                                                                         tooltip={false}
@@ -790,7 +908,14 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                         onChange={(e) => setVolume(e)}
                                                                                                                     /> */}
                                                                                                                 </div>
-                                                                                                                <input style={{ width: '36px', 'margin-top': '12px', 'margin-left': '5px', border: 'antiquewhite' }} value={volume + '%'}
+                                                                                                                <input
+                                                                                                                    style={{
+                                                                                                                        width: '36px',
+                                                                                                                        'margin-top': '12px',
+                                                                                                                        'margin-left': '5px',
+                                                                                                                        border: 'antiquewhite'
+                                                                                                                    }}
+                                                                                                                    value={volume + '%'}
                                                                                                                 ></input>
                                                                                                             </InputGroup>
                                                                                                             <MDBBtn
@@ -800,10 +925,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleIndiDisplay}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Indication Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!indiDisplay ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Indication
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!indiDisplay ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -812,55 +944,81 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                     id={indication.id}
                                                                                                                     className="m-0 p-1"
                                                                                                                     color="text-white"
-                                                                                                                    style={{ display: indiDisplay ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                    style={{
+                                                                                                                        display: indiDisplay ? 'block' : 'none',
+                                                                                                                        border: 'antiquewhite'
+                                                                                                                    }}
                                                                                                                 >
-                                                                                                                    <div className="d-flex justify-content-around align-items-center">
+                                                                                                                    <div
+                                                                                                                        className="d-flex justify-content-around align-items-center">
 
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={indication.inclusion}
-                                                                                                                            style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '115px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {IncExcList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={indication.value}
-                                                                                                                            style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '155px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {IndicationList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={indication.condition}
-                                                                                                                            style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '61px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {ConditionList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         {indication.value === "Stage of cancer" ? (
-                                                                                                                            <input style={{ width: '61px' }} value={indication.yesorno}
+                                                                                                                            <input
+                                                                                                                                style={{width: '61px'}}
+                                                                                                                                value={indication.yesorno}
                                                                                                                             ></input>
                                                                                                                         ) : (
                                                                                                                             <Select
                                                                                                                                 id="clinical-select"
                                                                                                                                 defaultValue={indication.yesorno}
-                                                                                                                                style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                                style={{
+                                                                                                                                    textAlign: 'left',
+                                                                                                                                    width: '61px'
+                                                                                                                                }}
                                                                                                                             >
                                                                                                                                 {YesNoList.map((ent) => (
-                                                                                                                                    <Option value={ent.id}>{ent.value}</Option>
+                                                                                                                                    <Option
+                                                                                                                                        value={ent.id}>{ent.value}</Option>
                                                                                                                                 ))}
                                                                                                                             </Select>
                                                                                                                         )}
                                                                                                                     </div>
                                                                                                                 </button>
                                                                                                             ))) : (
-                                                                                                                <Loader type="Grid" height={30} width={30} color="#00BFFF" />
+                                                                                                                <Loader
+                                                                                                                    type="Grid"
+                                                                                                                    height={30}
+                                                                                                                    width={30}
+                                                                                                                    color="#00BFFF"/>
                                                                                                             )}
 
                                                                                                             <a style={{
@@ -869,7 +1027,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: indiDisplay ? 'block' : 'none'
-                                                                                                            }}>Add new Indication criteria
+                                                                                                            }}>Add new
+                                                                                                                Indication
+                                                                                                                criteria
                                                                                                             </a>
 
 
@@ -879,10 +1039,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleDemoDisplay}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Demographics Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!demoDisplay ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Demographics
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!demoDisplay ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -892,47 +1059,69 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                     color="text-white"
                                                                                                                     outline
                                                                                                                     small
-                                                                                                                    style={{ display: demoDisplay ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                    style={{
+                                                                                                                        display: demoDisplay ? 'block' : 'none',
+                                                                                                                        border: 'antiquewhite'
+                                                                                                                    }}
                                                                                                                 >
-                                                                                                                    <div className="d-flex justify-content-around align-items-center">
+                                                                                                                    <div
+                                                                                                                        className="d-flex justify-content-around align-items-center">
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={demo.inclusion}
-                                                                                                                            style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '115px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {IncExcList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={demo.value}
-                                                                                                                            style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '155px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {DemographicVarList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={demo.condition}
-                                                                                                                            style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '61px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {ConditionList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         {demo.value === 'Age' ? (
-                                                                                                                            <input style={{ width: '61px' }} value={demo.genderListvalue}
+                                                                                                                            <input
+                                                                                                                                style={{width: '61px'}}
+                                                                                                                                value={demo.genderListvalue}
                                                                                                                             ></input>
                                                                                                                         ) : (
                                                                                                                             <Select
                                                                                                                                 id="clinical-select"
                                                                                                                                 defaultValue={demo.genderListvalue}
-                                                                                                                                style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                                style={{
+                                                                                                                                    textAlign: 'left',
+                                                                                                                                    width: '61px'
+                                                                                                                                }}
                                                                                                                             >
                                                                                                                                 {DemographicGenderList.map((ent) => (
-                                                                                                                                    <Option value={ent.id}>{ent.value}</Option>
+                                                                                                                                    <Option
+                                                                                                                                        value={ent.id}>{ent.value}</Option>
                                                                                                                                 ))}
                                                                                                                             </Select>
                                                                                                                         )}
@@ -940,7 +1129,11 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
 
                                                                                                                 </button>
                                                                                                             ))) : (
-                                                                                                                <Loader type="Grid" height={30} width={30} color="#00BFFF" />
+                                                                                                                <Loader
+                                                                                                                    type="Grid"
+                                                                                                                    height={30}
+                                                                                                                    width={30}
+                                                                                                                    color="#00BFFF"/>
                                                                                                             )}
 
                                                                                                             <a style={{
@@ -949,7 +1142,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: demoDisplay ? 'block' : 'none'
-                                                                                                            }}>Add new demographic criteria
+                                                                                                            }}>Add new
+                                                                                                                demographic
+                                                                                                                criteria
                                                                                                             </a>
                                                                                                             <MDBBtn
                                                                                                                 className="m-0 p-1 mt-2"
@@ -957,10 +1152,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleVitalDisplay}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Vital Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!vitalDisplay ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Vital
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!vitalDisplay ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -970,45 +1172,67 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                     color="text-white"
                                                                                                                     outline
                                                                                                                     small
-                                                                                                                    style={{ display: vitalDisplay ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                    style={{
+                                                                                                                        display: vitalDisplay ? 'block' : 'none',
+                                                                                                                        border: 'antiquewhite'
+                                                                                                                    }}
                                                                                                                 >
-                                                                                                                    <div className="d-flex justify-content-around align-items-center">
+                                                                                                                    <div
+                                                                                                                        className="d-flex justify-content-around align-items-center">
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={vital.inclusion}
-                                                                                                                            style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '115px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {IncExcList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
                                                                                                                             defaultValue={vital.value}
-                                                                                                                            style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '155px'
+                                                                                                                            }}
                                                                                                                         >
                                                                                                                             {VitalsList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
                                                                                                                         <Select
                                                                                                                             id="clinical-select"
-                                                                                                                            style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                            style={{
+                                                                                                                                textAlign: 'left',
+                                                                                                                                width: '61px'
+                                                                                                                            }}
                                                                                                                             defaultValue={vital.condition}
                                                                                                                         >
                                                                                                                             {ConditionList.map((ent) => {
-                                                                                                                                return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                                return <Option
+                                                                                                                                    value={ent.id}>{ent.value}</Option>;
                                                                                                                             })}
                                                                                                                         </Select>
 
-                                                                                                                        <input style={{ width: '61px' }} value={vital.genderListvalue}
+                                                                                                                        <input
+                                                                                                                            style={{width: '61px'}}
+                                                                                                                            value={vital.genderListvalue}
                                                                                                                         ></input>
                                                                                                                     </div>
 
 
                                                                                                                 </button>
                                                                                                             ))) : (
-                                                                                                                <Loader type="Grid" height={30} width={30} color="#00BFFF" />
+                                                                                                                <Loader
+                                                                                                                    type="Grid"
+                                                                                                                    height={30}
+                                                                                                                    width={30}
+                                                                                                                    color="#00BFFF"/>
                                                                                                             )}
 
                                                                                                             <a style={{
@@ -1017,7 +1241,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: vitalDisplay ? 'block' : 'none'
-                                                                                                            }}>Add new vital criteria
+                                                                                                            }}>Add new
+                                                                                                                vital
+                                                                                                                criteria
                                                                                                             </a>
                                                                                                         </MDBCardText>
                                                                                                     </MDBCardBody>
@@ -1025,26 +1251,43 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                             </MDBCol>
                                                                                         </MDBRow>
                                                                                     </TabPane>
-                                                                                    <TabPane tab="Set different SCA I/E criteria" key={2}>
-                                                                                        <MDBRow className="mt-2 d-flex justify-content-around">
+                                                                                    <TabPane
+                                                                                        tab="Set different SCA I/E criteria"
+                                                                                        key={2}>
+                                                                                        <MDBRow
+                                                                                            className="mt-2 d-flex justify-content-around">
                                                                                             <MDBCol>
-                                                                                                <MDBCard className="" style={{ height: '23rem', "margin-left": "-12px" }}>
-                                                                                                    <MDBCardBody style={{ overflowY: 'scroll', "margin-top": "-25px" }}>
-                                                                                                        <MDBCardText className="d-flex flex-column mt-2" >
-                                                                                                            <InputGroup style={inputGroup} compact>
-                                                                                                                <label style={{
-                                                                                                                    width: "40%",
-                                                                                                                    background: "rgb(32, 56, 100)",
-                                                                                                                    color: "#fff",
-                                                                                                                    fontWeight: "bold",
-                                                                                                                    textAlign: "center",
-                                                                                                                    height: "32px",
-                                                                                                                    padding: "4px 8px",
-                                                                                                                    margin: "1px",
-                                                                                                                    marginLeft: "-20px",
-                                                                                                                    "margin-top": "9px"
-                                                                                                                }}>Matching Caliper(%)</label>
-                                                                                                                <div style={{ width: '54%' }}>
+                                                                                                <MDBCard className=""
+                                                                                                         style={{
+                                                                                                             height: '23rem',
+                                                                                                             "margin-left": "-12px"
+                                                                                                         }}>
+                                                                                                    <MDBCardBody
+                                                                                                        style={{
+                                                                                                            overflowY: 'scroll',
+                                                                                                            "margin-top": "-25px"
+                                                                                                        }}>
+                                                                                                        <MDBCardText
+                                                                                                            className="d-flex flex-column mt-2">
+                                                                                                            <InputGroup
+                                                                                                                style={inputGroup}
+                                                                                                                compact>
+                                                                                                                <label
+                                                                                                                    style={{
+                                                                                                                        width: "40%",
+                                                                                                                        background: "rgb(32, 56, 100)",
+                                                                                                                        color: "#fff",
+                                                                                                                        fontWeight: "bold",
+                                                                                                                        textAlign: "center",
+                                                                                                                        height: "32px",
+                                                                                                                        padding: "4px 8px",
+                                                                                                                        margin: "1px",
+                                                                                                                        marginLeft: "-20px",
+                                                                                                                        "margin-top": "9px"
+                                                                                                                    }}>Matching
+                                                                                                                    Caliper(%)</label>
+                                                                                                                <div
+                                                                                                                    style={{width: '54%'}}>
                                                                                                                     {/* <Slider
                                                                                                                         value={volume}
                                                                                                                         tooltip={false}
@@ -1052,7 +1295,14 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                         onChange={(e) => setVolume(e)}
                                                                                                                     /> */}
                                                                                                                 </div>
-                                                                                                                <input style={{ width: '36px', 'margin-top': '12px', 'margin-left': '5px', border: 'antiquewhite' }} value={volume + '%'}
+                                                                                                                <input
+                                                                                                                    style={{
+                                                                                                                        width: '36px',
+                                                                                                                        'margin-top': '12px',
+                                                                                                                        'margin-left': '5px',
+                                                                                                                        border: 'antiquewhite'
+                                                                                                                    }}
+                                                                                                                    value={volume + '%'}
                                                                                                                 ></input>
                                                                                                             </InputGroup>
                                                                                                             <MDBBtn
@@ -1062,10 +1312,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleIndiDisplay2}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Indication Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!indiDisplay2 ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Indication
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!indiDisplay2 ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -1075,45 +1332,65 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 color="text-white"
                                                                                                                 outline
                                                                                                                 small
-                                                                                                                style={{ display: indiDisplay2 ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                style={{
+                                                                                                                    display: indiDisplay2 ? 'block' : 'none',
+                                                                                                                    border: 'antiquewhite'
+                                                                                                                }}
                                                                                                             >
-                                                                                                                <div className="d-flex justify-content-around align-items-center">
+                                                                                                                <div
+                                                                                                                    className="d-flex justify-content-around align-items-center">
 
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '115px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {IncExcList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '155px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {IndicationList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '61px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {ConditionList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })
                                                                                                                         }
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '61px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {YesNoList.map((ent) => (
-                                                                                                                            <Option value={ent.id}>{ent.value}</Option>
+                                                                                                                            <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>
                                                                                                                         ))}
                                                                                                                     </Select>
 
@@ -1126,7 +1403,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: indiDisplay2 ? 'block' : 'none'
-                                                                                                            }}>Add new Indication criteria
+                                                                                                            }}>Add new
+                                                                                                                Indication
+                                                                                                                criteria
                                                                                                             </a>
 
 
@@ -1136,10 +1415,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleDemoDisplay2}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Demographics Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!demoDisplay2 ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Demographics
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!demoDisplay2 ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -1149,43 +1435,63 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 color="text-white"
                                                                                                                 outline
                                                                                                                 small
-                                                                                                                style={{ display: demoDisplay2 ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                style={{
+                                                                                                                    display: demoDisplay2 ? 'block' : 'none',
+                                                                                                                    border: 'antiquewhite'
+                                                                                                                }}
                                                                                                             >
-                                                                                                                <div className="d-flex justify-content-around align-items-center">
+                                                                                                                <div
+                                                                                                                    className="d-flex justify-content-around align-items-center">
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '115px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {IncExcList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '155px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {DemographicVarList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '61px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {ConditionList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '61px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {DemographicGenderList.map((ent) => (
-                                                                                                                            <Option value={ent.id}>{ent.value}</Option>
+                                                                                                                            <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>
                                                                                                                         ))}
                                                                                                                     </Select>
 
@@ -1199,7 +1505,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: demoDisplay2 ? 'block' : 'none'
-                                                                                                            }}>Add new demographic criteria
+                                                                                                            }}>Add new
+                                                                                                                demographic
+                                                                                                                criteria
                                                                                                             </a>
                                                                                                             <MDBBtn
                                                                                                                 className="m-0 p-1 mt-2"
@@ -1207,10 +1515,17 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 outline
                                                                                                                 onClick={toggleVitalDisplay2}
                                                                                                             >
-                                                                                                                <MDBRow className="d-flex justify-content-end">
-                                                                                                                    <MDBCol size="10" style={inputLabelWidth}>Vital Criteria</MDBCol>
-                                                                                                                    <MDBCol size="2" style={inputLabelWidth}>
-                                                                                                                        <MDBIcon icon={!vitalDisplay2 ? 'chevron-right' : 'chevron-down'} />
+                                                                                                                <MDBRow
+                                                                                                                    className="d-flex justify-content-end">
+                                                                                                                    <MDBCol
+                                                                                                                        size="10"
+                                                                                                                        style={inputLabelWidth}>Vital
+                                                                                                                        Criteria</MDBCol>
+                                                                                                                    <MDBCol
+                                                                                                                        size="2"
+                                                                                                                        style={inputLabelWidth}>
+                                                                                                                        <MDBIcon
+                                                                                                                            icon={!vitalDisplay2 ? 'chevron-right' : 'chevron-down'}/>
                                                                                                                     </MDBCol>
                                                                                                                 </MDBRow>
                                                                                                             </MDBBtn>
@@ -1219,38 +1534,56 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 color="text-white"
                                                                                                                 outline
                                                                                                                 small
-                                                                                                                style={{ display: vitalDisplay2 ? 'block' : 'none', border: 'antiquewhite' }}
+                                                                                                                style={{
+                                                                                                                    display: vitalDisplay2 ? 'block' : 'none',
+                                                                                                                    border: 'antiquewhite'
+                                                                                                                }}
                                                                                                             >
-                                                                                                                <div className="d-flex justify-content-around align-items-center">
+                                                                                                                <div
+                                                                                                                    className="d-flex justify-content-around align-items-center">
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '115px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '115px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {IncExcList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
                                                                                                                         defaultValue={''}
-                                                                                                                        style={{ textAlign: 'left', width: '155px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '155px'
+                                                                                                                        }}
                                                                                                                     >
                                                                                                                         {VitalsList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
                                                                                                                     <Select
                                                                                                                         id="clinical-select"
-                                                                                                                        style={{ textAlign: 'left', width: '61px' }}
+                                                                                                                        style={{
+                                                                                                                            textAlign: 'left',
+                                                                                                                            width: '61px'
+                                                                                                                        }}
                                                                                                                         defaultValue={''}
                                                                                                                     >
                                                                                                                         {ConditionList.map((ent) => {
-                                                                                                                            return <Option value={ent.id}>{ent.value}</Option>;
+                                                                                                                            return <Option
+                                                                                                                                value={ent.id}>{ent.value}</Option>;
                                                                                                                         })}
                                                                                                                     </Select>
 
-                                                                                                                    <input style={{ width: '61px' }} value={''}
+                                                                                                                    <input
+                                                                                                                        style={{width: '61px'}}
+                                                                                                                        value={''}
                                                                                                                     ></input>
                                                                                                                 </div>
 
@@ -1263,7 +1596,9 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                 cursor: 'pointer',
                                                                                                                 color: 'blue',
                                                                                                                 display: vitalDisplay2 ? 'block' : 'none'
-                                                                                                            }}>Add new vital criteria
+                                                                                                            }}>Add new
+                                                                                                                vital
+                                                                                                                criteria
                                                                                                             </a>
                                                                                                         </MDBCardText>
                                                                                                     </MDBCardBody>
@@ -1289,61 +1624,89 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                 </TabPane>
 
                                                 <TabPane tab="Build SCA Cohort" key={2}>
-                                                    <Row style={{ marginRight: '12px', marginLeft: '-11px', "font-weight": "bold" }}>
-                                                        <Col style={{ width: '100%' }}>
+                                                    <Row style={{
+                                                        marginRight: '12px',
+                                                        marginLeft: '-11px',
+                                                        "font-weight": "bold"
+                                                    }}>
+                                                        <Col style={{width: '100%'}}>
                                                             <Card
                                                                 className="ant-card-small"
-                                                                style={{ margin: "0 10px 10px 0" }}
+                                                                style={{margin: "0 10px 10px 0"}}
                                                             >
                                                                 <Tabs
                                                                     defaultActiveKey="1"
                                                                     animated={false}
                                                                     tabPosition="top"
                                                                     className="tabCustomization"
-                                                                    style={{ "margin-top": "-6px" }}
+                                                                    style={{"margin-top": "-6px"}}
 
                                                                 >
-                                                                    <TabPane tab="Matched Clinical Trials Cohort" key={1}>
-                                                                        <div className='' style={{ "margin-left": "-17px", "margin-top": "-17px" }}>
-                                                                            <MDBRow className="mt-1 d-flex justify-content-around">
-                                                                                <MDBCol style={{ width: '50%' }}>
-                                                                                    <MDBCard className="" style={{ height: '15.5rem' }}>
-                                                                                        <MDBCardBody className="pt-1" style={{ lineHeight: '11px', width: '103%' }}>
+                                                                    <TabPane tab="Matched Clinical Trials Cohort"
+                                                                             key={1}>
+                                                                        <div className='' style={{
+                                                                            "margin-left": "-17px",
+                                                                            "margin-top": "-17px"
+                                                                        }}>
+                                                                            <MDBRow
+                                                                                className="mt-1 d-flex justify-content-around">
+                                                                                <MDBCol style={{width: '50%'}}>
+                                                                                    <MDBCard className=""
+                                                                                             style={{height: '15.5rem'}}>
+                                                                                        <MDBCardBody className="pt-1"
+                                                                                                     style={{
+                                                                                                         lineHeight: '11px',
+                                                                                                         width: '103%'
+                                                                                                     }}>
                                                                                             <MDBTable
                                                                                                 small
-                                                                                                className="border" border="1"
-                                                                                                style={{ height: '10rem' }}
+                                                                                                className="border"
+                                                                                                border="1"
+                                                                                                style={{height: '10rem'}}
                                                                                             >
-                                                                                                <MDBTableHead style={inputLabelWidth}>
+                                                                                                <MDBTableHead
+                                                                                                    style={inputLabelWidth}>
                                                                                                     <tr>
                                                                                                         <th style={{
-                                                                                                            width: '4%', 'vertical-align': 'middle',
+                                                                                                            width: '4%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Study ID</th>
+                                                                                                        }}>Study ID
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Arms</th>
+                                                                                                        }}>Arms
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '8%', 'vertical-align': 'middle',
+                                                                                                            width: '8%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Matched Patients</th>
+                                                                                                        }}>Matched
+                                                                                                            Patients
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Match %</th>
+                                                                                                        }}>Match %
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>View</th>
+                                                                                                        }}>View
+                                                                                                        </th>
                                                                                                     </tr>
                                                                                                 </MDBTableHead>
-                                                                                                <MDBTableBody className="mb-0">
+                                                                                                <MDBTableBody
+                                                                                                    className="mb-0">
                                                                                                     {clinicalTrialData ? (
                                                                                                         clinicalTrialData.rows.map((row, index) => {
                                                                                                             return (
@@ -1394,7 +1757,13 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                                         }}
                                                                                                                     >
                                                                                                                         <MDBInput
-                                                                                                                            style={{ height: '1.2rem', width: '1.2rem', textAlign: 'center', 'vertical-align': 'middle', 'margin-left': '0px' }}
+                                                                                                                            style={{
+                                                                                                                                height: '1.2rem',
+                                                                                                                                width: '1.2rem',
+                                                                                                                                textAlign: 'center',
+                                                                                                                                'vertical-align': 'middle',
+                                                                                                                                'margin-left': '0px'
+                                                                                                                            }}
                                                                                                                             onClick={() => onClick(index)}
                                                                                                                             checked={radio === index ? true : false}
                                                                                                                             label=""
@@ -1408,10 +1777,15 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                                             );
                                                                                                         })
                                                                                                     ) : (
-                                                                                                        <div className="loader">Loading...</div>
+                                                                                                        <div
+                                                                                                            className="loader">Loading...</div>
                                                                                                     )}
-                                                                                                    <CTSCA1display CTSCAdisplay1={CTSCAdisplay1} toggleCTSCA1={toggleCTSCA1} />
-                                                                                                    <CTSCA2display CTSCAdisplay2={CTSCAdisplay2} toggleCTSCA2={toggleCTSCA2} />
+                                                                                                    <CTSCA1display
+                                                                                                        CTSCAdisplay1={CTSCAdisplay1}
+                                                                                                        toggleCTSCA1={toggleCTSCA1}/>
+                                                                                                    <CTSCA2display
+                                                                                                        CTSCAdisplay2={CTSCAdisplay2}
+                                                                                                        toggleCTSCA2={toggleCTSCA2}/>
                                                                                                 </MDBTableBody>
                                                                                             </MDBTable>
                                                                                             <a style={{
@@ -1427,97 +1801,154 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                         </MDBCardBody>
                                                                                     </MDBCard>
                                                                                 </MDBCol>
-                                                                                <MDBCol style={{ width: '50%', marginLeft: '-41px' }}>
+                                                                                <MDBCol style={{
+                                                                                    width: '50%',
+                                                                                    marginLeft: '-41px'
+                                                                                }}>
                                                                                     <React.Fragment>
-                                                                                        <InputGroup style={inputGroup} compact>
-                                                                                            <label style={inputLabel}>Study ID</label>
+                                                                                        <InputGroup style={inputGroup}
+                                                                                                    compact>
+                                                                                            <label style={inputLabel}>Study
+                                                                                                ID</label>
                                                                                             <input className="ant-select-selection
-ant-select-selection--single" type="text" value={'NCT00645593'} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text" value={'NCT00645593'} style={{padding: '0px 9px', width: '56%'}} readOnly/>
                                                                                         </InputGroup>
-                                                                                        <InputGroup style={inputGroup} compact>
-                                                                                            <label style={inputLabel}>Brief Title</label>
+                                                                                        <InputGroup style={inputGroup}
+                                                                                                    compact>
+                                                                                            <label style={inputLabel}>Brief
+                                                                                                Title</label>
                                                                                             <textarea className="ant-select-selection
-ant-select-selection--single" style={{ width: '56%', "padding-top": "0px", height: "62px", resize: 'none' }} readOnly>{'Study of Gemcitabine and Cisplatin With or Without Cetuximab in Urothelial Cancer'}</textarea>
+ant-select-selection--single" style={{width: '56%', "padding-top": "0px", height: "62px", resize: 'none'}}
+                                                                                                      readOnly>{'Study of Gemcitabine and Cisplatin With or Without Cetuximab in Urothelial Cancer'}</textarea>
                                                                                         </InputGroup>
-                                                                                        <InputGroup style={inputGroup} compact>
-                                                                                            <label style={inputLabel}>Intervention Arm</label>
+                                                                                        <InputGroup style={inputGroup}
+                                                                                                    compact>
+                                                                                            <label style={inputLabel}>Intervention
+                                                                                                Arm</label>
                                                                                             <input className="ant-select-selection
-ant-select-selection--single" type="text" value={radio === 0 ? 'Cetuximab, Gemcitabine and Cisplatin' : 'Gemcitabine and Cisplatin'} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text"
+                                                                                                   value={radio === 0 ? 'Cetuximab, Gemcitabine and Cisplatin' : 'Gemcitabine and Cisplatin'}
+                                                                                                   style={{
+                                                                                                       padding: '0px 9px',
+                                                                                                       width: '56%'
+                                                                                                   }} readOnly/>
                                                                                         </InputGroup>
-                                                                                        <InputGroup style={inputGroup} compact>
-                                                                                            <label style={inputLabel}>Sponsor</label>
+                                                                                        <InputGroup style={inputGroup}
+                                                                                                    compact>
+                                                                                            <label
+                                                                                                style={inputLabel}>Sponsor</label>
                                                                                             <input className="ant-select-selection
-ant-select-selection--single" type="text" value={'University of Michigan Rogel Cancer Center'} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text" value={'University of Michigan Rogel Cancer Center'} style={{
+                                                                                                padding: '0px 9px',
+                                                                                                width: '56%'
+                                                                                            }} readOnly/>
                                                                                         </InputGroup>
-                                                                                        <InputGroup style={inputGroup} compact>
-                                                                                            <label style={inputLabel}>Investigator</label>
+                                                                                        <InputGroup style={inputGroup}
+                                                                                                    compact>
+                                                                                            <label
+                                                                                                style={inputLabel}>Investigator</label>
                                                                                             <input className="ant-select-selection
-ant-select-selection--single" type="text" value={'Maha Hussain, M.D.'} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text" value={'Maha Hussain, M.D.'} style={{padding: '0px 9px', width: '56%'}}
+                                                                                                   readOnly/>
                                                                                         </InputGroup>
                                                                                         <input className="ant-select-selection
 ant-select-selection--single" style={{
-                                                                                                cursor: 'pointer',
-                                                                                                color: 'blue',
-                                                                                                "text-decoration": "underline",
-                                                                                                padding: '4px 8px', width: '95%',
-                                                                                                height: "32px",
-                                                                                                textAlign: 'right',
-                                                                                                margin: '1px',
-                                                                                                border: 'antiquewhite',
-                                                                                                marginLeft: '23px'
-                                                                                            }} type="text" value='Inclusion/Exclusion Criteria' onClick={toggleExclusion} readOnly />
-                                                                                        <MatchClinicalInclusion primary={primary} toggleExclusion={toggleExclusion} />
+                                                                                            cursor: 'pointer',
+                                                                                            color: 'blue',
+                                                                                            "text-decoration": "underline",
+                                                                                            padding: '4px 8px',
+                                                                                            width: '95%',
+                                                                                            height: "32px",
+                                                                                            textAlign: 'right',
+                                                                                            margin: '1px',
+                                                                                            border: 'antiquewhite',
+                                                                                            marginLeft: '23px'
+                                                                                        }} type="text"
+                                                                                               value='Inclusion/Exclusion Criteria'
+                                                                                               onClick={toggleExclusion}
+                                                                                               readOnly/>
+                                                                                        <MatchClinicalInclusion
+                                                                                            primary={primary}
+                                                                                            toggleExclusion={toggleExclusion}/>
                                                                                     </React.Fragment>
                                                                                 </MDBCol>
                                                                             </MDBRow>
                                                                         </div>
                                                                     </TabPane>
                                                                     <TabPane tab="Matched EHR Cohort" key={2}>
-                                                                        <div className='' style={{ "margin-left": "-17px", "margin-top": "-17px" }}>
-                                                                            <MDBRow className="mt-1 d-flex justify-content-around">
-                                                                                <MDBCol >
-                                                                                    <MDBCard className="" style={{ height: '19rem', overflow: 'scroll', 'overflow-x': 'hidden' }}>
-                                                                                        <MDBCardBody className="pt-1" style={{ lineHeight: '11px', width: '103%' }}>
+                                                                        <div className='' style={{
+                                                                            "margin-left": "-17px",
+                                                                            "margin-top": "-17px"
+                                                                        }}>
+                                                                            <MDBRow
+                                                                                className="mt-1 d-flex justify-content-around">
+                                                                                <MDBCol>
+                                                                                    <MDBCard className="" style={{
+                                                                                        height: '19rem',
+                                                                                        overflow: 'scroll',
+                                                                                        'overflow-x': 'hidden'
+                                                                                    }}>
+                                                                                        <MDBCardBody className="pt-1"
+                                                                                                     style={{
+                                                                                                         lineHeight: '11px',
+                                                                                                         width: '103%'
+                                                                                                     }}>
                                                                                             <MDBTable
                                                                                                 small
-                                                                                                className="border" border="1"
-                                                                                                style={{ height: '10rem' }}
+                                                                                                className="border"
+                                                                                                border="1"
+                                                                                                style={{height: '10rem'}}
                                                                                             >
-                                                                                                <MDBTableHead style={inputLabelWidth}>
+                                                                                                <MDBTableHead
+                                                                                                    style={inputLabelWidth}>
                                                                                                     <tr>
                                                                                                         <th style={{
-                                                                                                            width: '4%', 'vertical-align': 'middle',
+                                                                                                            width: '4%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Cohort Rank</th>
+                                                                                                        }}>Cohort Rank
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Matched Patients</th>
+                                                                                                        }}>Matched
+                                                                                                            Patients
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '4%', 'vertical-align': 'middle',
+                                                                                                            width: '4%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Match %</th>
+                                                                                                        }}>Match %
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Sites</th>
+                                                                                                        }}>Sites
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Years Range</th>
+                                                                                                        }}>Years Range
+                                                                                                        </th>
                                                                                                         <th style={{
-                                                                                                            width: '5%', 'vertical-align': 'middle',
+                                                                                                            width: '5%',
+                                                                                                            'vertical-align': 'middle',
                                                                                                             textAlign: 'center',
                                                                                                             lineHeight: 'initial'
-                                                                                                        }}>Select</th>
+                                                                                                        }}>Select
+                                                                                                        </th>
                                                                                                     </tr>
                                                                                                 </MDBTableHead>
-                                                                                                <MDBTableBody className="mb-0">
+                                                                                                <MDBTableBody
+                                                                                                    className="mb-0">
                                                                                                     {EHRData ? (
                                                                                                         EHRData.rows.map((row, index) => {
                                                                                                             let bcolor = row.perc > 89 && row.perc < 100 ? 'green' : null || row.perc > 80 && row.perc < 89 ? 'orange' : null || row.perc > 0 && row.perc < 79 ? 'red' : null
@@ -1580,7 +2011,13 @@ ant-select-selection--single" style={{
                                                                                                                         }}
                                                                                                                     >
                                                                                                                         <MDBInput
-                                                                                                                            style={{ height: '1.2rem', width: '1.2rem', textAlign: 'center', 'vertical-align': 'middle', 'margin-left': '38px' }}
+                                                                                                                            style={{
+                                                                                                                                height: '1.2rem',
+                                                                                                                                width: '1.2rem',
+                                                                                                                                textAlign: 'center',
+                                                                                                                                'vertical-align': 'middle',
+                                                                                                                                'margin-left': '38px'
+                                                                                                                            }}
                                                                                                                             onClick={() => onClick(index)}
                                                                                                                             checked={radio === index ? true : false}
                                                                                                                             label=""
@@ -1595,10 +2032,15 @@ ant-select-selection--single" style={{
                                                                                                         })
 
                                                                                                     ) : (
-                                                                                                        <div className="loader">Loading...</div>
+                                                                                                        <div
+                                                                                                            className="loader">Loading...</div>
                                                                                                     )}
-                                                                                                    <EHRSCA1display EHRSCAdisplay1={EHRSCAdisplay1} toggleEHRSCA1={toggleEHRSCA1} />
-                                                                                                    <EHRSCA2display EHRSCAdisplay2={EHRSCAdisplay2} toggleEHRSCA2={toggleEHRSCA2} />
+                                                                                                    <EHRSCA1display
+                                                                                                        EHRSCAdisplay1={EHRSCAdisplay1}
+                                                                                                        toggleEHRSCA1={toggleEHRSCA1}/>
+                                                                                                    <EHRSCA2display
+                                                                                                        EHRSCAdisplay2={EHRSCAdisplay2}
+                                                                                                        toggleEHRSCA2={toggleEHRSCA2}/>
                                                                                                 </MDBTableBody>
                                                                                             </MDBTable>
                                                                                             <a style={{
@@ -1631,24 +2073,27 @@ ant-select-selection--single" style={{
                             </TabPane>
                             <TabPane tab="Arms Comparison" key={3}>
                                 <div className="row">
-                                    <div className="" style={{ width: '40%' }}>
+                                    <div className="" style={{width: '40%'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={inputLabel}>Study ID</label>
                                                 <input className="ant-select-selection
-ant-select-selection--single" type="text" value={ndc} style={{ padding: '0px 9px', width: '56%' }} readOnly />
+ant-select-selection--single" type="text" value={ndc} style={{padding: '0px 9px', width: '56%'}} readOnly/>
                                             </InputGroup>
-                                            <input className="clinical-input ant-select-selection ant-select-selection--single"
-                                                type="text" value='Inclusion/Exclusion Criteria' onClick={toggleInclusion} readOnly />
-                                            <InclusionExclusionCriteria relative={relative} toggleInclusion={toggleInclusion}
-                                                indicationList={indicationList}
-                                                demographicList={demographicList}
-                                                vitalList={vitalList}
+                                            <input
+                                                className="clinical-input ant-select-selection ant-select-selection--single"
+                                                type="text" value='Inclusion/Exclusion Criteria'
+                                                onClick={toggleInclusion} readOnly/>
+                                            <InclusionExclusionCriteria relative={relative}
+                                                                        toggleInclusion={toggleInclusion}
+                                                                        indicationList={indicationList}
+                                                                        demographicList={demographicList}
+                                                                        vitalList={vitalList}
 
                                             />
                                         </React.Fragment>
                                     </div>
-                                    <div className="" style={{ width: '60%', marginLeft: '-24px' }}>
+                                    <div className="" style={{width: '60%', marginLeft: '-24px'}}>
                                         <React.Fragment>
                                             <InputGroup style={inputGroup} compact>
                                                 <label style={{
@@ -1662,34 +2107,40 @@ ant-select-selection--single" type="text" value={ndc} style={{ padding: '0px 9px
                                                     marginBottom: "0px"
                                                 }}>Brief Title</label>
                                                 <textarea className="ant-select-selection
-ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", height: "62px", resize: 'none' }} readOnly>{briefTitle}</textarea>
+ant-select-selection--single" style={{width: '70%', "padding-top": "0px", height: "62px", resize: 'none'}}
+                                                          readOnly>{briefTitle}</textarea>
                                             </InputGroup>
                                         </React.Fragment>
                                     </div>
                                 </div>
 
-                                <Row style={{ marginRight: '-6px' }}>
-                                    <Col style={{ width: '100%' }}>
+                                <Row style={{marginRight: '-6px'}}>
+                                    <Col style={{width: '100%'}}>
                                         <Card
                                             className="ant-card-small"
-                                            style={{ margin: "0 10px 10px 0" }}
+                                            style={{margin: "0 10px 10px 0"}}
                                         >
                                             <Tabs
                                                 defaultActiveKey="1"
                                                 animated={false}
                                                 tabPosition="top"
-                                                style={{ "margin-top": "-6px" }}
+                                                style={{"margin-top": "-6px"}}
                                                 className="tabCustomization"
                                             >
                                                 <TabPane tab="DEMOGRAPHIC" key={1}>
 
                                                     <div className="row">
-                                                        <div className="" style={{ width: '40%' }}>
+                                                        <div className="" style={{width: '40%'}}>
                                                             <React.Fragment>
                                                                 <InputGroup style={inputGroup} compact>
                                                                     <label style={inputLabel}>RCT Arms</label>
                                                                     <Select
-                                                                        style={{ padding: '0px 2px', width: '56%', fontWeight: '400', height: '32px' }}
+                                                                        style={{
+                                                                            padding: '0px 2px',
+                                                                            width: '56%',
+                                                                            fontWeight: '400',
+                                                                            height: '32px'
+                                                                        }}
                                                                         mode="multiple"
                                                                         defaultValue={['RCT Arm1']}
 
@@ -1704,7 +2155,7 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                 </InputGroup>
                                                             </React.Fragment>
                                                         </div>
-                                                        <div className="" style={{ width: '60%', marginLeft: '-24px' }}>
+                                                        <div className="" style={{width: '60%', marginLeft: '-24px'}}>
                                                             <React.Fragment>
                                                                 <InputGroup style={inputGroup} compact>
                                                                     <label style={{
@@ -1718,7 +2169,14 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                         margin: "0"
                                                                     }}>SCA Arms</label>
                                                                     <Select
-                                                                        style={{ padding: '0px 2px', width: '69%', fontWeight: '400', height: '32px', overflow: 'scroll', 'overflow-x': 'hidden' }}
+                                                                        style={{
+                                                                            padding: '0px 2px',
+                                                                            width: '69%',
+                                                                            fontWeight: '400',
+                                                                            height: '32px',
+                                                                            overflow: 'scroll',
+                                                                            'overflow-x': 'hidden'
+                                                                        }}
                                                                         mode="multiple"
                                                                         defaultValue={['CT SCA 1', 'CT SCA 2', 'EHR SCA 1', 'EHR SCA 2']}
 
@@ -1734,20 +2192,34 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                             </React.Fragment>
                                                         </div>
                                                     </div>
-                                                    <div className='' style={{ "margin-left": "-17px", "margin-top": "6px" }}>
+                                                    <div className=''
+                                                         style={{"margin-left": "-17px", "margin-top": "6px"}}>
                                                         <MDBRow className="mt-1 d-flex justify-content-around">
-                                                            <MDBCol style={{ width: '50%' }}>
-                                                                <MDBCard className="card" style={{ marginRight: '-26px', height: '14rem' }}>
-                                                                    <MDBCardBody className="pt-1" style={{ width: '100%', lineHeight: '11px' }}>
+                                                            <MDBCol style={{width: '50%'}}>
+                                                                <MDBCard className="card" style={{
+                                                                    marginRight: '-26px',
+                                                                    height: '14rem'
+                                                                }}>
+                                                                    <MDBCardBody className="pt-1" style={{
+                                                                        width: '100%',
+                                                                        lineHeight: '11px'
+                                                                    }}>
                                                                         <MDBTable
                                                                             small
-                                                                            className="border" border="1" style={{ width: '101%' }}
+                                                                            className="border" border="1"
+                                                                            style={{width: '101%'}}
                                                                         >
                                                                             <MDBTableHead style={inputLabelWidth}>
                                                                                 <tr>
-                                                                                    <th style={{ width: '5%', textAlign: 'left' }}>Arm Name</th>
-                                                                                    <th style={{ width: '1%' }}>Patient</th>
-                                                                                    <th style={{ width: '14%' }}>Intervention Drug</th>
+                                                                                    <th style={{
+                                                                                        width: '5%',
+                                                                                        textAlign: 'left'
+                                                                                    }}>Arm Name
+                                                                                    </th>
+                                                                                    <th style={{width: '1%'}}>Patient</th>
+                                                                                    <th style={{width: '14%'}}>Intervention
+                                                                                        Drug
+                                                                                    </th>
                                                                                 </tr>
                                                                             </MDBTableHead>
                                                                             <MDBTableBody className="mb-0">
@@ -1776,20 +2248,32 @@ ant-select-selection--single" style={{ width: '70%', "padding-top": "0px", heigh
                                                                                         );
                                                                                     })
                                                                                 ) : (
-                                                                                    <div className="loader">Loading...</div>
+                                                                                    <div
+                                                                                        className="loader">Loading...</div>
                                                                                 )}
                                                                             </MDBTableBody>
                                                                         </MDBTable>
                                                                     </MDBCardBody>
                                                                 </MDBCard>
                                                             </MDBCol>
-                                                            <MDBCol style={{ width: '50%', "margin-right": "6px" }}>
-                                                                <MDBCard id="card1" style={{ width: '100%', overflow: 'scroll', height: '14rem', 'overflow-x': 'hidden' }}>
+                                                            <MDBCol style={{width: '50%', "margin-right": "6px"}}>
+                                                                <MDBCard id="card1" style={{
+                                                                    width: '100%',
+                                                                    overflow: 'scroll',
+                                                                    height: '14rem',
+                                                                    'overflow-x': 'hidden'
+                                                                }}>
                                                                     <MDBCardBody className="pb-0">
                                                                         <MDBCardText className="text-center">
-                                                                            <MDBCardImage className="img-fluid" style={{ marginBottom: '10px' }} src={AgeDistribution} />
-                                                                            <MDBCardImage className="img-fluid" style={{ marginBottom: '10px' }} src={GenderDistribution} />
-                                                                            <MDBCardImage className="img-fluid" style={{ marginBottom: '10px' }} src={RaceDistribution} />
+                                                                            <MDBCardImage className="img-fluid"
+                                                                                          style={{marginBottom: '10px'}}
+                                                                                          src={AgeDistribution}/>
+                                                                            <MDBCardImage className="img-fluid"
+                                                                                          style={{marginBottom: '10px'}}
+                                                                                          src={GenderDistribution}/>
+                                                                            <MDBCardImage className="img-fluid"
+                                                                                          style={{marginBottom: '10px'}}
+                                                                                          src={RaceDistribution}/>
                                                                         </MDBCardText>
                                                                     </MDBCardBody>
                                                                 </MDBCard>

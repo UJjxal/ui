@@ -1,9 +1,9 @@
-import React, { Fragment, Component } from 'react';
-import { STATICRISK360, globalData } from "../../../../config";
-import { message, Select, Popconfirm } from 'antd';
-import { getEmailData, getNotificationsData, getSaveNewsAlertData } from './api';
-import util from '../../../../utilities/util';
-const { Option } = Select;
+import React, {Component, Fragment} from 'react';
+import {globalData, STATICRISK360} from "../../../../config";
+import {message, Popconfirm, Select} from 'antd';
+import {getEmailData, getSaveNewsAlertData} from './api';
+
+const {Option} = Select;
 
 class AddAlert extends Component {
     constructor(props) {
@@ -66,12 +66,21 @@ class AddAlert extends Component {
             this.handleNewsAlertData();
             this.handleNotificationData();
         }
-        this.setState({ isLoadingForm: true });
+        this.setState({isLoadingForm: true});
 
     }
     handleNewsAlertData = async () => {
-        const { riskStatus, riskLevel, riskType, actionRequired, toBeReviewed, comment, managerReview, emailTo } = this.state
-        const { treeInfo } = this.props
+        const {
+            riskStatus,
+            riskLevel,
+            riskType,
+            actionRequired,
+            toBeReviewed,
+            comment,
+            managerReview,
+            emailTo
+        } = this.state
+        const {treeInfo} = this.props
         // var isReviewed = false
         // if (riskStatus != treeInfo.riskStatus || riskLevel != treeInfo.riskLevel || riskType != treeInfo.riskType
         //     || actionRequired != treeInfo.actionRequired || toBeReviewed != treeInfo.toBeReviewed || comment != treeInfo.comment ||
@@ -105,7 +114,7 @@ class AddAlert extends Component {
             managerReview: managerReview ? managerReview.toString() : "",
             emailTo: emailTo.split(",")
         }
-        this.setState({ isLoadingForm: true });
+        this.setState({isLoadingForm: true});
         const res = await getSaveNewsAlertData(emailTo.length > 0 ? dataWithEmailTo : dataWithoutEmailTo)
         if (res) {
             this.props.updateRow(treeInfo.alertID, emailTo.length > 0 ? dataWithEmailTo : dataWithoutEmailTo);
@@ -171,10 +180,10 @@ class AddAlert extends Component {
             to: [to],
             subject,
             message: bodyMessage,
-            attachments: [{ filename: alertID + ".pdf", base64: pdfbase64 }],
+            attachments: [{filename: alertID + ".pdf", base64: pdfbase64}],
         };
 
-        this.setState({ isLoadingEmail: true });
+        this.setState({isLoadingEmail: true});
         const res = await getEmailData(data)
         if (res) {
             this.setState({
@@ -184,7 +193,7 @@ class AddAlert extends Component {
         }
     }
     handleSaveDataWithEmail = () => {
-        const { riskStatus, toBeReviewed, emailTo } = this.state
+        const {riskStatus, toBeReviewed, emailTo} = this.state
         if (riskStatus === "") {
             message.error('Please fill the required field!');
             return
@@ -200,7 +209,7 @@ class AddAlert extends Component {
 
         this.handleNewsAlertData();
         this.handleNotificationData();
-        this.setState({ isLoadingEmail: true, isLoadingForm: false });
+        this.setState({isLoadingEmail: true, isLoadingForm: false});
 
     }
     validateEmail = (string) => {
@@ -230,7 +239,7 @@ class AddAlert extends Component {
         //return;
         //setTimeout(() => {
         this.setState({
-            treeInfo: { ...dtl },
+            treeInfo: {...dtl},
             riskStatus: dtl.riskStatus,
             riskLevel: dtl.riskLevel,
             riskType: dtl.riskType,
@@ -254,13 +263,14 @@ class AddAlert extends Component {
 
 
     render() {
-        const { isSubmitEnable } = this.state
-        const { showEmail } = this.props
+        const {isSubmitEnable} = this.state
+        const {showEmail} = this.props
         const emailPopText = <div>Are you sure you want to send an email
             to the users under "Email To"? </div>
         return (
             <Fragment>
-                <h6 onClick={this.updatetreeinfo} className="mb-3 font-weight-bold text-uppercase" style={{ fontSize: "14px", color: "#205684" }}>
+                <h6 onClick={this.updatetreeinfo} className="mb-3 font-weight-bold text-uppercase"
+                    style={{fontSize: "14px", color: "#205684"}}>
                     Risk Status Settings
                 </h6>
 
@@ -268,9 +278,12 @@ class AddAlert extends Component {
                     <div className="row risk-setting-form">
                         <div className="col">
                             <div className="form-group row">
-                                <label className="col-md-5 col-form-label">Risk Status:<span style={{ color: "red" }}>*</span></label>
+                                <label className="col-md-5 col-form-label">Risk Status:<span
+                                    style={{color: "red"}}>*</span></label>
                                 <div className="col-md-7">
-                                    <select name="riskStatus" value={this.state.riskStatus} onChange={this.handleInputChange} className="form-control custom-select-sm" required="required" >
+                                    <select name="riskStatus" value={this.state.riskStatus}
+                                            onChange={this.handleInputChange} className="form-control custom-select-sm"
+                                            required="required">
                                         <option value="">Choose Risk Status</option>
                                         <option value="Under Review">Confirmed (Under Review)</option>
                                         <option value="Risk Mitigated">Confirmed (Risk Mitigated)</option>
@@ -281,7 +294,8 @@ class AddAlert extends Component {
                             <div className="form-group row">
                                 <label className="col-md-5 col-form-label">Risk Level:</label>
                                 <div className="col-md-7">
-                                    <select name="riskLevel" value={this.state.riskLevel} onChange={this.handleInputChange} className="form-control custom-select-sm">
+                                    <select name="riskLevel" value={this.state.riskLevel}
+                                            onChange={this.handleInputChange} className="form-control custom-select-sm">
                                         <option value="-1">Choose Risk Level</option>
                                         <option value="1">Very Low</option>
                                         <option value="2">Low</option>
@@ -294,7 +308,8 @@ class AddAlert extends Component {
                             <div className="form-group row">
                                 <label className="col-md-5 col-form-label">Risk Type:</label>
                                 <div className="col-md-7">
-                                    <select name="riskType" value={this.state.riskType} onChange={this.handleInputChange} className="form-control custom-select-sm">
+                                    <select name="riskType" value={this.state.riskType}
+                                            onChange={this.handleInputChange} className="form-control custom-select-sm">
                                         <option value="">Choose Risk Type</option>
                                         <option value="Business Continuity">Business Continuity</option>
                                         <option value="Reputational">Reputational</option>
@@ -317,7 +332,7 @@ class AddAlert extends Component {
                                         name="toBeReviewed"
                                         value={this.state.toBeReviewed || undefined}
                                         placeholder="Choose To Be Reviewed"
-                                        style={{ width: '100%' }}
+                                        style={{width: '100%'}}
                                         onChange={(value) => this.handleChange("toBeReviewed", value)}
                                     >
                                         <Option value="VM">VM</Option>
@@ -333,13 +348,16 @@ class AddAlert extends Component {
                                 <div className="form-group row">
                                     <label className="col-md-5 col-form-label">Email To:</label>
                                     <div className="col-md-7">
-                                        <input type="email" name="emailTo" placeholder="Enter Email" value={this.state.emailTo} onChange={this.handleInputChange} className="form-control" multiple />
+                                        <input type="email" name="emailTo" placeholder="Enter Email"
+                                               value={this.state.emailTo} onChange={this.handleInputChange}
+                                               className="form-control" multiple/>
                                     </div>
                                 </div>}
                             <div className="form-group row">
                                 <label className="col-md-5 col-form-label">Action Required:</label>
                                 <div className="col-md-7">
-                                    <select name="actionRequired" value={this.state.actionRequired} onChange={this.handleInputChange} className="form-control custom-select-sm">
+                                    <select name="actionRequired" value={this.state.actionRequired}
+                                            onChange={this.handleInputChange} className="form-control custom-select-sm">
                                         <option value="-1">Choose Action Required</option>
                                         <option value="1">Yes</option>
                                         <option value="0">No</option>
@@ -356,7 +374,7 @@ class AddAlert extends Component {
                                             allowClear
                                             value={this.state.managerReview || undefined}
                                             placeholder="Choose Manager"
-                                            style={{ width: '100%' }}
+                                            style={{width: '100%'}}
                                             onChange={(value) => this.handleChange("managerReview", value)}
                                         >
                                             <Option value="Sanjit Grover">Sanjit Grover</Option>
@@ -368,7 +386,7 @@ class AddAlert extends Component {
                                             allowClear
                                             value={this.state.managerReview || undefined}
                                             placeholder="Choose Manager"
-                                            style={{ width: '100%' }}
+                                            style={{width: '100%'}}
                                             onChange={(value) => this.handleChange("managerReview", value)}
                                         >
                                             <Option value="Gwen Macgregor">Gwen Macgregor</Option>
@@ -379,7 +397,9 @@ class AddAlert extends Component {
                             <div className="form-group row">
                                 <label className="col-md-5 col-form-label">Enter Comment:</label>
                                 <div className="col-md-7">
-                                    <textarea name="comment" value={this.state.comment} onChange={this.handleInputChange} className="form-control" placeholder="Enter Comment" ></textarea>
+                                    <textarea name="comment" value={this.state.comment}
+                                              onChange={this.handleInputChange} className="form-control"
+                                              placeholder="Enter Comment"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +407,8 @@ class AddAlert extends Component {
                     <div className="text-right">
                         {
                             showEmail &&
-                            <Popconfirm placement="topRight" title={emailPopText} onConfirm={this.handleSaveDataWithEmail} onCancel={this.handleCancel}
+                            <Popconfirm placement="topRight" title={emailPopText}
+                                        onConfirm={this.handleSaveDataWithEmail} onCancel={this.handleCancel}
                             >
                                 <button type="submit" className="ant-btn blue-bg mr-2">
                                     {this.state.isLoadingEmail ? "Loading..." : "Send Email"}

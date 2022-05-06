@@ -1,10 +1,13 @@
 [
-	{
-		"values": [
-			819,
-			143
-		],
-		"categories":[0,1],
-		"col_type": "categorical"
-	}
+  {
+    "values": [
+      819,
+      143
+    ],
+    "categories": [
+      0,
+      1
+    ],
+    "col_type": "categorical"
+  }
 ]

@@ -435,21 +435,56 @@
   ],
   "ConfusionMatrix": [
     [
-      { "label": "0", "negative": "58,680 (64%)", "positive": "13,320 (14%)" },
-      { "label": "1", "negative": "6,348 (7%)", "positive": "11,929 (13%)" }
+      {
+        "label": "0",
+        "negative": "58,680 (64%)",
+        "positive": "13,320 (14%)"
+      },
+      {
+        "label": "1",
+        "negative": "6,348 (7%)",
+        "positive": "11,929 (13%)"
+      }
     ]
   ],
   "EventDataMetric": [
     [
-      { "key": 1, "Metric": "Precision", "Value": "47%" },
-      { "key": 2, "Metric": "Recall", "Value": "65%" },
-      { "key": 3, "Metric": "F1 Score", "Value": "0.55" },
-      { "key": 4, "Metric": "False Positive Rate", "Value": "18%" }
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "47%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "65%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.55"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "18%"
+      }
     ]
   ],
   "RankOrdering": [
     {
-      "Score_Decile": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+      "Score_Decile": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
       "Actual_Bad": [
         65.01,
         51.63,
@@ -542,7 +577,18 @@
   ],
   "KSCurve": [
     {
-      "Score_Decile": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+      "Score_Decile": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
       "cum_eventrate": [
         "12",
         "25",
@@ -747,7 +793,19 @@
   ],
   "ROCCurve": [
     {
-      "Score_Cutoff": [0.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+      "Score_Cutoff": [
+        0.0,
+        2.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
       "FalsePositiveRate": [
         0.0,
         0.0,
@@ -842,7 +900,18 @@
   ],
   "PSI": [
     {
-      "Score_Decile": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+      "Score_Decile": [
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
       "Expected": [
         -43.63,
         -11.4,
@@ -855,7 +924,18 @@
         -3.63,
         -4.8
       ],
-      "Actual": [38.68, 10.8, 9.7, 8.08, 6.58, 5.62, 5.0, 4.88, 5.2, 5.46]
+      "Actual": [
+        38.68,
+        10.8,
+        9.7,
+        8.08,
+        6.58,
+        5.62,
+        5.0,
+        4.88,
+        5.2,
+        5.46
+      ]
     }
   ],
   "PSIData": [
@@ -965,7 +1045,17 @@
         "M_Value_Generic (Avg. monetory value of txns last 3 months)",
         "CUMTND_DATE_DELTA_in_Days (Last contact with bank in days)"
       ],
-      "CSI_Score": [0.06, 0.03, 0.02, 0.02, 0.02, 0.01, 0.01, 0.01, 0.01]
+      "CSI_Score": [
+        0.06,
+        0.03,
+        0.02,
+        0.02,
+        0.02,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ]
     }
   ],
   "CSIData": [

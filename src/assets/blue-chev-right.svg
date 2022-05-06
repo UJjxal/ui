@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">  <image id="image0" width="55" height="55" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAMAAACfBSJ0AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px"
+     y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">  <image
+        id="image0" width="55" height="55" x="0" y="0"
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAMAAACfBSJ0AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACxFBMVEUAAABGi9FAj88+idBA
 ic8/iM4/iM8/h88/iM8/iM8/h88/iNA/iNA/h88+iM8/iM4+iM8+h9BAic9BhtFAiso7iMw/h9A/
 h88/iM8/iM8/iM8/iM8/iM8/iM8/iM8/iM8/iM8/h88+iM4/iM4/iNFAh88+h84/h88/iM8/iNBA
@@ -36,5 +38,5 @@ t30cRtMiLKz5TJdNLAlHtrQIhtMtXbY8LBQ6oXkSqF2m80vwIciJcMXKVcbmA6FSSVGrR64JQDsA
 4rG1vyfQph1RJ1tnWI/FA1uRJGzwTvOLNHIcTatUNM1xRqNfWmZSYoJt9yc5WKxcixs8DLhWnoXl
 iBCi3S+yo8Zmzi9a3wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wOC0yN1QxMzoyODo1OCswMzow
 MC48iKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDgtMjdUMTM6Mjg6NTgrMDM6MDBfYTAZAAAA
-AElFTkSuQmCC" />
+AElFTkSuQmCC"/>
 </svg>

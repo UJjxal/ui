@@ -1,4 +1,7 @@
-.ant-modal-centered::before{content: unset !important;}
+.ant-modal-centered::before {
+    content: unset !important;
+}
+
 .ant-table-tbody > tr > td {
     border-bottom: 0px;
     transition: background 0.3s;
@@ -8,14 +11,14 @@
     padding: 2px 8px;
 }
 
-.cancelbuttonhcp{
+.cancelbuttonhcp {
 
-    padding-right:0px ;
+    padding-right: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    padding-left:5px ;
-    border: 2px solid rgba(6, 91, 170, 0.7); 
-    color:#065BAA ;
+    padding-left: 5px;
+    border: 2px solid rgba(6, 91, 170, 0.7);
+    color: #065BAA;
     font-size: 15px;
 }
 
@@ -27,87 +30,87 @@
     font-size: 2.18em;
 }
 
-.fontModal{
-    font-family: 'Roboto',sans-serif ;
+.fontModal {
+    font-family: 'Roboto', sans-serif;
     font-size: '20px';
 }
 
-.pdrow{
+.pdrow {
     padding-left: 20px;
     padding-right: 10px;
-    padding-top:5px ;
-    padding-bottom:5px ;
-} 
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-.headings{
-       
-    font-family: 'Roboto',sans-serif ;
+.headings {
+
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     font-weight: bold;
     color: #065BAA;
 }
 
-.blueColored{
+.blueColored {
 
-    font-family: 'Roboto',sans-serif ;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #065BAA;
 }
 
-.photo{
+.photo {
     height: 12px;
     width: 12px;
 }
 
-.boxes{
-  
+.boxes {
+
     font-family: Roboto Condensed;
     font-style: italic;
     font-weight: bold;
     color: #FFFFFF;
-    background: rgba(6, 91, 170, 0.7) ;
-   
+    background: rgba(6, 91, 170, 0.7);
+
 }
 
-.rectangle89{
-   border-left: 5px solid rgba(6, 91, 170, 0.7); 
-   color: #808080 ;
-   
+.rectangle89 {
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    color: #808080;
+
 }
 
-.rectangle90{
-    border-left: 5px solid rgba(6, 91, 170, 0.7); 
-    color: #808080 ;
-    
- }
+.rectangle90 {
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    color: #808080;
 
-.rectangle70{
-
-   border-left: 5px solid rgba(6, 91, 170, 0.7); 
-   color: #808080
 }
 
-.rectangle72{
+.rectangle70 {
 
     border-left: 5px solid rgba(6, 91, 170, 0.7);
-    color:#808080 ;
-    box-sizing: border-box;
-    
+    color: #808080
 }
 
-.rectangle73{
+.rectangle72 {
+
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    color: #808080;
+    box-sizing: border-box;
+
+}
+
+.rectangle73 {
     border-left: 5px solid rgba(6, 91, 170, 0.7);
     box-sizing: border-box;
 }
 
-.rectangle74{
+.rectangle74 {
     border: 2px solid rgba(6, 91, 170, 0.7);
-    color:#065BAA ;
+    color: #065BAA;
 }
 
-.rectangle93{
-    font-family: 'Roboto',sans-serif ;
+.rectangle93 {
+    font-family: 'Roboto', sans-serif;
     border-left: 5px solid rgba(6, 91, 170, 0.7);
     box-sizing: border-box;
-    color:#065BAA ;
+    color: #065BAA;
 }

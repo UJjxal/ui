@@ -1,20 +1,20 @@
 import React from "react";
-import { MDBRow} from "mdbreact";
+import {MDBRow} from "mdbreact";
 import Card from "../../../utilities/Card";
-import { CONTEXT } from "../../../config";
+import {CONTEXT} from "../../../config";
 
 const NoLink = (props) => {
-  
-        return (
-          <MDBRow center>
+
+    return (
+        <MDBRow center>
             <Card
-              icon={`${CONTEXT}/gear.svg`}
-              title="No Link or submenu"
-              navLinkTo=""
-              txt="Contact your Admin"
-              navLinkTxt="."
+                icon={`${CONTEXT}/gear.svg`}
+                title="No Link or submenu"
+                navLinkTo=""
+                txt="Contact your Admin"
+                navLinkTxt="."
             />
-          </MDBRow>
-        )
-            }
+        </MDBRow>
+    )
+}
 export default NoLink;

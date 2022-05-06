@@ -78,7 +78,6 @@
       }
     ]
   },
-
   "tblChannelMDL": {
     "column": [
       {
@@ -159,15 +158,36 @@
     ]
   },
   "modelBar": {
-    "xaxis": ["Branch", "Call Center", "Email", "App", "Web", "Overall"],
+    "xaxis": [
+      "Branch",
+      "Call Center",
+      "Email",
+      "App",
+      "Web",
+      "Overall"
+    ],
     "modeldata": [
       {
         "name": "BAU",
-        "data": [3.8, 3.4, 2.8, 2.2, 2.6, 3.2]
+        "data": [
+          3.8,
+          3.4,
+          2.8,
+          2.2,
+          2.6,
+          3.2
+        ]
       },
       {
         "name": "Model",
-        "data": [7.3, 7.6, 6.1, 4.7, 5.2, 7.5]
+        "data": [
+          7.3,
+          7.6,
+          6.1,
+          4.7,
+          5.2,
+          7.5
+        ]
       }
     ]
   },
@@ -219,7 +239,13 @@
   },
   "DonutChart": [
     {
-      "series": [3.8, 3.4, 2.8, 2.2, 2.6],
+      "series": [
+        3.8,
+        3.4,
+        2.8,
+        2.2,
+        2.6
+      ],
       "labels": [
         "Branch",
         "Call  Center",
@@ -229,7 +255,13 @@
       ]
     },
     {
-      "series": [7.3, 7.6, 6.1, 4.7, 5.2],
+      "series": [
+        7.3,
+        7.6,
+        6.1,
+        4.7,
+        5.2
+      ],
       "labels": [
         "Branch",
         "Call  Center",

@@ -1,5 +1,5 @@
 //const config = require("./config.json");
-const appConfig = window.globalConfig ;
+const appConfig = window.globalConfig;
 
 //assign value to variables
 export const PROJECT_ID = appConfig.projectId;
@@ -35,42 +35,42 @@ export const GITCLIENTID = appConfig.GITCLIENTID;
 export const PSP = appConfig.PSP;
 export const TableHeader = appConfig.TableHeader;
 export const s3Url = (page) => {
-  
-  let url = "";
-  let s3 = appConfig.s3BaseUrl;
 
-  switch (page) {
-    case "inventory":
-      url = `https://dynobkod43.${s3}`;
-      break;
+    let url = "";
+    let s3 = appConfig.s3BaseUrl;
 
-    case "monitor":
-      url = `https://rzn34txz34.${s3}/`;
-      break;
+    switch (page) {
+        case "inventory":
+            url = `https://dynobkod43.${s3}`;
+            break;
 
-    case "addModel":
-      url = `https://83q28b4hda.${s3}`;
-      break;
+        case "monitor":
+            url = `https://rzn34txz34.${s3}/`;
+            break;
 
-    case "risk":
-      url = `https://ugac94ag76.${s3}/`;
-      break;
+        case "addModel":
+            url = `https://83q28b4hda.${s3}`;
+            break;
 
-    default:
-      break;
-  }
-  return url;
+        case "risk":
+            url = `https://ugac94ag76.${s3}/`;
+            break;
+
+        default:
+            break;
+    }
+    return url;
 };
 
 export const aws = {
-  bucketName: "bpd-datalake-dev",
-  dirName: "00Raw/datasets/parquet/MRM/modelRepository",
-  region: "us-east-2",
-  accessKeyId: "AKIA6RTOUGG5AIXEHFVP",
-  secretAccessKey: "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",
+    bucketName: "bpd-datalake-dev",
+    dirName: "00Raw/datasets/parquet/MRM/modelRepository",
+    region: "us-east-2",
+    accessKeyId: "AKIA6RTOUGG5AIXEHFVP",
+    secretAccessKey: "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",
 };
 export const globalData = {
-  // websocketUrl: 'wss://risk360.incedolabs.com:3071'
-  websocketUrl: WEBSOCKETURL ? WEBSOCKETURL : 'wss://idsp.incedolabs.com:3073',
-  websocket:null,
+    // websocketUrl: 'wss://risk360.incedolabs.com:3071'
+    websocketUrl: WEBSOCKETURL ? WEBSOCKETURL : 'wss://idsp.incedolabs.com:3073',
+    websocket: null,
 }

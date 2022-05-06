@@ -4,23 +4,26 @@
 } */
 
 .icon-hover {
-  visibility: hidden;
-  transition: all ease 0.5s;
+    visibility: hidden;
+    transition: all ease 0.5s;
 }
 
 .react-flow__node-special:hover .icon-hover {
-  visibility: visible;
+    visibility: visible;
 }
 
 .icon-hover span {
-  font-size: 15px;
+    font-size: 15px;
 }
+
 .icon-hover span:not(:last-child) {
-  margin-right: 8px;
+    margin-right: 8px;
 }
-.react-flow__edge-path{
-    stroke-width:2.5px;
+
+.react-flow__edge-path {
+    stroke-width: 2.5px;
 }
-.icon-action span i:hover{
- color: dodgerblue;
+
+.icon-action span i:hover {
+    color: dodgerblue;
 }

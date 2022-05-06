@@ -1,14 +1,32 @@
 {
   "risk_profile": [
     {
-      "series": [30, 70],
-      "labels": ["High Risk", "Low Risk"]
+      "series": [
+        30,
+        70
+      ],
+      "labels": [
+        "High Risk",
+        "Low Risk"
+      ]
     }
   ],
   "probability_distribution": [
     {
-      "categories": ["0.0-0.1", "0.1-0.2", "0.2-0.3", "0.3-0.4", ">0.4"],
-      "data": [37, 35, 18, 5, 4]
+      "categories": [
+        "0.0-0.1",
+        "0.1-0.2",
+        "0.2-0.3",
+        "0.3-0.4",
+        ">0.4"
+      ],
+      "data": [
+        37,
+        35,
+        18,
+        5,
+        4
+      ]
     }
   ],
   "patient_filter": [

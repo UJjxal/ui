@@ -1,50 +1,52 @@
 import React, {useContext, useEffect, useState} from 'react';
-import { Icon, Button } from '@material-ui/core';
-import { Table } from "antd";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBCardTitle } from "mdbreact";
+import {Button, Icon} from '@material-ui/core';
+import {Table} from "antd";
+import {MDBCard, MDBCardBody, MDBCardTitle, MDBCol, MDBRow} from "mdbreact";
 import ReactECharts from 'echarts-for-react';
-import { AppContext } from "../../../AppProvider";
+import {AppContext} from "../../../AppProvider";
 import PageTitle from '../../../utilities/PageTitle';
-import { Link } from 'react-router-dom';
-import { CONTEXT } from "../../../config";
+import {Link} from 'react-router-dom';
+import {CONTEXT} from "../../../config";
 
 const CampaignPerformance = () => {
     const [treeLink, setTreeLink] = useState("#");
     const selectedTreeId = useContext(AppContext).selectedTemplateTreeID;
-    const page = useContext(AppContext).pageContent.filter(page=>page.treeID===selectedTreeId);
-    useEffect(()=>{
-       
-        if(page.length > 0){
-           setTreeLink(page[0].link);
-        }else{
+    const page = useContext(AppContext).pageContent.filter(page => page.treeID === selectedTreeId);
+    useEffect(() => {
+
+        if (page.length > 0) {
+            setTreeLink(page[0].link);
+        } else {
             setTreeLink("#");
-        }      
-    },[])
-    
+        }
+    }, [])
+
 
     return <div className="container-fluid mt-3 mb-5">
-          
-       {selectedTreeId && treeLink!=="#" && <Button className="mx-3 mb-3"variant="contained" color="primary" style={{ background: "#3f88c5"}}>
-            { /* Sanjit - Set Tree Link from selected KPI Tree*/}
-            <Link 
-            to={`${CONTEXT}${treeLink}`}
-            className="text-white">{`< Analysis Tree`}</Link>
-        </Button>}
+
+        {selectedTreeId && treeLink !== "#" &&
+            <Button className="mx-3 mb-3" variant="contained" color="primary" style={{background: "#3f88c5"}}>
+                { /* Sanjit - Set Tree Link from selected KPI Tree*/}
+                <Link
+                    to={`${CONTEXT}${treeLink}`}
+                    className="text-white">{`< Analysis Tree`}</Link>
+            </Button>}
         <PageTitle title={"Collection Performance"} marginLeft={0}/>
         <div className="container-fluid">
             <MDBRow>
                 {
-                    tabDetails.map(({ label, value, percentage, icon, color, img }, i) => (
+                    tabDetails.map(({label, value, percentage, icon, color, img}, i) => (
                         <MDBCol md="3" key={i}>
                             <MDBCard>
                                 <MDBCardBody className="px-3 py-2">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div>
-                                            <h6 style={{ color: "#868686" }}>{label}</h6>
+                                            <h6 style={{color: "#868686"}}>{label}</h6>
                                             <h3 className="font-weight-bold mt-2 mb-0 text-left">{value}</h3>
                                         </div>
                                         <div>
-                                            <h3 className="m-0"><Icon className={`font-weight-bold text-${color}`} style={{ fontSize: "2.3rem" }}>{icon}</Icon></h3>
+                                            <h3 className="m-0"><Icon className={`font-weight-bold text-${color}`}
+                                                                      style={{fontSize: "2.3rem"}}>{icon}</Icon></h3>
                                             <h6 className={`font-weight-bold text-${color} text-center`}>{percentage}</h6>
                                         </div>
                                     </div>
@@ -61,7 +63,7 @@ const CampaignPerformance = () => {
                     <MDBCard>
                         <MDBCardBody>
                             <MDBCardTitle tag="h5">Collection Rate</MDBCardTitle>
-                            <ReactECharts option={optionsCollectionRate} />
+                            <ReactECharts option={optionsCollectionRate}/>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
@@ -69,7 +71,7 @@ const CampaignPerformance = () => {
                     <MDBCard>
                         <MDBCardBody>
                             <MDBCardTitle tag="h5">Payments ($ mn)</MDBCardTitle>
-                            <ReactECharts option={optionsPaymentMade} />
+                            <ReactECharts option={optionsPaymentMade}/>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
@@ -79,7 +81,7 @@ const CampaignPerformance = () => {
                     <MDBCard>
                         <MDBCardBody>
                             <MDBCardTitle tag="h5" style={tableHeaderStyle}>ML Enabled Performance</MDBCardTitle>
-                            <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
+                            <Table dataSource={dataSource} columns={columns} pagination={false} bordered/>
                         </MDBCardBody>
                     </MDBCard>
                 </MDBCol>
@@ -91,13 +93,14 @@ const CampaignPerformance = () => {
                             <MDBCol md="6">
                                 <MDBCardBody>
                                     <MDBCardTitle tag="h5">Roll Rate Analysis</MDBCardTitle>
-                                    <ReactECharts style={{height: '400px'}} option={optionsRollRateAnalysis} />
+                                    <ReactECharts style={{height: '400px'}} option={optionsRollRateAnalysis}/>
                                 </MDBCardBody>
                             </MDBCol>
-                            <MDBCol  md="6">
-                                <MDBCardBody className="m-2" style={{border: '1px solid #f0f0f0', borderRadius: '4px' }}>
+                            <MDBCol md="6">
+                                <MDBCardBody className="m-2" style={{border: '1px solid #f0f0f0', borderRadius: '4px'}}>
                                     <MDBCardTitle tag="h5" style={tableHeaderStyle}>Roll Rate Analysis</MDBCardTitle>
-                                    <Table dataSource={dataSourceAnalysis} columns={columnsAnalysis} pagination={false} bordered />
+                                    <Table dataSource={dataSourceAnalysis} columns={columnsAnalysis} pagination={false}
+                                           bordered/>
                                 </MDBCardBody>
                             </MDBCol>
                         </MDBRow>
@@ -132,11 +135,11 @@ const optionsCollectionRate = {
     xAxis: {
         type: 'category',
         data: ['Jan', 'Feb', 'Mar', 'Apr'],
-        splitLine: { show: false }
+        splitLine: {show: false}
     },
     yAxis: {
         type: 'value',
-        splitLine: { show: false },
+        splitLine: {show: false},
         min: 0,
         max: 100,
     },
@@ -217,12 +220,12 @@ const optionsPaymentMade = {
         type: 'value',
         min: 100,
         max: 130,
-        splitLine: { show: false },
+        splitLine: {show: false},
     }
     ],
     series: [{
         name: 'BAU',
-         data: [121, 122, 120, 117],
+        data: [121, 122, 120, 117],
         type: 'bar',
         color: '#D5E3FA',
         barGap: 0,
@@ -233,19 +236,19 @@ const optionsPaymentMade = {
             // formatter: '{c}%'
         },
     },
-    {
-        name: 'ML Enabled Strategy',
-        data: [121, 124, 126, 129],
-        type: 'bar',
-        color: '#92B4F3',
-        barGap: 0,
-        label: {
-            show: true,
-            color: '#000',
-            position: 'outside',
-            // formatter: '{c}%'
-        },
-    }
+        {
+            name: 'ML Enabled Strategy',
+            data: [121, 124, 126, 129],
+            type: 'bar',
+            color: '#92B4F3',
+            barGap: 0,
+            label: {
+                show: true,
+                color: '#000',
+                position: 'outside',
+                // formatter: '{c}%'
+            },
+        }
     ]
 };
 const optionsRollRateAnalysis = {
@@ -270,13 +273,13 @@ const optionsRollRateAnalysis = {
         axisPointer: {
             type: 'shadow'
         },
-        axisLabel: { interval: 0, rotate: 20 }
+        axisLabel: {interval: 0, rotate: 20}
     },
     yAxis: [{
         type: 'value',
         min: 0,
         max: 100,
-        splitLine: { show: false },
+        splitLine: {show: false},
         axisLabel: {
             formatter: '{value} %'
         }
@@ -295,28 +298,56 @@ const optionsRollRateAnalysis = {
             formatter: '{c}%'
         },
     },
-    {
-        name: 'ML Enabled Strategy (%)',
-        data: [20, 33, 75, 81, 84],
-        type: 'bar',
-        color: '#92B4F3',
-        barGap: 0,
-        label: {
-            show: true,
-            color: '#000',
-            position: 'outside',
-            formatter: '{c}%'
-        },
-    }
+        {
+            name: 'ML Enabled Strategy (%)',
+            data: [20, 33, 75, 81, 84],
+            type: 'bar',
+            color: '#92B4F3',
+            barGap: 0,
+            label: {
+                show: true,
+                color: '#000',
+                position: 'outside',
+                formatter: '{c}%'
+            },
+        }
     ]
 };
 
 
 const tabDetails = [
-    { label: 'Collection Rate', value: '80%', percentage: '9%', icon: 'expand_less', color: 'success', img: 'balance-increase.svg' },
-    { label: 'Payments ($ mn)', value: '$129', percentage: '8%', icon: 'expand_less', color: 'success', img: 'sales-increase.svg' },
-    { label: 'RPC Rate', value: '90%', percentage: '5%', icon: 'expand_less', color: 'success', img: 'channel-sales.svg' },
-    { label: 'Promise Kept', value: '53%', percentage: '8%', icon: 'expand_less', color: 'success', img: 'traffic-conversion.svg' },
+    {
+        label: 'Collection Rate',
+        value: '80%',
+        percentage: '9%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'balance-increase.svg'
+    },
+    {
+        label: 'Payments ($ mn)',
+        value: '$129',
+        percentage: '8%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'sales-increase.svg'
+    },
+    {
+        label: 'RPC Rate',
+        value: '90%',
+        percentage: '5%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'channel-sales.svg'
+    },
+    {
+        label: 'Promise Kept',
+        value: '53%',
+        percentage: '8%',
+        icon: 'expand_less',
+        color: 'success',
+        img: 'traffic-conversion.svg'
+    },
 ]
 
 const columns = [
@@ -350,20 +381,22 @@ const dataSource = [
     },
     {
         "key": <h6 className="m-0">RPC Rate</h6>,
-        "BAU": <h6><strong>7752</strong><br /><small>85%</small></h6>,
-        "MLEnabledStrategy": <h6><strong>8208</strong><br /><small className="text-success">90%</small></h6>,
+        "BAU": <h6><strong>7752</strong><br/><small>85%</small></h6>,
+        "MLEnabledStrategy": <h6><strong>8208</strong><br/><small className="text-success">90%</small></h6>,
         "ChangeOverBAU": <h4 className="text-success">5%<Icon className="align-text-top">arrow_upward</Icon></h4>
     },
     {
         "key": <h6 className="m-0">Promise Made</h6>,
-        "BAU": <h6><strong>5425</strong><br /><small>60%</small></h6>,
-        "MLEnabledStrategy": <h6><strong>6840</strong><br /><small className="text-success font-weight-bold">70%</small></h6>,
+        "BAU": <h6><strong>5425</strong><br/><small>60%</small></h6>,
+        "MLEnabledStrategy": <h6><strong>6840</strong><br/><small className="text-success font-weight-bold">70%</small>
+        </h6>,
         "ChangeOverBAU": <h4 className="text-success">10%<Icon className="align-text-top">arrow_upward</Icon></h4>
     },
     {
         "key": <h6 className="m-0">Promise Kept</h6>,
-        "BAU": <h6><strong>4104</strong><br /><small>45%</small></h6>,
-        "MLEnabledStrategy": <h6><strong>6384</strong><br /><small className="text-success font-weight-bold">53%</small></h6>,
+        "BAU": <h6><strong>4104</strong><br/><small>45%</small></h6>,
+        "MLEnabledStrategy": <h6><strong>6384</strong><br/><small className="text-success font-weight-bold">53%</small>
+        </h6>,
         "ChangeOverBAU": <h4 className="text-success">8%<Icon className="align-text-top">arrow_upward</Icon></h4>
     },
 ]
