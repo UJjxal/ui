@@ -1,0 +1,13 @@
+{
+  "categories": ["# of Drugs : 1", "# of Drugs : 2"],
+  "modeldata": [
+    {
+      "name": "High",
+      "data": [11, 89]
+    },
+    {
+      "name": "Low",
+      "data": [43, 57]
+    }
+  ]
+}

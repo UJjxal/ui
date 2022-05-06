@@ -1,0 +1,124 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "City of Hope Cancer Center",
+            "City": "Duarte",
+            "County": "Los Angeles",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Kenneth J. Norris Jr. Comprehensive Cancer Center, Keck School of Medicine, University of Southern California",
+            "City": "Los Angeles",
+            "County": "Los Angeles",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Stanford University",
+            "City": "Stanford",
+            "County": "Stanford",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Robert H. Lurie Comprehensive Cancer Center, Center of Northwestern University",
+            "City": "Chicago",
+            "County": "Cook",
+            "State": "Illinois",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins",
+            "City": "Baltimore",
+            "County": "Baltimore",
+            "State": "Maryland",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Boston Medical Center",
+            "City": "Boston",
+            "County": "Suffolk",
+            "State": "Massachusetts",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Lahey Clinic",
+            "City": "Burlington",
+            "County": "Burlington",
+            "State": "Massachusetts",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "University of Michigan",
+            "City": "Ann Arbor",
+            "County": "Washtenaw",
+            "State": "Michigan",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Wayne State University/Karmanos Cancer Institute",
+            "City": "Detroit",
+            "County": "Wayne",
+            "State": "Michigan",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Roswell Park Cancer Institute",
+            "City": "Buffalo",
+            "County": "Buffalo",
+            "State": "New York",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Vanderbilt-Ingram Cancer Center",
+            "City": "Nashville",
+            "County": "Davidson",
+            "State": "Tennessee",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "University of Texas MD Anderson Cancer Center",
+            "City": "Houston",
+            "County": "Houston",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "University of Utah Huntsman Cancer Institute",
+            "City": "Salt Lake City",
+            "County": "Salt Lake",
+            "State": "Utah",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "University of Washington",
+            "City": "Seattle",
+            "County": "King",
+            "State": "Washington",
+            "Country": "United States"
+        }
+    ]
+}

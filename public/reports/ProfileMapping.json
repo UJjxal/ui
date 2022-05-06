@@ -1,0 +1,51 @@
+[
+    {
+        "file": "Processed_data.csv",
+        "profile": "./reports/Processed_data.csv_report.html",
+        "columns": "16",
+        "records": "962"
+    },
+    {
+        "file": "Raw_data.csv",
+        "profile": "./reports/Raw_data.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Demographics.csv",
+        "profile": "./reports/Demographics.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Diet.csv",
+        "profile": "./reports/Diet.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Exam.csv",
+        "profile": "./reports/Exam.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Final_Dataset.csv",
+        "profile": "./reports/Final_Dataset.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Lab.csv",
+        "profile": "./reports/Lab.csv_report.html",
+        "columns": "19",
+        "records": "5000"
+    },
+    {
+        "file": "Final_merged_data.csv",
+        "profile": "./reports/Final_merged_data.csv_report.html",
+        "columns": "3295",
+        "records": "3295"
+    }
+    
+]

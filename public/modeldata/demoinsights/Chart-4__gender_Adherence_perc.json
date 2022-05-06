@@ -1,0 +1,13 @@
+{
+  "categories": ["No Co-Morbidity", "1 Co-Morbidity", "2+ Co-Morbidities"],
+  "modeldata": [
+    {
+      "name": "High Risk",
+      "data": [14, 27, 61]
+    },
+    {
+      "name": "Low Risk",
+      "data": [86, 73, 39]
+    }
+  ]
+}

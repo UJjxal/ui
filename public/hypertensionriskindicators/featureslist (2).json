@@ -1,0 +1,26 @@
+{
+	"data": [
+		18,
+		7,
+		5,
+		5,
+		4,
+		4,
+		4,
+		4,
+		4,
+		3
+	],
+	"categories": [
+		"Age",
+		"Avg_Systolic_BP",
+		"BMI.kg.m..2.",
+		"Albumin..urine..mg.L.",
+		"Avg_Diastolic_BP",
+		"Hematocrit....",
+		"Sodium..mg.",
+		"Weight.kg.",
+		"Cholestrol..mg.",
+		"Total.Sugars..gm."
+	]
+}

@@ -1,0 +1,78 @@
+{
+	"columns": [
+		{
+			"label": "Rank",
+			"field": "rank"
+		},
+		{
+			"label": "Model",
+			"field": "model_name"
+		},
+		{
+			"label": "Accuracy",
+			"field": "accuracy"
+		},
+		{
+			"label": "Recall",
+			"field": "recall"
+		},
+		{
+			"label": "Precision",
+			"field": "precision"
+		},
+		{
+			"label": "f1",
+			"field": "f1"
+		},
+		{
+			"label": "AUC ROC",
+			"field": "auc_roc"
+		},
+		{
+			"label": "Active",
+			"field": "active"
+		}
+	],
+	"rows": [
+		{
+			"rank":"1",
+			"model_name": "Naive Bayes",
+			"accuracy": 76,
+			"recall": 35,
+			"precision": 24,
+			"f1": 29,
+			"auc-roc": 0.81,
+			"active":""
+		},
+		{
+			"rank":"2",
+			"model_name": "RandomForest",
+			"accuracy": 83,
+			"recall": 15,
+			"precision": 27,
+			"f1": 19,
+			"auc-roc": 0.70,
+			"active":""
+		},
+		{
+			"rank":"3",
+			"model_name": "Decision Tree",
+			"accuracy": 81,
+			"recall": 15,
+			"precision": 21,
+			"f1": 18,
+			"auc-roc": 0.62,
+			"active":""
+		},
+		{
+			"rank":"4",
+			"model_name": "XGBoost",
+			"accuracy": 89,
+			"recall": 10,
+			"precision": 15,
+			"f1": 12,
+			"auc-roc": 0.53,
+			"active":""
+		}
+	]
+}

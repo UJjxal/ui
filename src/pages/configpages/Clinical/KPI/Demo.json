@@ -1,0 +1,46 @@
+{
+	"columns": [
+		{
+			"label": "Demographic Segments",
+			"field": "Demographic"
+		},
+		{
+			"label": "Status",
+			"field": "Status"
+		}
+    ],
+    "rows": [
+		{
+			"Demographic":"East Coast: Male: Low Income",
+			"Status": "red"
+        },
+        {
+			"Demographic":"East Coast: Male: High Income",
+			"Status": "red"
+        },
+        {
+			"Demographic":"West Coast: Male: Low Income",
+			"Status": "red"
+        },
+        {
+			"Demographic":"West Coast: Male: High Income",
+			"Status": "red"
+        },
+        {
+			"Demographic":"West Coast: Male: High Income",
+			"Status": "Amber"
+        },
+        {
+			"Demographic":"West Coast: Female: Low Income",
+			"Status": "Amber"
+        },
+        {
+			"Demographic":"West Coast: Female: High Income",
+			"Status": "Green"
+        },
+        {
+			"Demographic":"Midwest: Female: High Income",
+			"Status": "Green"
+        }
+    ]
+}

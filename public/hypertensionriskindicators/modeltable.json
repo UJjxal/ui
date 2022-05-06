@@ -1,0 +1,28 @@
+{
+    "columns": [
+        {
+            "label": "Model ID",
+            "field": "modelid"
+        },
+        {
+            "label": "Prediction Type",
+            "field": "predictiontype"
+        },
+        {
+            "label": "Model Type",
+            "field": "modeltype"
+        },
+        {
+            "label": "Created On",
+            "field": "created"
+        }
+    ],
+    "rows": [
+        {
+            "modelid": "ICON_POC_Model_001",
+            "predictiontype": "Binary Classification",
+            "modeltype": "Naive Bayes ",
+            "created": "12/03/2020 18:03:26"
+        }
+    ]
+}

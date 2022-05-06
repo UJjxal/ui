@@ -1,0 +1,91 @@
+{
+	"categories": {
+		"data": [
+			"18-Q1",
+			"18-Q2",
+			"18-Q3",
+			"18-Q4",
+			"19-Q1",
+			"19-Q2",
+			"19-Q3",
+			"19-Q4"
+		],
+		"title": "Quarter"
+	},
+	"yaxis": "",
+	"tickAmount":5,
+	"mintick":0,
+	"maxtick":30,
+	"series": [
+		{
+			"name": "Drug A1",
+			"data": [
+				11,
+				14,
+				17,
+				18,
+				21,
+				24,
+				29,
+				30
+			]
+		},
+		{
+			"name": "Drug A2",
+			"data": [
+				0,
+				0,
+				0,
+				17,
+				17,
+				17,
+				18,
+				18
+			]
+		},
+		{
+			"name": "Drug A3",
+			"data": [
+				26,
+				27,
+				28,
+				28,
+				27,
+				27,
+				26,
+				25
+			]
+		},
+		{
+			"name": "Drug A4",
+			"data": [
+				11,
+				11,
+				12,
+				12,
+				11,
+				11,
+				11,
+				11
+			]
+		}
+	],
+	"keyinsights": [
+		{
+			"trend": "down",
+			"text": "For Drug A, the effective rebate  has increased by 19% in 2019 Q4 due to  Access Price Group % change  from 6.25% to 7.95% in 2018 Q1"
+		},
+		{
+			"trend": "up",
+			"text": "For Drug A2,  Gross sales has increased from 10% to 12% resulting in reduction of effective rebate by 2%"
+		},
+		{
+			"trend": "down",
+			"text": "For Drug A, the effective rebate by Payer 1 has increased by 19% due change in Formulary position from P -> P to P->E at the end of 17-Q4"
+		},
+		{
+			"trend": "up",
+			"text": "For Drug A1, due to increased competition from Drug K in 18-Q3, ,a 1.2% higher Admin Fees and 1.0% higher Base Rebates , increased the effective rebate % by 2.2%"
+		}
+	]
+}

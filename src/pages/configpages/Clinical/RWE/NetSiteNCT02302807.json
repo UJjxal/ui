@@ -1,0 +1,61 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "Emory University; Winship Cancer Institute",
+            "City": "Atlanta",
+            "County": "Fulton",
+            "State": "Georgia",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Comprehensive Cancer Centers of Nevada",
+            "City": "Las Vegas",
+            "County": "Clark",
+            "State": "Nevada",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Duke Cancer Center",
+            "City": "Durham",
+            "County": "Durham",
+            "State": "North Carolina",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Bon Secours - St. Francis Hospital",
+            "City": "Greenville",
+            "County": "Greenville",
+            "State": "South Carolina",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Vanderbilt-Ingram Cancer Ctr",
+            "City": "Nashville",
+            "County": "Davidson",
+            "State": "Tennessee",
+            "Country": "United States"
+        }
+    ]
+}

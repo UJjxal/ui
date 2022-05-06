@@ -1,0 +1,62 @@
+{
+    "code": 200,
+    "response":{
+        "abondonment":{
+            "months": ["M1", "M2", "M3", "M4", "M5", "M6","M7","M8","M9","M11","M12"],
+            "series":[
+                {
+                  "name": "Other",
+                  "data": [36, 29, 34, 35, 38, 34,37,42,39,38,37,38]
+                },
+                {
+                    "name": "Coverage Denial",
+                    "data": [18, 20, 21, 18, 17, 15,14,11,10,11,10,7]
+                },
+                {
+                    "name": "Patient Unresponsive",
+                    "data": [7, 8, 7, 8, 9, 10,8,9,9,9,9,10]
+                },
+                {
+                    "name": "Patient Refused Treatment",
+                    "data": [6, 7, 5, 7, 4, 9,7,6,7,6,7,7]
+                },
+                {
+                    "name": "Patient Choice -Financial",
+                    "data": [33, 36, 33, 32, 32, 32,34,32,35,36,37,38]
+                }
+            ]
+        },
+
+        "keyInsights":[
+            {
+                "title":"MoM Fill Rate Drop", 
+                "status":"Down", 
+                "percent":"4",
+                "items":[
+                    {"title":"Biggest drop in fill rate is observed in NY, IL and WA states"},
+                    {"title":"Patient's financial choice and Coverage Denied are the top reasons for lower fill rate"}
+                ]
+            },
+            {
+                "title":"Coverage Denial", 
+                "status":"Up", 
+                "percent":"3",
+                "items":[
+                    {"title":"Fill rate drop due to coverage denial has improved over time "},
+                    {"title":"Coverage denial for Payer A has increased from 23% to 31% during M11 to M12"}
+					
+					
+                ]
+            },
+			{
+                "title":"Patient Choice Financial", 
+                "status":"Down", 
+                "percent":"1",
+                "items":[
+                    {"title":"AL, WI and TX have the highest % of fill drop because of Patient choice financial "},
+                    {"title":"NY and NJ see the highest decline in fill rate loss because of patient choice financials"}
+                ]
+            }
+        ]
+    }
+}

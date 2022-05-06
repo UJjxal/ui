@@ -1,0 +1,229 @@
+{
+    "AttritionPerformance": {
+        "TilesData": [
+            {
+                "label": "Growth Rate",
+                "value": "8.3%",
+                "percentage": "1.2%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "New Accounts",
+                "value": "80,034",
+                "percentage": "8.3%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "Sales($ mn)",
+                "value": "$ 28",
+                "percentage": "5%",
+                "icon": "expand_more",
+                "color": "danger",
+                "img": ""
+            },
+            {
+                "label": "Digital Sales (%)",
+                "value": "4.5%",
+                "percentage": "0.6%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            }
+        ]
+    },
+    "AttritionPerformanceScoreboard": {
+        "TableData": [
+            {
+                "ByProducts": "Total Accounts",
+                "CreditCard": 42700,
+                "Mortgage": 122000,
+                "PersonalLoan": 305000,
+                "AutoLoan": 146400,
+                "ECL": 219600,
+                "AllProducts": 1220000
+            },
+            {
+                "ByProducts": "Attrition",
+                "CreditCard": 18940,
+                "Mortgage": 6430,
+                "PersonalLoan": 12785,
+                "AutoLoan": 7490,
+                "ECL": 10530,
+                "AllProducts": 56175
+            },
+            {
+                "ByProducts": "Attrition Rate (%)",
+                "CreditCard": 4.44,
+                "Mortgage": 5.27,
+                "PersonalLoan": 4.19,
+                "AutoLoan": 5.12,
+                "ECL": 4.80,
+                "AllProducts": 4.60
+            }
+        ]
+    },
+    "AttritionRateByProduct": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "CreditCard": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "4.10",
+                    "4.13",
+                    "4.19",
+                    "4.25",
+                    "4.33",
+                    "4.37",
+                    "4.41",
+                    "4.44"
+                ],
+                "min": 4,
+                "max": 5
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "5.15",
+                    "5.22",
+                    "5.27",
+                    "5.29",
+                    "5.37",
+                    "5.44",
+                    "5.35",
+                    "5.27"
+                ],
+                "min": 5,
+                "max": 6
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "4.31",
+                    "4.29",
+                    "4.27",
+                    "4.25",
+                    "4.26",
+                    "4.21",
+                    "4.18",
+                    "4.19"
+                ],
+                "min": 4,
+                "max": 5
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "4.99",
+                    "5.03",
+                    "5.05",
+                    "5.04",
+                    "5.06",
+                    "5.08",
+                    "5.11",
+                    "5.12"
+                ],
+                "min": 4,
+                "max": 6
+            }
+        ],
+        "ECL": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "4.75",
+                    "4.77",
+                    "4.83",
+                    "4.81",
+                    "4.80",
+                    "4.78",
+                    "4.81",
+                    "4.80"
+                ],
+                "min": 4,
+                "max": 5
+            }
+        ],
+        "AllProducts": [
+            {
+                "type": "line",
+                "name": "Attrition Rate",
+                "data": [
+                    "4.48",
+                    "4.50",
+                    "4.54",
+                    "4.55",
+                    "4.59",
+                    "4.60",
+                    "4.60",
+                    "4.60"
+                ],
+                "min": 4,
+                "max": 5
+            }
+        ]
+    },
+    "AttritionReason": {
+        "yaxis": [
+            "Others",
+            "Poor bank communication",
+            "Price too high",
+            "Found a better product",
+            "Hidden Charges",
+            "Complaints not resolved",
+            "Poor rewards program" 
+        ],
+        "Reasons": [
+            {
+                "type": "bar",
+                "name": "Reasons for Attrition",
+                "data": [
+                    "21",
+                    "14",
+                    "17",
+                    "9",
+                    "11",
+                    "13",
+                    "15" 
+                ],
+                "min": 5,
+                "max": 25
+            }
+        ]
+    },
+    "KeyInsights": [
+        {
+            "title": "Attrition Rate",
+            "description": "Overall attrition rate stands at 4.6% for the current period",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUyQ3JlZGl0IFBvcnRmb2xpbyBQZXJmb3JtYW5jZQ=="
+        },
+        {
+            "title": "Portolio Accounts",
+            "description": "56,175 accounts got attrited in the current period",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUzQ3Jvc3MgU2VsbCBQZXJzb25hbGl6YXRpb246IENoYW5uZWxz"
+        }
+    ]
+}

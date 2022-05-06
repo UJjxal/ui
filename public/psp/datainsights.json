@@ -1,0 +1,59 @@
+{
+	"keyinsightsprior": [
+		{
+			"trend": "down",
+			"text": "Coverage Denial from Payer A over the period Nov '20 to Dec '20 has grown from 2.5% to 7.3%"
+		},
+		{
+			"trend": "down",
+			"text": "Drug Switch to Brand A has increased from 8.3% to 11% between Nov '20 to Dec '20"
+		},
+		{
+			"trend": "down",
+			"text": "New Patient Abandonment from the States of CA, GA ,MA  in Dec '20 has been more than 5% of Nov '20 numbers"
+		},
+		{
+			"trend": "down",
+			"text": "PA Denials has increased from 2.4% to 3.5% between Nov '20 and Dec '20 from HCPs – A,B,C,D,E"
+
+		}
+	],
+	"keyinsightsadherence": [
+		{
+			"trend": "down",
+			"text": "Refill Outlier from the States of CA, GA ,MA  in Dec '20 has been more than 5% of Nov '20 numbers"
+		},
+		{
+			"trend": "up",
+			"text": "Total no of unique patients with Refill Outlier has decreased from 22% in Nov '20 to 17% in Dec '20"
+		},
+		{
+			"trend": "down",
+			"text": "Patient between Age Group 55-65, have the maximum number of On Time Refills"
+		},
+		{
+			"trend": "down",
+			"text": "Patients on Therapy between 6 months to 1 year has the maximum count of Refill Outliers"
+
+		}
+	],
+	"keyinsightsadherenceV": [
+		{
+			"trend": "down",
+			"text": "Adherence from patients between the age group 40-50 has dropped by 9.2 % in in Dec '20 compared Nov '20"
+		},
+		{
+			"trend": "up",
+			"text": "Patients on Therapy between 2 -3 years  has the lowest adherence score of 3.8 between Nov '20 and Dec '20"
+		},
+		{
+			"trend": "up",
+			"text": "Adherence from the States of CA, GA ,MA  in Dec '20 has been more than 5% of Nov '20"
+		},
+		{
+			"trend": "down",
+			"text": "Patient count with Low adherence (Score 0-3) has increased from 10,456 to 13,346 between Nov '20 and Dec '20"
+
+		}
+	]
+}

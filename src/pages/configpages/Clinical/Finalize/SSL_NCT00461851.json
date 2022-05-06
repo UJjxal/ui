@@ -1,0 +1,34 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Surgical factors influence bladder cancer outcomes: a cooperative group report",
+			"StudyLink": "https://ascopubs.org/doi/abs/10.1200/jco.2004.11.024"	
+        },
+		{
+			"pub_lit":"Complications following radical cystectomy for bladder cancer in the elderly",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283809005156"		
+        },
+		{
+			"pub_lit":"A review of current guidelines and best practice recommendations for the management of nonmuscle invasive bladder cancer by the International Bladder Cancer …",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2011.07.076"
+        },
+		{
+			"pub_lit":"Superficial bladder cancer: an update on etiology, molecular development, classification, and natural history",
+			"StudyLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmc2312342/"	
+        },
+		{
+			"pub_lit":"Critical analysis of bladder sparing with trimodal therapy in muscle-invasive bladder cancer: a systematic review",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283814001675"
+        }
+    ]
+}

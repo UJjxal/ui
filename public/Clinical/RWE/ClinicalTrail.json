@@ -1,0 +1,40 @@
+{
+	"columns": [
+		{
+			"label": "STUDY ID",
+			"field": "id"
+		},
+		{
+			"label": "ARMS",
+			"field": "arms"
+		},
+		{
+			"label": "MATCHED PATIENTS",
+			"field": "mat_pat"
+		},
+		{
+			"label": "MATCH %",
+			"field": "perc"
+		},
+		{
+			"label": "View",
+			"field": "view"
+		}
+    ],
+    "rows": [
+		{
+			"id":"NCT00645593",
+			"arms": "Arm 1",
+			"mat_pat": "44",
+			"perc": "85",
+			"view":""
+		},
+		{
+			"id":"NCT00645593",
+			"arms": "Arm 2",
+			"mat_pat": "28",
+			"perc": "90",
+			"view":""
+        }
+    ]
+}

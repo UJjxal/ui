@@ -1,0 +1,61 @@
+
+.ant-datatable .ant-table-pagination .anticon{
+    vertical-align: middle;
+}
+.ant-datatable .ant-table-pagination-right{
+    justify-content: center;
+}
+/* Scroll horizontal css for table */
+.ant-datatable .ant-table{
+    /* overflow-x: scroll; */
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+}
+.ant-datatable table th{
+    font-size: 13px;
+    color: #000;
+    background: #fff;
+}
+.ant-datatable .ant-table-column-sorters::before{
+    cursor: move;
+}
+.ant-datatable .ant-table-header-column{
+    cursor: pointer;
+}
+.ant-datatable table .ant-table-row td{
+    font-size: 12px;
+    font-weight: 500;
+    color: #205684;
+    height: 61px;
+}
+.ant-datatable table .ant-table-tbody > tr > td{
+    padding: 10px 16px;
+}
+ /* css for line clamp on headline in 2 lines */
+.ant-datatable .headline-td .headline-td-span{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    color: #205684;
+    cursor: pointer;
+}
+/* div[role=presentation] .ant-input-affix-wrapper{
+    width: 200px !important;
+}
+div[role=presentation] .ant-input-affix-wrapper .ant-input{
+    border-color: #205684;
+}
+div[role=presentation] .ant-input-affix-wrapper .ant-input::placeholder{
+    color: #205684;
+}
+div[role=presentation] div div{
+    display: block !important;
+    text-align: right;
+} */
+/* div[role=presentation] div .ant-btn{
+    margin-right: 8px;
+} */
+.ant-datatable .ant-empty-normal, .ant-empty-image{
+    text-align: center !important;
+}

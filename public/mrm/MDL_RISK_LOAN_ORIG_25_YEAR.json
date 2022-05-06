@@ -1,0 +1,643 @@
+{
+  "DataOverview": [
+    [
+      {
+        "key": 1,
+        "_": "Performance Window",
+        "Development Cohort": "Sep'11 to Feb'12",
+        "Validation Cohort": "Jan'20 to Mar'20"
+      },
+      {
+        "key": 2,
+        "_": "# Total Customers",
+        "Development Cohort": "4,723",
+        "Validation Cohort": "2,481"
+      },
+      {
+        "key": 3,
+        "_": "# Bad(1)",
+        "Development Cohort": "464",
+        "Validation Cohort": "471"
+      },
+      {
+        "key": 4,
+        "_": "# Good(0)",
+        "Development Cohort": "4,656",
+        "Validation Cohort": "2,010"
+      },
+      {
+        "key": 5,
+        "_": "Event Rate/ Bad Rate",
+        "Development Cohort": "18%",
+        "Validation Cohort": "18.98%"
+      },
+      {
+        "key": 6,
+        "_": "Mean Score (Good)",
+        "Development Cohort": "210",
+        "Validation Cohort": "208"
+      },
+      {
+        "key": 7,
+        "_": "Mean Score (Bad)",
+        "Development Cohort": "198",
+        "Validation Cohort": "199"
+      }
+    ]
+  ],
+  "Discrimination_Table": [
+    [
+      {
+        "key": 1,
+        "Metric": "Accuracy",
+        "Development": "-",
+        "Validation": "35%",
+        "% Change": "-",
+        "Risk": "Red"
+      },
+      {
+        "key": 2,
+        "Metric": "Precision",
+        "Development": "-",
+        "Validation": "81%",
+        "% Change": "-",
+        "Risk": "Orange"
+      },
+      {
+        "key": 3,
+        "Metric": "Recall",
+        "Development": "-",
+        "Validation": "35%",
+        "% Change": "-",
+        "Risk": "Red"
+      },
+      {
+        "key": 4,
+        "Metric": "F1 Score",
+        "Development": "-",
+        "Validation": 0.34,
+        "% Change": "-",
+        "Risk": "Red"
+      },
+      {
+        "key": 5,
+        "Metric": "KS Statistic",
+        "Development": "20%",
+        "Validation": "28%",
+        "% Change": "46%",
+        "Risk": "Green"
+      },
+      {
+        "key": 6,
+        "Metric": "AUC",
+        "Development": "64%",
+        "Validation": "69%",
+        "% Change": "7%",
+        "Risk": "Green"
+      },
+      {
+        "key": 7,
+        "Metric": "Gini Score",
+        "Development": "28%",
+        "Validation": "38%",
+        "% Change": "33%",
+        "Risk": "Green"
+      },
+      {
+        "key": 8,
+        "Metric": "Divergence",
+        "Development": 0.28,
+        "Validation": 0.53,
+        "% Change": "87%",
+        "Risk": "Green"
+      }
+    ]
+  ],
+  "PrecisionRecall": [
+    {
+      "Score_Threshold": [167, 175, 183, 191, 199, 207, 215, 223, 231],
+      "Precision": [0.72, 0.74, 0.75, 0.75, 0.77, 0.77, 0.8, 0.82, 0.82],
+      "Recall": [0.81, 0.81, 0.81, 0.78, 0.74, 0.55, 0.41, 0.29, 0.22]
+    }
+  ],
+  "ConfusionMatrix": [
+    [
+      { "label": "0", "negative": "411 (16%)", "positive": "1,599 (64%)" },
+      { "label": "1", "negative": "22 (0%)", "positive": "449 (18%)" }
+    ]
+  ],
+  "EventDataMetric": [
+    [
+      { "key": 1, "Metric": "Precision", "Value": "21%" },
+      { "key": 2, "Metric": "Recall", "Value": "95%" },
+      { "key": 3, "Metric": "F1 Score", "Value": "0.36" },
+      { "key": 4, "Metric": "False Positive Rate", "Value": "79%" }
+    ]
+  ],
+  "KSCurve": [
+    {
+      "Score_Decile": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "cum_eventrate": [
+        "22",
+        "41",
+        "52",
+        "63",
+        "71",
+        "80",
+        "87",
+        "94",
+        "98",
+        "100"
+      ],
+      "cum_noneventrate": [
+        "8",
+        "16",
+        "24",
+        "34",
+        "46",
+        "58",
+        "66",
+        "77",
+        "89",
+        "100"
+      ]
+    }
+  ],
+  "KSCurveData": [
+    [
+      {
+        "key": 1,
+        "Score Decile": 159,
+        "Cumulative Event %": "22",
+        "Cumulative Non Event %": "8",
+        "KS": 13,
+        "Max_pos": 0
+      },
+      {
+        "key": 2,
+        "Score Decile": 192,
+        "Cumulative Event %": "41",
+        "Cumulative Non Event %": "16",
+        "KS": 24,
+        "Max_pos": 0
+      },
+      {
+        "key": 3,
+        "Score Decile": 198,
+        "Cumulative Event %": "52",
+        "Cumulative Non Event %": "24",
+        "KS": 28,
+        "Max_pos": 0
+      },
+      {
+        "key": 4,
+        "Score Decile": 201,
+        "Cumulative Event %": "63",
+        "Cumulative Non Event %": "34",
+        "KS": 29,
+        "Max_pos": 1
+      },
+      {
+        "key": 5,
+        "Score Decile": 204,
+        "Cumulative Event %": "71",
+        "Cumulative Non Event %": "46",
+        "KS": 24,
+        "Max_pos": 0
+      },
+      {
+        "key": 6,
+        "Score Decile": 207,
+        "Cumulative Event %": "80",
+        "Cumulative Non Event %": "58",
+        "KS": 22,
+        "Max_pos": 0
+      },
+      {
+        "key": 7,
+        "Score Decile": 211,
+        "Cumulative Event %": "87",
+        "Cumulative Non Event %": "66",
+        "KS": 20,
+        "Max_pos": 0
+      },
+      {
+        "key": 8,
+        "Score Decile": 214,
+        "Cumulative Event %": "94",
+        "Cumulative Non Event %": "77",
+        "KS": 16,
+        "Max_pos": 0
+      },
+      {
+        "key": 9,
+        "Score Decile": 219,
+        "Cumulative Event %": "98",
+        "Cumulative Non Event %": "89",
+        "KS": 8,
+        "Max_pos": 0
+      },
+      {
+        "key": 10,
+        "Score Decile": 225,
+        "Cumulative Event %": "100",
+        "Cumulative Non Event %": "100",
+        "KS": 0,
+        "Max_pos": 0
+      }
+    ]
+  ],
+  "LorenzCurve": [
+    {
+      "Cumulative_Total": [
+        10.92,
+        21.08,
+        30.11,
+        40.03,
+        51.19,
+        62.72,
+        70.46,
+        80.98,
+        91.18,
+        100.01
+      ],
+      "Cumulative_Event": [
+        22.08,
+        41.19,
+        52.87,
+        63.7,
+        71.34,
+        80.68,
+        87.05,
+        94.48,
+        98.09,
+        100.0
+      ]
+    }
+  ],
+  "LorenzCurveData": [
+    [
+      {
+        "key": 1,
+        "Score Decile": "1",
+        "Cumulative % Event": 22,
+        "Cumulative % Total": 10
+      },
+      {
+        "key": 2,
+        "Score Decile": "2",
+        "Cumulative % Event": 41,
+        "Cumulative % Total": 21
+      },
+      {
+        "key": 3,
+        "Score Decile": "3",
+        "Cumulative % Event": 52,
+        "Cumulative % Total": 30
+      },
+      {
+        "key": 4,
+        "Score Decile": "4",
+        "Cumulative % Event": 63,
+        "Cumulative % Total": 40
+      },
+      {
+        "key": 5,
+        "Score Decile": "5",
+        "Cumulative % Event": 71,
+        "Cumulative % Total": 51
+      },
+      {
+        "key": 6,
+        "Score Decile": "6",
+        "Cumulative % Event": 80,
+        "Cumulative % Total": 62
+      },
+      {
+        "key": 7,
+        "Score Decile": "7",
+        "Cumulative % Event": 87,
+        "Cumulative % Total": 70
+      },
+      {
+        "key": 8,
+        "Score Decile": "8",
+        "Cumulative % Event": 94,
+        "Cumulative % Total": 80
+      },
+      {
+        "key": 9,
+        "Score Decile": "9",
+        "Cumulative % Event": 98,
+        "Cumulative % Total": 91
+      },
+      {
+        "key": 10,
+        "Score Decile": "10",
+        "Cumulative % Event": 100,
+        "Cumulative % Total": 100
+      }
+    ]
+  ],
+  "ROCCurve": [
+    {
+      "Score_Cutoff": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "FalsePositiveRate": [
+        "0.0",
+        "0.07",
+        "0.15",
+        "0.2",
+        "0.32",
+        "0.43",
+        "0.55",
+        "0.64",
+        "0.76",
+        "0.87",
+        "1.0"
+      ],
+      "TruePositiveRate": [
+        "0.0",
+        "0.2",
+        "0.37",
+        "0.45",
+        "0.61",
+        "0.69",
+        "0.79",
+        "0.85",
+        "0.93",
+        "0.98",
+        "1.0"
+      ]
+    }
+  ],
+  "ROCData": [
+    [
+      {
+        "key": "1",
+        "Score Decile": "(158.999, 191.0]",
+        "FalsePositiveRate": "0.07",
+        "TruePositiveRate": "0.2"
+      },
+      {
+        "key": "2",
+        "Score Decile": "(191.0, 197.0]",
+        "FalsePositiveRate": "0.15",
+        "TruePositiveRate": "0.37"
+      },
+      {
+        "key": "3",
+        "Score Decile": "(197.0, 200.0]",
+        "FalsePositiveRate": "0.2",
+        "TruePositiveRate": "0.45"
+      },
+      {
+        "key": "4",
+        "Score Decile": "(200.0, 203.0]",
+        "FalsePositiveRate": "0.32",
+        "TruePositiveRate": "0.61"
+      },
+      {
+        "key": "5",
+        "Score Decile": "(203.0, 206.0]",
+        "FalsePositiveRate": "0.43",
+        "TruePositiveRate": "0.69"
+      },
+      {
+        "key": "6",
+        "Score Decile": "(206.0, 210.0]",
+        "FalsePositiveRate": "0.55",
+        "TruePositiveRate": "0.79"
+      },
+      {
+        "key": "7",
+        "Score Decile": "(210.0, 213.0]",
+        "FalsePositiveRate": "0.64",
+        "TruePositiveRate": "0.85"
+      },
+      {
+        "key": "8",
+        "Score Decile": "(213.0, 218.0]",
+        "FalsePositiveRate": "0.76",
+        "TruePositiveRate": "0.93"
+      },
+      {
+        "key": "9",
+        "Score Decile": "(218.0, 224.0]",
+        "FalsePositiveRate": "0.87",
+        "TruePositiveRate": "0.98"
+      },
+      {
+        "key": "10",
+        "Score Decile": "(224.0, 240.0]",
+        "FalsePositiveRate": "1.0",
+        "TruePositiveRate": "1.0"
+      }
+    ]
+  ],
+  "DivergenceCurve": [
+    {
+      "Score": [159, 169, 179, 189, 199, 209, 219, 229, 239, 249],
+      "Events": [2, 24, 57, 142, 170, 86, 21, 4, 1, 0],
+      "Non_Events": [6, 24, 95, 281, 749, 545, 353, 99, 6, 0]
+    }
+  ],
+  "DivergenceData": [
+    [
+      { "key": 1, "Metric": "Event Distribution Mean", "Value": 199 },
+      { "key": 2, "Metric": "Non-Event Distribution Mean", "Value": 208 },
+      { "key": 3, "Metric": "Event Distribution Variance", "Value": 146 },
+      { "key": 4, "Metric": "Non-Event Distribution Variance", "Value": 157 }
+    ]
+  ],
+  "PSI": [
+    {
+      "Score_Decile": [
+        "171 & menos",
+        "172 - 178",
+        "179 - 183",
+        "184 - 186",
+        "187 - 190",
+        "191 - 194",
+        "195 - 198",
+        "199 - 203",
+        "204 - 211",
+        "212 & mas"
+      ],
+      "Expected": [
+        -9.66,
+        -9.61,
+        -9.1,
+        -10.86,
+        -8.86,
+        -11.53,
+        -9.85,
+        -9.46,
+        -10.09,
+        -10.96
+      ],
+      "Actual": [
+        3.76,
+        3.58,
+        4.87,
+        4.16,
+        6.79,
+        10.13,
+        12.46,
+        14.88,
+        16.18,
+        23.19
+      ]
+    }
+  ],
+  "PSIData": [
+    [
+      {
+        "key": 1,
+        "Score_Decile": "171 & menos",
+        "Expected %": "10",
+        "Actual %": "4",
+        "Actual-Expected": -5.9,
+        "ln(Actual/Expected)": -0.94,
+        "Contribution To PSI": 0.055
+      },
+      {
+        "key": 2,
+        "Score_Decile": "172 - 178",
+        "Expected %": "10",
+        "Actual %": "4",
+        "Actual-Expected": -6.03,
+        "ln(Actual/Expected)": -0.99,
+        "Contribution To PSI": 0.06
+      },
+      {
+        "key": 3,
+        "Score_Decile": "179 - 183",
+        "Expected %": "9",
+        "Actual %": "5",
+        "Actual-Expected": -4.23,
+        "ln(Actual/Expected)": -0.63,
+        "Contribution To PSI": 0.027
+      },
+      {
+        "key": 4,
+        "Score_Decile": "184 - 186",
+        "Expected %": "11",
+        "Actual %": "4",
+        "Actual-Expected": -6.7,
+        "ln(Actual/Expected)": -0.96,
+        "Contribution To PSI": 0.064
+      },
+      {
+        "key": 5,
+        "Score_Decile": "187 - 190",
+        "Expected %": "9",
+        "Actual %": "7",
+        "Actual-Expected": -2.07,
+        "ln(Actual/Expected)": -0.27,
+        "Contribution To PSI": 0.006
+      },
+      {
+        "key": 6,
+        "Score_Decile": "191 - 194",
+        "Expected %": "12",
+        "Actual %": "10",
+        "Actual-Expected": -1.4,
+        "ln(Actual/Expected)": -0.13,
+        "Contribution To PSI": 0.002
+      },
+      {
+        "key": 7,
+        "Score_Decile": "195 - 198",
+        "Expected %": "10",
+        "Actual %": "12",
+        "Actual-Expected": 2.61,
+        "ln(Actual/Expected)": 0.24,
+        "Contribution To PSI": 0.006
+      },
+      {
+        "key": 8,
+        "Score_Decile": "199 - 203",
+        "Expected %": "9",
+        "Actual %": "15",
+        "Actual-Expected": 5.42,
+        "ln(Actual/Expected)": 0.45,
+        "Contribution To PSI": 0.024
+      },
+      {
+        "key": 9,
+        "Score_Decile": "204 - 211",
+        "Expected %": "10",
+        "Actual %": "16",
+        "Actual-Expected": 6.09,
+        "ln(Actual/Expected)": 0.47,
+        "Contribution To PSI": 0.029
+      },
+      {
+        "key": 10,
+        "Score_Decile": "212 & mas",
+        "Expected %": "11",
+        "Actual %": "23",
+        "Actual-Expected": 12.23,
+        "ln(Actual/Expected)": 0.75,
+        "Contribution To PSI": 0.092
+      }
+    ]
+  ],
+  "CSI": [
+    {
+      "Variable": [
+        "REFERENCIAS EN BANCO",
+        "MAXIMUM DELINQUENCY EVER \u00f1 TRADE LINE EXCL TELCO AND STUDENT",
+        "# DAYS WITH INQUIRIES 0-5 MONTHS",
+        "NET FRACTION REVOLVING BURDEN",
+        "MONTHS SINCE OLDEST REVOLVING DATE OPENED",
+        "EDAD",
+        "# SEVERELY DEROGATORY TRADE LINES",
+        "SEXO"
+      ],
+      "CSI_Score": [3.5, 0.26, 0.24, 0.23, 0.2, 0.06, 0.04, 0.01]
+    }
+  ],
+  "CSIData": [
+    [
+      {
+        "key": 2,
+        "Variable": "REFERENCIAS EN BANCO",
+        "CSI Score": 3.5,
+        "Status": "red"
+      },
+      {
+        "key": 6,
+        "Variable": "MAXIMUM DELINQUENCY EVER \u00f1 TRADE LINE EXCL TELCO AND STUDENT",
+        "CSI Score": 0.26,
+        "Status": "red"
+      },
+      {
+        "key": 4,
+        "Variable": "# DAYS WITH INQUIRIES 0-5 MONTHS",
+        "CSI Score": 0.24,
+        "Status": "orange"
+      },
+      {
+        "key": 8,
+        "Variable": "NET FRACTION REVOLVING BURDEN",
+        "CSI Score": 0.23,
+        "Status": "orange"
+      },
+      {
+        "key": 7,
+        "Variable": "MONTHS SINCE OLDEST REVOLVING DATE OPENED",
+        "CSI Score": 0.2,
+        "Status": "orange"
+      },
+      { "key": 1, "Variable": "EDAD", "CSI Score": 0.06, "Status": "green" },
+      {
+        "key": 5,
+        "Variable": "# SEVERELY DEROGATORY TRADE LINES",
+        "CSI Score": 0.04,
+        "Status": "green"
+      },
+      { "key": 3, "Variable": "SEXO", "CSI Score": 0.01, "Status": "green" }
+    ]
+  ]
+}

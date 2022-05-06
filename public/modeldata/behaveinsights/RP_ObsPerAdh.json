@@ -1,0 +1,13 @@
+{
+  "categories": ["0-25 %", "25-50 %", "50-75 %", "75 % and above"],
+  "modeldata": [
+    {
+      "name": "High Risk",
+      "data": [56, 44, 25, 12]
+    },
+    {
+      "name": "Low Risk",
+      "data": [44, 56, 75, 88]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+/*!
+ * @author Amit Maan
+ * @version 1.
+ * @link 
+ * @license 
+ * @date 19 june 2020
+ */
+.rfipicons__selector {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.rfipicons__ibox,
+.rfipicons__selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rfipicons__icon {
+  width: 20%;
+  height: 64px;
+  padding: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rfipicons__icon--error {
+  display: block;
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  line-height: 1;
+}
+.rfipicons__ibox {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: background-color 0.25s, border 0.25s;
+  transition: background-color 0.25s, border 0.25s;
+  border-radius: 2px;
+  outline: 0 none;
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+.rfipicons__ibox img,
+.rfipicons__ibox svg {
+  max-height: 24px;
+  width: auto;
+}
+.rfipicons__ibox > * {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.rfipicons__ibox:hover > * {
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+.rfipicons__ibox--error {
+  text-transform: lowercase;
+  font-style: italic;
+}

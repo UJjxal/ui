@@ -1,0 +1,54 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Carboplatin",
+            "Condition": "=",
+            "Dosevalue": "5",
+            "Doseunit": "AUC",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Gemcitabine",
+            "Condition": "=",
+            "Dosevalue": "800",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Paclitaxel",
+            "Condition": "=",
+            "Dosevalue": "80",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "28"
+        }
+    ]
+}

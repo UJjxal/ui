@@ -1,0 +1,30 @@
+[
+  {
+    "key": "",
+    "val": "Icon"
+  },
+  {
+    "key": "fa fa-dice-d6",
+    "val": "Dice"
+  },
+  {
+    "key": "fa fa-atom",
+    "val": "Atom"
+  },
+  {
+    "key": "far fa-futbol",
+    "val": "Futbol"
+  },
+  {
+    "key": "far fa-chart-bar",
+    "val": "Bar"
+  },
+  {
+    "key": "far fa-chart-line",
+    "val": "Line"
+  },
+  {
+    "key": "fa fa-chess-rook",
+    "val": "Chess"
+  }
+]

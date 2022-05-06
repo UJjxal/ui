@@ -1,0 +1,13 @@
+{
+  "categories": ["Yes", "No"],
+  "modeldata": [
+    {
+      "name": "Osteoporosis",
+      "data": [33, 8]
+    },
+    {
+      "name": "No Osteoporosis",
+      "data": [67, 92]
+    }
+  ]
+}

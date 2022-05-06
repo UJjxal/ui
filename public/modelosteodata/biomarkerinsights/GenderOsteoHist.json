@@ -1,0 +1,13 @@
+{
+  "categories": ["Female", "Male"],
+  "modeldata": [
+    {
+      "name": "Osteoporosis",
+      "data": [14, 2]
+    },
+    {
+      "name": "No Osteoporosis",
+      "data": [86, 98]
+    }
+  ]
+}

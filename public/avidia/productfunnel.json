@@ -1,0 +1,85 @@
+{
+  "tableData": [
+    {
+      "Credit_Card": "139,500",
+      "ECL": "40,500",
+      "Auto_Loans": "49,500",
+      "Personal_Loans": "180,000",
+      "Mortgages": "40,500",
+      "Overall": "450,000",
+      "skip": { "fill": "#fff" }
+    },
+    {
+      "Credit_Card": "16,740",
+      "ECL": "4,860",
+      "Auto_Loans": "5,940",
+      "Personal_Loans": "21,600",
+      "Mortgages": "4,860",
+      "Overall": "54,000",
+      "skip": { "fill": "#fff" }
+    },
+    {
+      "Credit_Card": "13,392",
+      "ECL": "3,888",
+      "Auto_Loans": "4,752",
+      "Personal_Loans": "17,280",
+      "Mortgages": "3,888",
+      "Overall": "43,200",
+      "skip": { "fill": "#fff" }
+    },
+    {
+      "Credit_Card": "8,035",
+      "ECL": "2,333",
+      "Auto_Loans": "2,851",
+      "Personal_Loans": "10,368",
+      "Mortgages": "2,333",
+      "Overall": "25,920",
+      "skip": { "fill": "#fff" }
+    }
+  ],
+  "crossSellRate": [
+    {
+      "title":"Leads to Conversion Ratio (Cross Sell Rates)",
+      "Credit_Card": "3.6%",
+      "ECL": "2.3%",
+      "Auto_Loans": "2.6%",
+      "Personal_Loans": "3.5%",
+      "Mortgages": "3.2%",
+      "Overall": "3.2%",
+      "skip": {
+        "fill": "#072F5F",
+        "style": {
+          "padding": 10,
+          "textAlign": "center",
+          "font-weight": "bold"
+        }
+      }
+    }
+  ],
+  "funnel": [
+    {
+      "x": "Conversions",
+      "y": "1",
+      "display": "Conversions : 25,920",
+      "fill": "#a5c2e7"
+    },
+    {
+      "x": "Approvals",
+      "y": "1",
+      "display": "Approvals : 43,200",
+      "fill": "#7ba0cf"
+    },
+    {
+      "x": "Applications",
+      "y": "1",
+      "display": "Applications : 54,000",
+      "fill": "#4f80b7"
+    },
+    {
+      "x": "Leads",
+      "y": "1",
+      "display": "Leads : 450,000",
+      "fill": "#1261a0"
+    }
+  ]
+}

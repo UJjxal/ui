@@ -1,0 +1,838 @@
+{
+  "DataOverview": [
+    [
+      {
+        "key": 1,
+        "_": "Performance Window",
+        "Development Cohort": "Sep'18 to Feb'19",
+        "Validation Cohort": "May'19 to Mar'20"
+      },
+      {
+        "key": 2,
+        "_": "# Total Customers",
+        "Development Cohort": "100",
+        "Validation Cohort": "45"
+      },
+      {
+        "key": 3,
+        "_": "# Bad(1)",
+        "Development Cohort": "26",
+        "Validation Cohort": "4"
+      },
+      {
+        "key": 4,
+        "_": "# Good(0)",
+        "Development Cohort": "74",
+        "Validation Cohort": "41"
+      },
+      {
+        "key": 5,
+        "_": "Event Rate/ Bad Rate",
+        "Development Cohort": "6.0%",
+        "Validation Cohort": "8.89%"
+      },
+      {
+        "key": 6,
+        "_": "Mean Rating (Good)",
+        "Development Cohort": "3",
+        "Validation Cohort": "4"
+      },
+      {
+        "key": 7,
+        "_": "Mean Rating (Bad)",
+        "Development Cohort": "4",
+        "Validation Cohort": "6"
+      }
+    ]
+  ],
+  "Discrimination_Table": [
+    [
+      {
+        "Key": 1,
+        "Metric": "Accuracy",
+        "Development Cohort": 0.82,
+        "Validation Cohort": 0.82,
+        "% Change": 0,
+        "Risk": "Red"
+      },
+      {
+        "Key": 2,
+        "Metric": "Precision",
+        "Development Cohort": 0.95,
+        "Validation Cohort": 0.94,
+        "% Change": 0.01,
+        "Risk": "Orange"
+      },
+      {
+        "Key": 3,
+        "Metric": "Recall",
+        "Development Cohort": 0.9,
+        "Validation Cohort": 0.82,
+        "% Change": 0.08,
+        "Risk": "Green"
+      },
+      {
+        "Key": 4,
+        "Metric": "F1 Score",
+        "Development Cohort": 0.92,
+        "Validation Cohort": 0.86,
+        "% Change": 0.06,
+        "Risk": "Yellow"
+      },
+      {
+        "Key": 5,
+        "Metric": "KS Statistic",
+        "Development Cohort": 0.83,
+        "Validation Cohort": 0.8,
+        "% Change": 0.03,
+        "Risk": "Red"
+      },
+      {
+        "Key": 6,
+        "Metric": "AUC",
+        "Development Cohort": 0.93,
+        "Validation Cohort": 0.91,
+        "% Change": 0.02,
+        "Risk": "Orange"
+      },
+      {
+        "Key": 7,
+        "Metric": "Gini Score",
+        "Development Cohort": 0.83,
+        "Validation Cohort": 0.82,
+        "% Change": 0.01,
+        "Risk": "Green"
+      },
+      {
+        "Key": 8,
+        "Metric": "Divergence",
+        "Development Cohort": 2.68,
+        "Validation Cohort": 2.67,
+        "% Change": 0.01,
+        "Risk": "Yellow"
+      }
+    ]
+  ],
+  "PrecisionRecall": [
+    {
+      "Score_Threshold": [
+        1,
+        2,
+        3,
+        3,
+        4,
+        5,
+        5,
+        6,
+        7
+      ],
+      "Precision": [
+        0.92,
+        0.92,
+        0.92,
+        0.92,
+        0.93,
+        0.94,
+        0.94,
+        0.92,
+        0.83
+      ],
+      "Recall": [
+        0.16,
+        0.24,
+        0.4,
+        0.4,
+        0.64,
+        0.82,
+        0.82,
+        0.87,
+        0.89
+      ]
+    }
+  ],
+  "ConfusionMatrix": [
+    [
+      {
+        "label": "0",
+        "negative": "4 (8%)",
+        "positive": "1 (2%)"
+      },
+      {
+        "label": "1",
+        "negative": "8 (17%)",
+        "positive": "33 (71%)"
+      }
+    ]
+  ],
+  "EventDataMetric": [
+    [
+      {
+        "key": 1,
+        "Metric": "Precision",
+        "Value": "97%"
+      },
+      {
+        "key": 2,
+        "Metric": "Recall",
+        "Value": "80%"
+      },
+      {
+        "key": 3,
+        "Metric": "F1 Score",
+        "Value": "0.88"
+      },
+      {
+        "key": 4,
+        "Metric": "False Positive Rate",
+        "Value": "20%"
+      }
+    ]
+  ],
+  "RankOrdering": [
+    {
+      "Score_Decile": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "Actual_Bad": [
+        65.01,
+        51.63,
+        45.42,
+        40.29,
+        35.19,
+        29.48,
+        23.3,
+        17.21,
+        11.26,
+        1.61
+      ],
+      "Expected_Bad": [
+        95.48,
+        82.14,
+        69.58,
+        55.02,
+        42.4,
+        31.72,
+        19.9,
+        10.1,
+        3.89,
+        0.53
+      ]
+    }
+  ],
+  "RankOrderingData": [
+    [
+      {
+        "key": 1,
+        "Score Decile": "1",
+        "Actual Customers %": 65,
+        "Expected Customer %": 95
+      },
+      {
+        "key": 2,
+        "Score Decile": "2",
+        "Actual Customers %": 51,
+        "Expected Customer %": 82
+      },
+      {
+        "key": 3,
+        "Score Decile": "3",
+        "Actual Customers %": 45,
+        "Expected Customer %": 69
+      },
+      {
+        "key": 4,
+        "Score Decile": "4",
+        "Actual Customers %": 40,
+        "Expected Customer %": 55
+      },
+      {
+        "key": 5,
+        "Score Decile": "5",
+        "Actual Customers %": 35,
+        "Expected Customer %": 42
+      },
+      {
+        "key": 6,
+        "Score Decile": "6",
+        "Actual Customers %": 29,
+        "Expected Customer %": 31
+      },
+      {
+        "key": 7,
+        "Score Decile": "7",
+        "Actual Customers %": 23,
+        "Expected Customer %": 19
+      },
+      {
+        "key": 8,
+        "Score Decile": "8",
+        "Actual Customers %": 17,
+        "Expected Customer %": 10
+      },
+      {
+        "key": 9,
+        "Score Decile": "9",
+        "Actual Customers %": 11,
+        "Expected Customer %": 3
+      },
+      {
+        "key": 10,
+        "Score Decile": "10",
+        "Actual Customers %": 1,
+        "Expected Customer %": 0
+      }
+    ]
+  ],
+  "KSCurve": [
+    {
+      "Score_Decile": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "cum_eventrate": [
+        "7",
+        "17",
+        "34",
+        "60",
+        "80",
+        "87",
+        "97",
+        "100"
+      ],
+      "cum_noneventrate": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "25",
+        "100",
+        "100"
+      ]
+    }
+  ],
+  "KSCurveData": [
+    [
+      {
+        "key": 1,
+        "Score Decile": 1,
+        "Cumulative Event %": "7",
+        "Cumulative Non Event %": "0",
+        "KS": 7,
+        "Max_pos": 0
+      },
+      {
+        "key": 2,
+        "Score Decile": 2,
+        "Cumulative Event %": "17",
+        "Cumulative Non Event %": "0",
+        "KS": 17,
+        "Max_pos": 0
+      },
+      {
+        "key": 3,
+        "Score Decile": 3,
+        "Cumulative Event %": "34",
+        "Cumulative Non Event %": "0",
+        "KS": 34,
+        "Max_pos": 0
+      },
+      {
+        "key": 4,
+        "Score Decile": 4,
+        "Cumulative Event %": "60",
+        "Cumulative Non Event %": "0",
+        "KS": 60,
+        "Max_pos": 0
+      },
+      {
+        "key": 5,
+        "Score Decile": 5,
+        "Cumulative Event %": "80",
+        "Cumulative Non Event %": "0",
+        "KS": 80,
+        "Max_pos": 1
+      },
+      {
+        "key": 6,
+        "Score Decile": 6,
+        "Cumulative Event %": "87",
+        "Cumulative Non Event %": "25",
+        "KS": 62,
+        "Max_pos": 0
+      },
+      {
+        "key": 7,
+        "Score Decile": 7,
+        "Cumulative Event %": "97",
+        "Cumulative Non Event %": "100",
+        "KS": -2,
+        "Max_pos": 0
+      },
+      {
+        "key": 8,
+        "Score Decile": 8,
+        "Cumulative Event %": "100",
+        "Cumulative Non Event %": "100",
+        "KS": 0,
+        "Max_pos": 0
+      }
+    ]
+  ],
+  "LorenzCurve": [
+    {
+      "Cumulative_Total": [
+        7,
+        16,
+        31,
+        56,
+        73,
+        82,
+        98,
+        100
+      ],
+      "Cumulative_Event": [
+        7,
+        17,
+        34,
+        61,
+        80,
+        88,
+        98,
+        100
+      ]
+    }
+  ],
+  "LorenzCurveData": [
+    [
+      {
+        "key": 1,
+        "Score Decile": "1",
+        "Cumulative Event %": 7,
+        "Cumulative Total %": 7
+      },
+      {
+        "key": 2,
+        "Score Decile": "2",
+        "Cumulative Event %": 17,
+        "Cumulative Total %": 16
+      },
+      {
+        "key": 3,
+        "Score Decile": "3",
+        "Cumulative Event %": 34,
+        "Cumulative Total %": 31
+      },
+      {
+        "key": 4,
+        "Score Decile": "4",
+        "Cumulative Event %": 61,
+        "Cumulative Total %": 56
+      },
+      {
+        "key": 5,
+        "Score Decile": "5",
+        "Cumulative Event %": 80,
+        "Cumulative Total %": 73
+      },
+      {
+        "key": 6,
+        "Score Decile": "6",
+        "Cumulative Event %": 88,
+        "Cumulative Total %": 82
+      },
+      {
+        "key": 7,
+        "Score Decile": "7",
+        "Cumulative Event %": 98,
+        "Cumulative Total %": 98
+      },
+      {
+        "key": 8,
+        "Score Decile": "8",
+        "Cumulative Event %": 100,
+        "Cumulative Total %": 100
+      }
+    ]
+  ],
+  "ROCCurve": [
+    {
+      "Score_Cutoff": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "FalsePositiveRate": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.25",
+        "1.0"
+      ],
+      "TruePositiveRate": [
+        "0.0",
+        "0.0",
+        "0.07",
+        "0.17",
+        "0.34",
+        "0.61",
+        "0.8",
+        "0.88",
+        "0.98"
+      ]
+    }
+  ],
+  "ROCData": [
+    [
+      {
+        "key": "1",
+        "Score Decile": "(0,1]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.0"
+      },
+      {
+        "key": "2",
+        "Score Decile": "(1,2]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.07"
+      },
+      {
+        "key": "3",
+        "Score Decile": "(2,3]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.17"
+      },
+      {
+        "key": "4",
+        "Score Decile": "(3,4]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.34"
+      },
+      {
+        "key": "5",
+        "Score Decile": "(4,5]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.61"
+      },
+      {
+        "key": "6",
+        "Score Decile": "(5,6]",
+        "FalsePositiveRate": "0.0",
+        "TruePositiveRate": "0.8"
+      },
+      {
+        "key": "7",
+        "Score Decile": "(6,7]",
+        "FalsePositiveRate": "0.25",
+        "TruePositiveRate": "0.88"
+      },
+      {
+        "key": "8",
+        "Score Decile": "(7,8]",
+        "FalsePositiveRate": "1.0",
+        "TruePositiveRate": "0.98"
+      }
+    ]
+  ],
+  "DivergenceCurve": [
+    {
+      "Score": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "Events": [
+        41,
+        38,
+        34,
+        27,
+        16,
+        8,
+        5,
+        1
+      ],
+      "Non_Events": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        0
+      ]
+    }
+  ],
+  "DivergenceData": [
+    [
+      {
+        "key": 1,
+        "Metric": "Event Distribution Mean",
+        "Value": 6
+      },
+      {
+        "key": 2,
+        "Metric": "Non-Event Distribution Mean",
+        "Value": 4
+      },
+      {
+        "key": 3,
+        "Metric": "Event Distribution Variance",
+        "Value": 0
+      },
+      {
+        "key": 4,
+        "Metric": "Non-Event Distribution Variance",
+        "Value": 3
+      }
+    ]
+  ],
+  "PSI": [
+    {
+      "Score_Decile": [
+        "10",
+        "9",
+        "8",
+        "7",
+        "6",
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "Expected": [
+        -43.63,
+        -11.4,
+        -9.92,
+        -7.88,
+        -6.11,
+        -4.82,
+        -4.1,
+        -3.71,
+        -3.63,
+        -4.8
+      ],
+      "Actual": [
+        38.68,
+        10.8,
+        9.7,
+        8.08,
+        6.58,
+        5.62,
+        5,
+        4.88,
+        5.2,
+        5.46
+      ]
+    }
+  ],
+  "PSIData": [
+    [
+      {
+        "key": 1,
+        "Score_Decile": "10",
+        "Expected %": "44",
+        "Actual %": "39",
+        "Actual-Expected": -4.95,
+        "ln(Actual/Expected)": -0.05,
+        "Contribution To PSI": 0.002
+      },
+      {
+        "key": 2,
+        "Score_Decile": "9",
+        "Expected %": "11",
+        "Actual %": "11",
+        "Actual-Expected": -0.6,
+        "ln(Actual/Expected)": -0.02,
+        "Contribution To PSI": 0
+      },
+      {
+        "key": 3,
+        "Score_Decile": "8",
+        "Expected %": "10",
+        "Actual %": "10",
+        "Actual-Expected": -0.22,
+        "ln(Actual/Expected)": -0.01,
+        "Contribution To PSI": 0
+      },
+      {
+        "key": 4,
+        "Score_Decile": "7",
+        "Expected %": "8",
+        "Actual %": "8",
+        "Actual-Expected": 0.2,
+        "ln(Actual/Expected)": 0.01,
+        "Contribution To PSI": 0
+      },
+      {
+        "key": 5,
+        "Score_Decile": "6",
+        "Expected %": "6",
+        "Actual %": "7",
+        "Actual-Expected": 0.47,
+        "ln(Actual/Expected)": 0.03,
+        "Contribution To PSI": 0
+      },
+      {
+        "key": 6,
+        "Score_Decile": "5",
+        "Expected %": "5",
+        "Actual %": "6",
+        "Actual-Expected": 0.8,
+        "ln(Actual/Expected)": 0.07,
+        "Contribution To PSI": 0.001
+      },
+      {
+        "key": 7,
+        "Score_Decile": "4",
+        "Expected %": "4",
+        "Actual %": "5",
+        "Actual-Expected": 0.9,
+        "ln(Actual/Expected)": 0.09,
+        "Contribution To PSI": 0.001
+      },
+      {
+        "key": 8,
+        "Score_Decile": "3",
+        "Expected %": "4",
+        "Actual %": "5",
+        "Actual-Expected": 1.17,
+        "ln(Actual/Expected)": 0.12,
+        "Contribution To PSI": 0.001
+      },
+      {
+        "key": 9,
+        "Score_Decile": "2",
+        "Expected %": "4",
+        "Actual %": "5",
+        "Actual-Expected": 1.57,
+        "ln(Actual/Expected)": 0.16,
+        "Contribution To PSI": 0.003
+      },
+      {
+        "key": 10,
+        "Score_Decile": "1",
+        "Expected %": "5",
+        "Actual %": "5",
+        "Actual-Expected": 0.66,
+        "ln(Actual/Expected)": 0.06,
+        "Contribution To PSI": 0
+      }
+    ]
+  ],
+  "CSI": [
+    {
+      "Variable": [
+        "Six_month_avg_LIM_TARJ (Avg. credit card limit  last 6 months)",
+        "Six_month_avg_M_TARJETA_COMP (Wallet share of credit with competitor)",
+        "Six_month_avg_BCE_PRES (Loan Balance last 6 months)",
+        "freq_Generic (Avg. frequency of txn last 3 months)",
+        "CUST_AGE (Customer Age)",
+        "EMPLOYMENT_STATUS_CD (Employment status code)",
+        "CTE_P_XTACRED_RD (Opted for extra credit )",
+        "M_Value_Generic (Avg. monetory value of txns last 3 months)",
+        "CUMTND_DATE_DELTA_in_Days (Last contact with bank in days)"
+      ],
+      "CSI_Score": [
+        0.06,
+        0.03,
+        0.02,
+        0.02,
+        0.02,
+        0.01,
+        0.01,
+        0.01,
+        0.01
+      ]
+    }
+  ],
+  "CSIData": [
+    [
+      {
+        "key": 7,
+        "Variable": "Six_month_avg_LIM_TARJ (Avg. credit card limit  last 6 months)",
+        "CSI Score": 0.06,
+        "Status": "green"
+      },
+      {
+        "key": 8,
+        "Variable": "Six_month_avg_M_TARJETA_COMP (Wallet share of credit with competitor)",
+        "CSI Score": 0.03,
+        "Status": "green"
+      },
+      {
+        "key": 3,
+        "Variable": "Six_month_avg_BCE_PRES (Loan Balance last 6 months)",
+        "CSI Score": 0.02,
+        "Status": "green"
+      },
+      {
+        "key": 4,
+        "Variable": "freq_Generic (Avg. frequency of txn last 3 months)",
+        "CSI Score": 0.02,
+        "Status": "green"
+      },
+      {
+        "key": 9,
+        "Variable": "CUST_AGE (Customer Age)",
+        "CSI Score": 0.02,
+        "Status": "green"
+      },
+      {
+        "key": 1,
+        "Variable": "EMPLOYMENT_STATUS_CD (Employment status code)",
+        "CSI Score": 0.01,
+        "Status": "green"
+      },
+      {
+        "key": 2,
+        "Variable": "CTE_P_XTACRED_RD (Opted for extra credit )",
+        "CSI Score": 0.01,
+        "Status": "green"
+      },
+      {
+        "key": 5,
+        "Variable": "M_Value_Generic (Avg. monetory value of txns last 3 months)",
+        "CSI Score": 0.01,
+        "Status": "green"
+      },
+      {
+        "key": 6,
+        "Variable": "CUMTND_DATE_DELTA_in_Days (Last contact with bank in days)",
+        "CSI Score": 0.01,
+        "Status": "green"
+      }
+    ]
+  ]
+}

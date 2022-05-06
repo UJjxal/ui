@@ -1,0 +1,94 @@
+{
+  "tblChannelStg": [
+    {
+      "channel": "BAU",
+      "branch": "3.8%",
+      "call_center": "3.4%",
+      "email": "2.8%",
+      "app": "2.2%",
+      "web": "2.6%",
+      "overall": "3.2%"
+    },
+    {
+      "channel": "Model Enabled",
+      "branch": "7.3%",
+      "call_center": "7.6%",
+      "email": "6.1%",
+      "app": "4.7%",
+      "web": "5.2%",
+      "Overall": "7.5%"
+    }
+  ],
+  "tblProductStg": [
+    {
+      "product": "BAU",
+      "credit_card": "3.6%",
+      "ecl": "2.3%",
+      "auto_loans": "2.6%",
+      "personal_loans": "3.5%",
+      "mortgages": "3.2%",
+      "overall": "3.2%"
+    },
+    {
+      "product": "Model Enabled",
+      "credit_card": "7.8%",
+      "ecl": "4.1%",
+      "auto_Loans": "3.8%",
+      "personal_Loans": "7.6%",
+      "mortgage": "3.8%",
+      "overall": "7.5%"
+    }
+  ],
+  "strategy": [
+    {
+      "x": "Conversions",
+      "y": "1",
+      "display": "Conversions : 25,920",
+      "fill": "#58CCED"
+    },
+    {
+      "x": "Approvals",
+      "y": "1",
+      "display": "Approvals : 43,200",
+      "fill": "#3895D3"
+    },
+    {
+      "x": "Applications",
+      "y": "1",
+      "display": "Applications : 54,000",
+      "fill": "#1261A0"
+    },
+    {
+      "x": "Leads",
+      "y": "1",
+      "display": "Leads : 450,000",
+      "fill": "#072F5F"
+    }
+  ],
+  "business": [
+    {
+      "x": "Conversions",
+      "y": "1",
+      "display": "Conversions : 27,648",
+      "fill": "#58CCED"
+    },
+    {
+      "x": "Approvals",
+      "y": "1",
+      "display": "Approvals : 46,080",
+      "fill": "#3895D3"
+    },
+    {
+      "x": "Applications",
+      "y": "1",
+      "display": "Applications : 57,600",
+      "fill": "#1261A0"
+    },
+    {
+      "x": "Leads",
+      "y": "1",
+      "display": "Leads : 480,000",
+      "fill": "#072F5F"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "Stanford University School of Medicine",
+            "City": "Stanford",
+            "County": "Stanford",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Karmanos Cancer Institute",
+            "City": "Detroit",
+            "County": "Wayne",
+            "State": "Michigan",
+            "Country": "United States"
+        }
+    ]
+}

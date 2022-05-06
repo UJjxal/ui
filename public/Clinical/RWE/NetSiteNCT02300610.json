@@ -1,0 +1,40 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "H. Lee Moffitt Cancer Center and Research Institute",
+            "City": "Tampa",
+            "County": "Hillsborough",
+            "State": "Florida",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "University of Minnesota, Masonic Cancer Center",
+            "City": "Minneapolis",
+            "County": "Hennepin",
+            "State": "Minnesota",
+            "Country": "United States"
+        }
+    ]
+}

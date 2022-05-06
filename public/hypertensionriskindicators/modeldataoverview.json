@@ -1,0 +1,22 @@
+{
+	"metrics": [
+		{
+			"metrics": "Sample Size",
+			"value": 5184
+		},
+		{
+			"metrics": "Event Rate",
+			"value": "26%"
+		}
+	],
+	"Model Data": [
+		{
+			"name": "No Hypertension",
+			"Count": 3856
+		},
+		{
+			"name": "Hypertension",
+			"Count": 1348
+		}
+	]
+}

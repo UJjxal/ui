@@ -1,0 +1,34 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Economic aspects of bladder cancer: what are the benefits and costs?",
+			"StudyLink": "https://link.springer.com/article/10.1007/s00345-009-0395-z"	
+        },
+		{
+			"pub_lit":"Bladder cancer detection using FISH (UroVysion assay)",
+			"StudyLink": "https://journals.lww.com/anatomicpathology/FullText/2008/09000/Bladder_Cancer_Detection_Using_FISH__UroVysion.3.aspx"		
+        },
+		{
+			"pub_lit":"Neoadjuvant and adjuvant chemotherapy in muscle-invasive bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283808012086"	
+        },
+		{
+			"pub_lit":"Immunotherapy for bladder cancer",
+			"StudyLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4427258/"	
+        },
+		{
+			"pub_lit":"Diagnosis and treatment of non-muscle invasive bladder cancer: AUA/SUO guideline",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2016.06.049"
+        }
+    ]
+}

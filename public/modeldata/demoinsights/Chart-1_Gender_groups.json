@@ -1,0 +1,13 @@
+{
+  "categories": ["Male", "Female"],
+  "modeldata": [
+    {
+      "name": "High Risk",
+      "data": [22, 30]
+    },
+    {
+      "name": "Low Risk",
+      "data": [78, 70]
+    }
+  ]
+}

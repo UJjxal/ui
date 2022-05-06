@@ -1,0 +1,1070 @@
+{
+	"row":[
+		{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Bladder Cancer- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",					
+			"data": [
+				57,
+				30
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                43,
+                70
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}	
+
+	]	
+	},
+{	
+	
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Allergy- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				60,
+				35
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                40,
+                65
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Secondary malignancy- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				60,
+				35
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                40,
+                65
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Colon Cancer- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				59,
+				37
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                41,
+                63
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"1",
+            "2",
+            "3",
+            "3+"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Stage of Cancer- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				65,
+                60,
+                40,
+                25
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                35,
+                40,
+                60,
+                75
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Stomach flu- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				57.1,
+				50
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                42.9,
+                50
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "Other Fracture- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				57.1,
+				55.8
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                42.9,
+                44.2
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "COPD - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				57,
+				57.8
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                43,
+                42.2
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "COPD - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				57,
+                57.8
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                43,
+                42.2
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0",
+			"1"
+		]
+	},
+	"yaxis": "Indication",
+	"title": "HIV - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				56.8,
+				35
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                43.2,
+                65
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0-0.5",
+            "0.5-1",
+            "1-1.5",
+            "1.5-2",
+            ">2"
+		]
+	},
+	"yaxis": "Vital",
+	"title": "Bilirubin- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				54,
+                55,
+                57,
+                0,
+                25
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                46,
+                45,
+                43,
+                100,
+                75
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0-0.5",
+            "0.5-1",
+            "1-1.5",
+            "1.5-2",
+            "2-2.5",
+            ">2.5"
+		]
+	},
+	"yaxis": "Vitals",
+	"title": "Creatinine- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				60,
+                57,
+                54,
+                50,
+                50,
+                58
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                40,
+                43,
+                46,
+                50,
+                50,
+                42
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+            "5 - 10",
+			"10 - 15",
+			"15 - 20"
+		]
+	},
+	"yaxis": "Vitals",
+	"title": "Hemoglobin- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+                52,
+				55,
+				60
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                48,
+                45,
+                40
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"0 - 50",
+            "50-100",
+            "100-150",
+            "150-200",
+            "200-250",
+            "250-300",
+            "300-350",
+            "350-400",
+            ">400"
+
+		]
+	},
+	"yaxis": "Vitals",
+	"title": "Platelets - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				50,
+                82,
+                59,
+                54,
+                53,
+                55,
+                61,
+                48,
+                49
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                50,
+                18,
+                42,
+                46,
+                48,
+                45,
+                39,
+                52,
+                51
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+            "<100",
+            "100-119",
+            "120-139",
+            "140-159",
+            ">160"			
+		]
+	},
+	"yaxis": "Vitals",
+	"title": "Systolic Blood Pressure - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+                45,
+                54,
+                57,
+                54,
+                58
+				
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                55,
+                46,
+                43,
+                46,
+                43
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"<100",
+            "100-119",
+            "120-139",
+            "140-159",
+            ">160"	
+		]
+	},
+	"yaxis": "Vitals",
+	"title": "Diastolic Blood Pressure- Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+                45,
+                54,
+                57,
+                54,
+                58
+				
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                55,
+                46,
+                43,
+                46,
+                43
+                
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Female",
+			"Male"
+		]
+	},
+	"yaxis": "Demographic",
+	"title": "Gender - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+				59,
+				56
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                41,
+                44
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"American",
+            "Asian",
+            "Black or African American",
+            "Other",
+            "White or Caucasian"
+		]
+	},
+	"yaxis": "Demographic",
+	"title": "Race - Attrition sensitivity",	
+	"tickAmount": 10,
+	"mintick": 0,
+	"maxtick": 100,
+	"series": [
+		{
+			"name": "Yes",			
+			"data": [
+                68,
+                83,
+                52,
+                64,
+                57
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		},
+		{
+			"name": "No",
+			"data": [
+                32,
+                17,
+                49,
+                36,
+                43
+			],
+			"tooltip": {
+				"valueSuffix": "%"
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Diagnosis History"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				1
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				1
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				12
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Retention Sample"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				2
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				1
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				11
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"PET/CT Scan"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				2
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				5
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				15
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Chemotherapy"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				3
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				6
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				11
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Cystoscopy"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				4
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				3
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				13
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"Intravenous"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				3
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				6
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				32
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+},
+{
+	"categories": {
+		"data": [
+			"TURBT"
+		]
+		
+	},
+	"title": "",
+    "yaxis": "",    
+	"maxtick":"1",		
+	"series": [
+		{
+			"name": "Average of Burden",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				4
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		},
+		{
+			"name": "Average of Frequency",
+			"type": "column",
+			"yAxis": 1,
+			"data": [
+				1
+				
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}		
+		},
+		{
+			"name": "Average of Attrition",
+			"type": "line",
+			"data": [
+				50
+			],
+			"tooltip": {
+				"valueSuffix": ""
+			}
+		}
+	]
+	
+}
+
+]
+}
+	
+
+
+
+	

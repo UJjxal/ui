@@ -1,0 +1,19 @@
+[
+  {
+    "title": "# Contact per Consumer",
+    "Decile": ["Test", "Control"],
+    "values": [1, 4.5]
+  },
+  {
+    "title": "$ Cost per Consumer",
+    "Decile": ["Test", "Control"],
+    "values": [3.97, 15.88],
+    "col_type": "dollar"
+  },
+  {
+    "title": "30 DPD+ Incedence Rate",
+    "Decile": ["Test", "Control"],
+    "values": [1.11, 1.13],
+    "col_type": "perc"
+  }
+]

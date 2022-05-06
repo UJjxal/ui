@@ -1,0 +1,57 @@
+{
+    "code": 200,
+    "response":{
+        "abondonment":{
+            "months": ["M7", "M8", "M9", "M10", "M11", "M12"],
+            "series":[
+                {
+                  "name": "Coverage Denial",
+                  "data": [10, 10, 10, 10, 10, 10]
+                },
+                {
+                    "name": "PA Denial",
+                    "data": [5, 5, 5, 5, 5, 5]
+                },
+                {
+                    "name": "BV Unsuccessfull",
+                    "data": [9, 9, 9, 9, 9, 9]
+                },
+                {
+                    "name": "Drug Switched",
+                    "data": [50, 50, 50, 50, 50, 50]
+                },
+                {
+                    "name": "Others",
+                    "data": [26, 26, 26, 26, 26, 26]
+                }
+            ]
+        },
+
+        "keyInsights":[
+            {
+                "status":"Down",
+                "items":[
+                    {"title":"Coverage Denial from Payer A over the period M11 to M12 has grown from 2.5% to 7.3%"}
+                ]
+            },
+            {
+                "status":"Up",
+                "items":[
+                    {"title":"Coverage Denial from Payer A over the period M11 to M12 has grown from 2.5% to 7.3%"}
+                ]
+            },
+            {
+                "status":"Down",
+                "items":[
+                    {"title":"Coverage Denial from Payer A over the period M11 to M12 has grown from 2.5% to 7.3%"}
+                ]
+            },
+            {
+                "status":"Down",
+                "items":[
+                    {"title":"Coverage Denial from Payer A over the period M11 to M12 has grown from 2.5% to 7.3%"}
+                ]
+            }
+        ]
+    }
+}

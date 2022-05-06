@@ -1,0 +1,22 @@
+[
+    [
+        "firstname",
+        "lastname",
+        "email"
+    ],
+    [
+        "Tim",
+        "Pane",
+        "tim@smthing.co.com"
+    ],
+    [
+        "John",
+        "Doe",
+        "doe@smthing.co.com"
+    ],
+    [
+        "Rick",
+        "Flair",
+        "flair_r@cocococo.com"
+    ]
+]

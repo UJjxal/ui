@@ -1,0 +1,9 @@
+thead tr th{font-weight: 500 !important; color: #000;}
+.table.table-sm thead tr th{font-size: 12px !important; background-color: #fff;}
+.table.table-sm tbody tr td{font-size: 13px !important; color:#000; font-weight: 400;}
+
+.MuiDataGrid-colCellWrapper{user-select: none;}
+.MuiDataGrid-colCellTitle{/*text-transform: uppercase;*/ font-size: 13px; font-weight: 600 !important;}
+.no-pagination .MuiDataGrid-footer{display: none;}
+.hide-overflow-y .MuiDataGrid-window{overflow-y: hidden !important;}
+.export-default-btn .MuiButtonBase-root{position: absolute; top: -38px; right: 0; border:1px solid rgb(32, 86, 132); border-radius: 2px; padding: 0 4px; width: 9%; min-width: 82px; height: 32px; font-size: 11px;}

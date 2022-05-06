@@ -1,0 +1,83 @@
+{
+	"categories": {
+		"data": [
+			"18-Q1",
+			"18-Q2",
+			"18-Q3",
+			"18-Q4",
+			"19-Q1",
+			"19-Q2",
+			"19-Q3",
+			"19-Q4"
+		],
+		"title": "Quarter"
+	},
+	"yaxis": "In Millions",
+	"tickAmount":5,
+	"mintick":0,
+	"maxtick":90,
+	"yopposite": true,
+		
+	"series": [
+		{
+			"name": "Net Contract Profit(E to P)",
+			"type": "column",
+			"data": [
+				84,
+				73,
+				64,
+				57,
+				50,
+				50,
+				50,
+				50
+			]
+		},
+		{
+			"name": "Net no Contract Profit(E to E)",
+			"type": "column",
+			"data": [
+				73,
+				62,
+				58,
+				52,
+				45,
+				46,
+				49,
+				50
+			]
+		},
+		{
+			"name": "ROC",
+			"type": "line",
+			"data": [
+				0.68,
+				0.63,
+				0.35,
+				0.30,
+				0.28,
+				0.20,
+				 0.02,
+				-0.04
+			]
+		}
+	],
+	"keyinsights": [
+		{
+			"trend": "down",
+			"text": "Increase in Direct contracting cost and indirect contracting cost by 29% between 18-Q1 and 19-Q4 reduced the Net Contracting Profit BY 40%"
+		},
+		{
+			"trend": "down",
+			"text": "The effective rebate by Payer 1 has increased by 19% due to  competitor Drug B launch in 18-Q2, leading to decline of ROC from  0.65 in 18-Q2  to -0.10 in 19-Q4"
+		},
+		{
+			"trend": "up",
+			"text": "Gross sales has increased by 4% due to change in FP from P -> P to P->E at the end of 17-Q4"
+		},
+		{
+			"trend": "down",
+			"text": "The Contracted profit diminished below Non-contracted profit from Q3-18. Renegotiation for E -> P should have resulted in a positive ROC"
+		}
+	]
+}

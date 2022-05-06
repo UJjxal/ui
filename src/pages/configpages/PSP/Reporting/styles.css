@@ -1,0 +1,49 @@
+
+/* PSP */
+.ant-table, .ant-select{
+  color: #000;
+}
+.ant-table-bordered .ant-table-body > table{
+  border: 0;
+}
+.ant-table-content .ant-table-body .ant-table-thead > tr > th {
+  background: rgb(32, 56, 100);
+  color: #fff;
+  border: 0;
+  border-right: 1px solid #97aad2;
+  border-radius: 0;
+}
+.ant-table-bordered .ant-table-tbody > tr > td:first-child {
+  border-left: 1px solid #e8e8e8;
+}
+.ant-layout-sider-children .logo .ant-menu-dark {
+  background: rgb(32, 56, 100);
+}
+.ant-col .ant-card-small .ant-card-head {
+  border-bottom: 0px;
+  height: 30px;
+}
+.ant-col .nopadding .ant-card-body {
+  padding: 0px;
+}
+
+.ant-table-tbody .Hello--hide-expand > td {
+  border-bottom: 0px;
+}
+.Hello--hide-expand .ant-table-row-expand-icon {
+  display: none;
+}
+
+.cardPadding .ant-card-body {
+  padding: 5px 24px;
+}
+
+.panelTextPd .ant-collapse-content > .ant-collapse-content-box {
+  padding: 5px;
+}
+.ant-table-body .ant-table-tbody .rowSubTable td {
+  padding: 4px 16px;
+}
+.ant-row .pdLeft {
+  padding-left: 10px;
+}

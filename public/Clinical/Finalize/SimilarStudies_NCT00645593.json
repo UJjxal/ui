@@ -1,0 +1,119 @@
+{
+	"columns": [
+		{
+			"label": "SimilarStudyID",
+			"field": "SimilarStudyID"
+		},
+		{
+			"label": "Title",
+			"field": "Title"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+	
+	"rows":[
+   {
+      "SimilarStudyID":"NCT01166230",
+      "Title":"An Open, Non-interventional, Retrospective, Comparative, Multicenter Follow-up Study in Patients Included in the Previously Completed Clinical Study PCB305/04, to Assess Longer-term Recurrence Rates in Patients After Hexvixu00ae (Cysviewu00ae)Fluorescence Cystoscopy/Transurethral Resection of the Bladder (TURB) or White Light Cystoscopy/TURB",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01166230"
+   },
+   {
+      "SimilarStudyID":"NCT02552121",
+      "Title":"Dose-escalating and Cohort Expansion Safety Trial of Tissue Factor Specific Antibody Drug Conjugate Tisotumab Vedotin (HuMaxu00ae-TF-ADC) in Patients With Locally Advanced and/or Metastatic Solid Tumors Known to Express Tissue Factor",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02552121"
+   },
+   {
+      "SimilarStudyID":"NCT00598806",
+      "Title":"A Multicenter, Randomized, Placebo-Controlled, Double-Blind, Phase 3 Trial of Single-Dose Intravesical Apaziquone (EOquinu00ae) as a Surgical Adjuvant Instilled in the Early Postoperative Period in Patients Undergoing Transurethral Resection for Noninvasive Bladder Cancer (Protocol SPI-612)",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00598806"
+   },
+   {
+      "SimilarStudyID":"NCT00461591",
+      "Title":"A Multicenter, Randomized, Placebo-Controlled, Double-Blind, Phase 3 Trial of Single Dose Intravesical Apaziquone (EOquinu00ae) as a Surgical Adjuvant Instilled in the Early Postoperative Period in Patients Undergoing Transurethral Resection for Noninvasive Bladder Cancer (Protocol SPI-611)",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00461591"
+   },
+   {
+      "SimilarStudyID":"NCT00045630",
+      "Title":"A Sequential Approach to the Treatment of Muscle Invasive, Non-Metastatic Urothelial Carcinoma of the Bladder: A Phase II Trial of Neoadjuvant Gemcitabine, Paclitaxel and Carboplatin With Molecular Correlates",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00045630"
+   },
+   {
+      "SimilarStudyID":"NCT00808639",
+      "Title":"A Phase II Trial of Neoadjuvant Dose-Dense MVAC With Pegfilgrastim Support in Subjects With Muscle-Invasive Urothelial Carcinoma",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00808639"
+   },
+   {
+      "SimilarStudyID":"NCT00734994",
+      "Title":"Pilot Study of External Hyperthermia and Intravesical Mitomycin-C To Treat Recurrent Bladder Cancer After Resection and Standard Adjuvant Therapy",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00734994"
+   },
+   {
+      "SimilarStudyID":"NCT00461851",
+      "Title":"A Phase II, Multicenter Trial of Gemcitabine, Carboplatin, and Sorafenib in Chemotherapy-naive Patients With Advanced/Metastatic Bladder Carcinoma",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00461851"
+   },
+   {
+      "SimilarStudyID":"NCT02178241",
+      "Title":"Phase II Trial of Gemcitabine-Eribulin (GE) in Cisplatin Ineligible Patients With Advanced or Unresectable Urothelial Carcinoma of the Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02178241"
+   },
+   {
+      "SimilarStudyID":"NCT00506155",
+      "Title":"A Phase II Clinical Trial of Neoadjuvant Chemotherapy With M-VAC Plus Avastin in Patients With Locally Advanced Urothelial Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00506155"
+   },
+   {
+      "SimilarStudyID":"NCT01589094",
+      "Title":"Phase II Study of Neoadjuvant Dose Dense Gemcitabine and Cisplatin (DD GC) In Patients With Muscle-Invasive Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01589094"
+   },
+   {
+      "SimilarStudyID":"NCT04125693",
+      "Title":"A Roll-over Study to Provide Continued Treatment With Rogaratinib in Participants Who Were Enrolled in Rogaratinib Studies",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT04125693"
+   },
+   {
+      "SimilarStudyID":"NCT00587964",
+      "Title":"Phase II Trial of Stereotactic Radiosurgery Boost Following Surgical Resection for Brain Metastases",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00587964"
+   },
+   {
+      "SimilarStudyID":"NCT00595088",
+      "Title":"Phase 2b, Multicenter Trial of Intravesical DTA-H19/PEI in Patients With Intermediate-Risk Superficial Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00595088"
+   },
+   {
+      "SimilarStudyID":"NCT00847015",
+      "Title":"Phase II Study of Gemcitabine, Cisplatin, and Sunitinib (GC-S) as Neoadjuvant Chemotherapy in Patients With Muscle-Invasive Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00847015"
+   },
+   {
+      "SimilarStudyID":"NCT00585689",
+      "Title":"A Phase Two Trial of Neoadjuvant ABI-007, Carboplatin and Gemcitabine in Patients With Locally Advanced Carcinoma of the Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00585689"
+   },
+   {
+      "SimilarStudyID":"NCT01821105",
+      "Title":"A 2 Phase Comparison of Pre-operative CT AND PET Images in the Intraoperative Detection of Disease to a Hand-held Probe, and to an Intraoperative CT Scan in Patients Undergoing Surgery for Metastatic Colorectal Cancer.",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01821105"
+   },
+   {
+      "SimilarStudyID":"NCT02756637",
+      "Title":"Neutrophil-to-Lymphocyte Ratio in Bladder Cancer: A Secondary Biomarker Analysis of SWOG 8710",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02756637"
+   },
+   {
+      "SimilarStudyID":"NCT02300610",
+      "Title":"A Phase I/1b Study of Enzalutamide in Combination With Gemcitabine and Cisplatin in Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02300610"
+   },
+   {
+      "SimilarStudyID":"NCT00253708",
+      "Title":"Body-Based Complementary Therapies for Patients With Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00253708"
+   }
+]
+}

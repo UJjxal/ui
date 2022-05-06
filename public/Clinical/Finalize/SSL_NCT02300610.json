@@ -1,0 +1,38 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Update on chemotherapy for advanced bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0022534705600092"	
+        },
+		{
+			"pub_lit":"Adjuvant chemotherapy in invasive bladder cancer: a systematic review and meta-analysis of individual patient data: Advanced Bladder Cancer (ABC) Meta-analysis …",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283805002125"		
+        },
+		{
+			"pub_lit":"Recurrence and progression of disease in non–muscle-invasive bladder cancer: from epidemiology to treatment strategy",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283809006551"
+        },
+		{
+			"pub_lit":"Bladder cancer: results of radiation therapy in 384 patients",
+			"StudyLink": "https://pubs.rsna.org/doi/abs/10.1148/117.1.149"	
+        },
+		{
+			"pub_lit":"Bladder cancer clinical guidelines panel summary report on the management of nonmuscle invasive bladder cancer (stages Ta, T1 and TIS)",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2805%2968208-0"
+        },
+		{
+			"pub_lit":"ICUD-EAU International Consultation on Bladder Cancer 2012: non–muscle-invasive urothelial carcinoma of the bladder",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283812010147"
+        }
+    ]
+}

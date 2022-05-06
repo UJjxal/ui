@@ -1,0 +1,11 @@
+.barwithpie .apexcharts-tooltip.apexcharts-theme-light{
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none;
+    padding: 10px;
+}
+.barwithpie .apexcharts-tooltip *{
+    width: 200px;
+    height: 200px;
+    background: none;
+}

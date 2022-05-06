@@ -1,0 +1,38 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Combined local bladder hyperthermia and intravesical chemotherapy for the treatment of high-grade superficial bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0090429503011762"	
+        },
+		{
+			"pub_lit":"The effect of age and gender on bladder cancer: a critical review of the literature",
+			"StudyLink": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1464-410X.2009.09076.x"		
+        },
+		{
+			"pub_lit":"Hexaminolevulinate guided fluorescence cystoscopy reduces recurrence in patients with nonmuscle invasive bladder cancer",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2010.06.148"
+        },
+		{
+			"pub_lit":"Spectroscopic diagnosis of bladder cancer with elastic light scattering",
+			"StudyLink": "https://onlinelibrary.wiley.com/doi/abs/10.1002/lsm.1900170403"	
+        },
+		{
+			"pub_lit":"Improved detection and treatment of bladder cancer using hexaminolevulinate imaging: a prospective, phase III multicenter study",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1097/01.ju.0000169257.19841.2a"
+        },
+		{
+			"pub_lit":"De novo muscle invasive bladder cancer: is there a change in trend?",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S002253470566819X"
+        }
+    ]
+}

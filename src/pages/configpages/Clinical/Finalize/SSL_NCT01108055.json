@@ -1,0 +1,34 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Gender, racial and age differences in bladder cancer incidence and mortality",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S107814390300139X"	
+        },
+		{
+			"pub_lit":"Long-term cancer-specific survival in patients with high-risk, non–muscle-invasive bladder cancer and tumour progression: a systematic review",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283811005501"		
+        },
+		{
+			"pub_lit":"Combined-modality treatment and selective organ preservation in invasive bladder cancer: long-term results",
+			"StudyLink": "https://ascopubs.org/doi/abs/10.1200/jco.2002.11.027"
+        },
+		{
+			"pub_lit":"Low incidence of perioperative chemotherapy for stage III bladder cancer 1998 to 2003: a report from the National Cancer Data Base",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2007.03.101"	
+        },
+		{
+			"pub_lit":"The effect of intravesical mitomycin C on recurrence of newly diagnosed superficial bladder cancer: a further report with 7 years of followup",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2801%2966226-8"
+        }
+    ]
+}

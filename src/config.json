@@ -1,0 +1,7 @@
+{
+  "PROJECT_ID":0,
+  "URL":"https://idsp.incedolabs.com",
+  "API_ROOT":"https://idsp.incedolabs.com:3057/",
+  "AIRFLOW_URL":"https://idsp.incedolabs.com:8080/",
+  "s3BaseUrl":"execute-api.us-east-2.amazonaws.com/dev"
+}

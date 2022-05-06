@@ -1,0 +1,551 @@
+{
+  "code": 200,
+  "response": [
+    {
+      "id": 1,
+      "name": "Database Table",
+      "nodeBaseType": "source",
+      "nodeType": "Database Table",
+      "icon": "databaseTable.svg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "S3",
+      "nodeBaseType": "source",
+      "nodeType": "S3",
+      "icon": "awsS3.svg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "option": [
+            { "key": " ", "value": "Please Select File Type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "dsv", "value": "DSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Record Limit",
+          "objIdentifier": "recordLimit",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nodeBaseType": "source",
+      "nodeType": "Github",
+      "name": "Github",
+      "icon": "github.svg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Repo",
+          "objIdentifier": "repo",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Path",
+          "objIdentifier": "path",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nodeBaseType": "source",
+      "nodeType": "Google Sheet",
+      "name": "Google Sheet",
+      "icon": "googleSheets.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Column",
+          "objIdentifier": "column",
+          "value": ""
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "nodeBaseType": "transform",
+      "nodeType": "Join",
+      "name": "Join",
+      "icon": "join.svg",
+      "internal": [
+        {
+          "nodeInput": [{ "position": "30%" }, { "position": "70%" }],
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please Select Join" },
+            { "key": "left", "value": "Left" },
+            { "key": "right", "value": "Right" },
+            { "key": "inner", "value": "Inner" }
+          ],
+          "label": "Join Type",
+          "objIdentifier": "joinType",
+          "value": "left"
+        },
+        {
+          "inputType": "table",
+          "rows": [
+            [
+              {
+                "inputType": "select",
+                "label": "select",
+                "option": [{ "key": "", "value": "Select" }],
+                "selectedValue": ""
+              },
+              {
+                "inputType": "select",
+                "label": "Select",
+                "option": [{ "key": "", "value": "Select" }],
+                "selectedValue": ""
+              }
+            ]
+          ],
+          "objIdentifier": "condition",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nodeBaseType": "target",
+      "nodeType": "S3",
+      "name": "S3",
+      "icon": "awsS3.svg",
+      "internal": [
+        {
+          "nodeInput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "S3 Path",
+          "objIdentifier": "path",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nodeBaseType": "target",
+      "nodeType": "Database Table",
+      "name": "Database Table",
+      "icon": "databaseTable.svg",
+      "internal": [
+        {
+          "nodeInput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nodeBaseType": "target",
+      "nodeType": "Google Sheet",
+      "name": "Google Sheet",
+      "icon": "googleSheets.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Column",
+          "objIdentifier": "column",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nodeBaseType": "source",
+      "nodeType": "Mongo DB",
+      "name": "Mongo DB",
+      "icon": "mongodb.jpg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nodeBaseType": "source",
+      "nodeType": "Cassandra DB",
+      "name": "Cassandra DB",
+      "icon": "cassandradb.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "nodeBaseType": "source",
+      "nodeType": "RedShift DB",
+      "name": "RedShift DB",
+      "icon": "redshiftdb.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "nodeBaseType": "source",
+      "nodeType": "Salesforce",
+      "name": "Salesforce",
+      "icon": "Salesforce.svg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "SF Object",
+          "objIdentifier": "sfObject",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Record Limit",
+          "objIdentifier": "recordLimit",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "nodeBaseType": "source",
+      "nodeType": "Google Analytics",
+      "name": "Google Analytics",
+      "icon": "googleAnalytics.svg",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "nodeBaseType": "source",
+      "nodeType": "Snow Flake",
+      "name": "Snow Flake",
+      "icon": "snowflake.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "nodeBaseType": "source",
+      "nodeType": "Apache Spark",
+      "name": "Apache Spark",
+      "icon": "ApacheSpark.png",
+      "internal": [
+        {
+          "nodeOutput": [{ "position": "50%" }]
+        }
+      ],
+      "external": [
+        {
+          "inputType": "text",
+          "label": "Table Name",
+          "objIdentifier": "tableName",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source Type",
+          "objIdentifier": "sourceType",
+          "value": ""
+        },
+        {
+          "inputType": "text",
+          "label": "Source File Path",
+          "objIdentifier": "sourceFilePath",
+          "value": ""
+        },
+        {
+          "inputType": "select",
+          "option": [
+            { "key": " ", "value": "Please select file type" },
+            { "key": "csv", "value": "CSV" },
+            { "key": "parquet", "value": "Parquet" },
+            { "key": "txt", "value": "Txt" }
+          ],
+          "label": "File Type",
+          "objIdentifier": "fileType",
+          "value": "csv"
+        }
+      ]
+    }
+  ]
+}

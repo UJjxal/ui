@@ -1,0 +1,40 @@
+{
+    "columns": [
+        {
+            "label": "id",
+            "field": "id"
+        },
+        {
+            "label": "inclusion",
+            "field": "inclusion"
+        },
+        {
+            "label": "condition",
+            "field": "condition"
+        },
+        {
+            "label": "yesorno",
+            "field": "yesorno"
+        },
+        {
+            "label": "value",
+            "field": "value"
+        }
+    ],
+    "rows": [
+        { "id": 0,"inclusion":"Inclusion","condition":"=", "yesorno":"Yes", "value": "Bladder Cancer"},
+
+        { "id": 1,"inclusion":"Inclusion","condition":"=", "yesorno":"Yes", "value": "Allergy"
+        },
+        { "id": 2,"inclusion":"Inclusion","condition":"=", "yesorno":"Yes", "value": "Secondary malignancy"
+        },
+        { "id": 3,"inclusion":"Inclusion","condition":"=", "yesorno":"2", "value": "Stage of cancer"
+        },
+        { "id": 4,"inclusion":"Exclusion","condition":"=", "yesorno":"No", "value": "Cardiac Arrest"
+        },
+        { "id": 5,"inclusion":"Exclusion","condition":"=", "yesorno":"No", "value": "Stomach flu"
+        },
+        { "id": 6,"inclusion":"Exclusion","condition":"=", "yesorno":"No", "value": "COPD"
+        }
+    ]
+}

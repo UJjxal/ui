@@ -1,0 +1,242 @@
+{
+  "tblChannelBAU": {
+    "column": [
+      {
+        "label": "BAU",
+        "field": "bau"
+      },
+      {
+        "label": "Branch",
+        "field": "branch"
+      },
+      {
+        "label": "Call Center",
+        "field": "call_center"
+      },
+      {
+        "label": "Email",
+        "field": "email"
+      },
+      {
+        "label": "App",
+        "field": "app"
+      },
+      {
+        "label": "Web",
+        "field": "web"
+      },
+      {
+        "label": "Overall",
+        "field": "overall"
+      }
+    ],
+    "row": [
+      {
+        "bau": "Cross Sell Rates",
+        "branch": "3.8%",
+        "call_center": "3.4%",
+        "email": "2.8%",
+        "app": "2.2%",
+        "web": "2.6%",
+        "overall": "3.2%"
+      },
+      {
+        "bau": "# Leads",
+        "branch": "315,000",
+        "call_center": "112,500",
+        "email": "13,500",
+        "app": "4,500",
+        "web": "4,500",
+        "overall": "450,000"
+      },
+      {
+        "bau": "# Applications",
+        "branch": "37,800",
+        "call_center": "13,500",
+        "email": "1,620",
+        "app": "540",
+        "web": "540",
+        "overall": "54,000"
+      },
+      {
+        "bau": "# Approvals",
+        "branch": "30,420",
+        "call_center": "10,800",
+        "email": "1,296",
+        "app": "432",
+        "web": "432",
+        "overall": "43,200"
+      },
+      {
+        "bau": "# Conversions",
+        "branch": "18,144",
+        "call_center": "6,480",
+        "email": "778",
+        "app": "259",
+        "web": "259",
+        "overall": "25,920"
+      }
+    ]
+  },
+
+  "tblChannelMDL": {
+    "column": [
+      {
+        "label": "Model",
+        "field": "model"
+      },
+      {
+        "label": "Branch",
+        "field": "branch"
+      },
+      {
+        "label": "Call Center",
+        "field": "call_center"
+      },
+      {
+        "label": "Email",
+        "field": "email"
+      },
+      {
+        "label": "App",
+        "field": "app"
+      },
+      {
+        "label": "Web",
+        "field": "web"
+      },
+      {
+        "label": "Overall",
+        "field": "overall"
+      }
+    ],
+    "row": [
+      {
+        "model": "Cross Sell Rates",
+        "branch": "7.3%",
+        "call_center": "7.6%",
+        "email": "6.1%",
+        "app": "4.7%",
+        "web": "5.2%",
+        "overall": "7.5%"
+      },
+      {
+        "model": "# Leads",
+        "branch": "307,200",
+        "call_center": "105,600",
+        "email": "62,400",
+        "app": "4,800",
+        "web": "4,800",
+        "overall": "480,000"
+      },
+      {
+        "model": "# Applications",
+        "branch": "36,864",
+        "call_center": "12,672",
+        "email": "7,488",
+        "app": "576",
+        "web": "576",
+        "overall": "57,600"
+      },
+      {
+        "model": "# Approvals",
+        "branch": "29,491",
+        "call_center": "10,138",
+        "email": "5,990",
+        "app": "461",
+        "web": "461",
+        "overall": "46,080"
+      },
+      {
+        "model": "# Conversions",
+        "branch": "17,695",
+        "call_center": "6,083",
+        "email": "3,594",
+        "app": "276",
+        "web": "376",
+        "overall": "27,648"
+      }
+    ]
+  },
+  "modelBar": {
+    "xaxis": ["Branch", "Call Center", "Email", "App", "Web", "Overall"],
+    "modeldata": [
+      {
+        "name": "BAU",
+        "data": [3.8, 3.4, 2.8, 2.2, 2.6, 3.2]
+      },
+      {
+        "name": "Model",
+        "data": [7.3, 7.6, 6.1, 4.7, 5.2, 7.5]
+      }
+    ]
+  },
+  "tblCrossSell": {
+    "column": [
+      {
+        "label": "",
+        "field": "product"
+      },
+      {
+        "label": "Branch",
+        "field": "branch"
+      },
+      {
+        "label": "Call Center",
+        "field": "call_center"
+      },
+      {
+        "label": "Email",
+        "field": "email"
+      },
+      {
+        "label": "App",
+        "field": "app"
+      },
+      {
+        "label": "Web",
+        "field": "web"
+      }
+    ],
+    "row": [
+      {
+        "product": "BAU",
+        "branch": "70%",
+        "call_center": "25%",
+        "email": "3%",
+        "app": "1%",
+        "web": "1%"
+      },
+      {
+        "product": "Model",
+        "branch": "64%",
+        "call_center": "22%",
+        "email": "13%",
+        "app": "1%",
+        "web": "1%"
+      }
+    ]
+  },
+  "DonutChart": [
+    {
+      "series": [3.8, 3.4, 2.8, 2.2, 2.6],
+      "labels": [
+        "Branch",
+        "Call  Center",
+        "Email",
+        "App",
+        "Web"
+      ]
+    },
+    {
+      "series": [7.3, 7.6, 6.1, 4.7, 5.2],
+      "labels": [
+        "Branch",
+        "Call  Center",
+        "Email",
+        "App",
+        "Web"
+      ]
+    }
+  ]
+}

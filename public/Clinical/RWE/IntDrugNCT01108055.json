@@ -1,0 +1,46 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Pazopanib (GW786034)",
+            "Condition": "=",
+            "Dosevalue": "800",
+            "Doseunit": "mg",
+            "Frequency": "All",
+            "Cycleduration": "28"
+        },
+        {
+            "DrugName": "Paclitaxel",
+            "Condition": "=",
+            "Dosevalue": "80",
+            "Doseunit": "mg/m2",
+            "Frequency": "1,8,15",
+            "Cycleduration": "28"
+        }
+    ]
+}

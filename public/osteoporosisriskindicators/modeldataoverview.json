@@ -1,0 +1,22 @@
+{
+	"metrics": [
+		{
+			"metrics": "Sample Size",
+			"value": 3295
+		},
+		{
+			"metrics": "Event Rate",
+			"value": "8%"
+		}
+	],
+	"Model Data": [
+		{
+			"name": "No Osteoporosis History",
+			"Count": 3026
+		},
+		{
+			"name": "Osteoporosis History",
+			"Count": 269
+		}
+	]
+}

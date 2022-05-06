@@ -1,0 +1,148 @@
+{
+  "inmuebles": {
+    "TOTAL": {
+      "line_chart": {
+        "FECHA_YR": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "LGD": [
+          0.9999421861235115,
+          0.7867252958173271,
+          0.9310840936864082,
+          0.9648501115525698,
+          0.8930735700666218,
+          0.6872526189664968,
+          0.8787708302994588
+        ],
+        "EAD": [
+          1741810.8704073518,
+          2065528.0762052075,
+          768450.3944814354,
+          2355521.2470681383,
+          4514838.206255339,
+          4279323.720107342,
+          10586982.543980554
+        ]
+      },
+      "lgd_mean": 0.8774,
+      "ead_sum": 26312455.06,
+      "type_loan": {
+        "Cooperate": 100.0,
+        "Non Cooperate": 0
+      },
+      "subtype_loan": {
+        "Prestamos": 100.0,
+        "Adelanto": 0,
+        "Arrendamiento Financiero": 0,
+        "Tarjeta de Credito": 0,
+        "Financiamiento Ctas x Cobrar": 0,
+        "Sobregiro Ocasional": 0,
+        "Sobregiro Contractual": 0,
+        "Otras Facilidades": 0
+      },
+      "avg_default": 149.2
+    },
+    "PAN": {
+      "line_chart": {
+        "FECHA_YR": [],
+        "LGD": [],
+        "EAD": []
+      },
+      "lgd_mean": 0.0,
+      "ead_sum": 0.0,
+      "type_loan": {
+        "Cooperate": 0,
+        "Non Cooperate": 0
+      },
+      "avg_default": 0.0,
+      "subtype_loan": {
+        "Prestamos": 0,
+        "Adelanto": 0,
+        "Arrendamiento Financiero": 0,
+        "Tarjeta de Credito": 0,
+        "Financiamiento Ctas x Cobrar": 0,
+        "Sobregiro Ocasional": 0,
+        "Sobregiro Contractual": 0,
+        "Otras Facilidades": 0
+      }
+    },
+    "RD": {
+      "line_chart": {
+        "FECHA_YR": [
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "LGD": [
+          0.9999421861235115,
+          0.7867252958173271,
+          0.9310840936864082,
+          0.9648501115525698,
+          0.8930735700666218,
+          0.6872526189664968,
+          0.8787708302994588
+        ],
+        "EAD": [
+          1741810.8704073518,
+          2065528.0762052075,
+          768450.3944814354,
+          2355521.2470681383,
+          4514838.206255339,
+          4279323.720107342,
+          10586982.543980554
+        ]
+      },
+      "lgd_mean": 0.8774,
+      "ead_sum": 26312455.06,
+      "type_loan": {
+        "Cooperate": 100.0,
+        "Non Cooperate": 0
+      },
+      "avg_default": 149.2,
+      "subtype_loan": {
+        "Prestamos": 100.0,
+        "Adelanto": 0,
+        "Arrendamiento Financiero": 0,
+        "Tarjeta de Credito": 0,
+        "Financiamiento Ctas x Cobrar": 0,
+        "Sobregiro Ocasional": 0,
+        "Sobregiro Contractual": 0,
+        "Otras Facilidades": 0
+      }
+    },
+    "PAN PREST": {
+      "line_chart": {
+        "FECHA_YR": [],
+        "LGD": [],
+        "EAD": []
+      },
+      "lgd_mean": 0.0,
+      "ead_sum": 0.0,
+      "type_loan": {
+        "Cooperate": 0,
+        "Non Cooperate": 0
+      },
+      "avg_default": 0.0,
+      "subtype_loan": {
+        "Prestamos": 0,
+        "Adelanto": 0,
+        "Arrendamiento Financiero": 0,
+        "Tarjeta de Credito": 0,
+        "Financiamiento Ctas x Cobrar": 0,
+        "Sobregiro Ocasional": 0,
+        "Sobregiro Contractual": 0,
+        "Otras Facilidades": 0
+      }
+    }
+  }
+}

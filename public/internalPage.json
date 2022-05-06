@@ -1,0 +1,766 @@
+{
+  "115": [
+    {
+      "key": "",
+      "val": "Select Internal Page"
+    },
+    {
+      "key": "KPISandbox/KPIVisualDraft",
+      "val": "KPI Visual Configuration"
+    },
+    {
+      "key": "I2A/actionsMonitoring",
+      "val": "Actions Monitoring"
+    },
+    {
+      "key": "MarketAccess/PreEventAnalysis",
+      "val": "MA-PreEventAnalysis"
+    },
+    {
+      "key": "MarketAccess/EmailTriggerModule",
+      "val": "MA-EmailTriggerModule"
+    },
+    {
+      "key": "Menu/AdminMenuConfigurations",
+      "val": "Menu Configuration"
+    },
+    {
+      "key": "Theme/ThemeSelection",
+      "val": "Theme Configuration"
+    }
+  ],
+  "110": [
+    {
+      "key": "",
+      "val": "Select Internal Page"
+    },
+    {
+      "key": "Covid/Portfolio",
+      "val": "Covid Portfolio"
+    },
+    {
+      "key": "Covid/Situational",
+      "val": "Covid Situational"
+    },
+    {
+      "key": "Covid/Geographical",
+      "val": "Covid Geographical"
+    },
+    {
+      "key": "DataProfiler",
+      "val": "Data Profiler"
+    },
+    {
+      "key": "Delinquency/SelfCureKpi",
+      "val": "Delinquency KPI"
+    },
+    {
+      "key": "Delinquency/RootCauseaAnalysis",
+      "val": "Delinquency RootCauseaAnalysis"
+    },
+    {
+      "key": "KPISandbox/KPIConfiguration",
+      "val": "KPI Configuration"
+    },
+    {
+      "key": "KPISandbox/KPIVisualDraft",
+      "val": "KPI Visual Configuration"
+    },
+    {
+      "key": "KPISandbox/KPISampleTree",
+      "val": "KPI Sample Tree"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree",
+      "val": "KPI Analysis"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree2",
+      "val": "KPI Analysis 2"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree3",
+      "val": "KPI Analysis 3"
+    },
+    {
+      "key": "I2A/actionsMonitoring",
+      "val": "Actions Monitoring"
+    },
+    {
+      "key": "Menu/AdminMenuConfigurations",
+      "val": "Menu Configuration"
+    },
+    {
+      "key": "Theme/ThemeSelection",
+      "val": "Theme Configuration"
+    },
+    {
+      "key": "MlOps",
+      "val": "ML Ops"
+    },
+    {
+      "key": "MRM/Inventory",
+      "val": "MRM-Inventory"
+    },
+    {
+      "key": "MRM/Governance",
+      "val": "MRM-Governance"
+    },
+    {
+      "key": "MRM/portfolio/index",
+      "val": "MRM-Portfolio"
+    },
+    {
+      "key": "MRM/monitoring/index",
+      "val": "MRM-Monitoring"
+    },
+    {
+      "key": "SelfCure/SelfCureKpi",
+      "val": "SC KPI"
+    },
+    {
+      "key": "SelfCure/RootCauseaAnalysis",
+      "val": "SC RootCauseaAnalysis"
+    },
+    {
+      "key": "SelfCure/BivariateProfiling",
+      "val": "SC BivariateProfiling"
+    },
+    {
+      "key": "SelfCure/CampaignPerformance",
+      "val": "SC CampaignPerformance"
+    },
+    {
+      "key": "Integratedbi",
+      "val": "Tableau"
+    }
+  ],
+  "111": [
+    {
+      "key": "",
+      "val": "Select Internal Page"
+    },
+    {
+      "key": "Covid/Portfolio",
+      "val": "Covid Portfolio"
+    },
+    {
+      "key": "Covid/Situational",
+      "val": "Covid Situational"
+    },
+    {
+      "key": "Covid/Geographical",
+      "val": "Covid Geographical"
+    },
+    {
+      "key": "DataProfiler",
+      "val": "Data Profiler"
+    },
+    {
+      "key": "Delinquency/SelfCureKpi",
+      "val": "Delinquency KPI"
+    },
+    {
+      "key": "Delinquency/RootCauseaAnalysis",
+      "val": "Delinquency RootCauseaAnalysis"
+    },
+    {
+      "key": "KPISandbox/KPIConfiguration",
+      "val": "KPI Configuration"
+    },
+    {
+      "key": "KPISandbox/KPIVisualDraft",
+      "val": "KPI Visual Configuration"
+    },
+    {
+      "key": "KPISandbox/KPISampleTree",
+      "val": "KPI Sample Tree"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree",
+      "val": "KPI Analysis"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree2",
+      "val": "KPI Analysis 2"
+    },
+    {
+      "key": "KPISandbox/KPICalculatedTree3",
+      "val": "KPI Analysis 3"
+    },
+    {
+      "key": "I2A/actionsMonitoring",
+      "val": "Actions Monitoring"
+    },
+    {
+      "key": "Menu/AdminMenuConfigurations",
+      "val": "Menu Configuration"
+    },
+    {
+      "key": "Theme/ThemeSelection",
+      "val": "Theme Configuration"
+    },
+    {
+      "key": "MlOps",
+      "val": "ML Ops"
+    },
+    {
+      "key": "MRM/Inventory",
+      "val": "MRM-Inventory"
+    },
+    {
+      "key": "MRM/Governance",
+      "val": "MRM-Governance"
+    },
+    {
+      "key": "MRM/portfolio/index",
+      "val": "MRM-Portfolio"
+    },
+    {
+      "key": "MRM/monitoring/index",
+      "val": "MRM-Monitoring"
+    },
+    {
+      "key": "SelfCure/SelfCureKpi",
+      "val": "SC KPI"
+    },
+    {
+      "key": "SelfCure/RootCauseaAnalysis",
+      "val": "SC RootCauseaAnalysis"
+    },
+    {
+      "key": "SelfCure/BivariateProfiling",
+      "val": "SC BivariateProfiling"
+    },
+    {
+      "key": "SelfCure/CampaignPerformance",
+      "val": "SC CampaignPerformance"
+    },
+    {
+      "key": "Integratedbi",
+      "val": "Tableau"
+    }
+  ],
+  "20": [
+    {
+      "key": "",
+      "val": "Select Internal Page"
+    },
+    {
+      "key": "I2A/actionsMonitoring",
+      "val": "Actions Monitoring"
+    },
+    {
+      "key": "Avidia/ProductFunnel",
+      "val": "Avidia-Product Funnel"
+    },
+    {
+      "key": "Avidia/ChannelFunnel",
+      "val": "Avidia-Channel Funnel"
+    },
+    {
+      "key": "ExecutiveCommandCentre/businessInsights",
+      "val": "Business Insights - AI Enabled Cross Sell"
+    },
+    {
+      "key": "ExecutiveCommandCentre/campaignPerformance",
+      "val": "CJO Campaign Performance"
+    },
+    {
+      "key": "ExecutiveCommandCentre/PortfolioPerformance",
+      "val": "CJO - Portfolio Performance"
+    },
+    {
+      "key": "ExecutiveCommandCentre/AcquisitionsPerformance",
+      "val": "CJO - Acquisitions Performance"
+    },
+    {
+      "key": "ExecutiveCommandCentre/CrossSellPerformance",
+      "val": "CJO - Cross Sell Performance"
+    },
+    {
+      "key": "ExecutiveCommandCentre/AttritionPerformance",
+      "val": "CJO - Attrition Performance"
+    },
+    {
+      "key": "Covid/Portfolio",
+      "val": "Covid Portfolio"
+    },
+    {
+      "key": "Covid/Situational",
+      "val": "Covid Situational"
+    },
+    {
+      "key": "Covid/Geographical",
+      "val": "Covid Geographical"
+    },
+    {
+      "key": "ExecutiveCommandCentre/creditPortfolioPerformance",
+      "val": "Credit Portfolio Performance"
+    },
+    {
+      "key": "DAP/Dashboard",
+      "val": "DAP Dashboard"
+    },
+    {
+      "key": "DAP/CampaignPerformance",
+      "val": "DAP Campaign Performance"
+    },
+
+   
+    {
+      "key": "DataProfiler/index",
+      "val": "Data Profiler"
+    },
+    {
+      "key": "Avidia/ModelSummary",
+      "val": "DataScience-ModelSummary"
+    },
+    {
+      "key": "Avidia/FeatureImportance",
+      "val": "DataScience-FeatureImportance"
+    },
+    {
+      "key": "Avidia/ModelStats",
+      "val": "DataScience-ModelStats"
+    },
+    {
+      "key": "Avidia/ModelLeaderboard",
+      "val": "DataScience-ModelLeaderboard"
+    },
+    
+    {
+      "key": "DQE/index",
+      "val": "DQE"
+    },
+    {
+      "key": "DQP/index",
+      "val": "DQP"
+    },
+    
+    {
+      "key": "Fidelity/AlertMonitoring/index",
+      "val": "Fidelity-Alert Monitoring"
+    },
+    {
+      "key": "Fidelity/RiskInsightsDashboard/index",
+      "val": "Fidelity-Risk Insights Dashboard"
+    },
+    {
+      "key": "Fidelity/RiskInsightsDashboard/DeepDive",
+      "val": "Fidelity-Deep Dive"
+    },
+    
+    {
+      "key": "ExecutiveCommandCentre/marketingEffectiveness",
+      "val": "Marketing Effectiveness"
+    },
+    {
+      "key": "MRM/Inventory",
+      "val": "MRM-Inventory"
+    },
+    {
+      "key": "MRM/Governance",
+      "val": "MRM-Governance"
+    },
+    {
+      "key": "MRM/portfolio/index",
+      "val": "MRM-Portfolio"
+    },
+    {
+      "key": "MRM/monitoring/index",
+      "val": "MRM-Monitoring"
+    },
+    {
+      "key": "ExecutiveCommandCentre/productLevelPerformance",
+      "val": "Product Level Performance"
+    },
+  
+    
+   
+    {
+      "key": "KPISandbox/KPIVisualDraft",
+      "val": "KPI Visual Configuration"
+    },
+   
+    {
+      "key": "Menu/AdminMenuConfigurations",
+      "val": "Menu Configuration"
+    },
+    {
+      "key": "Theme/ThemeSelection",
+      "val": "Theme Configuration"
+    },
+   
+    {
+      "key": "SelfCure/SelfCureKpi",
+      "val": "SC KPI"
+    },
+    {
+      "key": "SelfCure/RootCauseaAnalysis",
+      "val": "SC RootCauseaAnalysis"
+    },
+    {
+      "key": "SelfCure/BivariateProfiling",
+      "val": "SC BivariateProfiling"
+    },
+    {
+      "key": "SelfCure/CampaignPerformance",
+      "val": "SC CampaignPerformance"
+    },
+    {
+      "key": "SageMaker/AwsServices",
+      "val": "Sage-AwsServices"
+    },
+    {
+      "key": "Integratedbi",
+      "val": "Tableau"
+    }
+  ],
+  "21": [
+    {
+      "key": "",
+      "val": "Select Internal Page"
+    },
+     {
+      "key": "Fidelity/AlertMonitoring/index",
+      "val": "Fidelity-Alert Monitoring"
+    },
+    {
+      "key": "Fidelity/RiskInsightsDashboard/index",
+      "val": "Fidelity-Risk Insights Dashboard"
+    },
+    {
+      "key": "Avidia/ProductFunnel",
+      "val": "Avidia-Product Funnel"
+    },
+    {
+      "key": "Avidia/ChannelFunnel",
+      "val": "Avidia-Channel Funnel"
+    },
+    {
+      "key": "Avidia/BauChannel",
+      "val": "Avidia-BAU Channels"
+    },
+    {
+      "key": "Avidia/BauProduct",
+      "val": "Avidia-BAU Products"
+    },
+    {
+      "key": "Avidia/CampaignPerformance",
+      "val": "Avidia-Campaign Performance"
+    },
+    {
+      "key": "RWE/InsightEngineTherapy/BehaveInsights",
+      "val": "BehaveInsights"
+    },
+    {
+      "key": "Covid/Portfolio",
+      "val": "Covid Portfolio"
+    },
+    {
+      "key": "Covid/Situational",
+      "val": "Covid Situational"
+    },
+    {
+      "key": "Covid/Geographical",
+      "val": "Covid Geographical"
+    },
+    {
+      "key": "RWE/Clinical/index",
+      "val": "Clinical Trial Optimizer"
+    },
+    {
+      "key": "DataProfiler/index",
+      "val": "Data Profiler"
+    },
+    {
+      "key": "Avidia/ModelSummary",
+      "val": "DataScience-ModelSummary"
+    },
+    {
+      "key": "Avidia/FeatureImportance",
+      "val": "DataScience-FeatureImportance"
+    },
+    {
+      "key": "Avidia/ModelStats",
+      "val": "DataScience-ModelStats"
+    },
+    {
+      "key": "Avidia/ModelLeaderboard",
+      "val": "DataScience-ModelLeaderboard"
+    },
+    {
+      "key": "Delinquency/SelfCureKpi",
+      "val": "Delinquency KPI"
+    },
+    {
+      "key": "Delinquency/RootCauseaAnalysis",
+      "val": "Delinquency RootCauseaAnalysis"
+    },
+    
+    {
+      "key": "DQE/index",
+      "val": "DQE"
+    },
+    {
+      "key": "DQP/index",
+      "val": "DQP"
+    },
+     {
+      "key": "Dashboard/DashboardViewer",
+      "val": "Dashboard"
+    },
+    {
+      "key": "RWE/InsightEngineTherapy/DemoInsights",
+      "val": "DemoInsights"
+    },
+    {
+      "key": "RWE/InsightEngineHypertension/BiomarkerInsights",
+      "val": "Hypertension-BiomarkerInsights"
+    },
+    {
+      "key": "Hypertension/FeatureImportancePatient",
+      "val": "Hypertension-FeatureImportance"
+    },
+    {
+      "key": "Hypertension/ModelSummaryPatient",
+      "val": "Hypertension-ModelSummary"
+    },
+    {
+      "key": "RWE/InsightEngineHypertension/StudyDesigns",
+      "val": "Hypertension-StudyDesign"
+    },
+    {
+      "key": "KPISandbox/KPIVisualDraft",
+      "val": "KPI Visual Configuration"
+    },
+   
+    {
+      "key": "Menu/AdminMenuConfigurations",
+      "val": "Menu Configuration"
+    },
+    
+    {
+      "key": "MlOps/MlOps",
+      "val": "ML Ops"
+    },
+    {
+      "key": "MRM/Inventory",
+      "val": "MRM-Inventory"
+    },
+    {
+      "key": "MRM/Governance",
+      "val": "MRM-Governance"
+    },
+    {
+      "key": "MRM/portfolio/index",
+      "val": "MRM-Portfolio"
+    },
+    {
+      "key": "MRM/monitoring/index",
+      "val": "MRM-Monitoring"
+    },
+     {
+      "key": "riskSOI/predictiveIntelligence",
+      "val": "Predictive Intelligence"
+    },
+    {
+      "key": "RWE/InsightEngineOsteo/BiomarkerInsights",
+      "val": "Osteo-Biomarker"
+    },
+    {
+      "key": "Osteo/FeatureImportance",
+      "val": "Osteo-FeatureImportance"
+    },
+    {
+      "key": "Osteo/ModelSummary",
+      "val": "Osteo-ModelSummary"
+    },
+    {
+      "key": "RWE/InsightEngineOsteo/StudyDesigns",
+      "val": "Osteo-StudyDesign"
+    },
+    {
+      "key":"PayerAnalytics/Home/EffectiveRebate",
+      "val":"Payer Analytics-EffectiveRebate"
+    },
+    {
+      "key":"PayerAnalytics/Home/GTN",
+      "val":"Payer Analytics - GTN"
+    },
+    {
+      "key":"PayerAnalytics/Home/MarketShare",
+      "val":"Payer Analytics-Market Share"
+    },
+    {
+      "key":"PayerAnalytics/Home/ReturnOnContract",
+      "val":"Payer Analytics-ReturnOnContract"
+    },
+    {
+      "key":"PayerAnalytics/ContractRecommender/ContractRecommender",
+      "val":"Payer Analytics-Contract Recommender"
+    },
+    {
+      "key":"PayerAnalytics/ScenarioManager/Scenario1",
+      "val":"Payer Analytics-Scenario1"
+    },
+    {
+      "key":"PayerAnalytics/ScenarioManager/Scenario2",
+      "val":"Payer Analytics-Scenario2"
+    },
+    {
+      "key":"PayerAnalytics/ScenarioManager/CompareScenarios",
+      "val":"Payer Analytics-CompareScenarios"
+    },
+     {
+      "key": "PSP/AdvancedAnalytics/cohortAnalysis",
+      "val": "PSP-Advanced Analytics-Cohort Analysis"
+    },
+    {
+      "key": "PSP/AdvancedAnalytics/discontinuationDrivers",
+      "val": "PSP-Advanced Analytics-Discontinuation Drivers"
+    },
+    {
+      "key": "PSP/AdvancedAnalytics/RweMlOps",
+      "val": "PSP-AdvancedAnalytics-ML Ops"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/detailedReport",
+      "val": "PSP-Detailed Report"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/authorizationStatus",
+      "val": "PSP-Authorization Status"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/pharmacyStatus",
+      "val": "PSP-Pharmacy Status"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/summary",
+      "val": "PSP-Prior Authorization-Summary"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/dailySummary",
+      "val": "PSP-Daily Summary"
+    },
+    {
+      "key": "PSP/Reporting/PriorAuthorization/monthlySummary",
+      "val": "PSP-Monthly Summary"
+    },
+    {
+      "key": "PSP/Reporting/DiscontinuationCancellation/patientLevelData",
+      "val": "PSP-Discontinuation-Patient Level Data"
+    },
+    {
+      "key": "PSP/Reporting/DiscontinuationCancellation/reportDiscontinuation",
+      "val": "PSP-Discontinuation-Report Discontinuation"
+    },
+    {
+      "key": "PSP/Reporting/DiscontinuationCancellation/reportSwitching",
+      "val": "PSP-Discontinuation-Report Switching"
+    },
+    {
+      "key": "PSP/Reporting/DiscontinuationCancellation/dailySummary",
+      "val": "PSP-Discontinuation-Daily Summary"
+    },
+    {
+      "key": "PSP/Reporting/DiscontinuationCancellation/monthlySummary",
+      "val": "PSP-Discontinuation-Monthly Summary"
+    },
+    {
+      "key": "PSP/KPIInsights/gettingPatients",
+      "val": "PSP-KPI Insights-Getting Patients on Product"
+    },
+    {
+      "key": "PSP/KPIInsights/keepingPatients",
+      "val": "PSP-KPI Insights-Keeping Patients on Treatment"
+    },
+    {
+      "key": "riskSOI/index",
+      "val": "Risk SOI"
+    },
+    {
+      "key": "riskSOI/analyser",
+      "val": "Root Cause Analyser"
+    },
+   {
+      "key": "SageMaker/AwsServices",
+      "val": "Sage-AwsServices"
+    },
+    {
+      "key": "SelfCure/SelfCureKpi",
+      "val": "SC KPI"
+    },
+    {
+      "key": "SelfCure/RootCauseaAnalysis",
+      "val": "SC RootCauseaAnalysis"
+    },
+    {
+      "key": "SelfCure/BivariateProfiling",
+      "val": "SC BivariateProfiling"
+    },
+    {
+      "key": "SelfCure/CampaignPerformance",
+      "val": "SC CampaignPerformance"
+    },
+     
+    {
+      "key": "Integratedbi/Integratedbi",
+      "val": "Tableau"
+    },
+    {
+      "key": "Therapy/FeatureImportance",
+      "val": "Therapy-FeatureImportance"
+    },
+    {
+      "key": "RWE/InsightEngineTherapy/AdherenceRisk",
+      "val": "Therapy Adherence Insights"
+    },
+    {
+      "key": "Therapy/ModelSummary",
+      "val": "Therapy-ModelSummary"
+    },
+    {
+      "key": "Therapy/ModelStats",
+      "val": "Therapy-ModelStats"
+    },
+    {
+      "key": "Therapy/ModelLeaderboard",
+      "val": "Therapy-ModelLeaderboard"
+    },
+    {
+      "key": "Otsuka/Sales/IncomingSales",
+      "val": "Otsuka-Incoming-Sales"
+    },
+    {
+      "key": "Otsuka/Sales/LostSales",
+      "val": "Otsuka-Lost-Sales"
+    },
+    {
+      "key": "Theme/ThemeSelection",
+      "val": "Theme Configuration"
+    },
+     {
+      "key": "WellsFargo/PaymentInsightsConfiguration",
+      "val": "WellsFargo-Payment Insights"
+    },
+    {
+      "key": "WellsFargo/PaymentForecastsConfiguration",
+      "val": "WellsFargo-Payment Forecasts"
+    },
+    {
+      "key": "AlertDevices/Alerts",
+      "val": "Belden-Alerts"
+    },
+    {
+      "key": "Prospects/index",
+      "val": "Prospect - Dashborad"
+    },
+    {
+      "key": "Prospects/Prospects",
+      "val": "Prospect - All"
+    }
+  ]
+}

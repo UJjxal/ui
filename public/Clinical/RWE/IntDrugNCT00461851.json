@@ -1,0 +1,54 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Gemcitabine",
+            "Condition": "=",
+            "Dosevalue": "1000",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Carboplatin",
+            "Condition": "=",
+            "Dosevalue": "5",
+            "Doseunit": "AUC",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Sorafenib",
+            "Condition": "=",
+            "Dosevalue": "400",
+            "Doseunit": "mg",
+            "Frequency": "2-19",
+            "Cycleduration": "21"
+        }
+    ]
+}

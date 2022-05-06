@@ -1,0 +1,334 @@
+
+::-webkit-scrollbar{
+    height: 8px;
+}
+/* Css for Add Alert form */
+.risk-setting-form .form-control, .col-form-label{
+    font-size: 12px;
+    color: #000;
+}
+.risk-setting-form .form-group{
+    margin-bottom: 10px;
+}
+.risk-setting-form .ant-select-selection__choice__content{
+    font-size: 11px;
+    color: #000;
+}
+.blue-bg[disabled]{
+    opacity: .75;
+}
+
+/* Css for Tiles in Overall view */
+.tiles-wrapper .ant-card{
+    width: 25%;
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 15px;
+    /* border-top: 6px solid #00BFFF; */
+    cursor: pointer;
+}
+.tiles-wrapper .ant-card .ant-card-body{
+    padding: 5px;
+}
+.tiles-wrapper .ant-card:not(:last-child){
+    margin-right: 20px;
+}
+.tiles-wrapper .ant-card p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+.tiles-wrapper .ant-card span{
+    font-size: 28px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+}
+.boxGrey{
+    background: white !important;
+    border: 2px solid #59595b;
+}
+.boxGrey.ant-card p{
+    font-weight: 600 ;
+    color: #59595b ;
+}
+.boxGrey.ant-card span{
+    font-weight: 600;
+    color: #59595b ;
+}
+.boxOrange{
+    background: white !important;
+    border: 2px solid #f18934;
+}
+.boxOrange.ant-card p{
+    font-weight: 600 ;
+    color: #f18934 ;
+}
+.boxOrange.ant-card span{
+    font-weight: 600 ;
+    color: #f18934 ;
+}
+.boxLightBlue{
+    background: white !important;
+    border: 2px solid #3e89a8;
+}
+.boxLightBlue.ant-card p{
+    font-weight: 600 ;
+    color: #3e89a8 ;
+}
+.boxLightBlue.ant-card span{
+    font-weight: 600 ;
+    color: #3e89a8 ;
+}
+.boxBlue{
+    background: white !important;
+    border: 2px solid #215682;
+}
+.boxBlue.ant-card p{
+    font-weight: 600 ;
+    color: #215682 ;
+}
+.boxBlue.ant-card span{
+    font-weight: 600 ;
+    color: #215682 ;
+}
+.tiles-wrapper .ant-card .cases-icons{
+    width: 30px;
+    height: 30px;
+    background: #f1f197;
+    border-radius: 50%;
+}
+.tiles-wrapper .ant-card i{
+    padding: 8px;
+    font-weight: 600;
+}
+
+/* Drawer filter Css */
+
+.filter-drawer .ant-drawer-mask{
+    background: transparent;
+}
+
+.tag-wrapper .tag:last-child{
+    background: #c7c6c6;
+}
+.tag-wrapper{
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+.tag-wrapper li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    padding: 5px 8px;
+    font-size: 10px;
+    color: #000;
+}
+.filter-drawer .ant-select{
+    min-height: 20px;
+    margin-bottom: 20px;
+}
+.filter-drawer .ant-select-selection:focus, .ant-select-selection:hover{
+    border-bottom-color: #40a9ff;
+    box-shadow: none;
+    outline: 0;
+}
+.filter-drawer .ant-select-open .ant-select-selection{
+    box-shadow: none;
+}
+.filter-drawer label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+}
+.filter-drawer .ant-select-selection__placeholder, .ant-calendar-range-picker-input{
+    font-size: 12px;
+    font-weight: 400;
+}
+.filter-drawer .ant-calendar-range-picker-input{
+    width: 40%;
+    padding: 0;
+}
+.filter-drawer .ant-calendar-picker-input{
+    padding: 0;
+    line-height: 30px;
+}
+.filter-drawer .ant-drawer-title{
+    font-size: 22px;
+}
+.filter-drawer .ant-drawer-content-wrapper{
+    width: 325px !important;
+}
+.filter-drawer .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+    margin-left: 0;
+}
+.filter-drawer .ant-checkbox + span{
+    padding-left: 14px;
+}
+.filter-drawer .ant-checkbox-inner{
+    border: 2px solid #000;
+}
+.filter-drawer .range-picker{
+    width: 170px;
+    top: -3px;
+}
+
+/* Sidebar Form Css */
+.sidebar-form label{
+    font-size: 10px;
+    color: #000;
+    font-weight: 500;
+}
+.sidebar-form .form-control{
+    font-size: 11px;
+    color: #000;
+}
+/* News Alert Page css */
+.article-details{
+    transition: height ease 0.5s;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.2;
+}
+.Article-details-modal{
+    top: 45px;
+    width: 680px !important;
+}
+.Article-details-modal p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+/* Keywords Tags for Drawer and News Alert Page css */
+.keywords-tags{
+    background:rgb(63, 136, 197);
+    padding: 3px 8px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 5px;
+    list-style: none;
+    display: inline-block;
+}
+.tags-btn{
+    color: #fff;
+    background: rgb(32, 86, 132);
+    border: 1px solid #205684;
+    transition: all ease 0.5s;
+}
+.tags-btn:focus{
+    outline: none;
+}
+.tags-btn:hover{
+    color: #205684;
+    background: #fff;
+    border: 1px solid #205684;
+}
+
+/* Global search css */
+.global-search.ant-input-search{
+    width: 370px;
+}
+.global-search.ant-input-search .ant-input, .ant-input-search-button{
+border: 0;
+}
+.global-search.ant-input-search .ant-input-group{
+    border: 1px solid #205684;
+    border-radius: 4px;
+}
+.global-search.ant-input-search .ant-input::placeholder{
+    color: #205684;
+}
+.global-search.ant-input-search .anticon-search{
+    color: #205684;
+}
+.global-search.ant-input-search .ant-input:focus{
+    box-shadow: none;
+}
+
+/* Table tags css */
+.tag-red{
+    color: #ea1111;
+    background: #fff2e8;
+    border-color: #ffbb96;
+}
+.tag-green{
+    color: #389e0d;
+    background: #f6ffed;
+    border-color: #b7eb8f;
+}
+.tag-blue{
+    color: #096dd9;
+    background: #e6f7ff;
+    border-color: #91d5ff;
+}
+
+/* Kendo React PDF Css */
+.alerts-title-wrapper h6{
+    display: none ;
+}
+.article-keywords{
+    display: block;
+}
+.pdf-article-info{
+    display: none;
+}
+.k-pdf-export .alerts-title-wrapper h6{
+    display: block ;
+    font-weight: 700;
+}
+.k-pdf-export .pdf-article-info{
+    display: block;
+}
+.k-pdf-export .pdf-article-info .article-content span{
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #3f88c5;
+}
+ .pdf-article-info .article-content .keywords-tags{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.k-pdf-export .view-content-btn{
+    display: none;
+}
+.k-pdf-export .article-details{
+    display: none;
+}
+.k-pdf-export .risk-setting-block{
+    height: 100% !important;
+}
+.k-pdf-export .news-alert-block{
+    height: 100% !important;
+}
+.k-pdf-export .keywords-tags{
+    padding-left: 10px;
+    padding-right: 30px;
+    height: 25px;
+}
+.k-pdf-export .article-headline{
+    font-size: 14px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.k-pdf-export .article-source{
+    font-size: 12px !important;
+    color: #7c7c7d;
+   
+}
+
+/* Email popover css for AddAlert page css */
+.ant-popover-inner-content{
+    padding: 5px !important;
+    width: 100%;
+}
+
+/* .notification-menu .ant-dropdown-menu-item-group-title{
+    border-bottom: 1px solid rgb(232, 232, 232);
+} */

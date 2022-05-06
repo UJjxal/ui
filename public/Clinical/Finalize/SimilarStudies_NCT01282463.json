@@ -1,0 +1,34 @@
+{
+	"columns": [
+		{
+			"label": "SimilarStudyID",
+			"field": "SimilarStudyID"
+		},
+		{
+			"label": "Title",
+			"field": "Title"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+	
+	"rows":[
+   {
+      "SimilarStudyID":"NCT00794950",
+      "Title":"A Phase II Study of Intravesical Bacillus Calmette-Guerin Followed by Sunitinib for the Treatment of High Risk Non-muscle Invasive Lower Urinary Tract Urothelial Carcinoma",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00794950"
+   },
+   {
+      "SimilarStudyID":"NCT01023958",
+      "Title":"An Open-label, Single-arm, Phase II Trial of Intravenous BI 6727 in Patients With Locally Advanced, Metastatic or Recurrent Urothelial Cancer of the Bladder, Renal Pelvis, or Ureters After Failure of Prior Chemotherapy",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01023958"
+   },
+   {
+      "SimilarStudyID":"NCT01373294",
+      "Title":"Immune Modulation by Addition of Oral Lenalidomide to Intravesical BCG (Bacille Calmette-Guerrin) for Therapy of Non-muscle-invasive Transitional Cell Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01373294"
+   }
+]
+}

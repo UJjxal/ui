@@ -1,0 +1,28 @@
+{
+	"columns": [
+		{
+			"label": "ARM LABEL",
+			"field": "arm_label"
+		},
+		{
+			"label": "INTERVENTION DRUG",
+			"field": "int_drug"
+		},
+		{
+			"label": "DRUG DOSAGE",
+			"field": "dose"
+		},
+		{
+			"label": "PATIENTS COUNT",
+			"field": "pat_count"
+        }
+    ],
+    "rows": [
+		{
+			"arm_label":"Arm 1",
+			"int_drug": "Cisplatin + Gemcitabine + Bevacizumab",
+			"dose": "Cisplatin: Cisplatin 70 mg/m2, day 1\nGemcitabine: Gemcitabine 1250 mg/m2, day 1 and 8\nBevacizumab: Bevacizumab 15mg/kg, day 1",
+            "pat_count": "45"		
+        }
+    ]
+}

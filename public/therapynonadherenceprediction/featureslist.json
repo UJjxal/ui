@@ -1,0 +1,54 @@
+[
+	{
+		"data": [
+			18,
+			7,
+			5,
+			5,
+			4,
+			4,
+			4,
+			4,
+			4,
+			3
+		],
+		"categories": [
+			"Age",
+			"Avg_Systolic_BP",
+			"BMI",
+			"Albumin_urine_mg_L",
+			"Avg_Diastolic_BP",
+			"Hematocrit(%)",
+			"Sodium_mg",
+			"Weight",
+			"Cholestrol_mg",
+			"Total_Sugars_gm"
+		]
+	},
+	{
+		"data": [
+			12,
+			6,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5,
+			5
+		],
+		"categories": [
+			"Albumin_to_Cretainine",
+			"Hematocrit(%)",
+			"Total_Sugars_gm",
+			"Cholestrol_mg",
+			"Platelet_count_uL(1000)",
+			"Protein_mg",
+			"Total_Fat_gm",
+			"Total_Cholesterol_mg_dL",
+			"Mean_platelet_volume_fL",
+			"Phosphorus_mg"
+		]
+	}
+]

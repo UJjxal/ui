@@ -1,0 +1,170 @@
+[
+	{
+		"feature": "Albumin_to_Creatinine",
+		"values": [
+			28.00,
+			107.00
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Albumin_urine_mg_L",
+		"values": [
+			31.20,
+			96.62
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Alcohol_gm",
+		"values": [
+			8.37,
+			9.53
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Mean_Platelet_volume_fL",
+		"values": [
+			8.35,
+			8.42
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Total_Cholesterol_mg_dL",
+		"values": [
+			186.48,
+			188.23
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Hematocrit(%)",
+		"values": [
+			42.04,
+			41.49
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Creatinine_mg_dL",
+		"values": [
+			130.03,
+			120.58
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Pulse_rate",
+		"values": [
+			72.98,
+			72.28
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Platelet_count_uL(1000)",
+		"values": [
+			239.97,
+			237.75
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Carbohydrate_mg",
+		"values": [
+			252.58,
+			233.28
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Cholestrol_mg",
+		"values": [
+			379.18,
+			365.14
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Dietary_fibre_gm",
+		"values": [
+			17.21,
+			16.28
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Total_Fat_gm",
+		"values": [
+			82.96,
+			77.96
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Energy_KCAL",
+		"values": [
+			1131.35,
+			1054.44
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Protein_mg",
+		"values": [
+			81.9,
+			76.35
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Sodium_mg",
+		"values": [
+			1623.83,
+			1543.62
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Total_Sugars_gm",
+		"values": [
+			106.86,
+			99.17
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Vitamin_C_mg",
+		"values": [
+			79.87,
+			80.17
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Phosphorus_mg",
+		"values": [
+			1351.95,
+			1318.56
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Magnesium_mg",
+		"values": [
+			293.69,
+			287.45
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Potassium_mg",
+		"values": [
+			2528.63,
+			2522.39
+		],
+		"col_type": "categorical"
+	}
+]

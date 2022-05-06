@@ -1,0 +1,66 @@
+{
+	"columns": [
+		{
+			"label": "",
+			"field": "model"
+		},
+		{
+			"label": "Value",
+			"field": "value"
+		},
+		{
+			"label": "Min",
+			"field": "min"
+		},
+		{
+			"label": "Max",
+			"field": "max"
+        },
+		{
+			"label": "Additional Data Capture",
+			"field": "additional_data_capture"
+        }
+    ],
+    "rows": [
+		{
+			"Rank" : "1",
+			"model":"Patient Count",
+			"value": "",
+			"min": "",
+            "max": "",
+            "additional_data_capture":""		
+        },
+		{
+			"Rank" : "2",
+			"model":"Study Arms",
+			"value": "",
+			"min": "",
+            "max": "",
+            "additional_data_capture":""		
+        },       
+        {
+			"Rank" : "3",
+			"model":"Study Sites",
+			"value": "",
+			"min": "",
+            "max": "",
+            "additional_data_capture":"Add/Edit Sites"		
+        }, 
+        {
+			"Rank" : "4",
+			"model":"# of Intervention Drugs",
+			"value": "",
+			"min": "",
+            "max": "",
+            "additional_data_capture":"Add/Edit Drugs"		
+        }, 
+        {
+			"Rank" : "5",
+			"model":"# of Intervention Procedures",
+			"value": "",
+			"min": "",
+            "max": "",
+            "additional_data_capture":"Add/Edit Procedures."		
+        }
+    ]
+}

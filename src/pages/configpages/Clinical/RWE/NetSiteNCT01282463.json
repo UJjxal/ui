@@ -1,0 +1,194 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Los Angeles",
+            "County": "Los Angeles",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Sacramento",
+            "County": "Sacramento",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "San Francisco",
+            "County": "San Francisco",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Aurora",
+            "County": "Aurora",
+            "State": "Colorado",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "New Haven",
+            "County": "New Haven",
+            "State": "Connecticut",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Boca Raton",
+            "County": "Palm Beach",
+            "State": "Florida",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Jacksonville",
+            "County": "Duval",
+            "State": "Florida",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Orlando",
+            "County": "Orange",
+            "State": "Florida",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Baltimore",
+            "County": "Baltimore",
+            "State": "Maryland",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Rochester",
+            "County": "Monroe",
+            "State": "Minnesota",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Las Vegas",
+            "County": "Clark",
+            "State": "Nevada",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Albany",
+            "County": "Albany",
+            "State": "New York",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Springfield",
+            "County": "Greene",
+            "State": "Oregon",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Charleston",
+            "County": "Charleston",
+            "State": "South Carolina",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Nashville",
+            "County": "Davidson",
+            "State": "Tennessee",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Bedford",
+            "County": "Bedford",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Dallas",
+            "County": "Dallas",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "McAllen",
+            "County": "Hidalgo",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "The Woodlands",
+            "County": "Montgomery",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Webster",
+            "County": "Webster",
+            "State": "Texas",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Fairfax",
+            "County": "Fairfax",
+            "State": "Virginia",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Hampton",
+            "County": "Hampton",
+            "State": "Virginia",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Seattle",
+            "County": "King",
+            "State": "Washington",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "For additional information regarding investigative sites for this trial, contact 1-877-CTLILLY (1-877-285-4559, 1-317-615-4559) Mon - Fri from 9 AM to 5 PM Eastern Time (UTC/GMT - 5 hours, EST), or speak with your personal physician.",
+            "City": "Wenatchee",
+            "County": "Chelan",
+            "State": "Washington",
+            "Country": "United States"
+        }
+    ]
+}

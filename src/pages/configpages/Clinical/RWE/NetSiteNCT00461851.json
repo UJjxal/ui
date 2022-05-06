@@ -1,0 +1,33 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "Yale University, Comprehensive Cancer Center",
+            "City": "New Haven",
+            "County": "New Haven",
+            "State": "Connecticut",
+            "Country": "United States"
+        }
+    ]
+}

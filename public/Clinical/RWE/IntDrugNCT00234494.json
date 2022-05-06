@@ -1,0 +1,54 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Cisplatin",
+            "Condition": "=",
+            "Dosevalue": "70",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "28"
+        },
+        {
+            "DrugName": "Gemcitabine",
+            "Condition": "=",
+            "Dosevalue": "1250",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "28"
+        },
+        {
+            "DrugName": "Bevacizumab",
+            "Condition": "=",
+            "Dosevalue": "15",
+            "Doseunit": "mg/kg",
+            "Frequency": "1",
+            "Cycleduration": "28"
+        }
+    ]
+}

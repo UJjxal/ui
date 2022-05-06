@@ -1,0 +1,303 @@
+{
+    "program": "idspAPI",
+    "release": "1",
+    "version": "0.0.1",
+    "datetime": "2020-11-11 15:05:12.000589",
+    "timestamp": "1605125112.000589",
+    "status": "success",
+    "code": 200,
+    "message": "OK",
+    "response": [
+        {
+            "treeID": 24,
+            "treeName": "Early Auto Collections (Collection $)",
+            "kpi_tree_domain": "Multi-Domain",
+            "status": "Deleted",
+            "name": "Early Stage Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": null,
+            "attributes": {
+                "No of accounts": "0",
+                "Collection $": "NA",
+                "Recovery Rate": "NA",
+                "node_status": "NA"
+            },
+            "filter": "{\"dpd\":u\"1-14\",\"time\":u\"1m-to-1m\"}"
+        },
+        {
+            "treeID": 2,
+            "treeName": "New Analysis 2",
+            "kpi_tree_domain": "Home Equity",
+            "status": "Published",
+            "name": "Parent1",
+            "colorThreshold": {},
+            "kpi_tree_goal": "New Goal",
+            "attributes": {
+                "Field1": "10,268,937",
+                "No of accounts": "56,021",
+                "Recovery Rate": "35.7",
+                "node_status": "significant_growth"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1m-to-1m"
+            },
+            "unit": {"Field1": "$", "No of accounts": "$", "Recovery Rate":"$"},
+            "polarity": {"Field1": "+", "No of accounts": "+", "Recovery Rate":"+"}
+        },
+        {
+            "treeID": 18,
+            "treeName": "Analysis 188",
+            "kpi_tree_domain": "Credit Card",
+            "status": "Published",
+            "name": "Early Stage Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "A smaller version of the main tree, mainly for testing and demo",
+            "attributes": {
+                "Sales3": "8,905,475",
+                "node_status": "significant_growth"
+            },
+            "unit":{"Sales3":"$"},
+            "polarity":{"Sales3":"+"},
+            "filter": {
+                "dpd": "1-14",
+                "time": "1m-to-1m"
+            }
+        },
+        {
+            "treeID": 16,
+            "treeName": "Direct Auto Recovery Rate KPI Tree",
+            "kpi_tree_domain": "Business Lending",
+            "status": "Published",
+            "name": "Recovery Rate for Direct Auto",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "Collection based efficiency for Direct Auto",
+            "attributes": {
+                "Recovery Rate": "50.3%",
+                "No of accounts": "3,686",
+                "Collection $": "876,909",
+                "node_status": "modest_growth"
+            },
+            "unit": {
+                "Recovery Rate": "%",
+                "No of accounts": "#",
+                "Collection $": "$"
+                
+            },
+            "polarity":{
+                "Recovery Rate": "+",
+                "No of accounts": "+",
+                "Collection $": "+"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1Month"
+            }
+        },
+        {
+            "treeID": 10,
+            "treeName": "KPI_Test Analysis",
+            "kpi_tree_domain": "Auto Lending",
+            "status": "Published",
+            "name": "Early Stage Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "To get a closer look at the Auto Collections business(direct and indirect)",
+            "attributes": {
+                "Recovery": "42.9%",
+                "Online Sales": "22,702",
+                "Offline Sales": "207,905,749.61",
+                "Revenue Analysis":"231,21",
+                "Cost Analysis":"3,440",
+                "node_status": "no_change"
+            },
+            "unit":{
+                "Recovery": "%",
+                "Online Sales": "$",
+                "Offline Sales": "$",
+                "Revenue Analysis":"$",
+                "Cost Analysis":"$"
+            },
+            "polarity":{
+                "Recovery": "+",
+                "Online Sales": "+",
+                "Offline Sales": "+",
+                "Revenue Analysis":"+",
+                "Cost Analysis":"+"
+            },
+            "filter": {
+                "dpd": "15-29",
+                "time": "1m-to-1m"
+            }
+        },
+        {
+            "treeID": 15,
+            "treeName": "Analysis 10/07/2020",
+            "kpi_tree_domain": "Credit Card",
+            "status": "Saved",
+            "name": "Parent",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "test for 3 nodes",
+            "attributes": {
+                "Sales": "4,714",
+                "node_status": "NA"
+            },
+            "unit":{"Sales":"$"},
+            "polarity":{"Sales":"+"},
+            "filter": {
+                "dpd": "15-29",
+                "time": "1m-to-1m"
+            }
+        },
+        {
+            "treeID": 19,
+            "treeName": "Early Auto Collections Snippet",
+            "kpi_tree_domain": "Mortgage",
+            "status": "Saved",
+            "name": "p",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": null,
+            "attributes": {
+                "No of accounts": "0",
+                "Collection $": "NA",
+                "Recovery Rate": "NA",
+                "node_status": "NA"
+            },
+            "unit":
+            {"No of accounts": "#",
+            "Collection $": "$",
+            "Recovery Rate": "$"},
+            "polarity":{"No of accounts": "+",
+                "Collection $": "+",
+                "Recovery Rate": "+"},
+            "filter": {
+                "dpd": "1-14",
+                "time": "1m-to-1m"
+            }
+        },
+        {
+            "treeID": 23,
+            "treeName": "Test_KPITree_5 Metric",
+            "kpi_tree_domain": "Multi-Domain",
+            "status": "Published",
+            "name": "Early Stage Auto Collections 2",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "A smaller version of the main tree, mainly for testing and demo",
+            "attributes": {
+                "Recovery Rate": "33.4%",
+                "No of accounts": "52,335",
+                "Collection $": "8,905,475",
+                "node_status": "significant_growth"
+            },
+            "unit":{
+                "Recovery Rate": "%",
+                "No of accounts": "#",
+                "Collection $": "$"
+            },
+            "polarity":{
+                "Recovery Rate": "+",
+                "No of accounts": "+",
+                "Collection $": "+"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1m-to-1m"
+            }
+        },
+        {
+            "treeID": 25,
+            "treeName": "New Test Analysis",
+            "kpi_tree_domain": "P",
+            "status": "Saved",
+            "name": "Collection Dollars",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "Collection based efficiency for Direct Auto",
+            "attributes": {
+                "Recovery Rate": "50.3%",
+                "No of accounts": "3,686",
+                "Collection $": "876,909",
+                "node_status": "NA"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1Month"
+            }
+        },
+        {
+            "treeID": 17,
+            "treeName": "Analysis 3",
+            "kpi_tree_domain": "Student Lending",
+            "status": "Published",
+            "name": "Direct Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "This KPI tree analysis is for direct Auto Collections business",
+            "attributes": {
+                "Collection $": "1,138,455",
+                "No of accounts": "3,853",
+                "Recovery Rate": "62.6%",
+                "node_status": "significant_growth"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1Month"
+            }
+        },
+        {
+            "treeID": 33,
+            "treeName": "Brandon's Tree",
+            "kpi_tree_domain": "Auto Lending",
+            "status": "Deleted",
+            "name": "Direct Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "Monitor Collection $ for Direct Auto",
+            "attributes": {
+                "node_status": "modest_growth",
+                "Collection $": "1,138,455"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1Month"
+            }
+        },
+        {
+            "treeID": 30,
+            "treeName": "Collections | Direct Auto",
+            "kpi_tree_domain": "Auto Lending",
+            "status": "Deleted",
+            "name": "Direct Auto Collections",
+            "colorThreshold": {
+                "": "significant_loss"
+            },
+            "kpi_tree_goal": "This KPI tree analysis is for direct Auto Collections business",
+            "attributes": {
+                "Recovery Rate": "50.3%",
+                "No of accounts": "3,685",
+                "Collection $": "876,909",
+                "node_status": "significant_growth"
+            },
+            "filter": {
+                "dpd": "1-14",
+                "time": "1Month"
+            }
+        }
+    ]
+}

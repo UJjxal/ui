@@ -1,0 +1,50 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"The impact of variant histology on the outcome of bladder cancer treated with curative intent",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S1078143907001883"	
+        },
+		{
+			"pub_lit":"The role of hexaminolevulinate fluorescence cystoscopy in bladder cancer",
+			"StudyLink": "https://www.nature.com/articles/ncpuro0917"		
+        },
+		{
+			"pub_lit":"Multiprobe FISH for enhanced detection of bladder cancer in voided urine specimens and bladder washings",
+			"StudyLink": "https://academic.oup.com/ajcp/article-abstract/116/1/79/1758153"
+        },
+		{
+			"pub_lit":"A community study of bladder cancer screening by the detection of occult urinary bleeding",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2817%2936720-4"	
+        },
+		{
+			"pub_lit":"Performance characteristics of a new monoclonal antibody test for bladder cancer: ImmunoCyt trade mark.",
+			"StudyLink": "https://europepmc.org/article/med/12735818"
+        },
+		{
+			"pub_lit":"Prognosis of muscle-invasive bladder cancer: difference between primary and progressive tumours and implications for therapy",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283803005207"
+        },
+		{
+			"pub_lit":"Bladder cancer, version 5.2017, NCCN clinical practice guidelines in oncology",
+			"StudyLink": "https://jnccn.org/abstract/journals/jnccn/15/10/article-p1240.xml"
+        },
+		{
+			"pub_lit":"Immunotherapy in bladder cancer with keyhole-limpet hemocyanin: a randomized study",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2817%2942610-3"
+        },
+		{
+			"pub_lit":"Hematuria screening for bladder cancer.",
+			"StudyLink": "https://europepmc.org/article/med/2074507"
+        }
+    ]
+}

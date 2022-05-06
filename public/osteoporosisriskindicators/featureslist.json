@@ -1,0 +1,38 @@
+[
+	{
+		"data": [
+			23,
+			11,
+			11,
+			9,
+			7,
+			5
+		],
+		"categories": [
+			"Age",
+			"Gender",
+			"Caffeine_mg",
+			"Vitamin_K",
+			"Vitamin_B12",
+			"Sugar_gm"
+		]
+	},
+	{
+		"data": [
+			21,
+			20,
+			9,
+			8,
+			8,
+			7
+		],
+		"categories": [
+			"Vitamin_D_nmol_L",
+			"Vitamin_B12_pmol_L",
+			"Vitamin_A_mcg",
+			"Vitamin_K_mcg",
+			"Vitamin_C_mg",
+			"Zinc_mg"
+		]
+	}
+]

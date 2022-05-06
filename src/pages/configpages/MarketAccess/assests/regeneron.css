@@ -1,0 +1,41 @@
+.ant-modal{
+    transform-origin:unset !important
+}
+.ant-modal-header{
+    padding:14px 20px !important;
+}
+.ant-modal-body{
+    padding:14px 20px !important; overflow: auto;
+}
+.ant-modal-footer{
+    padding:10px 20px !important;
+}
+.ant-modal-close-x{
+    height:48px !important; line-height: 44px !important;
+}
+.ant-modal-close, .ant-modal-close:focus, .ant-modal-close:active{
+    box-shadow: none !important; outline: none !important;
+}
+.ant-modal-centered::before{content: unset !important;}
+
+/** **/
+.table-bordered.cellgap2 td, .table-bordered.cellgap2 th {
+    border: 2px solid #ffffff;
+}
+.cellgap2 thead th:first-child{border-left: 2px solid #fff;}
+.cellgap2 thead th:last-child{border-right: 2px solid #fff;}
+.midarea{grid-row: 2/4 !important;}
+.footer{grid-row: unset !important; height: 30px; line-height: 30px; width: 100%; left: 0; bottom: 0; position: absolute;}
+/** Regeneron **/
+.ellipsis{overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+.sidebar-link-light{margin-left: 15px !important;}
+.antd-tbl-white-th .ant-table-small .ant-table-thead > tr > th {
+    background-color: #fff; color: rgb(0, 71, 114);
+}
+.antd-tbl-white-th .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{content: unset !important;}
+.ant-table.ant-table-small .ant-table-tbody .ant-table-wrapper:only-child .ant-table{margin: unset !important;}
+
+.ant-select-borderless.ant-select-open{border: none !important; outline: none !important;}
+
+.antd-lbl-input{position: relative; border: 1px solid #dee2e6;}
+.antd-lbl-input .lbl{position:absolute; padding:3px; background:#fff; left:6px; top:-16px; font-size: 13px; font-weight: 500;}

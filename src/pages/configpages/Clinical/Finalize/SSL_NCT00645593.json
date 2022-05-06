@@ -1,0 +1,42 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Nitrosamine formation in bladder infections and its role in the etiology of bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0022534717570354"	
+        },
+		{
+			"pub_lit":"Measuring health‐related quality of life outcomes in bladder cancer patients using the Bladder Cancer Index (BCI)",
+			"StudyLink": "https://acsjournals.onlinelibrary.wiley.com/doi/abs/10.1002/cncr.22556"		
+        },
+		{
+			"pub_lit":"ICUD-EAU international consultation on bladder cancer 2012: urinary diversion",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283812010032"
+        },
+		{
+			"pub_lit":"Defining early morbidity of radical cystectomy for patients with bladder cancer using a standardized reporting methodology",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283808008609"	
+        },
+		{
+			"pub_lit":"Detection of early bladder cancer by 5-aminolevulinic acid induced porphyrin fluorescence",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2801%2966559-5"
+        },
+		{
+			"pub_lit":"Gender and bladder cancer: a collaborative review of etiology, biology, and outcomes",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283815007824"
+        },
+		{
+			"pub_lit":"Updated 2016 EAU guidelines on muscle-invasive and metastatic bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283816302901"
+        }
+    ]
+}

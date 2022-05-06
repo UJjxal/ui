@@ -1,0 +1,69 @@
+{
+	"columns": [
+		{
+			"label": "Study ID",
+			"field": "SimilarStudyID"
+		},
+		{
+			"label": "Title",
+			"field": "Title"
+		},
+		{
+			"label": "Study Link",
+			"field": "StudyLink"
+		}
+    ],
+	
+	"rows":[
+   {
+      "SimilarStudyID":"NCT01031420",
+      "Title":"Phase II Trial of Neoadjuvant Dose Dense MVAC in Muscle Invasive Bladder Cancer and High Risk Urothelial Carcinoma of the Upper Urinary Tract",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01031420"
+   },
+   {
+      "SimilarStudyID":"NCT00587964",
+      "Title":"Phase II Trial of Stereotactic Radiosurgery Boost Following Surgical Resection for Brain Metastases",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00587964"
+   },
+   {
+      "SimilarStudyID":"NCT00595088",
+      "Title":"Phase 2b, Multicenter Trial of Intravesical DTA-H19/PEI in Patients With Intermediate-Risk Superficial Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00595088"
+   },
+   {
+      "SimilarStudyID":"NCT00847015",
+      "Title":"Phase II Study of Gemcitabine, Cisplatin, and Sunitinib (GC-S) as Neoadjuvant Chemotherapy in Patients With Muscle-Invasive Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00847015"
+   },
+   {
+      "SimilarStudyID":"NCT00585689",
+      "Title":"A Phase Two Trial of Neoadjuvant ABI-007, Carboplatin and Gemcitabine in Patients With Locally Advanced Carcinoma of the Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00585689"
+   },
+   {
+      "SimilarStudyID":"NCT01821105",
+      "Title":"A 2 Phase Comparison of Pre-operative CT AND PET Images in the Intraoperative Detection of Disease to a Hand-held Probe, and to an Intraoperative CT Scan in Patients Undergoing Surgery for Metastatic Colorectal Cancer.",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01821105"
+   },
+   {
+      "SimilarStudyID":"NCT02756637",
+      "Title":"Neutrophil-to-Lymphocyte Ratio in Bladder Cancer: A Secondary Biomarker Analysis of SWOG 8710",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02756637"
+   },
+   {
+      "SimilarStudyID":"NCT00645593",
+      "Title":"Phase II Randomized Trial of Gemcitabine and Cisplatin With or Without Cetuximab in Patients With Urothelial Carcinoma",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00645593"
+   },
+   {
+      "SimilarStudyID":"NCT02300610",
+      "Title":"A Phase I/1b Study of Enzalutamide in Combination With Gemcitabine and Cisplatin in Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02300610"
+   },
+   {
+      "SimilarStudyID":"NCT00253708",
+      "Title":"Body-Based Complementary Therapies for Patients With Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00253708"
+   }
+]
+}

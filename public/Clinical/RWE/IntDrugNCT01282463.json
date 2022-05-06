@@ -1,0 +1,54 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Docetaxel",
+            "Condition": "=",
+            "Dosevalue": "75",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Ramucirumab DP",
+            "Condition": "=",
+            "Dosevalue": "10",
+            "Doseunit": "mg/Kg",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Icrucumab",
+            "Condition": "=",
+            "Dosevalue": "12",
+            "Doseunit": "mg/Kg",
+            "Frequency": "1,8",
+            "Cycleduration": "21"
+        }
+    ]
+}

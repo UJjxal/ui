@@ -1,0 +1,30 @@
+{
+    "columns": [
+        {
+            "label": "Procedure Name",
+            "field": "Procedure Name"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        }
+    ],
+    "rows": [
+        {
+            "Procedure": "Diagnosis History",
+            "Frequency": "1"
+        },
+        {
+            "Procedure": "Retention Sample",
+            "Frequency": "1"
+        },
+        {
+            "Procedure": "Chemotherapy",
+            "Frequency": "6"
+        },
+        {
+            "Procedure": "PET/CT Scan",
+            "Frequency": "3"
+        }
+    ]
+}

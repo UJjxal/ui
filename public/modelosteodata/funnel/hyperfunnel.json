@@ -1,0 +1,46 @@
+{
+	"risk_profile": [
+		{
+			"series": [
+				8,
+				92
+			],
+			"labels": [
+				"Osteoporosis",
+				"No Osteoporosis"
+			]
+		}
+	],
+	"patient_filter": [
+		{
+			"x": "Respondents with Osteoporosis profiling",
+			"y": 3296,
+			"text": "Respondents with Osteoporosis profiling",
+			"fill": "#00bdae"
+		},
+		{
+			"x": "Records with valid Questionnaire data",
+			"y": 3804,
+			"text": "Records with valid Questionnaire data",
+			"fill": "#404041"
+		},
+		{
+			"x": "Respondents left after merging with examination data",
+			"y": 5444,
+			"text": "Respondents left after merging with examination data",
+			"fill": "#357cd2"
+		},
+		{
+			"x": "Respondents with valid Dietary records readings",
+			"y": 8531,
+			"text": "Respondents with valid Dietary records readings",
+			"fill": "#e56590"
+		},
+		{
+			"x": "Respondent Universe",
+			"y": 9871,
+			"text": "Total unique respondents with data from dietary studies",
+			"fill": "#f8b883"
+		}
+	]
+}

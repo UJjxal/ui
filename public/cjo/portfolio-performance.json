@@ -1,0 +1,905 @@
+{
+    "PortfolioPerformance": {
+        "TilesData": [
+            {
+                "label": "Portfolio Growth Rate",
+                "value": "8.3%",
+                "percentage": "1.2%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "Portfolio Balance ($mn)",
+                "value": "$ 601",
+                "percentage": "8.3%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "Customer Satisfaction Score",
+                "value": "8.8/10",
+                "percentage": "5%",
+                "icon": "expand_more",
+                "color": "danger",
+                "img": ""
+            },
+            {
+                "label": "Digital Sales (%)",
+                "value": "4.5%",
+                "percentage": "0.6%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            }
+        ]
+    },
+    "PortfolioPerformanceScoreboard": {
+        "TableData": [
+            {
+                "Key": "YTD Portfolio Growth",
+                "CreditCard": 99,
+                "Mortgage": 101,
+                "PersonalLoan": 103,
+                "AutoLoan": 98,
+                "ECL": 99,
+                "AllProducts": 104
+            },
+            {
+                "Key": "Customer Satisfaction",
+                "CreditCard": 105,
+                "Mortgage": 98,
+                "PersonalLoan": 95,
+                "AutoLoan": 98,
+                "ECL": 98,
+                "AllProducts": 104
+            },
+            {
+                "Key": "Digital Sales (%)",
+                "CreditCard": 99,
+                "Mortgage": 104,
+                "PersonalLoan": 99,
+                "AutoLoan": 97,
+                "ECL": 96,
+                "AllProducts": 105
+            },
+            {
+                "Key": "Acquisitions",
+                "CreditCard": 99,
+                "Mortgage": 100,
+                "PersonalLoan": 102,
+                "AutoLoan": 100,
+                "ECL": 100,
+                "AllProducts": 99
+            },
+            {
+                "Key": "Cross Sell",
+                "CreditCard": 96,
+                "Mortgage": 105,
+                "PersonalLoan": 101,
+                "AutoLoan": 100,
+                "ECL": 95,
+                "AllProducts": 99
+            },
+            {
+                "Key": "Attrition",
+                "CreditCard": 102,
+                "Mortgage": 101,
+                "PersonalLoan": 95,
+                "AutoLoan": 97,
+                "ECL": 102,
+                "AllProducts": 101
+            }
+        ]
+    },
+    "PortfolioGrowthTrendsBalance": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "AllProducts": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "554",
+                    "560",
+                    "569",
+                    "577",
+                    "583",
+                    "591",
+                    "596",
+                    "601"
+                ],
+                "min": 450,
+                "max": 650
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "66",
+                    "67",
+                    "68",
+                    "69",
+                    "70",
+                    "71",
+                    "72",
+                    "72"
+                ],
+                "min": 60,
+                "max": 80
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "55",
+                    "56",
+                    "57",
+                    "58",
+                    "58",
+                    "59",
+                    "60",
+                    "60"
+                ],
+                "min": 50,
+                "max": 70
+            }
+        ],
+        "CreditCard": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "194",
+                    "196",
+                    "199",
+                    "202",
+                    "204",
+                    "207",
+                    "209",
+                    "210"
+                ],
+                "min": 190,
+                "max": 240
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "139",
+                    "140",
+                    "142",
+                    "144",
+                    "146",
+                    "148",
+                    "149",
+                    "150"
+                ],
+                "min": 130,
+                "max": 180
+            }
+        ],
+        "ECL": [
+            {
+                "type": "line",
+                "name": "PortfolioBalance ($mn)",
+                "data": [
+                    "100",
+                    "101",
+                    "102",
+                    "104",
+                    "105",
+                    "106",
+                    "107",
+                    "108"
+                ],
+                "min": 90,
+                "max": 110
+            }
+        ]
+    },
+    "PortfolioGrowthTrendsAccounts": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "AllProducts": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "1100",
+                    "1119",
+                    "1131",
+                    "1145",
+                    "1164",
+                    "1185",
+                    "1200",
+                    "1220"
+                ],
+                "min": 1000,
+                "max": 1300
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "132",
+                    "134",
+                    "136",
+                    "137",
+                    "140",
+                    "142",
+                    "144",
+                    "146"
+                ],
+                "min": 100,
+                "max": 200
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "110",
+                    "112",
+                    "113",
+                    "115",
+                    "116",
+                    "119",
+                    "120",
+                    "122"
+                ],
+                "min": 100,
+                "max": 200
+            }
+        ],
+        "CreditCard": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "385",
+                    "392",
+                    "396",
+                    "401",
+                    "407",
+                    "415",
+                    "420",
+                    "427"
+                ],
+                "min": 300,
+                "max": 500
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "275",
+                    "280",
+                    "283",
+                    "286",
+                    "291",
+                    "296",
+                    "300",
+                    "305"
+                ],
+                "min": 200,
+                "max": 400
+            }
+        ],
+        "ECL": [
+            {
+                "type": "line",
+                "name": "Accounts (1000s)",
+                "data": [
+                    "198",
+                    "201",
+                    "204",
+                    "206",
+                    "210",
+                    "213",
+                    "216",
+                    "220"
+                ],
+                "min": 100,
+                "max": 300
+            }
+        ]
+    },
+    "ACABalance": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "AllProducts": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "6",
+                    "5",
+                    "8",
+                    "6",
+                    "8",
+                    "3",
+                    "7",
+                    "6"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "3",
+                    "4",
+                    "7",
+                    "9",
+                    "3",
+                    "9",
+                    "6",
+                    "7"
+                ]
+            },
+            {
+                "name": "Attrition",
+                "type": "bar",
+                "data": [
+                    "-2",
+                    "-3",
+                    "-6",
+                    "-7",
+                    "-5",
+                    "-4",
+                    "-8",
+                    "-8"
+                ]
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "0.7",
+                    "0.6",
+                    "1.0",
+                    "0.7",
+                    "1.0",
+                    "0.4",
+                    "0.8",
+                    "0.7"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "0.4",
+                    "0.5",
+                    "0.8",
+                    "1.1",
+                    "0.4",
+                    "1.1",
+                    "0.7",
+                    "0.8"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.2",
+                    "-0.4",
+                    "-0.7",
+                    "-0.8",
+                    "-0.6",
+                    "-0.5",
+                    "-1.0",
+                    "-1.0"
+                ]
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "0.6",
+                    "0.5",
+                    "0.8",
+                    "0.6",
+                    "0.8",
+                    "0.3",
+                    "0.7",
+                    "0.6"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "0.3",
+                    "0.4",
+                    "0.7",
+                    "0.9",
+                    "0.3",
+                    "0.9",
+                    "0.6",
+                    "0.7"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.2",
+                    "-0.3",
+                    "-0.6",
+                    "-0.7",
+                    "-0.5",
+                    "-0.4",
+                    "-0.8",
+                    "-0.8"
+                ]
+            }
+        ],
+        "CreditCard": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "2.1",
+                    "1.75",
+                    "2.8",
+                    "2.1",
+                    "2.8",
+                    "1.05",
+                    "2.45",
+                    "2.1"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "1.05",
+                    "1.4",
+                    "2.45",
+                    "3.15",
+                    "1.05",
+                    "3.15",
+                    "2.1",
+                    "2.45"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.7",
+                    "-1.05",
+                    "-2.1",
+                    "-2.45",
+                    "-1.75",
+                    "-1.4",
+                    "-2.8",
+                    "-2.8"
+                ]
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "1.5",
+                    "1.25",
+                    "2",
+                    "1.5",
+                    "2",
+                    "0.75",
+                    "1.75",
+                    "1.5"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "0.75",
+                    "1",
+                    "1.75",
+                    "2.25",
+                    "0.75",
+                    "2.25",
+                    "1.5",
+                    "1.75"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.5",
+                    "-0.75",
+                    "-1.5",
+                    "-1.75",
+                    "-1.25",
+                    "-1",
+                    "-2",
+                    "-2"
+                ]
+            }
+        ],
+        "ECL": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "1.08",
+                    "0.9",
+                    "1.44",
+                    "1.08",
+                    "1.44",
+                    "0.54",
+                    "1.26",
+                    "1.08"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "0.54",
+                    "0.72",
+                    "1.26",
+                    "1.62",
+                    "0.54",
+                    "1.62",
+                    "1.08",
+                    "1.26"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.36",
+                    "-0.54",
+                    "-1.08",
+                    "-1.26",
+                    "-0.9",
+                    "-0.72",
+                    "-1.44",
+                    "-1.44"
+                ]
+            }
+        ]
+    },
+    "ACAAccounts": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "AllProducts": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "14",
+                    "16",
+                    "10",
+                    "17",
+                    "18",
+                    "16",
+                    "13",
+                    "19"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "8",
+                    "9",
+                    "11",
+                    "13",
+                    "13",
+                    "20",
+                    "12",
+                    "15"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-7",
+                    "-6",
+                    "-9",
+                    "-16",
+                    "-12",
+                    "-15",
+                    "-10",
+                    "-14"
+                ]
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "1.7",
+                    "1.9",
+                    "1.2",
+                    "2.0",
+                    "2.2",
+                    "1.9",
+                    "1.6",
+                    "2.3"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "1.0",
+                    "1.1",
+                    "1.3",
+                    "1.6",
+                    "1.6",
+                    "2.4",
+                    "1.4",
+                    "1.8"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.8",
+                    "-0.7",
+                    "-1.1",
+                    "-1.9",
+                    "-1.4",
+                    "-1.8",
+                    "-1.2",
+                    "-1.7"
+                ]
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "1.4",
+                    "1.6",
+                    "1.0",
+                    "1.7",
+                    "1.8",
+                    "1.6",
+                    "1.3",
+                    "1.9"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "0.8",
+                    "0.9",
+                    "1.1",
+                    "1.3",
+                    "1.3",
+                    "2.0",
+                    "1.2",
+                    "1.5"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-0.7",
+                    "-0.6",
+                    "-0.9",
+                    "-1.6",
+                    "-1.2",
+                    "-1.5",
+                    "-1.0",
+                    "-1.4"
+                ]
+            }
+        ],
+        "CreditCard": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "4.9",
+                    "5.6",
+                    "3.5",
+                    "5.95",
+                    "6.3",
+                    "5.6",
+                    "4.55",
+                    "6.65"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "2.8",
+                    "3.15",
+                    "3.85",
+                    "4.55",
+                    "4.55",
+                    "7",
+                    "4.2",
+                    "5.25"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-2.45",
+                    "-2.1",
+                    "-3.15",
+                    "-5.6",
+                    "-4.2",
+                    "-5.25",
+                    "-3.5",
+                    "-4.9"
+                ]
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "3.5",
+                    "4",
+                    "2.5",
+                    "4.25",
+                    "4.5",
+                    "4",
+                    "3.25",
+                    "4.75"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "2",
+                    "2.25",
+                    "2.75",
+                    "3.25",
+                    "3.25",
+                    "5",
+                    "3",
+                    "3.75"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-1.75",
+                    "-1.5",
+                    "-2.25",
+                    "-4",
+                    "-3",
+                    "-3.75",
+                    "-2.5",
+                    "-3.5"
+                ]
+            }
+        ],
+        "ECL": [
+            {
+                "type": "bar",
+                "name": "Acquisitions",
+                "data": [
+                    "2.52",
+                    "2.88",
+                    "1.8",
+                    "3.06",
+                    "3.24",
+                    "2.88",
+                    "2.34",
+                    "3.42"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Cross Sell",
+                "data": [
+                    "1.44",
+                    "1.62",
+                    "1.98",
+                    "2.34",
+                    "2.34",
+                    "3.6",
+                    "2.16",
+                    "2.7"
+                ]
+            },
+            {
+                "type": "bar",
+                "name": "Attrition",
+                "data": [
+                    "-1.26",
+                    "-1.08",
+                    "-1.62",
+                    "-2.88",
+                    "-2.16",
+                    "-2.7",
+                    "-1.8",
+                    "-2.52"
+                ]
+            }
+        ]
+    },
+    "KeyInsights": [
+        {
+            "title": "Portfolio Growth",
+            "description": "Credit portfolio witnessed 8.3% growth rate in the current period",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUyQ3JlZGl0IFBvcnRmb2xpbyBQZXJmb3JtYW5jZQ=="
+        },
+        {
+            "title": "Digital Sales",
+            "description": "Digital sales account for 4.3% of the total credit products sales",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUzQ3Jvc3MgU2VsbCBQZXJzb25hbGl6YXRpb246IENoYW5uZWxz"
+        },
+        {
+            "title": "Customer satisfaction",
+            "description": "NPS has increased by 1 point in the current period",
+            "link": ""
+        }
+    ]
+}

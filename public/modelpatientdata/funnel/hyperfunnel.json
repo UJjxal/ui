@@ -1,0 +1,46 @@
+{
+	"risk_profile": [
+		{
+			"series": [
+				26,
+				74
+			],
+			"labels": [
+				"Hypertension",
+				"No Hypertension"
+			]
+		}
+	],
+	"patient_filter": [
+		{
+			"x": "Respondents with Hypertension profiling",
+			"y": 5184,
+			"text": "Respondents with Hypertension profiling",
+			"fill": "#00bdae"
+		},
+		{
+			"x": "Removing respondents with unreliable survey records",
+			"y": 6333,
+			"text": "Removing respondents with unreliable survey records",
+			"fill": "#404041"
+		},
+		{
+			"x": "Respondents left after removing outliers in BP readings",
+			"y": 6865,
+			"text": "Respondents left after removing outliers in BP readings",
+			"fill": "#357cd2"
+		},
+		{
+			"x": "Respondents with valid BP readings",
+			"y": 7025,
+			"text": "Respondents with valid BP readings",
+			"fill": "#e56590"
+		},
+		{
+			"x": "Respondent Universe",
+			"y": 9971,
+			"text": "Total unique respondents with data from multiple studies",
+			"fill": "#f8b883"
+		}
+	]
+}

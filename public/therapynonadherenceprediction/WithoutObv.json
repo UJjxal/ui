@@ -1,0 +1,26 @@
+{
+	"data": [
+		12,
+		6,
+		5,
+		5,
+		5,
+		5,
+		5,
+		5,
+		5,
+		5
+	],
+	"categories": [
+		"Albumin_to_Cretainine",
+		"Hematocrit....",
+		"Total.Sugars..gm.",
+		"Cholestrol..mg.",
+		"Platelet.count..1000.cells.uL.",
+		"Protein..mg.",
+		"Total.Fat..gm.",
+		"Total.Cholesterol..mg.dL.",
+		"Mean.platelet.volume..fL.",
+		"Phosphorus	"
+	]
+}

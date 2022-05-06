@@ -1,0 +1,38 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Intravesical bacillus Calmette-Guerin reduces the risk of progression in patients with superficial bladder cancer: a meta-analysis of the published results of randomized …",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2805%2964273-5"	
+        },
+		{
+			"pub_lit":"Treatment of non-metastatic muscle-invasive bladder cancer: AUA/ASCO/ASTRO/SUO guideline",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2017.04.086"		
+        },
+		{
+			"pub_lit":"Bladder cancer exosomes contain EDIL-3/Del1 and facilitate cancer progression",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2014.02.035"
+        },
+		{
+			"pub_lit":"Intravesical bacillus Calmette-Guerin versus mitomycin C for superficial bladder cancer: a formal meta-analysis of comparative studies on recurrence and toxicity",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2805%2964043-8"	
+        },
+		{
+			"pub_lit":"Multivariate analysis of the prognostic factors of primary superficial bladder cancer",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2805%2967975-X"
+        },
+		{
+			"pub_lit":"ICUD-EAU international consultation on bladder cancer 2012: pathology",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283812011505"
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Gender<=0.5",
+    "nodeSvgShape": {
+      "shape": "rect"
+    },
+    "attributes": {
+      "gini": "0.154",
+      "sample": "2523",
+      "value": "[212, 2311]"
+    },
+    "children": [
+      {
+        "name": "Vitamin_D_nmol_L",
+        "attributes": {
+          "query": "<=122.0",
+          "gini": "0.038",
+          "sample": "1198",
+          "value": "[23, 1175]"
+        },
+        "nodeSvgShape": {
+          "shape": "rect"
+        },
+        "children": [
+          {
+            "name": "Carbohydrate_mg",
+            "attributes": {
+              "query": "<=52.295",
+              "gini": "0.029",
+              "sample": "1164",
+              "value": "[17, 1147]"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Age",
+                "query": "<=58.5",
+                "attributes": {
+                  "gini": "0.026",
+                  "sample": "1151",
+                  "value": "[15, 1136]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          },
+          {
+            "name": "Caffeine_mg",
+            "attributes": {
+              "query": "<=48.5",
+              "gini": "0.291",
+              "sample": "34",
+              "value": "[6, 28]"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Sugar_gm",
+                "attributes": {
+                  "query": "<=119.985",
+                  "gini": "0.087",
+                  "sample": "22",
+                  "value": "[1,21]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Age",
+        "attributes": {
+          "query": "<=66.5",
+          "gini": "0.245",
+          "sample": "1325",
+          "value": "[189, 1136]"
+        },
+        "nodeSvgShape": {
+          "shape": "rect"
+        },
+        "children": [
+          {
+            "name": "Age",
+            "attributes": {
+              "query": "<=56.5",
+              "gini": "0.149",
+              "sample": "940",
+              "value": "[76, 864]"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Vitamin_K_mcg",
+                "attributes": {
+                  "query": "<=11.55",
+                  "gini": "0.082",
+                  "sample": "607",
+                  "value": "[26, 581]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                },
+                "children": []
+              },
+              {
+                "name": "Cholestrol_mg",
+                "attributes": {
+                  "query": "<=707.5",
+                  "gini": "0.255",
+                  "sample": "333",
+                  "value": "[50, 283]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Sugar_gm",
+            "attributes": {
+              "query": "<=66.445",
+              "gini": "0.415",
+              "sample": "385",
+              "value": "[113, 272]"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Caffeine_mg",
+                "attributes": {
+                  "query": "<=54.0",
+                  "gini": "0.32",
+                  "sample": "160",
+                  "value": "[32, 128]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              },
+              {
+                "name": "Vitamin_K_mcg",
+                "attributes": {
+                  "query": "<=70.95",
+                  "gini": "0.461",
+                  "sample": "225",
+                  "value": "[81, 144]"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

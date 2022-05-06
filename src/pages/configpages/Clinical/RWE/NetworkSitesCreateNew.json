@@ -1,0 +1,53 @@
+{
+	"columns": [
+		{
+			"label": "Rank",
+			"field": "Rank"
+		},
+		{
+			"label": "Site Name",
+			"field": "SiteName"
+		},
+		{
+			"label": "City",
+			"field": "City"
+		},
+		{
+			"label": "County",
+			"field": "County"
+		},
+		{
+			"label": "Ongoing Studies",
+			"field": "OngStudies"
+		},
+		{
+			"label": "Completed Studies",
+			"field": "CStudies"
+		},
+		{
+			"label": "Enrollment",
+			"field": "Enrollment"
+		},
+		{
+			"label": "Attrition",
+			"field": "Attrition"
+		},
+		{
+			"label": "Study Patients",
+			"field": "studypatients"
+		}
+	],
+	"rows": [
+		{
+			"Rank": "",
+			"SiteName": "",
+			"City": "",
+			"County": "",
+			"OngStudies": "",
+			"Cstudies": "",
+			"Enrollment": "",
+			"Attrition": "",
+			"studypatients": ""
+		}
+	]
+}

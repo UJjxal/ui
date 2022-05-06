@@ -1,0 +1,351 @@
+{
+  "PortfolioRiskExposure": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Portfolio Risk Exposure",
+        "data": [1.5, 1.6, 1.6, 5.0, 4.7, 4.5, 4.4, 4.9]
+      }
+    ]
+  },
+  "PortfolioBalanceTrend": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Portfolio Balance Trend",
+        "data": [83.84, 84.86, 85.30, 85.50, 85.80, 86.32, 86.29, 85.85]
+      }
+    ]
+  },
+  "PortfolioBalTrend": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Others",
+        "data": [12.27, 12.13, 12.02, 11.51, 11.12, 10.79, 10.25, 10.78]
+      },
+      {
+        "name": "Very High Risk",
+        "data": [3.99, 4.03, 3.97, 9.84, 8.49, 7.44, 6.76, 8.4]
+      },
+      {
+        "name": "High Risk",
+        "data": [1.75, 1.73, 1.73, 6.46, 5.48, 5.15, 4.65, 4.75]
+      },
+      {
+        "name": "Medium Risk",
+        "data": [6.64, 6.58, 7.66, 23.24, 22.91, 22.37, 21.04, 19.4]
+      },
+      {
+        "name": "Low Risk",
+        "data": [19.24, 19.21, 19.83, 32.09, 33.99, 34.92, 35.8, 34.82]
+      },
+      {
+        "name": "Very Low Risk",
+        "data": [56.1, 56.33, 54.78, 16.85, 18.01, 19.34, 21.5, 21.85]
+      }
+    ]
+  },
+  "paymentholiday": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "LOAN_SKIP": [
+      {
+        "name": "Loan Skip",
+        "data": [0, 0, 30.62, 128.37, 128.31, 96.55, 0, 0]
+      }
+    ]
+  },
+  "MonetaryPolicyRate": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+    "MonetaryPolicyRate": [
+      {
+        "name": "Monetary Policy Rate",
+        "data": ["4.50", "4.50", "3.50", "3.50", "3.50", "3.50", "3.50", "3.50", "3.00"]
+      }
+    ]
+  },
+  "ConsumerPriceIndex": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "ConsumerPriceIndex": [
+      {
+        "name": "Consumer Price Index",
+        "data": [134.82, 134.65, 133.95, 132.85, 132.7, 134.96, 137.50, 138.57]
+      }
+    ]
+  },
+  "COVIDCases": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "MonetaryPolicyRate": [
+      {
+        "name": "COVID Cases",
+        "data": [0, 0, 1.2, 7.3, 17.6, 33.4, 71.4, 95.0]
+      },
+      {
+        "name": "COVID Recoveries",
+        "data": [0, 0, 0.005, 1.4, 10.9, 17.9, 37.5, 68.7]
+      }
+    ]
+  },
+  "exposureAmount": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Very High Risk",
+        "data": [1.10, 1.16, 1.08, 2.88, 2.40, 2.16, 2.15, 2.78]
+      },
+      {
+        "name": "High Risk",
+        "data": [0.12, 0.12, 0.12, 0.65, 0.60, 0.57, 0.53, 0.58]
+      },
+      {
+        "name": "Medium Risk",
+        "data": [0.19, 0.20, 0.23, 1.10, 1.20, 1.21, 1.14, 1.07]
+      },
+      {
+        "name": "Low Risk",
+        "data": [0.16, 0.16, 0.17, 0.50, 0.59, 0.64, 0.66, 0.63]
+      },
+      {
+        "name": "Very Low Risk",
+        "data": [0.076, 0.078, 0.078, 0.066, 0.090, 0.107, 0.120, 0.119]
+      }
+    ]
+  },
+  "PaymentPortfolioSchedule": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "As Scheduled",
+        "data": [
+          54943668109.18,
+      52016962386.97,
+      44352525268.64,
+      6587769702.36,
+      5737026886.54,
+      21622645918.74,
+      56201840674.91,
+      59601571730.2
+        ]
+      },
+      {
+        "name": "Less Than Scheduled",
+        "data": [
+          12545462046.68,
+      13215266972.05,
+      13276574724.42,
+      2660891319.8,
+      2054413017.87,
+      5743879855.71,
+      11014664816.19,
+      11995884852.49
+        ]
+      },
+      {
+        "name": "Prepayment",
+        "data": [
+          3106228015.92,
+      2524228138.36,
+      2526744645.69,
+      1196073404.81,
+      2049993174.86,
+      3112083185.32,
+      7685645530.04,
+      6074900872.26
+        ]
+      }
+    ]
+  },
+  "LateFeeAssessed": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun","July","Aug"],
+    "modeldata": [
+      {
+        "name": "Late Fee Assessed",
+        "data": [63.02, 98.4, 142.27, 166.03, 154.75, 215.55, 245.45, 343.87]
+      }
+    ]
+  },
+  "CardBillPaymentMiss": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun","July","Aug"],
+    "modeldata": [
+      {
+        "name": "Card Bill Payment Miss",
+        "data": [12.31, 11.9, 18.03, 39.14, 20.87, 0, 0, 18.22]
+      }
+    ]
+  },
+  "RiskBandDistribution": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Very High Risk",
+        "data": [10125.0,
+      11146.0,
+      10078.0,
+      23938.0,
+      24076.0,
+      22588.0,
+      20964.0,
+      24492.0]
+      },
+      {
+        "name": "High Risk",
+        "data": [4233.0,
+      4756.0,
+      4653.0,
+      13926.0,
+      14083.0,
+      13522.0,
+      12738.0,
+      12652.0]
+      },
+      {
+        "name": "Medium Risk",
+        "data": [12958.0,
+      13454.0,
+      15303.0,
+      45017.0,
+      43684.0,
+      43691.0,
+      43582.0,
+      40703.0]
+      },
+      {
+        "name": "Low Risk",
+        "data": [32616.0,
+      33823.0,
+      36524.0,
+      43160.0,
+      44586.0,
+      46770.0,
+      49227.0,
+      48242.0]
+      },
+      {
+        "name": "Very Low Risk",
+        "data": [69149.0,
+      70991.0,
+      71305.0,
+      12458.0,
+      13520.0,
+      14628.0,
+      16519.0,
+      17183.0]
+      }
+    ]
+  },
+  "DPDDistribution": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "0-30 DPD",
+        "data": [15, 15, 16, 17, 19, 20, 22, 21]
+      },
+      {
+        "name": "31-60 DPD",
+        "data": [9, 8, 9, 11, 12, 14, 15, 15]
+      },
+      {
+        "name": "61-90 DPD",
+        "data": [6, 6, 8, 10, 12, 11, 12, 12]
+      }
+    ]
+  },
+  "DPDDistributionJan20": {
+    "xaxis": ["Jan", "Aug"],
+    "modeldata": [
+      {
+        "name": "Current",
+        "data": [70, 52]
+      },
+      {
+        "name": "0-30DPD",
+        "data": [15, 21]
+      },
+      {
+        "name": "31-60DPD",
+        "data": [9, 15]
+      },
+      {
+        "name": "61-90DPD",
+        "data": [6, 12]
+      }
+    ]
+  },
+
+  "PortfolioBalanceTrendByMarketSegment": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Massive",
+        "data": [16.6, 17.0, 17.1, 17.0, 16.9, 16.9, 16.9, 16.8]
+      },
+      {
+        "name": "Premium",
+        "data": [38.3, 38.0, 39.0, 39.1, 39.1, 39.2, 39.5, 39.5]
+      },
+      {
+        "name": "PYME",
+        "data": [28.8, 29.0, 29.1, 29.3, 29.7, 30.1, 29.7, 29.4]
+      }
+    ]
+  },
+  "PortfolioBalanceTrendByProduct": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Personal",
+        "data": [15.44, 15.94, 16.14, 16.09, 15.97, 15.83, 15.64, 15.38]
+      },
+      {
+        "name": "Mortgage",
+        "data": [38.62, 38.99, 39.22, 39.26, 39.38, 39.62, 40.04, 40.21]
+      },
+      {
+        "name": "Vehicular",
+        "data": [7.51, 7.50, 7.44, 7.39, 7.35, 7.32, 7.31, 7.21]
+      },
+      {
+        "name": "Commercial Loan",
+        "data": [22.25, 22.43, 22.49, 22.75, 23.10, 23.55, 23.30, 23.04]
+      }
+    ]
+  },
+  "PortfolioRiskExposureTrendByMarketSegment": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Massive",
+        "data": [0.40, 0.41, 0.40, 1.18, 1.05, 0.98, 0.95, 1.04]
+      },
+      {
+        "name": "Premium",
+        "data": [0.56, 0.60, 0.61, 2.30, 1.98, 1.81, 1.70, 2.07]
+      },
+      {
+        "name": "PYME",
+        "data": [0.56, 0.54, 0.54, 1.51, 1.68, 1.71, 1.72, 1.79]
+      }
+    ]
+  },
+  "PortfolioRiskExposureTrendByProduct": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Personal",
+        "data": [0.36, 0.37, 0.36, 1.14, 1.05, 1.00, 0.97, 1.12]
+      },
+      {
+        "name": "Mortgage",
+        "data": [0.58, 0.60, 0.61, 2.19 , 1.95, 1.80, 1.72, 1.97]
+      },
+      {
+        "name": "Vehicular",
+        "data": [0.13, 0.14, 0.15, 0.48, 0.45, 0.41, 0.38, 0.43]
+      },
+      {
+        "name": "Commercial Loan",
+        "data": [0.42, 0.42, 0.42, 1.19, 1.27, 1.28, 1.30, 1.36]
+      }
+    ]
+  }
+}

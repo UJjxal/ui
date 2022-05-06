@@ -1,0 +1,30 @@
+{
+    "columns": [
+        {
+            "label": "id",
+            "field": "id"
+        },
+        {
+            "label": "inclusion",
+            "field": "inclusion"
+        },
+        {
+            "label": "condition",
+            "field": "condition"
+        },
+        {
+            "label": "genderListvalue",
+            "field": "genderListvalue"
+        },
+        {
+            "label": "value",
+            "field": "value"
+        }
+    ],
+    "rows": [
+        { "id": 0,"inclusion":"Inclusion","condition":">", "genderListvalue":"18", "value": "Age"},
+
+        { "id": 1,"inclusion":"Inclusion","condition":"=", "genderListvalue":"All", "value": "Gender"
+        }
+    ]
+}

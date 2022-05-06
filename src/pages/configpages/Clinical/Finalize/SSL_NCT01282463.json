@@ -1,0 +1,42 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Bladder cancer immunotherapy: BCG and beyond",
+			"StudyLink": "https://www.hindawi.com/journals/au/2012/181987/abs/"	
+        },
+		{
+			"pub_lit":"Immunotherapy of bladder cancer",
+			"StudyLink": "https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1098-2388(199709/10)13:5%3C342::AID-SSU8%3E3.0.CO;2-D"		
+        },
+		{
+			"pub_lit":"Clinical evaluation of a multi-target fluorescent in situ hybridization assay for detection of bladder cancer",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/S0022-5347%2805%2964270-X"
+        },
+		{
+			"pub_lit":"Molecular markers in bladder cancer: a critical appraisal",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S1078143905002875"	
+        },
+		{
+			"pub_lit":"Low incidence of perioperative chemotherapy for stage III bladder cancer 1998 to 2003: a report from the National Cancer Data Base",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1016/j.juro.2007.03.101"
+        },
+		{
+			"pub_lit":"Evaluation and follow-up strategies for superficial bladder cancer.",
+			"StudyLink": "https://www.ncbi.nlm.nih.gov/pubmed/14680313"	
+        },
+		{
+			"pub_lit":"Histologic variants of urothelial bladder cancer and nonurothelial histology in bladder cancer",
+			"StudyLink": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmc2792446/"	
+        }
+    ]
+}

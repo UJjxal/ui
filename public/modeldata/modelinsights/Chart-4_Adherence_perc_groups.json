@@ -1,0 +1,32 @@
+{
+	"categories": [
+		"High",
+		"Low"
+	],
+	"modeldata": [
+		{
+			"name": "0 to 0.5",
+			"data": [
+			"0 to 0.5",
+				46.94,
+				31.82
+			]
+		},
+		{
+			"name": "0.5 to 0.9",
+			"data": [
+			"0.5 to 0.9",
+				8.98,
+				22.38
+			]
+		},
+		{
+			"name": "1 and above",
+			"data": [
+			"1 and above",
+				44.08,
+				45.8
+			]
+		}
+	]
+}

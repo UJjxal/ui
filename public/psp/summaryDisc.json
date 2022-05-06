@@ -1,0 +1,181 @@
+{
+    "Daily_Summary": [
+        {
+            "key": "1",
+            "state": "AL",
+            "payer": "Anthem",
+            "provider": "BCBS CA",
+            "brand": "Tocilizumab",
+            "month": "11/12/2020",
+            "Approved": "9",
+            "Denied": "2",
+            "InProcess": "1",
+            "NA": "1",
+            "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "2",
+            "state": "AL",
+            "payer": "Anthem",
+            "provider": "BCBS CA",
+            "brand": "Tocilizumab",
+            "month": "11/15/2020",
+            "Approved": "14",
+            "Denied": "1",
+            "InProcess": "2",
+            "NA": "2",
+            "Total": "9",
+            "Switch to Comp": "5"
+        },
+        {
+            "key": "3",
+            "state": "AL",
+            "payer": "Anthem",
+            "provider": "BCBS CA",
+            "brand": "Tocilizumab",
+            "month": "11/13/2020",
+            "Approved": "2",
+            "Denied": "1",
+            "InProcess": "0",
+            "NA": "0",
+            "Total": "1",
+            "Switch to Comp": "0"
+        },
+        {
+            "key": "4",
+            "state": "AL",
+            "payer": "CVS",
+            "provider": "BCBS GA",
+            "brand": "Bevacizumab",
+            "month": "11/12/2020",
+            "Approved": "5",
+            "Denied": "0",
+            "InProcess": "1",
+            "NA": "1",
+            "Total": "3",
+            "Switch to Comp": "2"
+        },
+        {
+            "key": "5",
+            "state": "AL",
+            "payer": "Caremark",
+            "provider": "Keiser",
+            "brand": "Bevacizumab",
+            "month": "11/16/2020",
+            "Approved": "8",
+            "Denied": "0",
+            "InProcess": "1",
+            "NA": "1",
+            "Total": "6",
+            "Switch to Comp": "3"
+        },
+        {
+            "key": "6", "state": "CA", "payer": "Anthem", "provider": "BCBS GA", "brand": "Tocilizumab", "month": "11/16/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "1", "NA": "1", "Total": "2",
+            "Switch to Comp": "2"
+        },
+        {
+            "key": "7", "state": "CA", "payer": "ESI", "provider": "Keiser", "brand": "Tocilizumab", "month": "11/16/2020",
+            "Approved": "2", "Denied": "1", "InProcess": "1", "NA": "1", "Total": "2",
+            "Switch to Comp": "2"
+        },
+        {
+            "key": "8", "state": "CA", "payer": "ESI", "provider": "UCLA", "brand": "Tocilizumab", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "9", "state": "GA", "payer": "Anthem", "provider": "BCBS GA", "brand": "Tocilizumab", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "10", "state": "FL", "payer": "Anthem", "provider": "UCLA", "brand": "Remdesivir", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "11", "state": "NV", "payer": "ESI", "provider": "Keiser", "brand": "Remdesivir", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "12", "state": "NY", "payer": "ESI", "provider": "Keiser", "brand": "Viltolarsen", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "13", "state": "NY", "payer": "Anthem", "provider": "BCBS GA", "brand": "Viltolarsen", "month": "12/27/2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        }
+    ],
+    "Monthly_Summary": [
+        {
+            "key": "1", "state": "AL", "payer": "Anthem", "provider": "BCBS CA", "brand": "Tocilizumab", "month": "Apr - 2020",
+            "Approved": "5", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "6",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "2", "state": "AL", "payer": "Anthem", "provider": "BCBS CA", "brand": "Tocilizumab", "month": "May - 2020",
+            "Approved": "5", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "6",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "3", "state": "AL", "payer": "Anthem", "provider": "BCBS CA", "brand": "Tocilizumab", "month": "June - 2020",
+            "Approved": "5", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "6",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "4", "state": "AL", "payer": "Anthem", "provider": "BCBS CA", "brand": "Tocilizumab", "month": "July - 2020",
+            "Approved": "5", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "6",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "5", "state": "AL", "payer": "Anthem", "provider": "BCBS CA", "brand": "Tocilizumab", "month": "Aug - 2020",
+            "Approved": "5", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "6",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "6", "state": "CA", "payer": "Anthem", "provider": "BCBS GA", "brand": "Tocilizumab", "month": "Apr - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "7", "state": "CA", "payer": "ESI", "provider": "Keiser", "brand": "Tocilizumab", "month": "May - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "8", "state": "CA", "payer": "ESI", "provider": "UCLA", "brand": "Tocilizumab", "month": "June - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "9", "state": "GA", "payer": "Anthem", "provider": "BCBS GA", "brand": "Tocilizumab", "month": "Apr - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "10", "state": "FL", "payer": "Anthem", "provider": "UCLA", "brand": "Remdesivir", "month": "Apr - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "11", "state": "NV", "payer": "ESI", "provider": "Keiser", "brand": "Remdesivir", "month": "Apr - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "12", "state": "NY", "payer": "ESI", "provider": "Keiser", "brand": "Viltolarsen", "month": "Apr - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        },
+        {
+            "key": "13", "state": "NY", "payer": "Anthem", "provider": "BCBS GA", "brand": "Viltolarsen", "month": "May - 2020",
+            "Approved": "4", "Denied": "1", "InProcess": "0", "NA": "0", "Total": "5",
+            "Switch to Comp": "4"
+        }
+    ]
+}

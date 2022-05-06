@@ -1,0 +1,58 @@
+{
+    "code": 200,
+    "response":{
+        "trxBreakups":{
+            "months": ["M1", "M2", "M3", "M4", "M5", "M6", "M7", "M8", "M9", "M10", "M11", "M12"],
+            "series":[
+                {
+                  "name": "NBRx",
+                  "data": [6006,5919,6105,6209,7244,7356,8275,8482,9438,11289,11110,8898]
+                },
+                {
+                    "name": "Renewals",
+                    "data": [6674, 7057, 7814, 7403, 9474, 9501,11586,10857,15730,15805,14351,12288]
+                },
+                {
+                    "name": "Refills",
+                    "data": [9566, 9790, 10500, 10268, 11145, 13793,13241,14859,14157,18063,20832,21186]
+                },
+                {
+                    "name": "NBRx/TRx",
+                    "data": [27, 26, 25, 26, 26, 24,25,25,24,25,24,21]
+                }
+            ]
+        },
+
+        "keyInsights":[
+            {
+                "title":"MoM NBRx/TRx % Growth", 
+                "status":"Down", 
+                "percent":"-3",
+                "items":[
+                    {"title":"CARD NBRx share has declined from 23% to 18% in last month"},
+                    {"title":"Segment C has the highest drop in NBRx% in M12"},
+		            {"title":"FL, WI and NY have highest % of Rx coming from new patients (NBRx)"}
+					
+                ]
+            },
+            {
+                "title":"MoM Refills Volume Growth", 
+                "status":"Up", 
+                "percent":"1",
+                "items":[
+                    {"title":"Refills contribute to 54% of total TRx in M12, compared to 49% in M11"},
+                    {"title":"PUD refill volume increased by 15% in territory Sacramento"}
+                ]
+            },
+			{
+                "title":"MoM NBRx volume growth", 
+                "status":"Down", 
+                "percent":"-22",
+                "items":[
+                    {"title":"CARD NBRx volume declined by 30% between M11 and M12"},
+                    {"title":"Segment A contributes to 40% of total NBRx volume in M12"}
+                ]
+            }
+        ]
+    }
+}

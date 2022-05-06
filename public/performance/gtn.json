@@ -1,0 +1,69 @@
+{
+	"series": [
+		{
+			"data": [
+				{
+					"x": ["Gross", "Contract", "Sales"],
+					"y": [
+						0,
+						100
+					]
+				},
+				{
+					"x": "DCC",
+					"y": [
+						100,
+						79
+					]
+				},
+				{
+					"x": ["Net", "Sales"],
+					"y": [
+						0,
+						79
+					]
+				},
+				{
+					"x": ["Cost", "of", "Reserves"],
+					"y": [
+						79,
+						78
+					]
+				},
+				{
+					"x": ["Cost", "of", "Sales"],
+					"y": [
+						75,
+						73
+					]
+				},
+				{
+					"x": ["Net", "Contract", "Profit"],
+					"y": [
+						0,
+						75
+					]
+				}
+			]
+		}
+	],
+	"keyinsights": [
+		{
+			"trend": "down",
+			"text": "GTN has decreased  by 9%  from Q1-18 to Q4-19 due to increase in rebate by  19% by Payer 1"
+		},
+		{
+			"trend": "down",
+			"text": "Cost of Sales has increased by 1.35% due to a change in COGS component from 18% to 23% and Profit Sharing from 21% to 24% during 19-Q1"
+		},
+		{
+			"trend": "up",
+			"text": "Gross Contracted Sales has increased by 4% due to an increase in Units sold during by 345 M units Q1’19 – Q4’19"
+		},
+		{
+			"trend": "up",
+			"text": "Reserves has decreased by 1.5% due to a change in Distribution component from 18% to 15% and Site of Care reserves from 21% to 19% during 19-Q1"
+
+		}
+	]
+}

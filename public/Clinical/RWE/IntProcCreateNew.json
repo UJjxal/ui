@@ -1,0 +1,31 @@
+{
+	"columns": [
+		{
+			"label": "Procedure Name",
+			"field": "Procedure"
+		},
+		{
+			"label": "Average Attrition",
+			"field": "Attrition"
+		},
+		{
+			"label": "Average Patient Burden",
+			"field": "Burden"
+		},
+		{
+			"label": "Core Procedure Procedure",
+			"field": "Core Procedure"
+		},
+		{
+			"label": "Select for Select for Study",
+			"field": "Select for Study"
+		}
+	],
+	"rows": [
+		{
+			"Procedure": "",
+			"Attrition": "",
+			"Burden": ""
+		}
+	]
+}

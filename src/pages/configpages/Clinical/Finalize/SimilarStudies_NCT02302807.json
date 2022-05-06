@@ -1,0 +1,114 @@
+{
+	"columns": [
+		{
+			"label": "SimilarStudyID",
+			"field": "SimilarStudyID"
+		},
+		{
+			"label": "Title",
+			"field": "Title"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+	
+	"rows":[
+   {
+      "SimilarStudyID":"NCT01780545",
+      "Title":"The Borealis-2 Clinical Trial: A Randomized Phase 2 Study Comparing Docetaxel Alone to Docetaxel in Combination With OGX-427 in Patients With Relapsed or Refractory Metastatic Urothelial Carcinoma After Receiving a Platinum-containing Regimen: Hoosier Cancer Research Network GU12-160",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01780545"
+   },
+   {
+      "SimilarStudyID":"NCT02560584",
+      "Title":"A Prospective, Open, Comparative, Within Patient Controlled Multicenter Phase 3 Study of Blue Light Cystoscopy With Cysview and White Light Cystoscopy Using KARL STORZ D-Light C PDD Flexible Videoscope System in Detection of Bladder Cancer in Patients With Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02560584"
+   },
+   {
+      "SimilarStudyID":"NCT00233402",
+      "Title":"A Randomized, Comparative, Controlled Phase III, Multicenter Study of Hexvix Fluorescence Cystoscopy and White Light Cystoscopy in the Detection Of Papillary Bladder Cancer and the Early Recurrence Rate in Patients With Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00233402"
+   },
+   {
+      "SimilarStudyID":"NCT02351739",
+      "Title":"Randomized Phase 2 Trial of ACP-196 and Pembrolizumab Immunotherapy Dual CHECKpoint Inhibition In Platinum Resistant Metastatic Urothelial Carcinoma (RAPID CHECK Study)",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02351739"
+   },
+   {
+      "SimilarStudyID":"NCT03159143",
+      "Title":"A Phase II, Single-arm Study of Docetaxel and Oxaliplatin in Metastatic Cisplatin-resistant Transitional Cell Carcinoma of the Urinary Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT03159143"
+   },
+   {
+      "SimilarStudyID":"NCT02529553",
+      "Title":"A Phase 1 Study of LY3076226, a Fibroblast Growth Factor Receptor 3 (FGFR3) Antibody-Drug Conjugate, in Patients With Advanced or Metastatic Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02529553"
+   },
+   {
+      "SimilarStudyID":"NCT01520038",
+      "Title":"Feasibility and Phase 1/II Trial of Adjuvant Radiation Therapy for the Treatment of Urothelial Bladder Cancer Using Proton Therapy or IMRT",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01520038"
+   },
+   {
+      "SimilarStudyID":"NCT00710970",
+      "Title":"H-16848 - Phase II Pilot Study With Correlative Markers of Tamoxifen for Progressive Transitional Cell Carcinoma Following Previous Chemotherapy",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00710970"
+   },
+   {
+      "SimilarStudyID":"NCT00722553",
+      "Title":"A Phase 2, Single-Arm Study of Pralatrexate in Patients With Advanced or Metastatic Relapsed Transitional Cell Carcinoma of the Urinary Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00722553"
+   },
+   {
+      "SimilarStudyID":"NCT00471536",
+      "Title":"A Phase II Safety and Efficacy Study With the VEGF Receptor Tyrosine Kinase Inhibitor GW786034 in Patients With Metastatic Urothelial Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00471536"
+   },
+   {
+      "SimilarStudyID":"NCT00666562",
+      "Title":"A Phase II Randomized, Placebo-Controlled Trial of Polyphenon E to Evaluate Bladder Tissue Levels of EGCG",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00666562"
+   },
+   {
+      "SimilarStudyID":"NCT02233842",
+      "Title":"Cognitive Testing of Tobacco Use Measurement Items for Administration With Cancer Patients and Survivors",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02233842"
+   },
+   {
+      "SimilarStudyID":"NCT00666978",
+      "Title":"Enhancing Tobacco Use Treatment for African American Light Smokers",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00666978"
+   },
+   {
+      "SimilarStudyID":"NCT01328574",
+      "Title":"A Phase II Study of TRC105 in Adults With Advanced/Metastatic Urothelial Carcinoma",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01328574"
+   },
+   {
+      "SimilarStudyID":"NCT00397488",
+      "Title":"Phase II Study of Sunitinib in Metastatic Transitional Cell Carcinoma of the Urothelium",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00397488"
+   },
+   {
+      "SimilarStudyID":"NCT01108055",
+      "Title":"A Phase II Study of Pazopanib in Combination With Weekly Paclitaxel in Refractory Urothelial Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT01108055"
+   },
+   {
+      "SimilarStudyID":"NCT00880334",
+      "Title":"Randomized Study of Docetaxel +/- Vandetanib in Metastatic TCC",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00880334"
+   },
+   {
+      "SimilarStudyID":"NCT00496860",
+      "Title":"Phase I Study of ALT-801 in Patients With Progressive Metastatic Malignancies",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00496860"
+   },
+   {
+      "SimilarStudyID":"NCT00526656",
+      "Title":"Phase II Single Arm, Open Label, Single Institution Study of Neoadjuvant Sunitinib (SUTENT) in Patients With Muscle-Invasive Locally Advanced Transitional Cell Carcinoma of the Bladder",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00526656"
+   }
+]
+}

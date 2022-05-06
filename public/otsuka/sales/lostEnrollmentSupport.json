@@ -1,0 +1,50 @@
+{
+    "code": 200,
+    "response":{
+        "enrollment":{
+            "categories": ["M6", "M7", "M8", "M9", "M10", "M11","M12"],
+            "series":[
+                {
+                    "name": "New Enrollment",
+                    "data": [1790,1885, 1910, 1964, 1864, 1294, 1450]
+                },
+                {
+                    "name": "New Patient Abondonment",
+                    "data": [475,535, 668, 810, 1109, 2598, 3304]
+                }
+            ]
+        },
+
+        "keyInsights":[
+            {
+                "title":"Total Enrollment", 
+                "status":"Up", 
+                "percent":"",
+                "value":"23517",
+                "items":[
+                    {"title":"Enrollment for Brand A increased by 12%, Brand B increased by 9% in M12"},
+                    {"title":"Total Enrollment declined from 18% to 11% between M11 to M12"}
+                ]
+            },
+            {
+                "title":"New Enrollment", 
+                "status":"Up", 
+                "percent":"",
+                "value":"3453",
+                "items":[
+                    {"title":"New Enrollment through Anthem and CVS has decreased more than 20 %"},
+                    {"title":"ND, NC and AZ has lowest New Enrollments (less than 200)"}
+                ]
+            },
+            {
+                "title":"Abondonment", 
+                "status":"Down", 
+                "percent":"21",
+                "items":[
+                    {"title":"Patient Abandonment from CA, GA and MA  is greater than 500 in M12"},
+                    {"title":"Switch to Competition drug is the key Abandonment reason from M6 - M12", "dtlLink":true}
+                ]
+            }
+        ]
+    }
+}

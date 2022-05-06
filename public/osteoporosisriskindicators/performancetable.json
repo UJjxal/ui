@@ -1,0 +1,37 @@
+{
+	"columns":[
+		{
+			"label": "Metrics",
+			"field": "metrics"
+		},
+		{
+			"label":"Score",
+			"field":"score"
+		}
+	],
+    
+	"rows": [
+		
+		{
+			"metrics": "Accuracy",
+			"score": "0.76"
+		},
+		{
+			"metrics": "Recall",
+			"score": "0.35"
+		},
+		{
+			"metrics": "F1 Score",
+			"score": "0.29"
+		},
+		{
+			"metrics": "Precision",
+			"score": "0.24"
+		},
+		
+		{
+			"metrics": "ROC AUC",
+			"score": "0.81"
+		}
+	]
+}	

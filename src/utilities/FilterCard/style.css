@@ -1,0 +1,21 @@
+.filter-card{
+    border: 2px solid #d5dce4;
+    border-radius: 10px !important;
+    width: 25%;
+    cursor: pointer;
+}
+.filter-card:not(:last-child){
+    margin-right: 20px;
+}
+.filter-card .count{
+    color: #000;
+}
+.filter-card.enabled{
+    border-color: #043365;
+}
+.filter-card.enabled .count{
+    color: #043365;
+}
+.filter-card .ant-card-body{
+    padding: 14px;
+}

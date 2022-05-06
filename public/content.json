@@ -1,0 +1,462 @@
+{
+  "schema": "content.json",
+  "contentVersion": "1.0.0",
+  "title": "DataScienceStudioContent",
+  "heading": "incedoNOV",
+  "icon": "",
+  "primary": "#111",
+  "cardMenuKey": [3, 4],
+  "content": {
+    "pages": [
+      {
+        "displayName": "Data Profiler",
+        "link": "/dataprofiler",
+        "allowExternalLink": false,
+        "allowTabs": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "tabs": []
+      },
+      {
+        "displayName": "Data Science Studio",
+        "allowExternalLink": false,
+        "allowTabs": false,
+        "allowDashboard": false,
+        "allowHome": true,
+        "link": "/",
+        "tabs": []
+      },
+      {
+        "displayName": "Data Science Studio-Therapy Non-Adherence Prediction",
+        "link": "/therapynonadherenceprediction",
+        "allowExternalLink": false,
+        "allowTabs": true,
+        "allowDashboard": false,
+        "allowHome": false,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Model Summary",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Model Stats",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 4,
+            "displayName": "Workflow",
+            "allowExternalLink": true,
+            "allowDashboard": false,
+            "allowHome": false
+          },
+          {
+            "key": 5,
+            "displayName": "Model Leaderboard",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Data Science Studio-Hypertension Risk Indicators",
+        "link": "/hypertensionriskindicators",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": true,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Model Summary",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Feature Importance",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 3,
+            "displayName": "Workflow",
+            "allowExternalLink": true,
+            "allowDashboard": true,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Data Science Studio-Osteoporosis Risk Indicators",
+        "link": "/osteoporosisriskindicators",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": true,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Model Summary",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Feature Importance",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 3,
+            "displayName": "Workflow",
+            "allowExternalLink": true,
+            "allowDashboard": false,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Data Science Studio-Claim Rejection Summary",
+        "allowExternalLink": true,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "link": "/soi",
+        "tabs": []
+      },
+      {
+        "displayName": "Model Monitoring",
+        "link": "/modelmonitoring",
+        "allowExternalLink": true,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "tabs": []
+      },
+      {
+        "displayName": "Insight Engine-Therapy Non-Adherence Prediction",
+        "link": "/insightenginetherapynonadherenceprediction",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": true,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Adherence Risk Insights",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Behavioural Insights",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 3,
+            "displayName": "Demographics Insights",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Insight Engine-Hypertension Risk Indicators",
+        "link": "/insightenginehypertensionriskindicators",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": true,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Study Design",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Biomarker Insights",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 3,
+            "displayName": "Cohort Analyser",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Insight Engine-Osteoporosis Risk Indicators",
+        "link": "/insightengineosteoporosisriskindicators",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": true,
+        "tabs": [
+          {
+            "key": 1,
+            "displayName": "Study Design",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          },
+          {
+            "key": 2,
+            "displayName": "Biomarker Insights",
+            "allowExternalLink": false,
+            "allowDashboard": true,
+            "allowHome": false
+          }
+        ]
+      },
+      {
+        "displayName": "Root Cause Analysis",
+        "link": "/rootcauseanalysis",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "tabs": []
+      },
+      {
+        "displayName": "Admin-External Configurations",
+        "link": "/adminexternalconfigurations",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "tabs": []
+      },
+      {
+        "displayName": "Admin-Menu Configurations",
+        "link": "/adminmenuconfigurations",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "tabs": []
+      },
+      {
+        "displayName": "Admin-Theme Selection",
+        "link": "/themeSelection",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "tabs": []
+      }
+    ],
+    "sidebarMenu": [
+      {
+        "menuKey": "1",
+        "displayName": "Data Profiler",
+        "link": "/dataprofiler",
+        "icon": "dice-d6",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "children": []
+      },
+      {
+        "menuKey": "2",
+        "displayName": "Data Science Studio",
+        "link": "/",
+        "icon": "atom",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": true,
+        "allowTabs": false,
+        "expanded": true,
+        "children": [
+          {
+            "menuKey": "3",
+            "displayName": "Therapy Non-Adherence Prediction",
+            "link": "/therapynonadherenceprediction",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          },
+          {
+            "menuKey": "4",
+            "displayName": "Hypertension Risk Indicators",
+            "link": "/hypertensionriskindicators",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          },
+          { 
+            "menuKey": "6",
+            "displayName": "Osteoporosis Risk Indicators",
+            "link": "/osteoporosisriskindicators",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          },
+          {
+            "menuKey": "5",
+            "displayName": "Claim Rejection Summary",
+            "link": "/soi",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": false,
+            "expanded": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "menuKey": "7",
+        "displayName": "Model Monitoring",
+        "link": "/modelmonitoring",
+        "icon": "futbol",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "children": []
+      },
+      {
+        "menuKey": "8",
+        "displayName": "Insight Engine",
+        "link": "",
+        "icon": "chart-bar",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "expanded": true,
+        "children": [
+          {
+            "menuKey": "9",
+            "displayName": "Therapy Non-Adherence Prediction",
+            "link": "/insightenginetherapynonadherenceprediction",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          },
+          {
+            "menuKey": "10",
+            "displayName": "Hypertension Risk Indicators",
+            "link": "/insightenginehypertensionriskindicators",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          },
+          {
+            "menuKey": "11",
+            "displayName": "Osteoporosis Risk Indicators",
+            "link": "/insightengineosteoporosisriskindicators",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": true,
+            "expanded": true,
+            "children": []
+          }
+        ]
+      },
+      {
+        "menuKey": "16",
+        "displayName": "Root Cause Analysis",
+        "link": "/rootcauseanalysis",
+        "icon": "chart-line",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "children": []
+      },
+      {
+        "menuKey": "12",
+        "displayName": "Admin",
+        "link": "",
+        "icon": "chess-rook",
+        "allowExternalLink": false,
+        "allowDashboard": false,
+        "allowHome": false,
+        "allowTabs": false,
+        "expanded": true,
+        "children": [
+          {
+            "menuKey": "13",
+            "displayName": "External Configurations",
+            "link": "/adminexternalconfigurations",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": false,
+            "children": []
+          },
+          {
+            "menuKey": "14",
+            "displayName": "Menu Configurations",
+            "link": "/adminmenuconfigurations",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": false,
+            "children": []
+          },
+          {
+            "menuKey": "15",
+            "displayName": "Theme Selection",
+            "link": "/themeSelection",
+            "icon": "",
+            "allowExternalLink": false,
+            "allowDashboard": false,
+            "allowHome": false,
+            "allowTabs": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

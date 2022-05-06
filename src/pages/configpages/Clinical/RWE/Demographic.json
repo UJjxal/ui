@@ -1,0 +1,43 @@
+{
+	"columns": [
+		{
+			"label": "ARM NAME",
+			"field": "arm_name"
+		},
+		{
+			"label": "PATIENT",
+			"field": "patient"
+		},
+		{
+			"label": "INTERVENTION DRUG",
+			"field": "int_drug"
+		}
+    ],
+    "rows": [
+		{
+			"arm_name":"RCT Arm 1",
+			"patient": "44",
+			"int_drug": "Cisplatin + Gemcitabine + Bevacizumab"
+        },
+        {
+			"arm_name":"CT SCA Arm 1",
+			"patient": "44",
+			"int_drug": "Cisplatin + Gemcitabine + Cetuximab"
+        },
+        {
+			"arm_name":"CT SCA Arm 2",
+			"patient": "28",
+			"int_drug": "Cisplatin + Gemcitabine"
+        },
+        {
+			"arm_name":"EHR SCA Arm 1",
+			"patient": "44",
+			"int_drug": "Cisplatin + Gemcitabine"
+        },
+        {
+			"arm_name":"EHR SCA Arm 2",
+			"patient": "44",
+			"int_drug": "Cisplatin + Gemcitabine"
+        }
+    ]
+}

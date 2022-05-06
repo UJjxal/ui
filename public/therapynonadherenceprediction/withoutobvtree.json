@@ -1,0 +1,183 @@
+[
+	{
+		"name": "Albumin_to_Cretainine",
+		"nodeSvgShape": {
+			"shape": "rect"
+		},
+		"attributes": {"query":"<=26.405",
+			"gini": "0.384",
+			"sample": "4147",
+			"value": "[3072, 1075]"
+		},
+		"children": [
+			{
+				"name": "Sodium..mg.",
+				"attributes": {"query":"<=259.5",
+					"gini": "0.499",
+					"sample": "587",
+					"value": "[305, 282]"
+				},
+				"nodeSvgShape": {
+					"shape": "rect"
+				},
+				"children": [
+					{
+						"name": "Albumin_to_Cretainine",
+						"attributes": {"query":"<=97.012",
+							"gini": "0.5",
+							"sample": "545",
+							"value": "[272,273]"
+						},
+						"nodeSvgShape": {
+							"shape": "rect"
+						},
+						"children": [
+							{
+								"name": "Dietary.fibre..gm.",
+								"attributes": {"query":"<=27.65",
+									"gini": "0.476",
+									"sample": "195",
+									"value": "[76, 119]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							},
+							{
+								"name": "Carbohydrate..mg.",
+								"attributes": {"query":"<=195.4",
+									"gini": "0.493",
+									"sample": "350",
+									"value": "[196, 154]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							}
+						]
+					},
+					{
+						"name": "Mean.platelet.volume..fL.",
+						"attributes": {"query":"<=8.25",
+							"gini": "0.337",
+							"sample": "42",
+							"value": "[33,9]"
+						},
+						"nodeSvgShape": {
+							"shape": "rect"
+						},
+						"children": [
+							{
+								"name": "Hematocrit....",
+								"attributes": {"query":"<=32.75",
+									"gini": "0.137",
+									"sample": "27",
+									"value": "[25, 2]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							},
+							{
+								"name": "Total.Fat.gm.",
+								"attributes": {"query":"<=37.75",
+									"gini": "0.498",
+									"sample": "15",
+									"value": "[8, 7]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							}
+						]
+					}
+				]
+			},
+			{
+				"name": "Albumin_to_Cretainine",
+				"attributes": {"query":"<=5.23",
+					"gini": "0.346",
+					"sample": "3560",
+					"value": "[2767, 793]"
+				},
+				"nodeSvgShape": {
+					"shape": "rect"
+				},
+				"children": [
+					{
+						"name": "Race",
+						"attributes": {"query":"<=1.5",
+							"gini": "0.382",
+							"sample": "2353",
+							"value": "[1747, 606]"
+						},
+						"nodeSvgShape": {
+							"shape": "rect"
+						},
+						"children": [
+							{
+								"name": "X60sec_Pulse",
+								"attributes": {"query":"<=73.0",
+									"gini": "0.411",
+									"sample": "1624",
+									"value": "[1154, 470]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								},
+								"children": []
+							},
+							{
+								"name": "X60sec_Pulse",
+								"attributes": {"query":"<=59.0",
+									"gini": "0.304",
+									"sample": "729",
+									"value": "[593, 136]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								},
+								"children": []
+							}
+						]
+					},
+					{
+						"name": "Hematocrit",
+						"attributes": {"query":"<=41.45",
+							"gini": "0.262",
+							"sample": "1207",
+							"value": "[1020, 187]"
+						},
+						"nodeSvgShape": {
+							"shape": "rect"
+						},
+						"children": [
+							{
+								"name": "Hematocrit",
+								"attributes": {"query":"<=53.65",
+									"gini": "0.206",
+									"sample": "789",
+									"value": "[697, 92]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							},
+							{
+								"name": "X60sec_Pulse",
+								"attributes": {"query":"<=63.0",
+									"gini": "0.351",
+									"sample": "418",
+									"value": "[323, 95]"
+								},
+								"nodeSvgShape": {
+									"shape": "rect"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

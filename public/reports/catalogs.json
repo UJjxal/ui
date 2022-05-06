@@ -1,0 +1,137 @@
+{
+	"catalogs": [
+		{
+			"sourceId": "source8",
+			"sourceName": "NHANES-2013",
+			"description": "Data for NHANES-Osteo",
+			"tags": [
+				"nhanes-13"
+			],
+			"fileArray": [
+				{
+					"name": "Final_merged_data.csv",
+					"size": 2815734,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		
+		{
+			"sourceId": "source7",
+			"sourceName": "NHANES",
+			"description": "Data for NHANES",
+			"tags": [
+				"nhanes"
+			],
+			"fileArray": [
+				{
+					"name": "Final_Dataset.csv",
+					"size": 1062734,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source1",
+			"sourceName": "Raw Catalog Data",
+			"description": "Data for Raw File",
+			"tags": [
+				"Raw",
+				"Unprocessed"
+			],
+			"fileArray": [
+				{
+					"name": "Raw_data.csv",
+					"size": 1723956,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source2",
+			"sourceName": "Processed Catalog Data",
+			"description": "Data for Processed File",
+			"tags": [
+				"Processed"
+			],
+			"fileArray": [
+				{
+					"name": "Processed_data.csv",
+					"size": 78539,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source3",
+			"sourceName": "Diet",
+			"description": "Data for Diet",
+			"tags": [
+				"Diet"
+			],
+			"fileArray": [
+				{
+					"name": "Diet.csv",
+					"size": 2314021,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source4",
+			"sourceName": "Demographics",
+			"description": "Data for Demographics",
+			"tags": [
+				"Demographics"
+			],
+			"fileArray": [
+				{
+					"name": "Demographics.csv",
+					"size": 974742,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source5",
+			"sourceName": "Examination",
+			"description": "Data for Examination",
+			"tags": [
+				"Exam"
+			],
+			"fileArray": [
+				{
+					"name": "Exam.csv",
+					"size": 607847,
+					"id": 0,
+					"data": ""
+				}
+			]
+		},
+		{
+			"sourceId": "source6",
+			"sourceName": "Laboratory",
+			"description": "Data for Laboratory",
+			"tags": [
+				"Lab"
+			],
+			"fileArray": [
+				{
+					"name": "Lab.csv",
+					"size": 1750456,
+					"id": 0,
+					"data": ""
+				}
+			]
+		}
+		
+
+
+	]
+}

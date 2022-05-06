@@ -1,0 +1,58 @@
+{
+  "columns": [
+    {
+      "label": "",
+      "field": "blank"
+    },
+    {
+      "label": "Nov '19",
+      "field": "nov"
+    },
+    {
+      "label": "Dec '19",
+      "field": "dec"
+    },
+    {
+      "label": "Jan '20",
+      "field": "jan"
+    }
+  ],
+  "rows": [
+    {
+      "blank": "Number of Customers",
+      "nov": "20,998",
+      "dec": "21,051",
+      "jan": "19,880"
+    },
+    {
+      "blank": "Number of Contacts/Customer",
+      "nov": "4.5",
+      "dec": "4.7",
+      "jan": "4.4"
+    },
+    {
+      "blank": "Cost/Contact",
+      "nov": "$ 3.40",
+      "dec": "$ 3.52",
+      "jan": "$ 3.47"
+    },
+    {
+      "blank": "60 DPD+ Incidence Rate",
+      "nov": "1.12%",
+      "dec": "1.15%",
+      "jan": "1.11%"
+    },
+    {
+      "blank": "60 DPD+ Incidences",
+      "nov": "235",
+      "dec": "242",
+      "jan": "221"
+    },
+    {
+      "blank": "Cost/Customer",
+      "nov": "$ 15.75",
+      "dec": "$ 16.01",
+      "jan": "$ 15.89"
+    }
+  ]
+}

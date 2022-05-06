@@ -1,0 +1,21 @@
+.finalize-label{
+    background: #203864;
+	font-weight: bold;
+	text-align: center;
+	height: 32px;
+	padding: 4px 8px;
+	margin: 0px;
+    color: #fff;
+}
+
+.clinical-input{
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    padding:4px 8px; 
+    width: 50%;
+    height: 32px;
+    text-align: center;
+    margin: 1px;
+     border: antiquewhite;                                                           
+}

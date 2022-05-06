@@ -1,0 +1,22 @@
+{
+	"metrics": [
+		{
+			"metrics": "Sample Size",
+			"value": 962
+		},
+		{
+			"metrics": "Event Rate",
+			"value": "14.9%"
+		}
+	],
+	"data": [
+		{
+			"name": "0",
+			"Count": 819
+		},
+		{
+			"name": "1",
+			"Count": 143
+		}
+	]
+}

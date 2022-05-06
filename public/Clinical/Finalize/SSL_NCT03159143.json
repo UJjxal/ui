@@ -1,0 +1,38 @@
+{
+	"columns": [
+		{
+			"label": "Published Literature",
+			"field": "pub_lit"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+    "rows": [
+		{
+			"pub_lit":"Urine markers for bladder cancer surveillance: a systematic review",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S030228380500148X"	
+        },
+		{
+			"pub_lit":"Tumor content of the antiapoptosis molecule survivin and recurrence of bladder cancer",
+			"StudyLink": "https://www.nejm.org/doi/pdf/10.1056/NEJM199908053410614"		
+        },
+		{
+			"pub_lit":"Current use and questions concerning intravesical bladder cancer group for superficial bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S009401430570241X"
+        },
+		{
+			"pub_lit":"Urine markers for detection and surveillance of non–muscle-invasive bladder cancer",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283811006014"	
+        },
+		{
+			"pub_lit":"Urine detection of survivin is a sensitive marker for the noninvasive diagnosis of bladder cancer",
+			"StudyLink": "https://www.auajournals.org/doi/abs/10.1097/01.ju.0000107826.78479.90"
+        },
+		{
+			"pub_lit":"The economics of bladder cancer: costs and considerations of caring for this disease",
+			"StudyLink": "https://www.sciencedirect.com/science/article/pii/S0302283814000189"
+        }
+    ]
+}

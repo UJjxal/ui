@@ -1,0 +1,33 @@
+{
+    "columns": [
+        {
+            "label": "id",
+            "field": "id"
+        },
+        {
+            "label": "inclusion",
+            "field": "inclusion"
+        },
+        {
+            "label": "condition",
+            "field": "condition"
+        },
+        {
+            "label": "genderListvalue",
+            "field": "genderListvalue"
+        },
+        {
+            "label": "value",
+            "field": "value"
+        }
+    ],
+    "rows": [        
+        { "id": 0,"inclusion":"Inclusion","condition":"<", "genderListvalue":"1.5", "value": "Bilirubin"
+        },
+        { "id": 1,"inclusion":"Inclusion","condition":"<", "genderListvalue":"1.8", "value": "Creatinine"},
+
+        { "id": 2,"inclusion":"Inclusion","condition":">", "genderListvalue":"9", "value": "Hemoglobin"
+        },
+        { "id": 3,"inclusion":"Inclusion","condition":">", "genderListvalue":"100000", "value": "Platelets"}   
+    ]
+}

@@ -1,0 +1,46 @@
+{
+  "risk_profile": [
+    {
+      "series": [30, 70],
+      "labels": ["High Risk", "Low Risk"]
+    }
+  ],
+  "probability_distribution": [
+    {
+      "categories": ["0.0-0.1", "0.1-0.2", "0.2-0.3", "0.3-0.4", ">0.4"],
+      "data": [37, 35, 18, 5, 4]
+    }
+  ],
+  "patient_filter": [
+    {
+      "x": "Patient Universe",
+      "y": 962,
+      "text": "Unique patients who had more than 1 adherent months in the entire observation window",
+      "fill": "#00bdae"
+    },
+    {
+      "x": "8+ months medication data",
+      "y": 1000,
+      "text": "Unique patients who have more 8+ months of data available for the medication (with minimum 4 months of medication for Drug A)",
+      "fill": "#404041"
+    },
+    {
+      "x": "7+ months medication data",
+      "y": 1583,
+      "text": "Unique patients who have more 7+ months of data available for the medication (individual or combined)",
+      "fill": "#357cd2"
+    },
+    {
+      "x": "Drug A & Drug B Claims",
+      "y": 3650,
+      "text": "Unique patients with drug A & drug B claim during qualification period (June 2016 to Jan 2018)",
+      "fill": "#e56590"
+    },
+    {
+      "x": "Total Unique Claims",
+      "y": 4900,
+      "text": "Patient Universe - total unique patients with claims data",
+      "fill": "#f8b883"
+    }
+  ]
+}

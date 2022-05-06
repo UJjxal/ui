@@ -1,0 +1,66 @@
+[
+	{
+		"feature": "Vitamin_B12_pmol_L",
+		"values": [
+			655.8,
+			480.62
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Caffeine_mg",
+		"values": [
+			142.04,
+			157.07
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Alcohol_gm",
+		"values": [
+			4.93,
+			9.24
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Vitamin_D_nmol_L",
+		"values": [
+			87.14,
+			68.48
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Age",
+		"values": [
+			67.56,
+			58.15
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Phosphorus_mg",
+		"values": [
+			1149.17,
+			1321.42
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Vitamin_K_mcg",
+		"values": [
+			110.81,
+			123.73
+		],
+		"col_type": "categorical"
+	},
+	{
+		"feature": "Zinc_mg",
+		"values": [
+			9.31,
+			10.58
+		],
+		"col_type": "categorical"
+	}
+]

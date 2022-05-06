@@ -1,0 +1,854 @@
+{
+    "CrossSellPerformance": {
+        "TilesData": [
+            {
+                "label": "Growth Rate",
+                "value": "8.3%",
+                "percentage": "1.2%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "New Accounts",
+                "value": "80,034",
+                "percentage": "8.3%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            },
+            {
+                "label": "Sales ($ mn)",
+                "value": "$ 28",
+                "percentage": "5%",
+                "icon": "expand_more",
+                "color": "danger",
+                "img": ""
+            },
+            {
+                "label": "Digital Sales (%)",
+                "value": "4.5%",
+                "percentage": "0.6%",
+                "icon": "expand_less",
+                "color": "success",
+                "img": ""
+            }
+        ]
+    },
+    "CrossSellPerformanceScoreboard": {
+        "TableData": [
+            {
+                "ByProducts": "Leads",
+                "CreditCard": 101,
+                "Mortgage": 98,
+                "PersonalLoan": 96,
+                "AutoLoan": 102,
+                "ECL": 99,
+                "AllProducts": 99
+            },
+            {
+                "ByProducts": "Applications",
+                "CreditCard": 105,
+                "Mortgage": 98,
+                "PersonalLoan": 103,
+                "AutoLoan": 98,
+                "ECL": 102,
+                "AllProducts": 101
+            },
+            {
+                "ByProducts": "Approvals",
+                "CreditCard": 99,
+                "Mortgage": 103,
+                "PersonalLoan": 96,
+                "AutoLoan": 101,
+                "ECL": 96,
+                "AllProducts": 100
+            },
+            {
+                "ByProducts": "Conversions",
+                "CreditCard": 96,
+                "Mortgage": 99,
+                "PersonalLoan": 101,
+                "AutoLoan": 99,
+                "ECL": 102,
+                "AllProducts": 97
+            }
+        ]
+    },
+    "CrossSellFunnel": {
+        "CreditCard": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 166250,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 27000,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 18600,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 13250,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 47500,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 7860,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 7100,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 3970,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 118750,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 20400,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 16900,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 9670,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 57000,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 7900,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 7600,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 5300,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ],
+        "ECL": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 85500,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 12500,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 10900,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 6480,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ],
+        "AllProducts": [
+            {
+                "type": "funnel",
+                "data": [
+                    {
+                        "value": 47500,
+                        "name": "Leads"
+                    },
+                    {
+                        "value": 75660,
+                        "name": "Applications"
+                    },
+                    {
+                        "value": 61100,
+                        "name": "Approvals"
+                    },
+                    {
+                        "value": 38670,
+                        "name": "Conversions"
+                    }
+                ]
+            }
+        ]
+    },
+    "LTCRatioByChannel": {
+        "TableData": {
+            "CreditCard": [
+                {
+                    "CallCenter": "7.7",
+                    "Email": "9.6",
+                    "App": "7.5",
+                    "Web": "6.6",
+                    "Branch": "8.0"
+                }
+            ],
+            "Mortgage": [
+                {
+                    "CallCenter": "9.5",
+                    "Email": "8.7",
+                    "App": "7.2",
+                    "Web": "8.8",
+                    "Branch": "7.9"
+                }
+            ],
+            "PersonalLoan": [
+                {
+                    "CallCenter": "7.2",
+                    "Email": "8.8",
+                    "App": "6.9",
+                    "Web": "6.6",
+                    "Branch": "8.5"
+                }
+            ],
+            "AutoLoan": [
+                {
+                    "CallCenter": "10.1",
+                    "Email": "9.8",
+                    "App": "10.9",
+                    "Web": "11.9",
+                    "Branch": "8.9"
+                }
+            ],
+            "ECL": [
+                {
+                    "CallCenter": "10.0",
+                    "Email": "12.2",
+                    "App": "9.6",
+                    "Web": "9.1",
+                    "Branch": "6.5"
+                }
+            ],
+            "AllProducts": [
+                {
+                    "CallCenter": "8.5",
+                    "Email": "9.8",
+                    "App": "8.1",
+                    "Web": "7.9",
+                    "Branch": "8.0"
+                }
+            ]
+        }
+    },
+    "TrendsByProduct": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "CreditCard": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "7.1",
+                    "7.2",
+                    "7.2",
+                    "7.4",
+                    "7.5",
+                    "7.6",
+                    "7.9",
+                    "8.0"
+                ],
+                "min": 7,
+                "max": 9
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "7.5",
+                    "7.6",
+                    "7.6",
+                    "7.7",
+                    "7.8",
+                    "8.1",
+                    "8.2",
+                    "8.4"
+                ],
+                "min": 7,
+                "max": 9
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "7.3",
+                    "7.3",
+                    "7.4",
+                    "7.5",
+                    "7.7",
+                    "7.9",
+                    "8.0",
+                    "8.1"
+                ],
+                "min": 7,
+                "max": 9
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "8.0",
+                    "8.2",
+                    "8.3",
+                    "8.6",
+                    "8.7",
+                    "8.9",
+                    "9.1",
+                    "9.3"
+                ],
+                "min": 7,
+                "max": 10
+            }
+        ],
+        "ECL": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "6.9",
+                    "6.8",
+                    "7.1",
+                    "7.0",
+                    "7.3",
+                    "7.4",
+                    "7.5",
+                    "7.6"
+                ],
+                "min": 6,
+                "max": 8
+            }
+        ],
+        "AllProducts": [
+            {
+                "type": "line",
+                "name": "Lead to Conversion Ratio",
+                "data": [
+                    "7.3",
+                    "7.3",
+                    "7.4",
+                    "7.5",
+                    "7.7",
+                    "7.8",
+                    "8.0",
+                    "8.1"
+                ],
+                "min": 7,
+                "max": 9
+            }
+        ]
+    },
+    "TrendsByChannel": {
+        "xaxis": [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug"
+        ],
+        "min": 5,
+        "max": 12,
+        "CreditCard": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "6.9",
+                    "7.0",
+                    "7.0",
+                    "7.2",
+                    "7.3",
+                    "7.4",
+                    "7.7",
+                    "7.7"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "8.6",
+                    "8.8",
+                    "8.8",
+                    "8.9",
+                    "9.0",
+                    "9.3",
+                    "9.4",
+                    "9.6"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "6.7",
+                    "6.7",
+                    "6.8",
+                    "6.9",
+                    "7.1",
+                    "7.3",
+                    "7.4",
+                    "7.5"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "5.7",
+                    "5.8",
+                    "5.9",
+                    "6.1",
+                    "6.2",
+                    "6.3",
+                    "6.5",
+                    "6.6"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "7.3",
+                    "7.2",
+                    "7.5",
+                    "7.3",
+                    "7.7",
+                    "7.8",
+                    "7.9",
+                    "8.0"
+                ]
+            }
+        ],
+        "Mortgage": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "8.5",
+                    "8.6",
+                    "8.6",
+                    "8.8",
+                    "9.0",
+                    "9.1",
+                    "9.4",
+                    "9.5"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "7.8",
+                    "7.9",
+                    "7.9",
+                    "8.0",
+                    "8.1",
+                    "8.4",
+                    "8.5",
+                    "8.7"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "6.4",
+                    "6.4",
+                    "6.5",
+                    "6.6",
+                    "6.8",
+                    "6.9",
+                    "7.0",
+                    "7.2"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "7.6",
+                    "7.8",
+                    "7.9",
+                    "8.2",
+                    "8.3",
+                    "8.5",
+                    "8.7",
+                    "8.8"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "7.2",
+                    "7.1",
+                    "7.4",
+                    "7.3",
+                    "7.6",
+                    "7.7",
+                    "7.9",
+                    "7.9"
+                ]
+            }
+        ],
+        "PersonalLoan": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "6.4",
+                    "6.5",
+                    "6.5",
+                    "6.7",
+                    "6.8",
+                    "6.8",
+                    "7.1",
+                    "7.2"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "7.9",
+                    "8.0",
+                    "8.0",
+                    "8.1",
+                    "8.2",
+                    "8.5",
+                    "8.6",
+                    "8.8"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "6.2",
+                    "6.1",
+                    "6.2",
+                    "6.4",
+                    "6.5",
+                    "6.7",
+                    "6.8",
+                    "6.9"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "5.7",
+                    "5.8",
+                    "5.9",
+                    "6.1",
+                    "6.1",
+                    "6.3",
+                    "6.4",
+                    "6.6"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "7.7",
+                    "7.6",
+                    "8.0",
+                    "7.8",
+                    "8.2",
+                    "8.2",
+                    "8.4",
+                    "8.5"
+                ]
+            }
+        ],
+        "AutoLoan": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "7.6",
+                    "7.7",
+                    "7.7",
+                    "8.0",
+                    "8.1",
+                    "8.2",
+                    "8.5",
+                    "8.6"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "7.5",
+                    "7.6",
+                    "7.6",
+                    "7.7",
+                    "7.8",
+                    "8.1",
+                    "8.2",
+                    "8.3"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "8.3",
+                    "8.2",
+                    "8.3",
+                    "8.5",
+                    "8.7",
+                    "9.0",
+                    "9.1",
+                    "9.2"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "8.7",
+                    "8.9",
+                    "9.0",
+                    "9.4",
+                    "9.5",
+                    "9.7",
+                    "9.9",
+                    "10.1"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "6.9",
+                    "6.8",
+                    "7.1",
+                    "6.9",
+                    "7.3",
+                    "7.3",
+                    "7.5",
+                    "7.6"
+                ]
+            }
+        ],
+        "ECL": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "7.5",
+                    "7.6",
+                    "7.6",
+                    "7.8",
+                    "8.0",
+                    "8.1",
+                    "8.4",
+                    "8.3"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "9.3",
+                    "9.4",
+                    "9.4",
+                    "9.5",
+                    "9.6",
+                    "10.0",
+                    "10.1",
+                    "10.3"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "7.3",
+                    "7.2",
+                    "7.3",
+                    "7.5",
+                    "7.7",
+                    "7.9",
+                    "8.0",
+                    "8.1"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "6.7",
+                    "6.8",
+                    "6.9",
+                    "7.2",
+                    "7.2",
+                    "7.4",
+                    "7.6",
+                    "7.7"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "7.6",
+                    "7.5",
+                    "7.8",
+                    "7.7",
+                    "8.1",
+                    "8.1",
+                    "8.3",
+                    "8.4"
+                ]
+            }
+        ],
+        "AllProducts": [
+            {
+                "type": "line",
+                "name": "Call Center",
+                "data": [
+                    "7.5",
+                    "7.6",
+                    "7.6",
+                    "7.9",
+                    "8.0",
+                    "8.1",
+                    "8.4",
+                    "8.5"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Email",
+                "data": [
+                    "8.8",
+                    "8.9",
+                    "8.9",
+                    "9.0",
+                    "9.1",
+                    "9.5",
+                    "9.6",
+                    "9.8"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "App",
+                "data": [
+                    "7.3",
+                    "7.2",
+                    "7.3",
+                    "7.5",
+                    "7.7",
+                    "7.9",
+                    "8.0",
+                    "8.1"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Web",
+                "data": [
+                    "6.8",
+                    "6.9",
+                    "7.1",
+                    "7.3",
+                    "7.4",
+                    "7.6",
+                    "7.7",
+                    "7.9"
+                ]
+            },
+            {
+                "type": "line",
+                "name": "Branch",
+                "data": [
+                    "7.2",
+                    "7.1",
+                    "7.5",
+                    "7.3",
+                    "7.7",
+                    "7.7",
+                    "7.9",
+                    "8.0"
+                ]
+            }
+        ]
+    },
+    "KeyInsights": [
+        {
+            "title": "Cross Sell",
+            "description": "Cross sell sales witnessed 5% growth in the current period",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUyQ3JlZGl0IFBvcnRmb2xpbyBQZXJmb3JtYW5jZQ=="
+        },
+        {
+            "title": "Conversion Rate",
+            "description": "Conversion rate for cross sell increased from 7.9% to 7.6%",
+            "link": "/QW5hbHlzaXNIdWItUHVibGlzaGVkLTUzQ3Jvc3MgU2VsbCBQZXJzb25hbGl6YXRpb246IENoYW5uZWxz"
+        }
+    ]
+}

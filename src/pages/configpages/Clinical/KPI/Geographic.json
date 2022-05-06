@@ -1,0 +1,34 @@
+{
+	"columns": [
+		{
+			"label": "Geographic Segments",
+			"field": "Geographic"
+		},
+		{
+			"label": "Status",
+			"field": "Status"
+		}
+    ],
+    "rows": [
+		{
+			"Geographic":"East Coast: Male: Low Income",
+			"Status": "red"
+        },
+        {
+			"Geographic":"East Coast: Male: High Income",
+			"Status": "red"
+        },
+        {
+			"Geographic":"West Coast: Male: Low Income",
+			"Status": "red"
+        },
+        {
+			"Geographic":"West Coast: Male: High Income",
+			"Status": "red"
+        },
+        {
+			"Geographic":"Midwest: Female: High Income",
+			"Status": "Green"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+	"columns": [
+		{
+			"label": "COHORT RANK",
+			"field": "rank"
+		},
+		{
+			"label": "MATCHED PATIENTS",
+			"field": "mat_pat"
+		},
+		{
+			"label": "MATCH %",
+			"field": "perc"
+        },
+		{
+			"label": "SITES",
+			"field": "sites"
+        },
+		{
+			"label": "YEARS RANGE",
+			"field": "years"
+		},
+		{
+			"label": "View",
+			"field": "View"
+		}
+		
+    ],
+    "rows": [
+		{
+			"rank":"1",			
+			"mat_pat": "45",
+            "perc": "95",
+			"sites": "4",
+			"years": "2015-17",
+			"View":""
+        },
+		{
+			"rank":"2",			
+			"mat_pat": "45",
+            "perc": "90",
+			"sites": "7",
+			"years": "2013-17",
+			"View":""
+        },
+		{
+			"rank":"3",			
+			"mat_pat": "45",
+            "perc": "87",
+			"sites": "5",
+			"years": "2016-18",
+			"View":""
+        },
+		{
+			"rank":"4",			
+			"mat_pat": "45",
+            "perc": "76",
+			"sites": "8",
+			"years": "2015-19",
+			"View":""
+        },
+		{
+			"rank":"5",			
+			"mat_pat": "45",
+            "perc": "73",
+			"sites": "10",
+			"years": "2009-12",
+			"View":""
+        }
+    ]
+}

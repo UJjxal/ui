@@ -1,0 +1,309 @@
+{
+  "AvgCreditCardSpendk": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "CreditCardSpend",
+        "data": [23.04, 25.11, 28.26, 15.13, 27.90, 25.01, 29.89, 33.21]
+      }
+    ]
+  },
+  "LoanPaymentSkip": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "LoanPaymentSkip",
+        "data": [0, 0, 30.62, 128.37, 128.31, 96.55, 0, 0]
+      }
+    ]
+  },
+  "ActualCreditCardSpendbn": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "ActualCreditCardSpend",
+        "data": [6.72, 7.21, 7.83, 3.58, 6.12, 4.88, 6.48, 7.35]
+      }
+    ]
+  },
+  "CreditCardUtilization": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Credit Card Utilization",
+        "data": [49.52, 48.26, 48.12, 48.98, 52.33, 51.87, 48.30, 49.38]
+      }
+    ]
+  },
+  "CreditCardOverdraftUtilization": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Credit Card Overdraft Utilization",
+        "data": [3.68, 3.26, 3.13, 3.81, 4.8, 5.81, 5.54, 5.80]
+      }
+    ]
+  },
+  "CreditCardUtilizationByRiskBands": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      { "name": "Others", "data": [42, 42, 43, 48, 58, 62, 60, 60] },
+      {
+        "name": "Very High Risk",
+        "data": [99, 98, 97, 89, 102, 104, 100, 99]
+      },
+      { "name": "High Risk", "data": [94, 93, 91, 75, 82, 83, 85, 82] },
+      { "name": "Medium Risk", "data": [85, 82, 80, 56, 57, 59, 63, 59] },
+      { "name": "Low Risk", "data": [69, 66, 63, 27, 27, 27, 27, 25] },
+      { "name": "Very Low Risk", "data": [30, 29, 27, 12, 11, 11, 9, 10] }
+    ]
+  },
+  "CreditCardUtilizationOverdraftByRiskBands": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      { "name": "Others", "data": [3, 3, 3, 4, 6, 8, 8, 8] },
+      {
+        "name": "Very High Risk",
+        "data": [15, 14, 13, 12, 16, 19, 17, 18]
+      },
+      { "name": "High Risk", "data": [12, 11, 10, 6, 8, 10, 11, 10] },
+      { "name": "Medium Risk", "data": [8, 7, 7, 3, 3, 4, 6, 5] },
+      { "name": "Low Risk", "data": [5, 4, 3, 1, 1, 1, 1, 1] },
+      { "name": "Very Low Risk", "data": [1, 1, 1, 0, 0, 0, 0, 0] }
+    ]
+  },
+  "EmploymentRisk": {
+    "modeldata": [
+      {
+        "name": "No Impact",
+        "data": [
+          [0, 2943, "Instituciones Financieras"],
+          [0, 19, "Actividades De Organizaciones Extraterritoriales"],
+          [0, 146, "Administracion Publica"],
+          [0, 418, "Seguros"],
+          [0, 567, "Explotacion De Minas Y Canteras"]
+        ]
+      },
+      {
+        "name": "Some Impact",
+        "data": [
+          [0.085, 1116, "Correo Y Telecomunicaciones"],
+          [0.05, 34, "Fabricacion Productos De Piel"],
+          [0.05, 86, "Fabricacion Equipos De Transporte"],
+          [0.24, 6379, "Construccion"],
+          [0.14, 1098, "Produccion De Alimentos Y Bebidas"],
+          [0.28, 235, "Suministro De Electricidad, Gas, Vapor Y Aire ..."], 
+	  [0.25, 647, "Fabricacion De Productos Quim., Plast. Y Caucho"],       
+          [0.28, 235, "Productos De Madera Y Papel"]
+        ]
+      },
+      {
+        "name": "Moderate Impact",
+        "data": [
+          [0.31, 18079, "Act. Inmobiliarias, Alquiler Y Act. Empresariales"],
+          [0.36, 1666, "Actividades De Edicion E Impresion"],
+          [0.33, 4305, "Otras Industrias Manufactureras"],
+          [0.42, 1210, "Ensenanza"],
+          [0.59, 1934, "Servicios Relacionados Con La Salud"]
+        ]
+      },
+      {
+        "name": "Average Trend",
+        "data": [[0.63, 0, "Market Average"]],
+        "markLine": {
+          "lineStyle": {
+            "type": "dashed",
+            "width": 1
+          },
+          "symbol": "circle",
+          "symbolSize": 10,
+          "label": {
+            "show": true,
+            "position": "end",
+            "formatter": "{b}: {c}"
+          },
+          "data": [{ "xAxis": 0.63, "name": "Market Average" }]
+        }
+      },
+      {
+        "name": "Highest Impact",
+        "data": [
+          [0.67, 3138, "Turismo"],
+          [0.63, 2494, "Elaboracion Productos Textiles"],
+          [0.85, 10890, "Comercio Al Por Menor"],
+          [0.85, 12780, "Comercio Al Por Mayor"],
+          [0.85, 6439, "Automoviles"],
+          [1, 2775, "Transporte Y Almacenamiento"],
+          [0.63, 766, "Reparacion"],
+          [0.63, 2747, "Act. De Los Hog. (Empl. Y Contrato Serv. Dom.)"],
+          [0.63, 9935, "Otras Actividades De Servicios Comunitarios, S..."]
+        ]
+      }
+    ]
+  },
+
+  "CreditCardSpend": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Credit Card Spend",
+        "data": [6.72, 7.21, 7.83, 3.58, 6.12, 4.88, 6.48, 7.35]
+      }
+    ]
+  },
+  "PctChangeTotalBalance": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "% Change in Total Balance",
+        "data": [50.55, 45.09, 36.58, 9.89, 0, 0, 0, 12.54]
+      }
+    ]
+  },
+  "FASE": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "FASE",
+        "data": [0, 0, 0, 14.69, 17.23, 19.97, 19.67, 19.02]
+      }
+    ]
+  },
+  "MonthlyDepositsk": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Deposits",
+        "data": [189.18, 167.94, 169.4, 113.24, 138.08, 160.42, 173.18, 173.95]
+      }
+    ]
+  },
+  "MonthlyWithdrawlsk": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Withdrawls",
+        "data": [162.01, 177.67, 193.21, 97.12, 160.91, 139.52, 156.63, 195.35]
+      }
+    ]
+  },
+  "MonthlyLiquidityk": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Liquidity",
+        "data": [107.98, 105.5, 106.86, 110.57, 112.08, 101.77, 105.16, 108.10]
+      }
+    ]
+  },
+  "MonthlyDepositsByMrkSegment": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Massive",
+        "data": [78.14, 66.06, 72.54, 47.72, 57.33, 67.41, 70.71, 69.01]
+      },
+      {
+        "name": "Premium",
+        "data": [454.7, 387.84, 387.36, 262.78, 324.65, 384.73, 416.23, 419.97]
+      },
+      {
+        "name": "PYME",
+        "data": [1864.21, 1714.94, 1579.6, 1018.14, 1212.48, 1542.13, 1697.26, 1735.45]
+      }
+    ]
+  },
+  "SalaryMisses": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Salary Misses",
+        "data": [2.42, 1.59, 3.50, 14.21, 21.10, 20.03, 18.55, 21.11]
+      }
+    ]
+  },
+  "SalaryCreditk": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Salary Credit",
+        "data": [13.12, 12.62, 14.36, 10.83, 9.45, 9.92, 10.47, 9.73]
+      }
+    ]
+  },
+  "IncomeEstimatek": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "IncomeEstimate",
+        "data": [115.39, 117.47, 112.05, 111.37, 107.21, 107.35, 109.42, 112.43]
+      }
+    ]
+  },
+  "NewLoanDisbursedByProduct": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Short Term Loan",
+        "data": [1181.90, 1005.39, 687.00, 147.90, 118.60, 153.20, 208.50, 129.00]
+      },
+      {
+        "name": "Mortgage",
+        "data": [752.89, 673.14, 462.91, 161.50, 294.08, 502.98, 691.44, 538.33]
+      },
+      {
+        "name": "Commercial Loan",
+        "data": [794.81, 537.43, 475.09, 437.60, 445.27, 649.41, 396.61, 214.51]
+      }
+    ]
+  },
+  "NewLoans": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "New Loans",
+        "data": [6.8, 5.8, 4.6, 8.3, 5.3, 1.1, 1.3, 1.2]
+      }
+    ]
+  },
+  "NewLoansPortfoliobn": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "New Loans Portfolio",
+        "data": [2.7, 2.2, 1.6, 0.7, 0.8, 1.3, 1.3, 0.8]
+      }
+    ]
+  },
+  "NewLoanByProduct": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul","Aug"],
+    "modeldata": [
+      {
+        "name": "Short Term Loan",
+        "data": [6348, 5407, 4291,  652,  299,  835,  885, 1012]
+      },
+      { "name": "Mortgage", "data": [298, 260, 186, 49, 104, 172, 278, 207] },
+      {
+        "name": "Commercial Loan",
+        "data": [251, 171, 200, 131, 135, 142, 144, 62]
+      }
+    ]
+  },
+  "IncomeEstimateTrendByMarketSegment": {
+    "xaxis": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+    "modeldata": [
+      {
+        "name": "Massive",
+        "data": [41.3, 41.4, 40.5, 38.8, 37.5, 37.8, 38.3, 39.3]
+      },
+      {
+        "name": "Premium",
+        "data": [295.0, 304.0, 292.4, 290.8, 279.7, 277.0, 276.8, 279.1]
+      },
+      {
+        "name": "PYME",
+        "data": [1478.6, 1478.5, 1420.5, 1390.2, 1321.0, 1309.6, 1339.2, 1378.5]
+      }
+    ]
+  }
+}

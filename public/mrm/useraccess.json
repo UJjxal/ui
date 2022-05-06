@@ -1,0 +1,107 @@
+{
+  "code": 200,
+  "response": [
+    {
+      "UserID": "U34331-1",
+      "email": "amit.maan@incedoinc.com",
+      "Division": "Administrator",
+      "access": "['BPD', 'PB']"
+    },
+    {
+      "UserID": "U34331",
+      "email": "pempujols@bpd.com.do",
+      "Division": "Administrator",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U44103",
+      "email": "ovaldivia@bpd.com.do",
+      "Division": "Administrator",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U22225",
+      "email": "apdume@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U30394",
+      "email": "Sleon@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U12942",
+      "email": "scastillo@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U16740",
+      "email": "menunez@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U22589",
+      "email": "JoseJohnson@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U29416",
+      "email": "rdominguez@bpd.com.do",
+      "Division": "Administrator",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U19126",
+      "email": "aabbott@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U30954",
+      "email": "Orosario@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U32543",
+      "email": "fpsuarez@bpd.com.do",
+      "Division": "Executive",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U39037",
+      "email": "jangustia@bpd.com.do",
+      "Division": "Administrator",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "U44381",
+      "email": "dabueno@bpd.com.do",
+      "Division": "Administrator",
+      "access": "['BPD']"
+    },
+    {
+      "UserID": "Bramirez",
+      "email": "Bramirez@POPULARBANK.COM.PA",
+      "Division": "Administrator",
+      "access": "['PB']"
+    },
+    {
+      "UserID": "Mordonez",
+      "email": "Mordonez@POPULARBANK.COM.PA",
+      "Division": "Executive",
+      "access": "['PB']"
+    },
+    {
+      "UserID": "Externo2779",
+      "email": "gargi.verma@incedoinc.com",
+      "Division": "Administrator",
+      "access": "['BPD','PB']"
+    }
+  ]
+}

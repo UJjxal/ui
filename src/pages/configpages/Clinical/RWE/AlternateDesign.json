@@ -1,0 +1,98 @@
+{
+    "columns": [
+        {
+            "label": "DESIGN RANK",
+            "field": "rank"
+        },
+        {
+            "label": "PATIENT ATTRITION",
+            "field": "pat_attrition"
+        },
+        {
+            "label": "PATIENT COUNT",
+            "field": "pat_count"
+        },
+        {
+            "label": "STUDY ARMS",
+            "field": "study_arms"
+        },
+        {
+            "label": "STUDY SITES",
+            "field": "study_sites"
+        },
+        {
+            "label": "INTERVENTION DRUGS",
+            "field": "int_drug"
+        },
+        {
+            "label": "INTERVENTION PROCEDURES",
+            "field": "int_Proc"
+        },
+        {
+            "label": "VIEW DESIGN",
+            "field": "view"
+        }
+    ],
+    "rows": [
+        {
+            "rank": "1",
+            "pat_attrition": "2",
+            "pat_count": "50",
+            "study_arms": "1",
+            "study_sites": "10",
+            "int_drug": "4",
+            "int_Proc": "1",
+            "view": ""
+        },
+        {
+            "rank": "2",
+            "pat_attrition": "2",
+            "pat_count": "42",
+            "study_arms": "1",
+            "study_sites": "11",
+            "int_drug": "4",
+            "int_Proc": "1",
+            "view": ""
+        },
+        {
+            "rank": "3",
+            "pat_attrition": "2",
+            "pat_count": "49",
+            "study_arms": "1",
+            "study_sites": "12",
+            "int_drug": "4",
+            "int_Proc": "1",
+            "view": ""
+        },
+        {
+            "rank": "4",
+            "pat_attrition": "2",
+            "pat_count": "40",
+            "study_arms": "1",
+            "study_sites": "12",
+            "int_drug": "4",
+            "int_Proc": "1",
+            "view": ""
+        },
+        {
+            "rank": "5",
+            "pat_attrition": "7",
+            "pat_count": "41",
+            "study_arms": "1",
+            "study_sites": "11",
+            "int_drug": "3",
+            "int_Proc": "1",
+            "view": ""
+        },
+        {
+            "rank": "6",
+            "pat_attrition": "8",
+            "pat_count": "42",
+            "study_arms": "2",
+            "study_sites": "12",
+            "int_drug": "4",
+            "int_Proc": "1",
+            "view": ""
+        }
+    ]
+}

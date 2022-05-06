@@ -1,0 +1,59 @@
+{
+    "code": 200,
+    "response":{
+        "monthlySales":{
+            "months": ["M1", "M2", "M3", "M4", "M5", "M6","M7","M8","M9","M10","M11","M12"],
+            "series":[
+                {
+                    "name": "Sales",
+                    "data": [9010000, 9220903, 9890111, 9863000, 11508129, 12658942, 13671658, 14013000, 16241930, 18650123, 19120000, 17500120]
+                },
+                {
+                    "name": "Calls",
+                    "data": [6123, 6210, 5802, 6431, 6321, 6124, 6210, 6014, 6501, 6534, 6313, 6250]
+                }
+            ]
+        },
+
+        "salesAndgoals":{
+            "sales":161347918, 
+            "goals":177482709
+        },
+        "keyInsights":[
+            {
+                "title":"MoM Sales Growth", 
+                "status":"Down", 
+                "percent":"-8",
+                "items":[
+                    {"title":"PUD sales decreased by 12% from M11 to M12"},
+                    {"title":"CARD sales increased by 7% from M11 to M12"},
+					{"title":"California sales decreased by 12% from M11 to M12"},
+					{"title":"Oakland sales decreased by 17% from M11 to M12"}
+                ]
+            },
+            {
+                "title":"MoM Calls Growth", 
+                "status":"Down", 
+                "percent":"-1",
+                "items":[
+                    {"title":"San Diego and Sacramento observe highest drop in calls from M11 to M12, 40% and 36%"},
+					{"title":"Calls to targets dropped from 70% to 64% between M11 and M12"}
+				
+					
+					
+                ]
+            },
+			{
+                "title":"MoM Sales Growth Top Segment (A,B)", 
+                "status":"Down", 
+                "percent":"-4",
+                "items":[
+                    {"title":"Top segment sales for Oakland dropped by 18%"},
+					{"title":"LA sales dropped by 13% between M11 and M12"},
+					{"title":"Calls to top segments dropped by 1% from M11 to M12"},
+					{"title":"San Jose and California City have the highest top segment sales contribution in M12, 65% and 62%"}	
+                ]
+            }
+        ]
+    }
+}

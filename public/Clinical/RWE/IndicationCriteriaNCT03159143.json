@@ -1,0 +1,34 @@
+{
+    "columns": [
+        {
+            "label": "id",
+            "field": "id"
+        },
+        {
+            "label": "inclusion",
+            "field": "inclusion"
+        },
+        {
+            "label": "condition",
+            "field": "condition"
+        },
+        {
+            "label": "yesorno",
+            "field": "yesorno"
+        },
+        {
+            "label": "value",
+            "field": "value"
+        }
+    ],
+    "rows": [
+        { "id": 0,"inclusion":"Inclusion","condition":"=", "yesorno":"Yes", "value": "Bladder Cancer"},
+        
+        { "id": 1,"inclusion":"Inclusion","condition":"=", "yesorno":"2", "value": "Stage of cancer"
+        },        
+        { "id": 2,"inclusion":"Exclusion","condition":"=", "yesorno":"No", "value": "Cardiac Arrest"
+        },
+        { "id": 3,"inclusion":"Exclusion","condition":"=", "yesorno":"NA", "value": "COPD"
+        }
+    ]
+}

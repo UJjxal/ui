@@ -1,0 +1,68 @@
+{
+    "columns": [
+        {
+            "label": "Network Site",
+            "field": "Network Site"
+        },
+        {
+            "label": "City",
+            "field": "City"
+        },
+        {
+            "label": "County",
+            "field": "County"
+        },
+        {
+            "label": "State",
+            "field": "State"
+        },
+        {
+            "label": "Country",
+            "field": "Country"
+        }
+    ],
+    "rows": [
+        {
+            "Network Site": "Gynecologic Oncology Associates",
+            "City": "Newport Beach",
+            "County": "Orange",
+            "State": "California",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Research Facility",
+            "City": "Orlando",
+            "County": "Orange",
+            "State": "Florida",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Hematology and Oncology Specialists, LLC",
+            "City": "Covington",
+            "County": "Covington",
+            "State": "Louisiana",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Greater Baltimore Medical Center",
+            "City": "Baltimore",
+            "County": "Baltimore",
+            "State": "Maryland",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Massachusetts General Hospital Cancer Center",
+            "City": "Boston",
+            "County": "Suffolk",
+            "State": "Massachusetts",
+            "Country": "United States"
+        },
+        {
+            "Network Site": "Women & Infants Hospital of Rhode Island",
+            "City": "Providence",
+            "County": "Providence",
+            "State": "Rhode Island",
+            "Country": "United States"
+        }
+    ]
+}

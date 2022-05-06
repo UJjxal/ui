@@ -1,0 +1,213 @@
+import React from 'react';
+import ReactApexChart from 'react-apexcharts';
+
+export default class ApexChart extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+    
+      // series: [{
+      //   name: 'Market Segment',
+      //   data: [7, 10]
+      // }],
+      options1: {
+        chart: {
+          height: 350,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            dataLabels: {
+              position: 'top', // top, center, bottom
+            },
+            columnWidth: '30rem',
+          }
+        },
+        dataLabels: {
+          enabled: true,
+          formatter: function(value, { seriesIndex, dataPointIndex, w }) {
+            return value + '%'
+          },
+          offsetY: -20,
+          style: {
+            fontSize: '12px',
+            colors: ["#304758"]
+          }
+        },
+        xaxis: {
+          categories: ["Massive", "Premium"],
+          position: 'bottom',
+          labels: {
+            offsetY: -5,
+          },
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false
+          },
+          crosshairs: {
+            fill: {
+              type: 'gradient',
+              gradient: {
+                colorFrom: '#D8E3F0',
+                colorTo: '#BED1E6',
+                stops: [0, 100],
+                opacityFrom: 0.4,
+                opacityTo: 0.5,
+              }
+            }
+          },
+          tooltip: {
+            enabled: true,
+            offsetY: -35,
+        
+          }
+        },
+        fill: {
+          gradient: {
+            shade: 'light',
+            type: "horizontal",
+            shadeIntensity: 0.25,
+            gradientToColors: undefined,
+            inverseColors: true,
+            opacityFrom: 1,
+            opacityTo: 1,
+            stops: [50, 0, 100, 100]
+          },
+        },
+        yaxis: {
+          axisBorder: {
+            show: false
+          },
+          axisTicks: {
+            show: false,
+          },
+          labels: {
+            show: true,
+            formatter: function (val) {
+              return val + "%";
+            }
+          }
+        
+        },
+        title: {
+          text: '',
+          floating: true,
+          offsetY: 320,
+          align: 'center',
+          style: {
+            color: '#444'
+          }
+        }
+      },
+    
+    
+   
+    options2: {
+      chart: {
+        height: 350,
+        type: 'bar',
+      },
+      plotOptions: {
+        bar: {
+          dataLabels: {
+            position: 'top', // top, center, bottom
+          },
+          columnWidth: '30rem',
+        }
+      },
+      dataLabels: {
+        enabled: true,
+        formatter: function(value, { seriesIndex, dataPointIndex, w }) {
+          return value + '%'
+        },
+        offsetY: -20,
+        style: {
+          fontSize: '12px',
+          colors: ["#304758"]
+        }
+      },
+      xaxis: {
+        categories: ["1", "2", "3+"],
+        position: 'bottom',
+        labels: {
+          offsetY: -5,
+        },
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false
+        },
+        crosshairs: {
+          fill: {
+            type: 'gradient',
+            gradient: {
+              colorFrom: '#D8E3F0',
+              colorTo: '#BED1E6',
+              stops: [0, 100],
+              opacityFrom: 0.4,
+              opacityTo: 0.5,
+            }
+          }
+        },
+        tooltip: {
+          enabled: true,
+          offsetY: -35,
+      
+        }
+      },
+      fill: {
+        gradient: {
+          shade: 'light',
+          type: "horizontal",
+          shadeIntensity: 0.25,
+          gradientToColors: undefined,
+          inverseColors: true,
+          opacityFrom: 1,
+          opacityTo: 1,
+          stops: [50, 0, 100, 100]
+        },
+      },
+      yaxis: {
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          show: true,
+          formatter: function (val) {
+            return val + "%";
+          }
+        }
+      
+      },
+      title: {
+        text: '',
+        floating: true,
+        offsetY: 320,
+        align: 'center',
+        style: {
+          color: '#444'
+        }
+      }
+    },
+  
+  };
+  };
+  
+
+
+
+  render() {
+    return (
+  <div id="chart">
+<ReactApexChart options={this.props.chartName == 'marseg'?this.state.options1:this.state.options2} 
+series={this.props.series} type="bar" height={350} />
+</div>)
+  }
+}

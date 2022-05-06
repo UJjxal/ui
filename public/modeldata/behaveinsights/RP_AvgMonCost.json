@@ -1,0 +1,13 @@
+{
+  "categories": ["$ 0-100", "$ 100-500", "$ 500 and above"],
+  "modeldata": [
+    {
+      "name": "High Risk",
+      "data": [6, 34, 41]
+    },
+    {
+      "name": "Low Risk",
+      "data": [94, 66, 59]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+	"categories": {
+		"data": [
+			"18-Q1",
+			"18-Q2",
+			"18-Q3",
+			"18-Q4",
+			"19-Q1",
+			"19-Q2",
+			"19-Q3",
+			"19-Q4"
+		],
+		"title": "Quarter"
+	},
+	"yaxis": "",
+	"tickAmount":5,
+	"mintick":0,
+	"maxtick":50,
+	"series": [
+		{
+			"name": "Drug A",
+			"data": [
+				25,
+				25,
+				24,
+				14,
+				13,
+				13,
+				12,
+				12
+			]
+		},
+		{
+			"name": "Drug B",
+			"data": [
+				0,
+				0,
+				0,
+				10,
+				11,
+				11,
+				12,
+				12
+			]
+		},
+		{
+			"name": "Drug C",
+			"data": [
+				25,
+				26,
+				26,
+				27,
+				27,
+				28,
+				28,
+				29
+			]
+		},
+		{
+			"name": "Drug D",
+			"data": [
+				50,
+				50,
+				50,
+				49,
+				49,
+				48,
+				48,
+				47
+			]
+		}
+	],
+	"keyinsights": [
+		{
+			"trend": "down",
+			"text": "Market Share of Drug A has decreased by 13% from Q1-18 to Q4-19 due to an increase in Drug B’s market share which was launched on Q4’18"
+		},
+		{
+			"trend": "down",
+			"text": "Market Share of Drug A has decreased from 25%  in Q1-18 to 12% in Q4-19 due to a change in contract relative access from  P -> P to P->E"
+		},
+		{
+			"trend": "up",
+			"text": "For Drug A in Q4 2019, California state attributed to a growth of 15% in its Market compared to its market share in Q4 2018"
+		},
+		{
+			"trend": "up",
+			"text": "Market Share of Drug A from Provider1 has increased by 3% from Q1-19 to Q4-19 due to its inclusion under Payer1"
+		}
+	]
+}

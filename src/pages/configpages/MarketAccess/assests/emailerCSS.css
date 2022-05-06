@@ -1,0 +1,113 @@
+.ant-modal-centered::before{content: unset !important;}
+.ant-table-tbody > tr > td {
+    border-bottom: 0px;
+    transition: background 0.3s;
+}
+
+.ant-table.ant-table-small .ant-table-tbody > tr > td, .ant-table.ant-table-small tfoot > tr > th, .ant-table.ant-table-small tfoot > tr > td {
+    padding: 2px 8px;
+}
+
+.cancelbuttonhcp{
+
+    padding-right:0px ;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left:5px ;
+    border: 2px solid rgba(6, 91, 170, 0.7); 
+    color:#065BAA ;
+    font-size: 15px;
+}
+
+.fa-arrow-right:before {
+    font-size: 24px;
+}
+
+.fa-lg {
+    font-size: 2.18em;
+}
+
+.fontModal{
+    font-family: 'Roboto',sans-serif ;
+    font-size: '20px';
+}
+
+.pdrow{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top:5px ;
+    padding-bottom:5px ;
+} 
+
+.headings{
+       
+    font-family: 'Roboto',sans-serif ;
+    font-style: italic;
+    font-weight: bold;
+    color: #065BAA;
+}
+
+.blueColored{
+
+    font-family: 'Roboto',sans-serif ;
+    font-weight: bold;
+    color: #065BAA;
+}
+
+.photo{
+    height: 12px;
+    width: 12px;
+}
+
+.boxes{
+  
+    font-family: Roboto Condensed;
+    font-style: italic;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: rgba(6, 91, 170, 0.7) ;
+   
+}
+
+.rectangle89{
+   border-left: 5px solid rgba(6, 91, 170, 0.7); 
+   color: #808080 ;
+   
+}
+
+.rectangle90{
+    border-left: 5px solid rgba(6, 91, 170, 0.7); 
+    color: #808080 ;
+    
+ }
+
+.rectangle70{
+
+   border-left: 5px solid rgba(6, 91, 170, 0.7); 
+   color: #808080
+}
+
+.rectangle72{
+
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    color:#808080 ;
+    box-sizing: border-box;
+    
+}
+
+.rectangle73{
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    box-sizing: border-box;
+}
+
+.rectangle74{
+    border: 2px solid rgba(6, 91, 170, 0.7);
+    color:#065BAA ;
+}
+
+.rectangle93{
+    font-family: 'Roboto',sans-serif ;
+    border-left: 5px solid rgba(6, 91, 170, 0.7);
+    box-sizing: border-box;
+    color:#065BAA ;
+}

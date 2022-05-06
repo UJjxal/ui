@@ -1,0 +1,214 @@
+[
+  {
+    "name": "Age<=34.5",
+    "nodeSvgShape": {
+      "shape": "rect"
+    },
+    "attributes": {
+      "gini": "0.384",
+      "sample": "4147",
+      "value": "[3072, 1075]",
+      "statusVal": "26"
+    },
+    "relation": "Text message between L & R",
+    "children": [
+      {
+        "name": "Avg_Systolic_BP",
+        "attributes": {
+          "query": "<=142.335",
+          "gini": "0.495",
+          "sample": "1794",
+          "value": "[987, 807]",
+          "statusVal": "22"
+        },
+        "nodeSvgShape": {
+          "shape": "rect"
+        },
+        "relation": "Please add some text here for showing relationship between child",
+        "children": [
+          {
+            "name": "Weight.kg",
+            "attributes": {
+              "query": "<=85.8",
+              "gini": "0.478",
+              "sample": "486",
+              "value": "[192. 294]",
+              "statusVal": "21"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Energy.KCAL",
+                "query": "<=2043.5",
+                "attributes": {
+                  "gini": "0.359",
+                  "sample": "141",
+                  "value": "[33, 108]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              },
+              {
+                "name": "Albumin.urine.mg.L",
+                "attributes": {
+                  "query": "<=36.6",
+                  "gini": "0.497",
+                  "sample": "345",
+                  "value": "[159, 186]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          },
+          {
+            "name": "BMI.kg.m.2",
+            "attributes": {
+              "query": "<=27.65",
+              "gini": "0.477",
+              "sample": "1308",
+              "value": "[795, 513]",
+              "statusVal": "21"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Total Cholestrol.mg.dL",
+                "attributes": {
+                  "query": "<=193.5",
+                  "gini": "0.498",
+                  "sample": "779",
+                  "value": "[414, 365]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              },
+              {
+                "name": "Hematocrit...",
+                "attributes": {
+                  "query": "<=35.0",
+                  "gini": "0.403",
+                  "sample": "529",
+                  "value": "[381, 148]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Avg_Systolic_BP",
+        "attributes": {
+          "query": "<=134.335",
+          "gini": "0.202",
+          "sample": "2353",
+          "value": "[2085, 268]",
+          "statusVal": "20"
+        },
+        "nodeSvgShape": {
+          "shape": "rect"
+        },
+        "children": [
+          {
+            "name": "Avg_Diastolic_BP",
+            "attributes": {
+              "query": "<=101.665",
+              "gini": "0.49",
+              "sample": "231",
+              "value": "[132, 99]",
+              "statusVal": "21"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "Height.cm",
+                "attributes": {
+                  "query": "<=165.95",
+                  "gini": "0.208",
+                  "sample": "17",
+                  "value": "[2, 15]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                },
+                "children": []
+              },
+              {
+                "name": "Magnesium",
+                "attributes": {
+                  "query": "<=511.5",
+                  "gini": "0.477",
+                  "sample": "214",
+                  "value": "[130, 84]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Age",
+            "attributes": {
+              "query": "<=20.5",
+              "gini": "0.147",
+              "sample": "2122",
+              "value": "[1953, 189]",
+              "statusVal": "21"
+            },
+            "nodeSvgShape": {
+              "shape": "rect"
+            },
+            "children": [
+              {
+                "name": "BMI.kg.m.2",
+                "attributes": {
+                  "query": "<=30.45",
+                  "gini": "0.273",
+                  "sample": "693",
+                  "value": "[580, 113]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              },
+              {
+                "name": "Weight.kg",
+                "attributes": {
+                  "query": "<=97.55",
+                  "gini": "0.075",
+                  "sample": "1429",
+                  "value": "[1373, 56]",
+                  "statusVal": "21"
+                },
+                "nodeSvgShape": {
+                  "shape": "rect"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

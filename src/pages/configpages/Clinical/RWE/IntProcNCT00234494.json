@@ -1,0 +1,90 @@
+{
+	"columns": [
+		{
+			"label": "Procedure Name",
+			"field": "Procedure"
+		},
+		{
+			"label": "Average Attrition",
+			"field": "Attrition"
+		},
+		{
+			"label": "Average Patient Burden",
+			"field": "Burden"
+		},
+		{
+			"label": "Core Procedure Procedure",
+			"field": "Core Procedure"
+		},
+		{
+			"label": "Select for Select for Study",
+			"field": "Select for Study"
+		}
+	],
+	"rows": [
+		{
+			"Rank":"1",
+			"Procedure": "Diagnosis History",
+			"Attrition": "12",
+			"Burden": "1",
+			"Core": 1,
+			"Study":1,
+			"key":"1"
+		},
+		{
+			"Rank":"2",
+			"Procedure": "Retention Sample",
+			"Attrition": "11",
+			"Burden": "2",
+			"Core": 1,
+			"Study":1,
+			"key":"2"
+		},
+		{
+			"Rank":"3",
+			"Procedure": "PET/CT Scan",
+			"Attrition": "15",
+			"Burden": "2",
+			"Core": 1,
+			"Study":1,
+			"key":"3"
+		},
+		{
+			"Rank":"4",
+			"Procedure": "Chemotherapy",
+			"Attrition": "11",
+			"Burden": "3",
+			"Core": 1,
+			"Study":1,
+			"key": "4"		
+
+		},
+		{
+			"Rank":"5",
+			"Procedure": "Cystoscopy",
+			"Attrition": "13",
+			"Burden": "4",
+			"Core": 0,
+			"Study":1,
+			"key":"5"
+		},
+		{
+			"Rank":"6",
+			"Procedure": "Intravenous",
+			"Attrition": "32",
+			"Burden": "3",
+			"Core": 1,
+			"Study":1,
+			"key":"6"
+		},
+		{
+			"Rank":"7",
+			"Procedure": "TURBT",
+			"Attrition": "50",
+			"Burden": "4",
+			"Core": 1,
+			"Study":1,
+			"key":"7"
+		}
+	]
+}

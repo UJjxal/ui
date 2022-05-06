@@ -1,0 +1,54 @@
+{
+    "columns": [
+        {
+            "label": "DrugName",
+            "field": "DrugName"
+        },
+        {
+            "label": "Condition",
+            "field": "Condition"
+        },
+        {
+            "label": "Dosevalue",
+            "field": "Dosevalue"
+        },
+        {
+            "label": "Doseunit",
+            "field": "Doseunit"
+        },
+        {
+            "label": "Frequency",
+            "field": "Frequency"
+        },
+        {
+            "label": "Cycleduration",
+            "field": "Cycleduration"
+        }
+    ],
+    "rows": [
+        {
+            "DrugName": "Enzalutamide",
+            "Condition": "<=",
+            "Dosevalue": "160",
+            "Doseunit": "mg",
+            "Frequency": "All",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Cisplatin",
+            "Condition": "=",
+            "Dosevalue": "70",
+            "Doseunit": "mg/m2",
+            "Frequency": "1",
+            "Cycleduration": "21"
+        },
+        {
+            "DrugName": "Gemcitabine",
+            "Condition": "=",
+            "Dosevalue": "1000",
+            "Doseunit": "mg/m2",
+            "Frequency": "1,8",
+            "Cycleduration": "21"
+        }
+    ]
+}

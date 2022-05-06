@@ -1,0 +1,1412 @@
+{
+    "DataOverview": [
+        [
+            {
+                "key": 1,
+                "_": "Performance Window",
+                "Development Cohort": "Dec-2014 - Dec-2017",
+                "Validation Cohort": "Dec-2018 - Sep-2021"
+            },
+            {
+                "key": 2,
+                "_": "# Total Customers",
+                "Development Cohort": "2,602",
+                "Validation Cohort": "583"
+            },
+            {
+                "key": 3,
+                "_": "# Bad(1)",
+                "Development Cohort": "56",
+                "Validation Cohort": "25"
+            },
+            {
+                "key": 4,
+                "_": "# Good(0)",
+                "Development Cohort": "2,546",
+                "Validation Cohort": "558"
+            },
+            {
+                "key": 5,
+                "_": "Event Rate/ Bad Rate",
+                "Development Cohort": "2.0%",
+                "Validation Cohort": "4.29%"
+            },
+            {
+                "key": 6,
+                "_": "Mean Rating (Good)",
+                "Development Cohort": "4.18",
+                "Validation Cohort": "4.79"
+            },
+            {
+                "key": 7,
+                "_": "Mean Rating (Bad)",
+                "Development Cohort": "5.21",
+                "Validation Cohort": "5.92"
+            }
+        ]
+    ],
+    "Final_Rating": {
+        "Discrimination_Table": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Event Distribution By Rating",
+                    "Development": "-",
+                    "Validation": "0%",
+                    "% Change": "-",
+                    "Risk": "orange"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Accuracy",
+                    "Development": "-",
+                    "Validation": "25%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 3,
+                    "Metric": "Precision",
+                    "Development": "-",
+                    "Validation": "5%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 4,
+                    "Metric": "Recall",
+                    "Development": "-",
+                    "Validation": "96%",
+                    "% Change": "-",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 5,
+                    "Metric": "F1 Score",
+                    "Development": 0.0,
+                    "Validation": 0.1,
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 6,
+                    "Metric": "KS Statistic",
+                    "Development": "20%",
+                    "Validation": "32%",
+                    "% Change": "61%",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 7,
+                    "Metric": "AUC",
+                    "Development": "64%",
+                    "Validation": "59%",
+                    "% Change": "-8%",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 8,
+                    "Metric": "Gini Score",
+                    "Development": "28%",
+                    "Validation": "18%",
+                    "% Change": "-36%",
+                    "Risk": "Red"
+                }
+            ]
+        ],
+        "EventBarPlot": [
+            [
+                {
+                    "Rating": 8,
+                    "Population": 49,
+                    "Good_Customers": 44,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 10.2
+                },
+                {
+                    "Rating": 7,
+                    "Population": 61,
+                    "Good_Customers": 56,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 8.2
+                },
+                {
+                    "Rating": 6,
+                    "Population": 86,
+                    "Good_Customers": 80,
+                    "Bad_Customers": 6,
+                    "Event_Rate": 6.98
+                },
+                {
+                    "Rating": 5,
+                    "Population": 133,
+                    "Good_Customers": 130,
+                    "Bad_Customers": 3,
+                    "Event_Rate": 2.26
+                },
+                {
+                    "Rating": 4,
+                    "Population": 129,
+                    "Good_Customers": 124,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 3.88
+                },
+                {
+                    "Rating": 3,
+                    "Population": 81,
+                    "Good_Customers": 81,
+                    "Bad_Customers": 0,
+                    "Event_Rate": 0.0
+                },
+                {
+                    "Rating": 2,
+                    "Population": 20,
+                    "Good_Customers": 19,
+                    "Bad_Customers": 1,
+                    "Event_Rate": 5.0
+                },
+                {
+                    "Rating": 1,
+                    "Population": 24,
+                    "Good_Customers": 24,
+                    "Bad_Customers": 0,
+                    "Event_Rate": 0.0
+                }
+            ]
+        ],
+        "ConfusionMatrix": [
+            [
+                {
+                    "label": "0",
+                    "negative": "124 (21%)",
+                    "positive": "434 (74%)"
+                },
+                {
+                    "label": "1",
+                    "negative": "1 (0%)",
+                    "positive": "24 (4%)"
+                }
+            ]
+        ],
+        "EventDataMetric": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Precision",
+                    "Value": "5%"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Recall",
+                    "Value": "96%"
+                },
+                {
+                    "key": 3,
+                    "Metric": "F1 Score",
+                    "Value": "0.1"
+                },
+                {
+                    "key": 4,
+                    "Metric": "False Positive Rate",
+                    "Value": "77%"
+                }
+            ]
+        ],
+        "KSCurve": [
+            {
+                "Rating": [
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "cum_eventrate": [
+                    "20",
+                    "40",
+                    "64",
+                    "76",
+                    "96",
+                    "96",
+                    "100",
+                    "100"
+                ],
+                "cum_noneventrate": [
+                    "7",
+                    "17",
+                    "32",
+                    "55",
+                    "77",
+                    "92",
+                    "95",
+                    "100"
+                ]
+            }
+        ],
+        "KSCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8,
+                    "Cumulative Event %": "20",
+                    "Cumulative Non Event %": "7",
+                    "KS": 12,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 2,
+                    "Rating": 7,
+                    "Cumulative Event %": "40",
+                    "Cumulative Non Event %": "17",
+                    "KS": 22,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 3,
+                    "Rating": 6,
+                    "Cumulative Event %": "64",
+                    "Cumulative Non Event %": "32",
+                    "KS": 31,
+                    "Max_pos": 1
+                },
+                {
+                    "key": 4,
+                    "Rating": 5,
+                    "Cumulative Event %": "76",
+                    "Cumulative Non Event %": "55",
+                    "KS": 20,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 5,
+                    "Rating": 4,
+                    "Cumulative Event %": "96",
+                    "Cumulative Non Event %": "77",
+                    "KS": 18,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 6,
+                    "Rating": 3,
+                    "Cumulative Event %": "96",
+                    "Cumulative Non Event %": "92",
+                    "KS": 3,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 7,
+                    "Rating": 2,
+                    "Cumulative Event %": "100",
+                    "Cumulative Non Event %": "95",
+                    "KS": 4,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 8,
+                    "Rating": 1,
+                    "Cumulative Event %": "100",
+                    "Cumulative Non Event %": "100",
+                    "KS": 0,
+                    "Max_pos": 0
+                }
+            ]
+        ],
+        "LorenzCurve": [
+            {
+                "Cumulative_Total": [
+                    8,
+                    19,
+                    34,
+                    56,
+                    79,
+                    92,
+                    96,
+                    100
+                ],
+                "Cumulative_Event": [
+                    20,
+                    40,
+                    64,
+                    76,
+                    96,
+                    96,
+                    100,
+                    100
+                ]
+            }
+        ],
+        "LorenzCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8,
+                    "Cumulative % Event": 20,
+                    "Cumulative % Total": 8
+                },
+                {
+                    "key": 2,
+                    "Rating": 7,
+                    "Cumulative % Event": 40,
+                    "Cumulative % Total": 19
+                },
+                {
+                    "key": 3,
+                    "Rating": 6,
+                    "Cumulative % Event": 64,
+                    "Cumulative % Total": 34
+                },
+                {
+                    "key": 4,
+                    "Rating": 5,
+                    "Cumulative % Event": 76,
+                    "Cumulative % Total": 56
+                },
+                {
+                    "key": 5,
+                    "Rating": 4,
+                    "Cumulative % Event": 96,
+                    "Cumulative % Total": 79
+                },
+                {
+                    "key": 6,
+                    "Rating": 3,
+                    "Cumulative % Event": 96,
+                    "Cumulative % Total": 92
+                },
+                {
+                    "key": 7,
+                    "Rating": 2,
+                    "Cumulative % Event": 100,
+                    "Cumulative % Total": 96
+                },
+                {
+                    "key": 8,
+                    "Rating": 1,
+                    "Cumulative % Event": 100,
+                    "Cumulative % Total": 100
+                }
+            ]
+        ],
+        "ROCCurve": [
+            {
+                "Score_Cutoff": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "FalsePositiveRate": [
+                    "0.0",
+                    "1.0",
+                    "0.96",
+                    "0.92",
+                    "0.78",
+                    "0.56",
+                    "0.32",
+                    "0.18",
+                    "0.08"
+                ],
+                "TruePositiveRate": [
+                    "0.0",
+                    "1.0",
+                    "1.0",
+                    "0.96",
+                    "0.96",
+                    "0.76",
+                    "0.64",
+                    "0.4",
+                    "0.2"
+                ]
+            }
+        ],
+        "ROCData": [
+            [
+                {
+                    "key": "8",
+                    "Rating": "8",
+                    "FalsePositiveRate": "0.08",
+                    "TruePositiveRate": "0.2"
+                },
+                {
+                    "key": "7",
+                    "Rating": "7",
+                    "FalsePositiveRate": "0.18",
+                    "TruePositiveRate": "0.4"
+                },
+                {
+                    "key": "6",
+                    "Rating": "6",
+                    "FalsePositiveRate": "0.32",
+                    "TruePositiveRate": "0.64"
+                },
+                {
+                    "key": "5",
+                    "Rating": "5",
+                    "FalsePositiveRate": "0.56",
+                    "TruePositiveRate": "0.76"
+                },
+                {
+                    "key": "4",
+                    "Rating": "4",
+                    "FalsePositiveRate": "0.78",
+                    "TruePositiveRate": "0.96"
+                },
+                {
+                    "key": "3",
+                    "Rating": "3",
+                    "FalsePositiveRate": "0.92",
+                    "TruePositiveRate": "0.96"
+                },
+                {
+                    "key": "2",
+                    "Rating": "2",
+                    "FalsePositiveRate": "0.96",
+                    "TruePositiveRate": "1.0"
+                },
+                {
+                    "key": "1",
+                    "Rating": "1",
+                    "FalsePositiveRate": "1.0",
+                    "TruePositiveRate": "1.0"
+                }
+            ]
+        ]
+    },
+    "Quantitative_Rating": {
+        "Discrimination_Table": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Event Distribution By Rating",
+                    "Development": "-",
+                    "Validation": "0%",
+                    "% Change": "-",
+                    "Risk": "orange"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Accuracy",
+                    "Development": "-",
+                    "Validation": "25%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 3,
+                    "Metric": "Precision",
+                    "Development": "-",
+                    "Validation": "5%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 4,
+                    "Metric": "Recall",
+                    "Development": "-",
+                    "Validation": "96%",
+                    "% Change": "-",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 5,
+                    "Metric": "F1 Score",
+                    "Development": 0.0,
+                    "Validation": 0.1,
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 6,
+                    "Metric": "KS Statistic",
+                    "Development": "20%",
+                    "Validation": "32%",
+                    "% Change": "61%",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 7,
+                    "Metric": "AUC",
+                    "Development": "64%",
+                    "Validation": "59%",
+                    "% Change": "-8%",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 8,
+                    "Metric": "Gini Score",
+                    "Development": "28%",
+                    "Validation": "18%",
+                    "% Change": "-36%",
+                    "Risk": "Red"
+                }
+            ]
+        ],
+        "EventBarPlot": [
+            [
+                {
+                    "Rating": 8,
+                    "Population": 49,
+                    "Good_Customers": 44,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 10.2
+                },
+                {
+                    "Rating": 7,
+                    "Population": 61,
+                    "Good_Customers": 56,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 8.2
+                },
+                {
+                    "Rating": 6,
+                    "Population": 86,
+                    "Good_Customers": 80,
+                    "Bad_Customers": 6,
+                    "Event_Rate": 6.98
+                },
+                {
+                    "Rating": 5,
+                    "Population": 133,
+                    "Good_Customers": 130,
+                    "Bad_Customers": 3,
+                    "Event_Rate": 2.26
+                },
+                {
+                    "Rating": 4,
+                    "Population": 129,
+                    "Good_Customers": 124,
+                    "Bad_Customers": 5,
+                    "Event_Rate": 3.88
+                },
+                {
+                    "Rating": 3,
+                    "Population": 81,
+                    "Good_Customers": 81,
+                    "Bad_Customers": 0,
+                    "Event_Rate": 0.0
+                },
+                {
+                    "Rating": 2,
+                    "Population": 20,
+                    "Good_Customers": 19,
+                    "Bad_Customers": 1,
+                    "Event_Rate": 5.0
+                },
+                {
+                    "Rating": 1,
+                    "Population": 24,
+                    "Good_Customers": 24,
+                    "Bad_Customers": 0,
+                    "Event_Rate": 0.0
+                }
+            ]
+        ],
+        "ConfusionMatrix": [
+            [
+                {
+                    "label": "0",
+                    "negative": "124 (21%)",
+                    "positive": "434 (74%)"
+                },
+                {
+                    "label": "1",
+                    "negative": "1 (0%)",
+                    "positive": "24 (4%)"
+                }
+            ]
+        ],
+        "EventDataMetric": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Precision",
+                    "Value": "5%"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Recall",
+                    "Value": "96%"
+                },
+                {
+                    "key": 3,
+                    "Metric": "F1 Score",
+                    "Value": "0.1"
+                },
+                {
+                    "key": 4,
+                    "Metric": "False Positive Rate",
+                    "Value": "77%"
+                }
+            ]
+        ],
+        "KSCurve": [
+            {
+                "Rating": [
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                ],
+                "cum_eventrate": [
+                    "20",
+                    "40",
+                    "64",
+                    "76",
+                    "96",
+                    "96",
+                    "100",
+                    "100"
+                ],
+                "cum_noneventrate": [
+                    "7",
+                    "17",
+                    "32",
+                    "55",
+                    "77",
+                    "92",
+                    "95",
+                    "100"
+                ]
+            }
+        ],
+        "KSCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8,
+                    "Cumulative Event %": "20",
+                    "Cumulative Non Event %": "7",
+                    "KS": 12,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 2,
+                    "Rating": 7,
+                    "Cumulative Event %": "40",
+                    "Cumulative Non Event %": "17",
+                    "KS": 22,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 3,
+                    "Rating": 6,
+                    "Cumulative Event %": "64",
+                    "Cumulative Non Event %": "32",
+                    "KS": 31,
+                    "Max_pos": 1
+                },
+                {
+                    "key": 4,
+                    "Rating": 5,
+                    "Cumulative Event %": "76",
+                    "Cumulative Non Event %": "55",
+                    "KS": 20,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 5,
+                    "Rating": 4,
+                    "Cumulative Event %": "96",
+                    "Cumulative Non Event %": "77",
+                    "KS": 18,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 6,
+                    "Rating": 3,
+                    "Cumulative Event %": "96",
+                    "Cumulative Non Event %": "92",
+                    "KS": 3,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 7,
+                    "Rating": 2,
+                    "Cumulative Event %": "100",
+                    "Cumulative Non Event %": "95",
+                    "KS": 4,
+                    "Max_pos": 0
+                },
+                {
+                    "key": 8,
+                    "Rating": 1,
+                    "Cumulative Event %": "100",
+                    "Cumulative Non Event %": "100",
+                    "KS": 0,
+                    "Max_pos": 0
+                }
+            ]
+        ],
+        "LorenzCurve": [
+            {
+                "Cumulative_Total": [
+                    8,
+                    19,
+                    34,
+                    56,
+                    79,
+                    92,
+                    96,
+                    100
+                ],
+                "Cumulative_Event": [
+                    20,
+                    40,
+                    64,
+                    76,
+                    96,
+                    96,
+                    100,
+                    100
+                ]
+            }
+        ],
+        "LorenzCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8,
+                    "Cumulative % Event": 20,
+                    "Cumulative % Total": 8
+                },
+                {
+                    "key": 2,
+                    "Rating": 7,
+                    "Cumulative % Event": 40,
+                    "Cumulative % Total": 19
+                },
+                {
+                    "key": 3,
+                    "Rating": 6,
+                    "Cumulative % Event": 64,
+                    "Cumulative % Total": 34
+                },
+                {
+                    "key": 4,
+                    "Rating": 5,
+                    "Cumulative % Event": 76,
+                    "Cumulative % Total": 56
+                },
+                {
+                    "key": 5,
+                    "Rating": 4,
+                    "Cumulative % Event": 96,
+                    "Cumulative % Total": 79
+                },
+                {
+                    "key": 6,
+                    "Rating": 3,
+                    "Cumulative % Event": 96,
+                    "Cumulative % Total": 92
+                },
+                {
+                    "key": 7,
+                    "Rating": 2,
+                    "Cumulative % Event": 100,
+                    "Cumulative % Total": 96
+                },
+                {
+                    "key": 8,
+                    "Rating": 1,
+                    "Cumulative % Event": 100,
+                    "Cumulative % Total": 100
+                }
+            ]
+        ],
+        "ROCCurve": [
+            {
+                "Score_Cutoff": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "FalsePositiveRate": [
+                    "0.0",
+                    "1.0",
+                    "0.96",
+                    "0.92",
+                    "0.78",
+                    "0.56",
+                    "0.32",
+                    "0.18",
+                    "0.08"
+                ],
+                "TruePositiveRate": [
+                    "0.0",
+                    "1.0",
+                    "1.0",
+                    "0.96",
+                    "0.96",
+                    "0.76",
+                    "0.64",
+                    "0.4",
+                    "0.2"
+                ]
+            }
+        ],
+        "ROCData": [
+            [
+                {
+                    "key": "8",
+                    "Rating": "8",
+                    "FalsePositiveRate": "0.08",
+                    "TruePositiveRate": "0.2"
+                },
+                {
+                    "key": "7",
+                    "Rating": "7",
+                    "FalsePositiveRate": "0.18",
+                    "TruePositiveRate": "0.4"
+                },
+                {
+                    "key": "6",
+                    "Rating": "6",
+                    "FalsePositiveRate": "0.32",
+                    "TruePositiveRate": "0.64"
+                },
+                {
+                    "key": "5",
+                    "Rating": "5",
+                    "FalsePositiveRate": "0.56",
+                    "TruePositiveRate": "0.76"
+                },
+                {
+                    "key": "4",
+                    "Rating": "4",
+                    "FalsePositiveRate": "0.78",
+                    "TruePositiveRate": "0.96"
+                },
+                {
+                    "key": "3",
+                    "Rating": "3",
+                    "FalsePositiveRate": "0.92",
+                    "TruePositiveRate": "0.96"
+                },
+                {
+                    "key": "2",
+                    "Rating": "2",
+                    "FalsePositiveRate": "0.96",
+                    "TruePositiveRate": "1.0"
+                },
+                {
+                    "key": "1",
+                    "Rating": "1",
+                    "FalsePositiveRate": "1.0",
+                    "TruePositiveRate": "1.0"
+                }
+            ]
+        ]
+    },
+    "Qualitative_Rating": {
+        "Discrimination_Table": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Event Distribution By Rating",
+                    "Development": "-",
+                    "Validation": "0%",
+                    "% Change": "-",
+                    "Risk": "orange"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Accuracy",
+                    "Development": "-",
+                    "Validation": "4%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 3,
+                    "Metric": "Precision",
+                    "Development": "-",
+                    "Validation": "4%",
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 4,
+                    "Metric": "Recall",
+                    "Development": "-",
+                    "Validation": "100%",
+                    "% Change": "-",
+                    "Risk": "Green"
+                },
+                {
+                    "key": 5,
+                    "Metric": "F1 Score",
+                    "Development": 0.0,
+                    "Validation": 0.08,
+                    "% Change": "-",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 6,
+                    "Metric": "KS Statistic",
+                    "Development": "20%",
+                    "Validation": "0%",
+                    "% Change": "-100%",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 7,
+                    "Metric": "AUC",
+                    "Development": "64%",
+                    "Validation": "50%",
+                    "% Change": "-22%",
+                    "Risk": "Red"
+                },
+                {
+                    "key": 8,
+                    "Metric": "Gini Score",
+                    "Development": "28%",
+                    "Validation": "0%",
+                    "% Change": "-100%",
+                    "Risk": "Red"
+                }
+            ]
+        ],
+        "EventBarPlot": [
+            [
+                {
+                    "Rating": 8.0,
+                    "Population": 583,
+                    "Good_Customers": 558,
+                    "Bad_Customers": 25,
+                    "Event_Rate": 4.29
+                }
+            ]
+        ],
+        "ConfusionMatrix": [
+            [
+                {
+                    "label": "0",
+                    "negative": "1 (0%)",
+                    "positive": "558 (95%)"
+                },
+                {
+                    "label": "1",
+                    "negative": "1 (0%)",
+                    "positive": "25 (4%)"
+                }
+            ]
+        ],
+        "EventDataMetric": [
+            [
+                {
+                    "key": 1,
+                    "Metric": "Precision",
+                    "Value": "4%"
+                },
+                {
+                    "key": 2,
+                    "Metric": "Recall",
+                    "Value": "96%"
+                },
+                {
+                    "key": 3,
+                    "Metric": "F1 Score",
+                    "Value": "0.08"
+                },
+                {
+                    "key": 4,
+                    "Metric": "False Positive Rate",
+                    "Value": "99%"
+                }
+            ]
+        ],
+        "KSCurve": [
+            {
+                "Rating": [
+                    1
+                ],
+                "cum_eventrate": [
+                    "100"
+                ],
+                "cum_noneventrate": [
+                    "100"
+                ]
+            }
+        ],
+        "KSCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8.0,
+                    "Cumulative Event %": "100",
+                    "Cumulative Non Event %": "100",
+                    "KS": 0,
+                    "Max_pos": 1
+                }
+            ]
+        ],
+        "LorenzCurve": [
+            {
+                "Cumulative_Total": [
+                    100
+                ],
+                "Cumulative_Event": [
+                    100
+                ]
+            }
+        ],
+        "LorenzCurveData": [
+            [
+                {
+                    "key": 1,
+                    "Rating": 8.0,
+                    "Cumulative % Event": 100,
+                    "Cumulative % Total": 100
+                }
+            ]
+        ],
+        "ROCCurve": [
+            {
+                "Score_Cutoff": [
+                    0,
+                    1
+                ],
+                "FalsePositiveRate": [
+                    "0.0",
+                    "1.0"
+                ],
+                "TruePositiveRate": [
+                    "0.0",
+                    "1.0"
+                ]
+            }
+        ],
+        "ROCData": [
+            [
+                {
+                    "key": "1",
+                    "Rating": "8.0",
+                    "FalsePositiveRate": "1.0",
+                    "TruePositiveRate": "1.0"
+                }
+            ]
+        ]
+    },
+    "RankOrdering": [
+        {
+            "Rating": [
+                8,
+                7,
+                6,
+                5,
+                4,
+                3,
+                2,
+                1
+            ],
+            "Actual_Bad": [
+                10.2,
+                8.2,
+                6.98,
+                2.26,
+                3.88,
+                0.0,
+                5.0,
+                0.0
+            ],
+            "Expected_Bad": [
+                6.73,
+                3.3,
+                2.66,
+                2.63,
+                2.1,
+                1.2,
+                0.7,
+                0.96
+            ]
+        }
+    ],
+    "RankOrderingData": [
+        [
+            {
+                "key": 1,
+                "Rating": 8,
+                "Population": 49,
+                "Actual % Bad": 10.2,
+                "Expected % Bad": 6.73
+            },
+            {
+                "key": 2,
+                "Rating": 7,
+                "Population": 61,
+                "Actual % Bad": 8.2,
+                "Expected % Bad": 3.3
+            },
+            {
+                "key": 3,
+                "Rating": 6,
+                "Population": 86,
+                "Actual % Bad": 6.98,
+                "Expected % Bad": 2.66
+            },
+            {
+                "key": 4,
+                "Rating": 5,
+                "Population": 133,
+                "Actual % Bad": 2.26,
+                "Expected % Bad": 2.63
+            },
+            {
+                "key": 5,
+                "Rating": 4,
+                "Population": 129,
+                "Actual % Bad": 3.88,
+                "Expected % Bad": 2.1
+            },
+            {
+                "key": 6,
+                "Rating": 3,
+                "Population": 81,
+                "Actual % Bad": 0.0,
+                "Expected % Bad": 1.2
+            },
+            {
+                "key": 7,
+                "Rating": 2,
+                "Population": 20,
+                "Actual % Bad": 5.0,
+                "Expected % Bad": 0.7
+            },
+            {
+                "key": 8,
+                "Rating": 1,
+                "Population": 24,
+                "Actual % Bad": 0.0,
+                "Expected % Bad": 0.96
+            }
+        ]
+    ],
+    "PSI": [
+        {
+            "Rating": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ],
+            "Expected": [
+                -7.99,
+                -10.99,
+                -16.03,
+                -21.98,
+                -19.02,
+                -12.99,
+                -6.99,
+                -4.0
+            ],
+            "Actual": [
+                4.12,
+                3.43,
+                13.89,
+                22.13,
+                22.81,
+                14.75,
+                10.46,
+                8.4
+            ]
+        }
+    ],
+    "PSIData": [
+        [
+            {
+                "key": 1,
+                "Rating": 1,
+                "Expected %": "8",
+                "Actual %": "4",
+                "Actual-Expected": -3.87,
+                "ln(Actual/Expected)": -0.66,
+                "Contribution To PSI": 0.026
+            },
+            {
+                "key": 2,
+                "Rating": 2,
+                "Expected %": "11",
+                "Actual %": "3",
+                "Actual-Expected": -7.56,
+                "ln(Actual/Expected)": -1.16,
+                "Contribution To PSI": 0.088
+            },
+            {
+                "key": 3,
+                "Rating": 3,
+                "Expected %": "16",
+                "Actual %": "14",
+                "Actual-Expected": -2.14,
+                "ln(Actual/Expected)": -0.14,
+                "Contribution To PSI": 0.003
+            },
+            {
+                "key": 4,
+                "Rating": 4,
+                "Expected %": "22",
+                "Actual %": "22",
+                "Actual-Expected": 0.15,
+                "ln(Actual/Expected)": 0.01,
+                "Contribution To PSI": 0.0
+            },
+            {
+                "key": 5,
+                "Rating": 5,
+                "Expected %": "19",
+                "Actual %": "23",
+                "Actual-Expected": 3.79,
+                "ln(Actual/Expected)": 0.18,
+                "Contribution To PSI": 0.007
+            },
+            {
+                "key": 6,
+                "Rating": 6,
+                "Expected %": "13",
+                "Actual %": "15",
+                "Actual-Expected": 1.76,
+                "ln(Actual/Expected)": 0.13,
+                "Contribution To PSI": 0.002
+            },
+            {
+                "key": 7,
+                "Rating": 7,
+                "Expected %": "7",
+                "Actual %": "10",
+                "Actual-Expected": 3.47,
+                "ln(Actual/Expected)": 0.4,
+                "Contribution To PSI": 0.014
+            },
+            {
+                "key": 8,
+                "Rating": 8,
+                "Expected %": "4",
+                "Actual %": "8",
+                "Actual-Expected": 4.4,
+                "ln(Actual/Expected)": 0.74,
+                "Contribution To PSI": 0.033
+            }
+        ]
+    ],
+    "CSI": [
+        {
+            "Variable": [
+                "Cobertura Flujo Fondos",
+                "Cobertura EBITDA",
+                "Endeudamiento Global",
+                "Apalancamiento Financiero",
+                "Liquidez 5",
+                "Solvencia 2 Fisica",
+                "Margen Neto",
+                "ROE Neto",
+                "LN Ventas",
+                "Rotacion Activo Corriente",
+                "Crecimiento ventas"
+            ],
+            "CSI_Score": [
+                0.0,
+                -0.0,
+                -0.0,
+                -0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0,
+                -0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "CSIData": [
+        [
+            {
+                "key": 1,
+                "Variable": "Cobertura Flujo Fondos",
+                "CSI Score": 0.0,
+                "Status": "green"
+            },
+            {
+                "key": 2,
+                "Variable": "Cobertura EBITDA",
+                "CSI Score": -0.0,
+                "Status": "green"
+            },
+            {
+                "key": 3,
+                "Variable": "Endeudamiento Global",
+                "CSI Score": -0.0,
+                "Status": "green"
+            },
+            {
+                "key": 4,
+                "Variable": "Apalancamiento Financiero",
+                "CSI Score": -0.0,
+                "Status": "green"
+            },
+            {
+                "key": 5,
+                "Variable": "Liquidez 5",
+                "CSI Score": 0.0,
+                "Status": "green"
+            },
+            {
+                "key": 6,
+                "Variable": "Solvencia 2 Fisica",
+                "CSI Score": -0.0,
+                "Status": "green"
+            },
+            {
+                "key": 7,
+                "Variable": "Margen Neto",
+                "CSI Score": 0.0,
+                "Status": "green"
+            },
+            {
+                "key": 8,
+                "Variable": "ROE Neto",
+                "CSI Score": 0.0,
+                "Status": "green"
+            },
+            {
+                "key": 9,
+                "Variable": "LN Ventas",
+                "CSI Score": -0.0,
+                "Status": "green"
+            },
+            {
+                "key": 10,
+                "Variable": "Rotacion Activo Corriente",
+                "CSI Score": 0.0,
+                "Status": "green"
+            },
+            {
+                "key": 11,
+                "Variable": "Crecimiento ventas",
+                "CSI Score": 0.0,
+                "Status": "green"
+            }
+        ]
+    ]
+}

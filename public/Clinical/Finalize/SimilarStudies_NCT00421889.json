@@ -1,0 +1,59 @@
+{
+	"columns": [
+		{
+			"label": "SimilarStudyID",
+			"field": "SimilarStudyID"
+		},
+		{
+			"label": "Title",
+			"field": "Title"
+		},
+		{
+			"label": "StudyLink",
+			"field": "StudyLink"
+		}
+    ],
+	
+	"rows":[
+   {
+      "SimilarStudyID":"NCT00462488",
+      "Title":"Phase II Study to Evaluate the Efficacy and Tolerability of Intravesical Vicinium/u2122 in Patients With Non-Invasive Urothelial Carcinoma in Situ (CIS) Previously Treated With Bacille Calmette-Gu/u00e9rin (BCG)",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00462488"
+   },
+   {
+      "SimilarStudyID":"NCT00538863",
+      "Title":"Open-label Multi-center Safety Trial of Fentanyl Sublingual Spray (Fentanyl SL Spray) for the Treatment of Breakthrough Cancer Pain",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00538863"
+   },
+   {
+      "SimilarStudyID":"NCT00445601",
+      "Title":"A Phase III Blinded Study of Immediate Post TURBT Instillation of Gemcitabine Versus Saline in Patients With Newly Diagnosed or Occasionally Recurring Grade I//II Superficial Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00445601"
+   },
+   {
+      "SimilarStudyID":"NCT02318329",
+      "Title":"A Phase 1 Open-Label, Dose-Finding Study Evaluating Safety and Pharmacokinetics of FPA144 in Patients With Advanced Solid Tumors",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT02318329"
+   },
+   {
+      "SimilarStudyID":"NCT03058705",
+      "Title":"Pilot Study: Assessing Near Infrared Fluorescence Imaging Medical Technology for the Detection of Bladder Cancer",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT03058705"
+   },
+   {
+      "SimilarStudyID":"NCT00790569",
+      "Title":"Varenicline Versus Nicotine Replacement for Methadone-Maintained Smokers",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00790569"
+   },
+   {
+      "SimilarStudyID":"NCT00365508",
+      "Title":"Comparing the Lozenge to the Patch for Smoking Cessation",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00365508"
+   },
+   {
+      "SimilarStudyID":"NCT00538850",
+      "Title":"A Randomized, Double-blind, Placebo-controlled Multi-center Study to Evaluate the Safety and Efficacy of Fentanyl Sublingual Spray (Fentanyl SL Spray) for the Treatment of Breakthrough Cancer Pain",
+      "StudyLink":"https://clinicaltrials.gov/ct2/show/results/NCT00538850"
+   }
+]
+}

@@ -1,0 +1,13 @@
+{
+  "categories": ["40-49", "50-59", "60-69", "70-79"],
+  "modeldata": [
+    {
+      "name": "Osteoporosis",
+      "data": [2, 5, 10, 18]
+    },
+    {
+      "name": "No Osteoporosis",
+      "data": [98, 95, 90, 82]
+    }
+  ]
+}
